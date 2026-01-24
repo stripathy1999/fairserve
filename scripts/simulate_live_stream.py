@@ -9,7 +9,7 @@ import uuid
 # Add project root to path
 sys.path.append(os.path.abspath(os.path.join(os.path.dirname(__file__), '..')))
 
-from intake.processor import process_batch
+
 from intake.processor import process_batch
 from intake.api_client import CityAPIClient
 
