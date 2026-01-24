@@ -1,0 +1,130 @@
+[
+  {
+    "policy_id": "Baseline",
+    "parameters": {
+      "capacity_shift_pct": 0.0,
+      "efficiency_bonus_pct": 0.0,
+      "max_reassignments": 0
+    },
+    "neighborhood_effects": {
+      "Bayview": {
+        "delta_p90": 0.0,
+        "delta_backlog_pct": 0.0
+      },
+      "Tenderloin": {
+        "delta_p90": 0.0,
+        "delta_backlog_pct": 0.0
+      },
+      "Sunset": {
+        "delta_p90": 0.0,
+        "delta_backlog_pct": 0.0
+      },
+      "Mission": {
+        "delta_p90": 0.0,
+        "delta_backlog_pct": 0.0
+      },
+      "Marina": {
+        "delta_p90": 0.0,
+        "delta_backlog_pct": 0.0
+      }
+    },
+    "citywide_delta_p90": 0.0,
+    "equity_improvement": 0.0
+  },
+  {
+    "policy_id": "Efficiency_Boost",
+    "parameters": {
+      "capacity_shift_pct": 0.0,
+      "efficiency_bonus_pct": 0.16,
+      "max_reassignments": 0
+    },
+    "neighborhood_effects": {
+      "Bayview": {
+        "delta_p90": -0.2219,
+        "delta_backlog_pct": -0.0985
+      },
+      "Tenderloin": {
+        "delta_p90": -0.2379,
+        "delta_backlog_pct": -0.117
+      },
+      "Sunset": {
+        "delta_p90": -0.2077,
+        "delta_backlog_pct": -0.0821
+      },
+      "Mission": {
+        "delta_p90": -0.2374,
+        "delta_backlog_pct": -0.1164
+      },
+      "Marina": {
+        "delta_p90": -0.2346,
+        "delta_backlog_pct": -0.1132
+      }
+    },
+    "citywide_delta_p90": -0.2279,
+    "equity_improvement": 0.2259
+  },
+  {
+    "policy_id": "Equity_Shift",
+    "parameters": {
+      "capacity_shift_pct": 0.2,
+      "efficiency_bonus_pct": 0.0,
+      "max_reassignments": 1
+    },
+    "neighborhood_effects": {
+      "Bayview": {
+        "delta_p90": -0.1849,
+        "delta_backlog_pct": -0.0799
+      },
+      "Tenderloin": {
+        "delta_p90": -0.205,
+        "delta_backlog_pct": -0.0987
+      },
+      "Sunset": {
+        "delta_p90": -0.1814,
+        "delta_backlog_pct": -0.0703
+      },
+      "Mission": {
+        "delta_p90": 0.4288,
+        "delta_backlog_pct": 0.1455
+      },
+      "Marina": {
+        "delta_p90": 0.4238,
+        "delta_backlog_pct": 0.1415
+      }
+    },
+    "citywide_delta_p90": 0.0563,
+    "equity_improvement": 0.042
+  },
+  {
+    "policy_id": "Balanced_Reform",
+    "parameters": {
+      "capacity_shift_pct": 0.04,
+      "efficiency_bonus_pct": 0.12,
+      "max_reassignments": 2
+    },
+    "neighborhood_effects": {
+      "Bayview": {
+        "delta_p90": -0.2088,
+        "delta_backlog_pct": -0.0918
+      },
+      "Tenderloin": {
+        "delta_p90": -0.2252,
+        "delta_backlog_pct": -0.1098
+      },
+      "Sunset": {
+        "delta_p90": -0.1972,
+        "delta_backlog_pct": -0.0773
+      },
+      "Mission": {
+        "delta_p90": -0.1203,
+        "delta_backlog_pct": -0.0547
+      },
+      "Marina": {
+        "delta_p90": -0.1189,
+        "delta_backlog_pct": -0.0532
+      }
+    },
+    "citywide_delta_p90": -0.1741,
+    "equity_improvement": 0.1886
+  }
+]
