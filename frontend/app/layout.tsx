@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 import type { Metadata } from "next";
 import { Geist, Geist_Mono } from "next/font/google";
 import "./globals.css";
@@ -61,6 +62,21 @@ export default function RootLayout({
           <main className="mx-auto max-w-6xl px-6 py-8">{children}</main>
         </div>
       </body>
+=======
+import type { ReactNode } from "react";
+
+import "./globals.css";
+
+export const metadata = {
+  title: "FairServe",
+  description: "Fairness and policy review demo",
+};
+
+export default function RootLayout({ children }: { children: ReactNode }) {
+  return (
+    <html lang="en">
+      <body>{children}</body>
+>>>>>>> 521b4f51 (Move project into frontend directory.)
     </html>
   );
 }

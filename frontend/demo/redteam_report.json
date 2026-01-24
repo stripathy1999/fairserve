@@ -1,0 +1,12 @@
+{
+  "service_type": "encampment",
+  "policy_id": "P_PASS",
+  "risks": [
+    {"type": "distribution_shift", "severity": "medium", "detail": "Plan concentrates capacity toward worst neighborhoods; monitor any emerging tail delays in mid-tier areas."},
+    {"type": "backlog_sensitivity", "severity": "medium", "detail": "If arrivals spike by ~20%, backlog delta may exceed constitution cap. Recommend enabling crisis-mode efficiency bonus or reducing shift by 2–3 pts."}
+  ],
+  "mitigations": [
+    "Add weekly audit: check max_harm_pct and backlog_delta_pct; auto-reduce capacity_shift_pct if thresholds approach limits.",
+    "Run chaos stress tests (demand spike, capacity drop) before adopting policy."
+  ]
+}
