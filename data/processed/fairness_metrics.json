@@ -1,5 +1,6 @@
 [
   {
+<<<<<<< HEAD
     "service_type": "Autonomous Vehicle Complaints",
     "neighborhood": "Financial District/South Beach",
     "N": 11,
@@ -1221,6 +1222,17 @@
     "worst_k_flag": false
   },
   {
+<<<<<<< HEAD
+=======
+    "service_type": "Encampment",
+    "neighborhood": "Mission Bay",
+    "N": 20,
+    "p50_hr": 1.2354166666666666,
+    "p90_hr": 3.7399166666666686,
+    "city_p90_hr": 2.231388888888889,
+    "ratio_p90": 1.6760487987053412,
+=======
+>>>>>>> 0b5cce5 (Refactor fairness metrics and simulator for strict historical/live data separation and robustness)
     "service_type": "cleaning",
     "neighborhood": "McLaren Park",
     "N": 37,
@@ -1228,10 +1240,26 @@
     "p90_hr": 288.30283333333335,
     "city_p90_hr": 127.96133333333339,
     "ratio_p90": 2.25304649321149,
+<<<<<<< HEAD
+=======
+>>>>>>> 9857cbd (Refactor fairness metrics and simulator for strict historical/live data separation and robustness)
+>>>>>>> 0b5cce5 (Refactor fairness metrics and simulator for strict historical/live data separation and robustness)
     "rank": 1,
     "worst_k_flag": true
   },
   {
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+    "service_type": "Encampment",
+    "neighborhood": "North Beach",
+    "N": 23,
+    "p50_hr": 1.091388888888889,
+    "p90_hr": 2.9306111111111113,
+    "city_p90_hr": 2.231388888888889,
+    "ratio_p90": 1.3133574007220217,
+=======
+>>>>>>> 0b5cce5 (Refactor fairness metrics and simulator for strict historical/live data separation and robustness)
     "service_type": "cleaning",
     "neighborhood": "Potrero Hill",
     "N": 146,
@@ -1239,10 +1267,26 @@
     "p90_hr": 286.8980555555555,
     "city_p90_hr": 127.96133333333339,
     "ratio_p90": 2.242068350508659,
+<<<<<<< HEAD
+=======
+>>>>>>> 9857cbd (Refactor fairness metrics and simulator for strict historical/live data separation and robustness)
+>>>>>>> 0b5cce5 (Refactor fairness metrics and simulator for strict historical/live data separation and robustness)
     "rank": 2,
     "worst_k_flag": true
   },
   {
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+    "service_type": "Encampment",
+    "neighborhood": "Hayes Valley",
+    "N": 62,
+    "p50_hr": 1.0752777777777778,
+    "p90_hr": 2.7015,
+    "city_p90_hr": 2.231388888888889,
+    "ratio_p90": 1.2106809411178885,
+=======
+>>>>>>> 0b5cce5 (Refactor fairness metrics and simulator for strict historical/live data separation and robustness)
     "service_type": "cleaning",
     "neighborhood": "Mission Bay",
     "N": 74,
@@ -1250,10 +1294,26 @@
     "p90_hr": 280.1244444444445,
     "city_p90_hr": 127.96133333333339,
     "ratio_p90": 2.1891335229739535,
+<<<<<<< HEAD
+=======
+>>>>>>> 9857cbd (Refactor fairness metrics and simulator for strict historical/live data separation and robustness)
+>>>>>>> 0b5cce5 (Refactor fairness metrics and simulator for strict historical/live data separation and robustness)
     "rank": 3,
     "worst_k_flag": true
   },
   {
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+    "service_type": "Encampment",
+    "neighborhood": "Lone Mountain/USF",
+    "N": 11,
+    "p50_hr": 0.9936111111111111,
+    "p90_hr": 2.674166666666667,
+    "city_p90_hr": 2.231388888888889,
+    "ratio_p90": 1.1984314701854848,
+=======
+>>>>>>> 0b5cce5 (Refactor fairness metrics and simulator for strict historical/live data separation and robustness)
     "service_type": "cleaning",
     "neighborhood": "Bayview Hunters Point",
     "N": 1159,
@@ -1261,10 +1321,15 @@
     "p90_hr": 239.30033333333336,
     "city_p90_hr": 127.96133333333339,
     "ratio_p90": 1.8700987798397426,
+<<<<<<< HEAD
+=======
+>>>>>>> 9857cbd (Refactor fairness metrics and simulator for strict historical/live data separation and robustness)
+>>>>>>> 0b5cce5 (Refactor fairness metrics and simulator for strict historical/live data separation and robustness)
     "rank": 4,
     "worst_k_flag": false
   },
   {
+<<<<<<< HEAD
     "service_type": "Encampment",
     "neighborhood": "Noe Valley",
     "N": 5,
@@ -1272,10 +1337,20 @@
     "p90_hr": 2.668444444444445,
     "city_p90_hr": 2.231388888888889,
     "ratio_p90": 1.1958670484252458,
+=======
+    "service_type": "cleaning",
+    "neighborhood": "Visitacion Valley",
+    "N": 215,
+    "p50_hr": 24.897222222222222,
+    "p90_hr": 238.34944444444446,
+    "city_p90_hr": 127.96133333333339,
+    "ratio_p90": 1.8626677155946407,
+>>>>>>> 9857cbd (Refactor fairness metrics and simulator for strict historical/live data separation and robustness)
     "rank": 5,
     "worst_k_flag": false
   },
   {
+<<<<<<< HEAD
     "service_type": "Encampment",
     "neighborhood": "Western Addition",
     "N": 24,
@@ -1283,10 +1358,20 @@
     "p90_hr": 2.4667222222222223,
     "city_p90_hr": 2.231388888888889,
     "ratio_p90": 1.1054649570521597,
+=======
+    "service_type": "cleaning",
+    "neighborhood": "Twin Peaks",
+    "N": 34,
+    "p50_hr": 14.0075,
+    "p90_hr": 192.46683333333328,
+    "city_p90_hr": 127.96133333333339,
+    "ratio_p90": 1.5041014994112796,
+>>>>>>> 9857cbd (Refactor fairness metrics and simulator for strict historical/live data separation and robustness)
     "rank": 6,
     "worst_k_flag": false
   },
   {
+<<<<<<< HEAD
     "service_type": "Encampment",
     "neighborhood": "Bayview Hunters Point",
     "N": 20,
@@ -1481,10 +1566,31 @@
     "p90_hr": 100.00447222222242,
     "city_p90_hr": 73.24130555555556,
     "ratio_p90": 1.3654108356433687,
+=======
+    "service_type": "cleaning",
+    "neighborhood": "Golden Gate Park",
+    "N": 100,
+    "p50_hr": 26.471805555555555,
+    "p90_hr": 189.8641388888889,
+    "city_p90_hr": 127.96133333333339,
+    "ratio_p90": 1.483761804781305,
+    "rank": 7,
+    "worst_k_flag": false
+  },
+  {
+    "service_type": "cleaning",
+    "neighborhood": "Excelsior",
+    "N": 395,
+    "p50_hr": 13.878055555555555,
+    "p90_hr": 182.15322222222272,
+    "city_p90_hr": 127.96133333333339,
+    "ratio_p90": 1.4235020648598742,
+>>>>>>> 9857cbd (Refactor fairness metrics and simulator for strict historical/live data separation and robustness)
     "rank": 8,
     "worst_k_flag": false
   },
   {
+<<<<<<< HEAD
     "service_type": "Encampments",
     "neighborhood": "Bernal Heights",
     "N": 234,
@@ -1492,10 +1598,20 @@
     "p90_hr": 89.41358333333335,
     "city_p90_hr": 73.24130555555556,
     "ratio_p90": 1.2208081581166064,
+=======
+    "service_type": "cleaning",
+    "neighborhood": "Marina",
+    "N": 212,
+    "p50_hr": 17.250833333333333,
+    "p90_hr": 168.15522222222222,
+    "city_p90_hr": 127.96133333333339,
+    "ratio_p90": 1.314109644232806,
+>>>>>>> 9857cbd (Refactor fairness metrics and simulator for strict historical/live data separation and robustness)
     "rank": 9,
     "worst_k_flag": false
   },
   {
+<<<<<<< HEAD
     "service_type": "Encampments",
     "neighborhood": "Financial District/South Beach",
     "N": 625,
@@ -1503,10 +1619,20 @@
     "p90_hr": 87.99500000000008,
     "city_p90_hr": 73.24130555555556,
     "ratio_p90": 1.2014395337785648,
+=======
+    "service_type": "cleaning",
+    "neighborhood": "Glen Park",
+    "N": 60,
+    "p50_hr": 18.105833333333337,
+    "p90_hr": 166.7279166666667,
+    "city_p90_hr": 127.96133333333339,
+    "ratio_p90": 1.3029554500838791,
+>>>>>>> 9857cbd (Refactor fairness metrics and simulator for strict historical/live data separation and robustness)
     "rank": 10,
     "worst_k_flag": false
   },
   {
+<<<<<<< HEAD
     "service_type": "Encampments",
     "neighborhood": "Inner Richmond",
     "N": 162,
@@ -1514,10 +1640,20 @@
     "p90_hr": 86.67286111111113,
     "city_p90_hr": 73.24130555555556,
     "ratio_p90": 1.1833877134449409,
+=======
+    "service_type": "cleaning",
+    "neighborhood": "Presidio Heights",
+    "N": 77,
+    "p50_hr": 23.273055555555555,
+    "p90_hr": 153.5215000000004,
+    "city_p90_hr": 127.96133333333339,
+    "ratio_p90": 1.199749142970275,
+>>>>>>> 9857cbd (Refactor fairness metrics and simulator for strict historical/live data separation and robustness)
     "rank": 11,
     "worst_k_flag": false
   },
   {
+<<<<<<< HEAD
     "service_type": "Encampments",
     "neighborhood": "Lone Mountain/USF",
     "N": 81,
@@ -1525,10 +1661,20 @@
     "p90_hr": 74.50277777777778,
     "city_p90_hr": 73.24130555555556,
     "ratio_p90": 1.0172235081372951,
+=======
+    "service_type": "cleaning",
+    "neighborhood": "Financial District/South Beach",
+    "N": 290,
+    "p50_hr": 14.42013888888889,
+    "p90_hr": 150.72630555555585,
+    "city_p90_hr": 127.96133333333339,
+    "ratio_p90": 1.1779050876480066,
+>>>>>>> 9857cbd (Refactor fairness metrics and simulator for strict historical/live data separation and robustness)
     "rank": 12,
     "worst_k_flag": false
   },
   {
+<<<<<<< HEAD
     "service_type": "Encampments",
     "neighborhood": "Chinatown",
     "N": 150,
@@ -1536,10 +1682,20 @@
     "p90_hr": 71.7283611111111,
     "city_p90_hr": 73.24130555555556,
     "ratio_p90": 0.9793430164445001,
+=======
+    "service_type": "cleaning",
+    "neighborhood": "Russian Hill",
+    "N": 226,
+    "p50_hr": 14.965555555555556,
+    "p90_hr": 149.0597222222222,
+    "city_p90_hr": 127.96133333333339,
+    "ratio_p90": 1.164880970987763,
+>>>>>>> 9857cbd (Refactor fairness metrics and simulator for strict historical/live data separation and robustness)
     "rank": 13,
     "worst_k_flag": false
   },
   {
+<<<<<<< HEAD
     "service_type": "Encampments",
     "neighborhood": "Glen Park",
     "N": 42,
@@ -1547,10 +1703,20 @@
     "p90_hr": 70.66630555555555,
     "city_p90_hr": 73.24130555555556,
     "ratio_p90": 0.9648422433151905,
+=======
+    "service_type": "cleaning",
+    "neighborhood": "Inner Richmond",
+    "N": 239,
+    "p50_hr": 15.489722222222222,
+    "p90_hr": 144.21066666666667,
+    "city_p90_hr": 127.96133333333339,
+    "ratio_p90": 1.1269862771045416,
+>>>>>>> 9857cbd (Refactor fairness metrics and simulator for strict historical/live data separation and robustness)
     "rank": 14,
     "worst_k_flag": false
   },
   {
+<<<<<<< HEAD
     "service_type": "Encampments",
     "neighborhood": "Haight Ashbury",
     "N": 232,
@@ -1558,10 +1724,20 @@
     "p90_hr": 69.52172222222222,
     "city_p90_hr": 73.24130555555556,
     "ratio_p90": 0.9492146773583667,
+=======
+    "service_type": "cleaning",
+    "neighborhood": "North Beach",
+    "N": 227,
+    "p50_hr": 20.198611111111113,
+    "p90_hr": 142.7393888888889,
+    "city_p90_hr": 127.96133333333339,
+    "ratio_p90": 1.1154884461625556,
+>>>>>>> 9857cbd (Refactor fairness metrics and simulator for strict historical/live data separation and robustness)
     "rank": 15,
     "worst_k_flag": false
   },
   {
+<<<<<<< HEAD
     "service_type": "Encampments",
     "neighborhood": "Excelsior",
     "N": 44,
@@ -1569,10 +1745,20 @@
     "p90_hr": 68.72041666666668,
     "city_p90_hr": 73.24130555555556,
     "ratio_p90": 0.9382740537651987,
+=======
+    "service_type": "cleaning",
+    "neighborhood": "Chinatown",
+    "N": 293,
+    "p50_hr": 18.31833333333333,
+    "p90_hr": 139.8408333333335,
+    "city_p90_hr": 127.96133333333339,
+    "ratio_p90": 1.092836638151109,
+>>>>>>> 9857cbd (Refactor fairness metrics and simulator for strict historical/live data separation and robustness)
     "rank": 16,
     "worst_k_flag": false
   },
   {
+<<<<<<< HEAD
     "service_type": "Encampments",
     "neighborhood": "Outer Mission",
     "N": 85,
@@ -1580,10 +1766,20 @@
     "p90_hr": 68.36438888888895,
     "city_p90_hr": 73.24130555555556,
     "ratio_p90": 0.9334130293053374,
+=======
+    "service_type": "cleaning",
+    "neighborhood": "Portola",
+    "N": 492,
+    "p50_hr": 25.860416666666666,
+    "p90_hr": 126.02447222222223,
+    "city_p90_hr": 127.96133333333339,
+    "ratio_p90": 0.9848637001455297,
+>>>>>>> 9857cbd (Refactor fairness metrics and simulator for strict historical/live data separation and robustness)
     "rank": 17,
     "worst_k_flag": false
   },
   {
+<<<<<<< HEAD
     "service_type": "Encampments",
     "neighborhood": "Noe Valley",
     "N": 43,
@@ -1591,10 +1787,20 @@
     "p90_hr": 67.26933333333334,
     "city_p90_hr": 73.24130555555556,
     "ratio_p90": 0.9184616907505517,
+=======
+    "service_type": "cleaning",
+    "neighborhood": "Mission",
+    "N": 2578,
+    "p50_hr": 21.748194444444444,
+    "p90_hr": 125.33494444444447,
+    "city_p90_hr": 127.96133333333339,
+    "ratio_p90": 0.9794751365863992,
+>>>>>>> 9857cbd (Refactor fairness metrics and simulator for strict historical/live data separation and robustness)
     "rank": 18,
     "worst_k_flag": false
   },
   {
+<<<<<<< HEAD
     "service_type": "Encampments",
     "neighborhood": "North Beach",
     "N": 174,
@@ -1602,10 +1808,20 @@
     "p90_hr": 67.14369444444445,
     "city_p90_hr": 73.24130555555556,
     "ratio_p90": 0.916746280464841,
+=======
+    "service_type": "cleaning",
+    "neighborhood": "Outer Mission",
+    "N": 267,
+    "p50_hr": 16.3625,
+    "p90_hr": 125.16161111111111,
+    "city_p90_hr": 127.96133333333339,
+    "ratio_p90": 0.9781205607249408,
+>>>>>>> 9857cbd (Refactor fairness metrics and simulator for strict historical/live data separation and robustness)
     "rank": 19,
     "worst_k_flag": false
   },
   {
+<<<<<<< HEAD
     "service_type": "Encampments",
     "neighborhood": "Tenderloin",
     "N": 1473,
@@ -1613,10 +1829,20 @@
     "p90_hr": 66.1221111111111,
     "city_p90_hr": 73.24130555555556,
     "ratio_p90": 0.9027980947302428,
+=======
+    "service_type": "cleaning",
+    "neighborhood": "Outer Richmond",
+    "N": 350,
+    "p50_hr": 15.380833333333333,
+    "p90_hr": 125.1156388888889,
+    "city_p90_hr": 127.96133333333339,
+    "ratio_p90": 0.9777612942104035,
+>>>>>>> 9857cbd (Refactor fairness metrics and simulator for strict historical/live data separation and robustness)
     "rank": 20,
     "worst_k_flag": false
   },
   {
+<<<<<<< HEAD
     "service_type": "Encampments",
     "neighborhood": "Russian Hill",
     "N": 97,
@@ -1624,10 +1850,20 @@
     "p90_hr": 65.87650000000001,
     "city_p90_hr": 73.24130555555556,
     "ratio_p90": 0.8994446439793575,
+=======
+    "service_type": "cleaning",
+    "neighborhood": "Bernal Heights",
+    "N": 390,
+    "p50_hr": 15.246111111111112,
+    "p90_hr": 124.58377777777778,
+    "city_p90_hr": 127.96133333333339,
+    "ratio_p90": 0.9736048736944838,
+>>>>>>> 9857cbd (Refactor fairness metrics and simulator for strict historical/live data separation and robustness)
     "rank": 21,
     "worst_k_flag": false
   },
   {
+<<<<<<< HEAD
     "service_type": "Encampments",
     "neighborhood": "Mission Bay",
     "N": 185,
@@ -1635,10 +1871,20 @@
     "p90_hr": 65.36699999999999,
     "city_p90_hr": 73.24130555555556,
     "ratio_p90": 0.8924881868799747,
+=======
+    "service_type": "cleaning",
+    "neighborhood": "West of Twin Peaks",
+    "N": 209,
+    "p50_hr": 13.64861111111111,
+    "p90_hr": 122.95561111111112,
+    "city_p90_hr": 127.96133333333339,
+    "ratio_p90": 0.9608809779343063,
+>>>>>>> 9857cbd (Refactor fairness metrics and simulator for strict historical/live data separation and robustness)
     "rank": 22,
     "worst_k_flag": false
   },
   {
+<<<<<<< HEAD
     "service_type": "Encampments",
     "neighborhood": "Western Addition",
     "N": 393,
@@ -1646,10 +1892,20 @@
     "p90_hr": 63.168000000000006,
     "city_p90_hr": 73.24130555555556,
     "ratio_p90": 0.8624641453460347,
+=======
+    "service_type": "cleaning",
+    "neighborhood": "Western Addition",
+    "N": 486,
+    "p50_hr": 14.573888888888888,
+    "p90_hr": 122.28861111111111,
+    "city_p90_hr": 127.96133333333339,
+    "ratio_p90": 0.955668465821272,
+>>>>>>> 9857cbd (Refactor fairness metrics and simulator for strict historical/live data separation and robustness)
     "rank": 23,
     "worst_k_flag": false
   },
   {
+<<<<<<< HEAD
     "service_type": "Encampments",
     "neighborhood": "Outer Richmond",
     "N": 101,
@@ -1657,10 +1913,20 @@
     "p90_hr": 63.05722222222222,
     "city_p90_hr": 73.24130555555556,
     "ratio_p90": 0.8609516412073182,
+=======
+    "service_type": "cleaning",
+    "neighborhood": "Hayes Valley",
+    "N": 624,
+    "p50_hr": 13.739166666666666,
+    "p90_hr": 121.70813888888895,
+    "city_p90_hr": 127.96133333333339,
+    "ratio_p90": 0.9511321562416426,
+>>>>>>> 9857cbd (Refactor fairness metrics and simulator for strict historical/live data separation and robustness)
     "rank": 24,
     "worst_k_flag": false
   },
   {
+<<<<<<< HEAD
     "service_type": "Encampments",
     "neighborhood": "Japantown",
     "N": 42,
@@ -1668,10 +1934,20 @@
     "p90_hr": 61.944499999999984,
     "city_p90_hr": 73.24130555555556,
     "ratio_p90": 0.8457590908590968,
+=======
+    "service_type": "cleaning",
+    "neighborhood": "Lone Mountain/USF",
+    "N": 265,
+    "p50_hr": 24.02,
+    "p90_hr": 121.70283333333334,
+    "city_p90_hr": 127.96133333333339,
+    "ratio_p90": 0.9510906940638315,
+>>>>>>> 9857cbd (Refactor fairness metrics and simulator for strict historical/live data separation and robustness)
     "rank": 25,
     "worst_k_flag": false
   },
   {
+<<<<<<< HEAD
     "service_type": "Encampments",
     "neighborhood": "South of Market",
     "N": 2533,
@@ -1679,10 +1955,20 @@
     "p90_hr": 60.78327777777781,
     "city_p90_hr": 73.24130555555556,
     "ratio_p90": 0.8299043458704053,
+=======
+    "service_type": "cleaning",
+    "neighborhood": "Noe Valley",
+    "N": 172,
+    "p50_hr": 8.121666666666666,
+    "p90_hr": 121.50622222222222,
+    "city_p90_hr": 127.96133333333339,
+    "ratio_p90": 0.9495542056107222,
+>>>>>>> 9857cbd (Refactor fairness metrics and simulator for strict historical/live data separation and robustness)
     "rank": 26,
     "worst_k_flag": false
   },
   {
+<<<<<<< HEAD
     "service_type": "Encampments",
     "neighborhood": "McLaren Park",
     "N": 8,
@@ -1690,10 +1976,20 @@
     "p90_hr": 57.150083333333335,
     "city_p90_hr": 73.24130555555556,
     "ratio_p90": 0.7802985337281217,
+=======
+    "service_type": "cleaning",
+    "neighborhood": "Castro/Upper Market",
+    "N": 518,
+    "p50_hr": 18.06458333333333,
+    "p90_hr": 120.96591666666667,
+    "city_p90_hr": 127.96133333333339,
+    "ratio_p90": 0.9453317929374495,
+>>>>>>> 9857cbd (Refactor fairness metrics and simulator for strict historical/live data separation and robustness)
     "rank": 27,
     "worst_k_flag": false
   },
   {
+<<<<<<< HEAD
     "service_type": "Encampments",
     "neighborhood": "Presidio",
     "N": 4,
@@ -1701,10 +1997,20 @@
     "p90_hr": 54.21361111111111,
     "city_p90_hr": 73.24130555555556,
     "ratio_p90": 0.7402054168735235,
+=======
+    "service_type": "cleaning",
+    "neighborhood": "Pacific Heights",
+    "N": 210,
+    "p50_hr": 14.238888888888889,
+    "p90_hr": 119.85602777777777,
+    "city_p90_hr": 127.96133333333339,
+    "ratio_p90": 0.9366581658348178,
+>>>>>>> 9857cbd (Refactor fairness metrics and simulator for strict historical/live data separation and robustness)
     "rank": 28,
     "worst_k_flag": false
   },
   {
+<<<<<<< HEAD
     "service_type": "Encampments",
     "neighborhood": "Inner Sunset",
     "N": 90,
@@ -1712,10 +2018,20 @@
     "p90_hr": 53.468638888888904,
     "city_p90_hr": 73.24130555555556,
     "ratio_p90": 0.7300339403198031,
+=======
+    "service_type": "cleaning",
+    "neighborhood": "Oceanview/Merced/Ingleside",
+    "N": 310,
+    "p50_hr": 4.196111111111112,
+    "p90_hr": 119.4325,
+    "city_p90_hr": 127.96133333333339,
+    "ratio_p90": 0.9333483552323094,
+>>>>>>> 9857cbd (Refactor fairness metrics and simulator for strict historical/live data separation and robustness)
     "rank": 29,
     "worst_k_flag": false
   },
   {
+<<<<<<< HEAD
     "service_type": "Encampments",
     "neighborhood": "Oceanview/Merced/Ingleside",
     "N": 48,
@@ -1723,10 +2039,20 @@
     "p90_hr": 53.27944444444447,
     "city_p90_hr": 73.24130555555556,
     "ratio_p90": 0.7274507743998438,
+=======
+    "service_type": "cleaning",
+    "neighborhood": "South of Market",
+    "N": 975,
+    "p50_hr": 15.631944444444445,
+    "p90_hr": 118.97305555555556,
+    "city_p90_hr": 127.96133333333339,
+    "ratio_p90": 0.9297578608815854,
+>>>>>>> 9857cbd (Refactor fairness metrics and simulator for strict historical/live data separation and robustness)
     "rank": 30,
     "worst_k_flag": false
   },
   {
+<<<<<<< HEAD
     "service_type": "Encampments",
     "neighborhood": "Castro/Upper Market",
     "N": 647,
@@ -1734,10 +2060,20 @@
     "p90_hr": 52.9251111111111,
     "city_p90_hr": 73.24130555555556,
     "ratio_p90": 0.722612885033377,
+=======
+    "service_type": "cleaning",
+    "neighborhood": "Japantown",
+    "N": 64,
+    "p50_hr": 1.544861111111111,
+    "p90_hr": 113.51247222222229,
+    "city_p90_hr": 127.96133333333339,
+    "ratio_p90": 0.8870841625768897,
+>>>>>>> 9857cbd (Refactor fairness metrics and simulator for strict historical/live data separation and robustness)
     "rank": 31,
     "worst_k_flag": false
   },
   {
+<<<<<<< HEAD
     "service_type": "Encampments",
     "neighborhood": "Hayes Valley",
     "N": 711,
@@ -2196,10 +2532,20 @@
     "p90_hr": 226.17572222222228,
     "city_p90_hr": 332.8961666666668,
     "ratio_p90": 0.6794182236670059,
+=======
+    "service_type": "cleaning",
+    "neighborhood": "Lincoln Park",
+    "N": 5,
+    "p50_hr": 21.168055555555554,
+    "p90_hr": 111.31538888888889,
+    "city_p90_hr": 127.96133333333339,
+    "ratio_p90": 0.8699142622945122,
+>>>>>>> 9857cbd (Refactor fairness metrics and simulator for strict historical/live data separation and robustness)
     "rank": 32,
     "worst_k_flag": false
   },
   {
+<<<<<<< HEAD
     "service_type": "General Request",
     "neighborhood": "Inner Sunset",
     "N": 167,
@@ -2647,10 +2993,20 @@
     "p90_hr": 249.63247222222222,
     "city_p90_hr": 568.7888888888889,
     "ratio_p90": 0.4388842276962747,
+=======
+    "service_type": "cleaning",
+    "neighborhood": "Haight Ashbury",
+    "N": 456,
+    "p50_hr": 11.468888888888888,
+    "p90_hr": 102.15694444444443,
+    "city_p90_hr": 127.96133333333339,
+    "ratio_p90": 0.7983422943736472,
+>>>>>>> 9857cbd (Refactor fairness metrics and simulator for strict historical/live data separation and robustness)
     "rank": 33,
     "worst_k_flag": false
   },
   {
+<<<<<<< HEAD
     "service_type": "Graffiti Private",
     "neighborhood": "Outer Richmond",
     "N": 38,
@@ -2658,10 +3014,20 @@
     "p90_hr": 249.04633333333345,
     "city_p90_hr": 568.7888888888889,
     "ratio_p90": 0.4378537242874726,
+=======
+    "service_type": "cleaning",
+    "neighborhood": "Inner Sunset",
+    "N": 206,
+    "p50_hr": 13.905555555555555,
+    "p90_hr": 101.51625,
+    "city_p90_hr": 127.96133333333339,
+    "ratio_p90": 0.7933353565139466,
+>>>>>>> 9857cbd (Refactor fairness metrics and simulator for strict historical/live data separation and robustness)
     "rank": 34,
     "worst_k_flag": false
   },
   {
+<<<<<<< HEAD
     "service_type": "Graffiti Private",
     "neighborhood": "Treasure Island",
     "N": 1,
@@ -2669,10 +3035,20 @@
     "p90_hr": 248.795,
     "city_p90_hr": 568.7888888888889,
     "ratio_p90": 0.43741184973921193,
+=======
+    "service_type": "cleaning",
+    "neighborhood": "Sunset/Parkside",
+    "N": 500,
+    "p50_hr": 8.028611111111111,
+    "p90_hr": 99.55458333333335,
+    "city_p90_hr": 127.96133333333339,
+    "ratio_p90": 0.7780052046972521,
+>>>>>>> 9857cbd (Refactor fairness metrics and simulator for strict historical/live data separation and robustness)
     "rank": 35,
     "worst_k_flag": false
   },
   {
+<<<<<<< HEAD
     "service_type": "Graffiti Private",
     "neighborhood": "Russian Hill",
     "N": 51,
@@ -2680,10 +3056,20 @@
     "p90_hr": 192.1197222222222,
     "city_p90_hr": 568.7888888888889,
     "ratio_p90": 0.3377698228204176,
+=======
+    "service_type": "cleaning",
+    "neighborhood": "Nob Hill",
+    "N": 761,
+    "p50_hr": 9.188611111111111,
+    "p90_hr": 99.49833333333333,
+    "city_p90_hr": 127.96133333333339,
+    "ratio_p90": 0.777565618780673,
+>>>>>>> 9857cbd (Refactor fairness metrics and simulator for strict historical/live data separation and robustness)
     "rank": 36,
     "worst_k_flag": false
   },
   {
+<<<<<<< HEAD
     "service_type": "Graffiti Private",
     "neighborhood": "Pacific Heights",
     "N": 36,
@@ -2691,10 +3077,20 @@
     "p90_hr": 187.97833333333332,
     "city_p90_hr": 568.7888888888889,
     "ratio_p90": 0.33048875778945513,
+=======
+    "service_type": "cleaning",
+    "neighborhood": "Lakeshore",
+    "N": 36,
+    "p50_hr": 17.23708333333333,
+    "p90_hr": 96.35916666666667,
+    "city_p90_hr": 127.96133333333339,
+    "ratio_p90": 0.753033468443592,
+>>>>>>> 9857cbd (Refactor fairness metrics and simulator for strict historical/live data separation and robustness)
     "rank": 37,
     "worst_k_flag": false
   },
   {
+<<<<<<< HEAD
     "service_type": "Graffiti Private",
     "neighborhood": "Japantown",
     "N": 17,
@@ -3131,10 +3527,20 @@
     "p90_hr": 431.5060833333333,
     "city_p90_hr": 757.4131111111111,
     "ratio_p90": 0.5697103430125758,
+=======
+    "service_type": "cleaning",
+    "neighborhood": "Tenderloin",
+    "N": 864,
+    "p50_hr": 8.280277777777778,
+    "p90_hr": 50.377638888888896,
+    "city_p90_hr": 127.96133333333339,
+    "ratio_p90": 0.39369423228544725,
+>>>>>>> 9857cbd (Refactor fairness metrics and simulator for strict historical/live data separation and robustness)
     "rank": 38,
     "worst_k_flag": false
   },
   {
+<<<<<<< HEAD
     "service_type": "Graffiti Public",
     "neighborhood": "McLaren Park",
     "N": 9,
@@ -3142,10 +3548,20 @@
     "p90_hr": 304.92300000000006,
     "city_p90_hr": 757.4131111111111,
     "ratio_p90": 0.402584792271002,
+=======
+    "service_type": "cleaning",
+    "neighborhood": "Seacliff",
+    "N": 12,
+    "p50_hr": 8.959583333333335,
+    "p90_hr": 49.22919444444446,
+    "city_p90_hr": 127.96133333333339,
+    "ratio_p90": 0.38471929888542716,
+>>>>>>> 9857cbd (Refactor fairness metrics and simulator for strict historical/live data separation and robustness)
     "rank": 39,
     "worst_k_flag": false
   },
   {
+<<<<<<< HEAD
     "service_type": "Graffiti Public",
     "neighborhood": "Presidio",
     "N": 17,
@@ -3153,10 +3569,20 @@
     "p90_hr": 239.54094444444448,
     "city_p90_hr": 757.4131111111111,
     "ratio_p90": 0.3162619459980595,
+=======
+    "service_type": "cleaning",
+    "neighborhood": "Presidio",
+    "N": 4,
+    "p50_hr": 7.608611111111111,
+    "p90_hr": 37.945750000000004,
+    "city_p90_hr": 127.96133333333339,
+    "ratio_p90": 0.29654075189380114,
+>>>>>>> 9857cbd (Refactor fairness metrics and simulator for strict historical/live data separation and robustness)
     "rank": 40,
     "worst_k_flag": false
   },
   {
+<<<<<<< HEAD
     "service_type": "Graffiti Public",
     "neighborhood": "Lincoln Park",
     "N": 2,
@@ -3168,6 +3594,7 @@
     "worst_k_flag": false
   },
   {
+<<<<<<< HEAD
     "service_type": "cleaning",
     "neighborhood": "Twin Peaks",
     "N": 34,
@@ -3175,6 +3602,100 @@
     "p90_hr": 192.46683333333328,
     "city_p90_hr": 127.96133333333339,
     "ratio_p90": 1.5041014994112796,
+=======
+    "service_type": "Graffiti",
+    "neighborhood": "West of Twin Peaks",
+    "N": 41,
+    "p50_hr": 336.7236111111111,
+    "p90_hr": 1166.1486111111112,
+    "city_p90_hr": 710.2657222222223,
+    "ratio_p90": 1.6418483598822131,
+=======
+    "service_type": "encampment",
+    "neighborhood": "Visitacion Valley",
+    "N": 1,
+    "p50_hr": 328.0366666666667,
+    "p90_hr": 328.0366666666667,
+    "city_p90_hr": 67.11427777777777,
+    "ratio_p90": 4.887732946375875,
+>>>>>>> 9857cbd (Refactor fairness metrics and simulator for strict historical/live data separation and robustness)
+    "rank": 1,
+    "worst_k_flag": true
+  },
+  {
+<<<<<<< HEAD
+    "service_type": "Graffiti",
+    "neighborhood": "Lakeshore",
+    "N": 11,
+    "p50_hr": 142.56805555555556,
+    "p90_hr": 1093.1330555555555,
+    "city_p90_hr": 710.2657222222223,
+    "ratio_p90": 1.5390480229504089,
+=======
+    "service_type": "encampment",
+    "neighborhood": "Twin Peaks",
+    "N": 4,
+    "p50_hr": 33.81166666666667,
+    "p90_hr": 211.81086111111117,
+    "city_p90_hr": 67.11427777777777,
+    "ratio_p90": 3.155973186695662,
+>>>>>>> 9857cbd (Refactor fairness metrics and simulator for strict historical/live data separation and robustness)
+    "rank": 2,
+    "worst_k_flag": true
+  },
+  {
+<<<<<<< HEAD
+    "service_type": "Graffiti",
+    "neighborhood": "Lincoln Park",
+    "N": 3,
+    "p50_hr": 127.13388888888889,
+    "p90_hr": 1093.0881111111112,
+    "city_p90_hr": 710.2657222222223,
+    "ratio_p90": 1.5389847445983245,
+=======
+    "service_type": "encampment",
+    "neighborhood": "Bayview Hunters Point",
+    "N": 73,
+    "p50_hr": 15.733888888888888,
+    "p90_hr": 184.4038888888888,
+    "city_p90_hr": 67.11427777777777,
+    "ratio_p90": 2.7476104190447956,
+>>>>>>> 9857cbd (Refactor fairness metrics and simulator for strict historical/live data separation and robustness)
+    "rank": 3,
+    "worst_k_flag": true
+  },
+  {
+<<<<<<< HEAD
+    "service_type": "Graffiti",
+    "neighborhood": "Oceanview/Merced/Ingleside",
+    "N": 28,
+    "p50_hr": 60.45097222222222,
+    "p90_hr": 1008.8890000000001,
+    "city_p90_hr": 710.2657222222223,
+    "ratio_p90": 1.4204388138617605,
+    "rank": 4,
+    "worst_k_flag": false
+  },
+  {
+    "service_type": "Graffiti",
+    "neighborhood": "Outer Mission",
+    "N": 25,
+    "p50_hr": 47.007777777777775,
+    "p90_hr": 981.1008888888891,
+    "city_p90_hr": 710.2657222222223,
+    "ratio_p90": 1.381315271444185,
+    "rank": 5,
+    "worst_k_flag": false
+  },
+  {
+    "service_type": "Graffiti",
+    "neighborhood": "Tenderloin",
+    "N": 39,
+    "p50_hr": 71.87972222222223,
+    "p90_hr": 951.5453333333334,
+    "city_p90_hr": 710.2657222222223,
+    "ratio_p90": 1.3397033019645308,
+>>>>>>> 0b5cce5 (Refactor fairness metrics and simulator for strict historical/live data separation and robustness)
     "rank": 6,
     "worst_k_flag": false
   },
@@ -4468,6 +4989,3076 @@
   {
     "service_type": "other",
     "neighborhood": "Lakeshore",
+<<<<<<< HEAD
+=======
+    "N": 29,
+    "p50_hr": 59.580555555555556,
+    "p90_hr": 271.0724444444442,
+    "city_p90_hr": 489.8930555555556,
+    "ratio_p90": 0.5533298367274032,
+    "rank": 31,
+    "worst_k_flag": false
+  },
+  {
+    "service_type": "MTA Parking Traffic Signs Normal Priority",
+    "neighborhood": "Twin Peaks",
+    "N": 23,
+    "p50_hr": 155.4813888888889,
+    "p90_hr": 254.80761111111113,
+    "city_p90_hr": 489.8930555555556,
+    "ratio_p90": 0.520129053109664,
+    "rank": 32,
+    "worst_k_flag": false
+  },
+  {
+    "service_type": "MTA Parking Traffic Signs Normal Priority",
+    "neighborhood": "Chinatown",
+    "N": 12,
+    "p50_hr": 113.04277777777779,
+    "p90_hr": 238.93658333333335,
+    "city_p90_hr": 489.8930555555556,
+    "ratio_p90": 0.4877321297448706,
+    "rank": 33,
+    "worst_k_flag": false
+  },
+  {
+    "service_type": "MTA Parking Traffic Signs Normal Priority",
+    "neighborhood": "Russian Hill",
+    "N": 12,
+    "p50_hr": 148.9136111111111,
+    "p90_hr": 233.20247222222224,
+    "city_p90_hr": 489.8930555555556,
+    "ratio_p90": 0.4760273075472822,
+    "rank": 34,
+    "worst_k_flag": false
+  },
+  {
+    "service_type": "MTA Parking Traffic Signs Normal Priority",
+    "neighborhood": "Castro/Upper Market",
+    "N": 165,
+    "p50_hr": 59.321666666666665,
+    "p90_hr": 218.1578333333332,
+    "city_p90_hr": 489.8930555555556,
+    "ratio_p90": 0.44531726028640006,
+    "rank": 35,
+    "worst_k_flag": false
+  },
+  {
+    "service_type": "MTA Parking Traffic Signs Normal Priority",
+    "neighborhood": "Bernal Heights",
+    "N": 40,
+    "p50_hr": 41.45444444444445,
+    "p90_hr": 217.77311111111115,
+    "city_p90_hr": 489.8930555555556,
+    "ratio_p90": 0.44453194149516767,
+    "rank": 36,
+    "worst_k_flag": false
+  },
+  {
+    "service_type": "MTA Parking Traffic Signs Normal Priority",
+    "neighborhood": "Noe Valley",
+    "N": 65,
+    "p50_hr": 59.981944444444444,
+    "p90_hr": 188.7916666666667,
+    "city_p90_hr": 489.8930555555556,
+    "ratio_p90": 0.3853732248818479,
+    "rank": 37,
+    "worst_k_flag": false
+  },
+  {
+    "service_type": "MTA Parking Traffic Signs Normal Priority",
+    "neighborhood": "McLaren Park",
+    "N": 2,
+    "p50_hr": 25.9125,
+    "p90_hr": 31.8685,
+    "city_p90_hr": 489.8930555555556,
+    "ratio_p90": 0.06505195294891458,
+    "rank": 38,
+    "worst_k_flag": false
+  },
+  {
+    "service_type": "MTA Parking Traffic Signs Normal Priority",
+    "neighborhood": "Presidio",
+    "N": 1,
+    "p50_hr": 0.5438888888888889,
+    "p90_hr": 0.5438888888888889,
+    "city_p90_hr": 489.8930555555556,
+    "ratio_p90": 0.001110219634103815,
+    "rank": 39,
+    "worst_k_flag": false
+  },
+  {
+    "service_type": "Muni Employee Feedback",
+    "neighborhood": "Visitacion Valley",
+    "N": 15,
+    "p50_hr": 316.63972222222225,
+    "p90_hr": 622.5426666666666,
+    "city_p90_hr": 411.14522222222223,
+    "ratio_p90": 1.5141673380073597,
+    "rank": 1,
+    "worst_k_flag": true
+  },
+  {
+    "service_type": "Muni Employee Feedback",
+    "neighborhood": "Outer Mission",
+    "N": 13,
+    "p50_hr": 207.46333333333334,
+    "p90_hr": 586.1777777777778,
+    "city_p90_hr": 411.14522222222223,
+    "ratio_p90": 1.4257195416488415,
+    "rank": 2,
+    "worst_k_flag": true
+  },
+  {
+    "service_type": "Muni Employee Feedback",
+    "neighborhood": "Mission Bay",
+    "N": 23,
+    "p50_hr": 62.9975,
+    "p90_hr": 539.9270000000001,
+    "city_p90_hr": 411.14522222222223,
+    "ratio_p90": 1.3132269835989288,
+    "rank": 3,
+    "worst_k_flag": true
+  },
+  {
+    "service_type": "Muni Employee Feedback",
+    "neighborhood": "Excelsior",
+    "N": 23,
+    "p50_hr": 182.12666666666667,
+    "p90_hr": 517.6255555555556,
+    "city_p90_hr": 411.14522222222223,
+    "ratio_p90": 1.2589847274834225,
+    "rank": 4,
+    "worst_k_flag": false
+  },
+  {
+    "service_type": "Muni Employee Feedback",
+    "neighborhood": "Chinatown",
+    "N": 18,
+    "p50_hr": 336.0901388888889,
+    "p90_hr": 501.10225,
+    "city_p90_hr": 411.14522222222223,
+    "ratio_p90": 1.2187962377175732,
+    "rank": 5,
+    "worst_k_flag": false
+  },
+  {
+    "service_type": "Muni Employee Feedback",
+    "neighborhood": "North Beach",
+    "N": 14,
+    "p50_hr": 122.66708333333334,
+    "p90_hr": 488.2390000000004,
+    "city_p90_hr": 411.14522222222223,
+    "ratio_p90": 1.187509847155926,
+    "rank": 6,
+    "worst_k_flag": false
+  },
+  {
+    "service_type": "Muni Employee Feedback",
+    "neighborhood": "Pacific Heights",
+    "N": 26,
+    "p50_hr": 263.5780555555556,
+    "p90_hr": 483.9922222222222,
+    "city_p90_hr": 411.14522222222223,
+    "ratio_p90": 1.1771807041956248,
+    "rank": 7,
+    "worst_k_flag": false
+  },
+  {
+    "service_type": "Muni Employee Feedback",
+    "neighborhood": "Financial District/South Beach",
+    "N": 80,
+    "p50_hr": 130.36916666666667,
+    "p90_hr": 449.81330555555604,
+    "city_p90_hr": 411.14522222222223,
+    "ratio_p90": 1.0940496964170823,
+    "rank": 8,
+    "worst_k_flag": false
+  },
+  {
+    "service_type": "Muni Employee Feedback",
+    "neighborhood": "Inner Richmond",
+    "N": 19,
+    "p50_hr": 96.06222222222222,
+    "p90_hr": 448.67066666666665,
+    "city_p90_hr": 411.14522222222223,
+    "ratio_p90": 1.0912705351204643,
+    "rank": 9,
+    "worst_k_flag": false
+  },
+  {
+    "service_type": "Muni Employee Feedback",
+    "neighborhood": "Outer Richmond",
+    "N": 36,
+    "p50_hr": 74.70305555555555,
+    "p90_hr": 443.6638888888889,
+    "city_p90_hr": 411.14522222222223,
+    "ratio_p90": 1.0790928968866638,
+    "rank": 10,
+    "worst_k_flag": false
+  },
+  {
+    "service_type": "Muni Employee Feedback",
+    "neighborhood": "South of Market",
+    "N": 85,
+    "p50_hr": 77.63388888888889,
+    "p90_hr": 433.62605555555587,
+    "city_p90_hr": 411.14522222222223,
+    "ratio_p90": 1.054678571264493,
+    "rank": 11,
+    "worst_k_flag": false
+  },
+  {
+    "service_type": "Muni Employee Feedback",
+    "neighborhood": "Russian Hill",
+    "N": 40,
+    "p50_hr": 87.70138888888889,
+    "p90_hr": 432.57400000000007,
+    "city_p90_hr": 411.14522222222223,
+    "ratio_p90": 1.052119729525145,
+    "rank": 12,
+    "worst_k_flag": false
+  },
+  {
+    "service_type": "Muni Employee Feedback",
+    "neighborhood": "Mission",
+    "N": 132,
+    "p50_hr": 111.66305555555556,
+    "p90_hr": 427.7894166666667,
+    "city_p90_hr": 411.14522222222223,
+    "ratio_p90": 1.0404825194233884,
+    "rank": 13,
+    "worst_k_flag": false
+  },
+  {
+    "service_type": "Muni Employee Feedback",
+    "neighborhood": "Noe Valley",
+    "N": 12,
+    "p50_hr": 80.01597222222222,
+    "p90_hr": 426.2574166666667,
+    "city_p90_hr": 411.14522222222223,
+    "ratio_p90": 1.0367563421089117,
+    "rank": 14,
+    "worst_k_flag": false
+  },
+  {
+    "service_type": "Muni Employee Feedback",
+    "neighborhood": "Haight Ashbury",
+    "N": 16,
+    "p50_hr": 58.96347222222222,
+    "p90_hr": 416.8461111111111,
+    "city_p90_hr": 411.14522222222223,
+    "ratio_p90": 1.013865876534028,
+    "rank": 15,
+    "worst_k_flag": false
+  },
+  {
+    "service_type": "Muni Employee Feedback",
+    "neighborhood": "Castro/Upper Market",
+    "N": 31,
+    "p50_hr": 81.87972222222223,
+    "p90_hr": 412.9738888888889,
+    "city_p90_hr": 411.14522222222223,
+    "ratio_p90": 1.0044477390659747,
+    "rank": 16,
+    "worst_k_flag": false
+  },
+  {
+    "service_type": "Muni Employee Feedback",
+    "neighborhood": "Tenderloin",
+    "N": 58,
+    "p50_hr": 157.19055555555556,
+    "p90_hr": 410.19544444444455,
+    "city_p90_hr": 411.14522222222223,
+    "ratio_p90": 0.9976899214038188,
+    "rank": 17,
+    "worst_k_flag": false
+  },
+  {
+    "service_type": "Muni Employee Feedback",
+    "neighborhood": "Lone Mountain/USF",
+    "N": 22,
+    "p50_hr": 70.07597222222222,
+    "p90_hr": 392.97144444444444,
+    "city_p90_hr": 411.14522222222223,
+    "ratio_p90": 0.955797181152807,
+    "rank": 18,
+    "worst_k_flag": false
+  },
+  {
+    "service_type": "Muni Employee Feedback",
+    "neighborhood": "Nob Hill",
+    "N": 30,
+    "p50_hr": 112.88555555555556,
+    "p90_hr": 381.7231944444445,
+    "city_p90_hr": 411.14522222222223,
+    "ratio_p90": 0.9284388430473474,
+    "rank": 19,
+    "worst_k_flag": false
+  },
+  {
+    "service_type": "Muni Employee Feedback",
+    "neighborhood": "Western Addition",
+    "N": 40,
+    "p50_hr": 170.65347222222223,
+    "p90_hr": 362.52252777777784,
+    "city_p90_hr": 411.14522222222223,
+    "ratio_p90": 0.881738393598153,
+    "rank": 20,
+    "worst_k_flag": false
+  },
+  {
+    "service_type": "Muni Employee Feedback",
+    "neighborhood": "Presidio",
+    "N": 7,
+    "p50_hr": 209.72166666666666,
+    "p90_hr": 349.1946666666667,
+    "city_p90_hr": 411.14522222222223,
+    "ratio_p90": 0.849321961664262,
+    "rank": 21,
+    "worst_k_flag": false
+  },
+  {
+    "service_type": "Muni Employee Feedback",
+    "neighborhood": "Japantown",
+    "N": 12,
+    "p50_hr": 90.38958333333332,
+    "p90_hr": 329.3472777777778,
+    "city_p90_hr": 411.14522222222223,
+    "ratio_p90": 0.8010485346215868,
+    "rank": 22,
+    "worst_k_flag": false
+  },
+  {
+    "service_type": "Muni Employee Feedback",
+    "neighborhood": "Marina",
+    "N": 20,
+    "p50_hr": 84.23861111111111,
+    "p90_hr": 321.957888888889,
+    "city_p90_hr": 411.14522222222223,
+    "ratio_p90": 0.7830758366805783,
+    "rank": 23,
+    "worst_k_flag": false
+  },
+  {
+    "service_type": "Muni Employee Feedback",
+    "neighborhood": "Portola",
+    "N": 23,
+    "p50_hr": 78.08055555555555,
+    "p90_hr": 316.69477777777786,
+    "city_p90_hr": 411.14522222222223,
+    "ratio_p90": 0.7702747366637419,
+    "rank": 24,
+    "worst_k_flag": false
+  },
+  {
+    "service_type": "Muni Employee Feedback",
+    "neighborhood": "Presidio Heights",
+    "N": 12,
+    "p50_hr": 150.3701388888889,
+    "p90_hr": 285.13366666666667,
+    "city_p90_hr": 411.14522222222223,
+    "ratio_p90": 0.6935108357225495,
+    "rank": 25,
+    "worst_k_flag": false
+  },
+  {
+    "service_type": "Muni Employee Feedback",
+    "neighborhood": "Bernal Heights",
+    "N": 24,
+    "p50_hr": 125.43180555555554,
+    "p90_hr": 264.0593611111111,
+    "city_p90_hr": 411.14522222222223,
+    "ratio_p90": 0.6422532643913059,
+    "rank": 26,
+    "worst_k_flag": false
+  },
+  {
+    "service_type": "Muni Employee Feedback",
+    "neighborhood": "Inner Sunset",
+    "N": 18,
+    "p50_hr": 53.93138888888889,
+    "p90_hr": 241.3305277777778,
+    "city_p90_hr": 411.14522222222223,
+    "ratio_p90": 0.5869714999323029,
+    "rank": 27,
+    "worst_k_flag": false
+  },
+  {
+    "service_type": "Muni Employee Feedback",
+    "neighborhood": "Golden Gate Park",
+    "N": 8,
+    "p50_hr": 82.29486111111112,
+    "p90_hr": 240.81333333333333,
+    "city_p90_hr": 411.14522222222223,
+    "ratio_p90": 0.5857135637664659,
+    "rank": 28,
+    "worst_k_flag": false
+  },
+  {
+    "service_type": "Muni Employee Feedback",
+    "neighborhood": "West of Twin Peaks",
+    "N": 36,
+    "p50_hr": 33.35125,
+    "p90_hr": 203.21569444444447,
+    "city_p90_hr": 411.14522222222223,
+    "ratio_p90": 0.4942674351074114,
+    "rank": 29,
+    "worst_k_flag": false
+  },
+  {
+    "service_type": "Muni Employee Feedback",
+    "neighborhood": "Hayes Valley",
+    "N": 22,
+    "p50_hr": 64.70361111111112,
+    "p90_hr": 197.01397222222226,
+    "city_p90_hr": 411.14522222222223,
+    "ratio_p90": 0.4791834164030175,
+    "rank": 30,
+    "worst_k_flag": false
+  },
+  {
+    "service_type": "Muni Employee Feedback",
+    "neighborhood": "Lakeshore",
+    "N": 17,
+    "p50_hr": 66.32305555555556,
+    "p90_hr": 179.78222222222223,
+    "city_p90_hr": 411.14522222222223,
+    "ratio_p90": 0.4372718263646773,
+    "rank": 31,
+    "worst_k_flag": false
+  },
+  {
+    "service_type": "Muni Employee Feedback",
+    "neighborhood": "Bayview Hunters Point",
+    "N": 72,
+    "p50_hr": 49.30208333333333,
+    "p90_hr": 168.31630555555554,
+    "city_p90_hr": 411.14522222222223,
+    "ratio_p90": 0.40938407272693855,
+    "rank": 32,
+    "worst_k_flag": false
+  },
+  {
+    "service_type": "Muni Employee Feedback",
+    "neighborhood": "Sunset/Parkside",
+    "N": 63,
+    "p50_hr": 43.187222222222225,
+    "p90_hr": 167.36822222222224,
+    "city_p90_hr": 411.14522222222223,
+    "ratio_p90": 0.4070781154104241,
+    "rank": 33,
+    "worst_k_flag": false
+  },
+  {
+    "service_type": "Muni Employee Feedback",
+    "neighborhood": "Potrero Hill",
+    "N": 13,
+    "p50_hr": 38.675555555555555,
+    "p90_hr": 131.16344444444448,
+    "city_p90_hr": 411.14522222222223,
+    "ratio_p90": 0.31901974619943707,
+    "rank": 34,
+    "worst_k_flag": false
+  },
+  {
+    "service_type": "Muni Employee Feedback",
+    "neighborhood": "Treasure Island",
+    "N": 1,
+    "p50_hr": 114.96027777777778,
+    "p90_hr": 114.96027777777778,
+    "city_p90_hr": 411.14522222222223,
+    "ratio_p90": 0.2796099080427651,
+    "rank": 35,
+    "worst_k_flag": false
+  },
+  {
+    "service_type": "Muni Employee Feedback",
+    "neighborhood": "Glen Park",
+    "N": 5,
+    "p50_hr": 8.169166666666667,
+    "p90_hr": 85.83733333333335,
+    "city_p90_hr": 411.14522222222223,
+    "ratio_p90": 0.2087761907322825,
+    "rank": 36,
+    "worst_k_flag": false
+  },
+  {
+    "service_type": "Muni Employee Feedback",
+    "neighborhood": "Oceanview/Merced/Ingleside",
+    "N": 34,
+    "p50_hr": 0.06388888888888888,
+    "p90_hr": 69.84263888888889,
+    "city_p90_hr": 411.14522222222223,
+    "ratio_p90": 0.16987340509854992,
+    "rank": 37,
+    "worst_k_flag": false
+  },
+  {
+    "service_type": "Muni Employee Feedback",
+    "neighborhood": "McLaren Park",
+    "N": 2,
+    "p50_hr": 55.55972222222222,
+    "p90_hr": 62.97327777777778,
+    "city_p90_hr": 411.14522222222223,
+    "ratio_p90": 0.15316553464347687,
+    "rank": 38,
+    "worst_k_flag": false
+  },
+  {
+    "service_type": "Muni Service Feedback",
+    "neighborhood": "North Beach",
+    "N": 16,
+    "p50_hr": 67.2625,
+    "p90_hr": 601.7277777777778,
+    "city_p90_hr": 263.44325000000003,
+    "ratio_p90": 2.2840888038610885,
+    "rank": 1,
+    "worst_k_flag": true
+  },
+  {
+    "service_type": "Muni Service Feedback",
+    "neighborhood": "Oceanview/Merced/Ingleside",
+    "N": 7,
+    "p50_hr": 56.5175,
+    "p90_hr": 597.8178333333337,
+    "city_p90_hr": 263.44325000000003,
+    "ratio_p90": 2.269247108564496,
+    "rank": 2,
+    "worst_k_flag": true
+  },
+  {
+    "service_type": "Muni Service Feedback",
+    "neighborhood": "Presidio Heights",
+    "N": 27,
+    "p50_hr": 71.35333333333334,
+    "p90_hr": 559.3064444444445,
+    "city_p90_hr": 263.44325000000003,
+    "ratio_p90": 2.1230623462337506,
+    "rank": 3,
+    "worst_k_flag": true
+  },
+  {
+    "service_type": "Muni Service Feedback",
+    "neighborhood": "Japantown",
+    "N": 12,
+    "p50_hr": 44.792500000000004,
+    "p90_hr": 431.009638888889,
+    "city_p90_hr": 263.44325000000003,
+    "ratio_p90": 1.6360625633372232,
+    "rank": 4,
+    "worst_k_flag": false
+  },
+  {
+    "service_type": "Muni Service Feedback",
+    "neighborhood": "Visitacion Valley",
+    "N": 17,
+    "p50_hr": 80.195,
+    "p90_hr": 426.2007222222223,
+    "city_p90_hr": 263.44325000000003,
+    "ratio_p90": 1.6178084738258514,
+    "rank": 5,
+    "worst_k_flag": false
+  },
+  {
+    "service_type": "Muni Service Feedback",
+    "neighborhood": "Lone Mountain/USF",
+    "N": 36,
+    "p50_hr": 18.835416666666667,
+    "p90_hr": 397.8651388888889,
+    "city_p90_hr": 263.44325000000003,
+    "ratio_p90": 1.5102498883113873,
+    "rank": 6,
+    "worst_k_flag": false
+  },
+  {
+    "service_type": "Muni Service Feedback",
+    "neighborhood": "South of Market",
+    "N": 55,
+    "p50_hr": 46.75138888888889,
+    "p90_hr": 387.4317222222222,
+    "city_p90_hr": 263.44325000000003,
+    "ratio_p90": 1.4706458496174115,
+    "rank": 7,
+    "worst_k_flag": false
+  },
+  {
+    "service_type": "Muni Service Feedback",
+    "neighborhood": "Bayview Hunters Point",
+    "N": 57,
+    "p50_hr": 50.923611111111114,
+    "p90_hr": 368.9795555555554,
+    "city_p90_hr": 263.44325000000003,
+    "ratio_p90": 1.4006035666336312,
+    "rank": 8,
+    "worst_k_flag": false
+  },
+  {
+    "service_type": "Muni Service Feedback",
+    "neighborhood": "Sunset/Parkside",
+    "N": 69,
+    "p50_hr": 35.57972222222222,
+    "p90_hr": 323.166722222223,
+    "city_p90_hr": 263.44325000000003,
+    "ratio_p90": 1.226703368646655,
+    "rank": 9,
+    "worst_k_flag": false
+  },
+  {
+    "service_type": "Muni Service Feedback",
+    "neighborhood": "Inner Richmond",
+    "N": 30,
+    "p50_hr": 61.92916666666667,
+    "p90_hr": 319.50238888888896,
+    "city_p90_hr": 263.44325000000003,
+    "ratio_p90": 1.2127939846205547,
+    "rank": 10,
+    "worst_k_flag": false
+  },
+  {
+    "service_type": "Muni Service Feedback",
+    "neighborhood": "Marina",
+    "N": 28,
+    "p50_hr": 53.41597222222222,
+    "p90_hr": 312.0505000000003,
+    "city_p90_hr": 263.44325000000003,
+    "ratio_p90": 1.1845074793148058,
+    "rank": 11,
+    "worst_k_flag": false
+  },
+  {
+    "service_type": "Muni Service Feedback",
+    "neighborhood": "Chinatown",
+    "N": 23,
+    "p50_hr": 32.83222222222222,
+    "p90_hr": 311.20766666666685,
+    "city_p90_hr": 263.44325000000003,
+    "ratio_p90": 1.1813081818063922,
+    "rank": 12,
+    "worst_k_flag": false
+  },
+  {
+    "service_type": "Muni Service Feedback",
+    "neighborhood": "Castro/Upper Market",
+    "N": 68,
+    "p50_hr": 49.05041666666666,
+    "p90_hr": 300.74294444444456,
+    "city_p90_hr": 263.44325000000003,
+    "ratio_p90": 1.1415853108570613,
+    "rank": 13,
+    "worst_k_flag": false
+  },
+  {
+    "service_type": "Muni Service Feedback",
+    "neighborhood": "Excelsior",
+    "N": 27,
+    "p50_hr": 41.75111111111111,
+    "p90_hr": 297.3166111111117,
+    "city_p90_hr": 263.44325000000003,
+    "ratio_p90": 1.1285793472070802,
+    "rank": 14,
+    "worst_k_flag": false
+  },
+  {
+    "service_type": "Muni Service Feedback",
+    "neighborhood": "Noe Valley",
+    "N": 24,
+    "p50_hr": 57.33180555555556,
+    "p90_hr": 294.82708333333323,
+    "city_p90_hr": 263.44325000000003,
+    "ratio_p90": 1.1191293887140141,
+    "rank": 15,
+    "worst_k_flag": false
+  },
+  {
+    "service_type": "Muni Service Feedback",
+    "neighborhood": "Pacific Heights",
+    "N": 41,
+    "p50_hr": 39.76833333333333,
+    "p90_hr": 289.4533333333333,
+    "city_p90_hr": 263.44325000000003,
+    "ratio_p90": 1.0987312574276749,
+    "rank": 16,
+    "worst_k_flag": false
+  },
+  {
+    "service_type": "Muni Service Feedback",
+    "neighborhood": "Haight Ashbury",
+    "N": 20,
+    "p50_hr": 30.136944444444445,
+    "p90_hr": 285.1628611111115,
+    "city_p90_hr": 263.44325000000003,
+    "ratio_p90": 1.0824451228532577,
+    "rank": 17,
+    "worst_k_flag": false
+  },
+  {
+    "service_type": "Muni Service Feedback",
+    "neighborhood": "Portola",
+    "N": 12,
+    "p50_hr": 28.54375,
+    "p90_hr": 282.91575000000006,
+    "city_p90_hr": 263.44325000000003,
+    "ratio_p90": 1.0739153498903464,
+    "rank": 18,
+    "worst_k_flag": false
+  },
+  {
+    "service_type": "Muni Service Feedback",
+    "neighborhood": "Hayes Valley",
+    "N": 19,
+    "p50_hr": 66.84472222222222,
+    "p90_hr": 265.0777777777778,
+    "city_p90_hr": 263.44325000000003,
+    "ratio_p90": 1.0062044777301289,
+    "rank": 19,
+    "worst_k_flag": false
+  },
+  {
+    "service_type": "Muni Service Feedback",
+    "neighborhood": "Presidio",
+    "N": 7,
+    "p50_hr": 34.05583333333333,
+    "p90_hr": 261.5925555555557,
+    "city_p90_hr": 263.44325000000003,
+    "ratio_p90": 0.9929749786929658,
+    "rank": 20,
+    "worst_k_flag": false
+  },
+  {
+    "service_type": "Muni Service Feedback",
+    "neighborhood": "West of Twin Peaks",
+    "N": 38,
+    "p50_hr": 73.51388888888889,
+    "p90_hr": 261.40877777777786,
+    "city_p90_hr": 263.44325000000003,
+    "ratio_p90": 0.9922773795790092,
+    "rank": 21,
+    "worst_k_flag": false
+  },
+  {
+    "service_type": "Muni Service Feedback",
+    "neighborhood": "Golden Gate Park",
+    "N": 14,
+    "p50_hr": 36.58402777777778,
+    "p90_hr": 253.07972222222236,
+    "city_p90_hr": 263.44325000000003,
+    "ratio_p90": 0.9606612514164714,
+    "rank": 22,
+    "worst_k_flag": false
+  },
+  {
+    "service_type": "Muni Service Feedback",
+    "neighborhood": "Russian Hill",
+    "N": 55,
+    "p50_hr": 44.522222222222226,
+    "p90_hr": 247.3978888888889,
+    "city_p90_hr": 263.44325000000003,
+    "ratio_p90": 0.939093671555027,
+    "rank": 23,
+    "worst_k_flag": false
+  },
+  {
+    "service_type": "Muni Service Feedback",
+    "neighborhood": "Outer Mission",
+    "N": 18,
+    "p50_hr": 62.739999999999995,
+    "p90_hr": 245.58277777777778,
+    "city_p90_hr": 263.44325000000003,
+    "ratio_p90": 0.9322037204512841,
+    "rank": 24,
+    "worst_k_flag": false
+  },
+  {
+    "service_type": "Muni Service Feedback",
+    "neighborhood": "Mission",
+    "N": 121,
+    "p50_hr": 34.532222222222224,
+    "p90_hr": 238.30972222222223,
+    "city_p90_hr": 263.44325000000003,
+    "ratio_p90": 0.9045960457222655,
+    "rank": 25,
+    "worst_k_flag": false
+  },
+  {
+    "service_type": "Muni Service Feedback",
+    "neighborhood": "Bernal Heights",
+    "N": 38,
+    "p50_hr": 47.20375,
+    "p90_hr": 201.77030555555595,
+    "city_p90_hr": 263.44325000000003,
+    "ratio_p90": 0.7658966610666849,
+    "rank": 26,
+    "worst_k_flag": false
+  },
+  {
+    "service_type": "Muni Service Feedback",
+    "neighborhood": "Financial District/South Beach",
+    "N": 111,
+    "p50_hr": 29.3875,
+    "p90_hr": 200.0,
+    "city_p90_hr": 263.44325000000003,
+    "ratio_p90": 0.7591767866513944,
+    "rank": 27,
+    "worst_k_flag": false
+  },
+  {
+    "service_type": "Muni Service Feedback",
+    "neighborhood": "Lakeshore",
+    "N": 32,
+    "p50_hr": 43.29666666666667,
+    "p90_hr": 185.62483333333336,
+    "city_p90_hr": 263.44325000000003,
+    "ratio_p90": 0.7046103224635034,
+    "rank": 28,
+    "worst_k_flag": false
+  },
+  {
+    "service_type": "Muni Service Feedback",
+    "neighborhood": "Nob Hill",
+    "N": 38,
+    "p50_hr": 20.779583333333335,
+    "p90_hr": 184.0183611111114,
+    "city_p90_hr": 263.44325000000003,
+    "ratio_p90": 0.6985123403659474,
+    "rank": 29,
+    "worst_k_flag": false
+  },
+  {
+    "service_type": "Muni Service Feedback",
+    "neighborhood": "Glen Park",
+    "N": 9,
+    "p50_hr": 6.82,
+    "p90_hr": 159.82166666666666,
+    "city_p90_hr": 263.44325000000003,
+    "ratio_p90": 0.6066644966863514,
+    "rank": 30,
+    "worst_k_flag": false
+  },
+  {
+    "service_type": "Muni Service Feedback",
+    "neighborhood": "Tenderloin",
+    "N": 53,
+    "p50_hr": 34.033611111111114,
+    "p90_hr": 147.72500000000002,
+    "city_p90_hr": 263.44325000000003,
+    "ratio_p90": 0.5607469540403863,
+    "rank": 31,
+    "worst_k_flag": false
+  },
+  {
+    "service_type": "Muni Service Feedback",
+    "neighborhood": "Potrero Hill",
+    "N": 17,
+    "p50_hr": 42.39861111111111,
+    "p90_hr": 135.48950000000005,
+    "city_p90_hr": 263.44325000000003,
+    "ratio_p90": 0.5143024161750207,
+    "rank": 32,
+    "worst_k_flag": false
+  },
+  {
+    "service_type": "Muni Service Feedback",
+    "neighborhood": "Outer Richmond",
+    "N": 54,
+    "p50_hr": 3.7055555555555557,
+    "p90_hr": 135.43986111111124,
+    "city_p90_hr": 263.44325000000003,
+    "ratio_p90": 0.514113992714223,
+    "rank": 33,
+    "worst_k_flag": false
+  },
+  {
+    "service_type": "Muni Service Feedback",
+    "neighborhood": "Mission Bay",
+    "N": 18,
+    "p50_hr": 28.886944444444445,
+    "p90_hr": 102.21219444444449,
+    "city_p90_hr": 263.44325000000003,
+    "ratio_p90": 0.3879856266746044,
+    "rank": 34,
+    "worst_k_flag": false
+  },
+  {
+    "service_type": "Muni Service Feedback",
+    "neighborhood": "Western Addition",
+    "N": 56,
+    "p50_hr": 15.9775,
+    "p90_hr": 101.45930555555555,
+    "city_p90_hr": 263.44325000000003,
+    "ratio_p90": 0.3851277478377432,
+    "rank": 35,
+    "worst_k_flag": false
+  },
+  {
+    "service_type": "Muni Service Feedback",
+    "neighborhood": "Inner Sunset",
+    "N": 29,
+    "p50_hr": 33.9225,
+    "p90_hr": 93.48211111111111,
+    "city_p90_hr": 263.44325000000003,
+    "ratio_p90": 0.35484724361360975,
+    "rank": 36,
+    "worst_k_flag": false
+  },
+  {
+    "service_type": "Muni Service Feedback",
+    "neighborhood": "Lincoln Park",
+    "N": 2,
+    "p50_hr": 81.46569444444444,
+    "p90_hr": 86.02202777777778,
+    "city_p90_hr": 263.44325000000003,
+    "ratio_p90": 0.32652963314785166,
+    "rank": 37,
+    "worst_k_flag": false
+  },
+  {
+    "service_type": "Muni Service Feedback",
+    "neighborhood": "Treasure Island",
+    "N": 1,
+    "p50_hr": 78.32472222222222,
+    "p90_hr": 78.32472222222222,
+    "city_p90_hr": 263.44325000000003,
+    "ratio_p90": 0.2973115546601487,
+    "rank": 38,
+    "worst_k_flag": false
+  },
+  {
+    "service_type": "Muni Service Feedback",
+    "neighborhood": "Seacliff",
+    "N": 1,
+    "p50_hr": 31.9225,
+    "p90_hr": 31.9225,
+    "city_p90_hr": 263.44325000000003,
+    "ratio_p90": 0.1211741048593957,
+    "rank": 39,
+    "worst_k_flag": false
+  },
+  {
+    "service_type": "Muni Service Feedback",
+    "neighborhood": "Twin Peaks",
+    "N": 3,
+    "p50_hr": 6.423611111111111,
+    "p90_hr": 27.156722222222225,
+    "city_p90_hr": 263.44325000000003,
+    "ratio_p90": 0.10308376556325592,
+    "rank": 40,
+    "worst_k_flag": false
+  },
+  {
+    "service_type": "Noise",
+    "neighborhood": "Treasure Island",
+    "N": 22,
+    "p50_hr": 1148.149861111111,
+    "p90_hr": 1212.3022222222223,
+    "city_p90_hr": 797.5867777777786,
+    "ratio_p90": 1.5199627877482074,
+    "rank": 1,
+    "worst_k_flag": true
+  },
+  {
+    "service_type": "Noise",
+    "neighborhood": "Lakeshore",
+    "N": 12,
+    "p50_hr": 36.23347222222222,
+    "p90_hr": 1118.7485277777782,
+    "city_p90_hr": 797.5867777777786,
+    "ratio_p90": 1.4026668432177556,
+    "rank": 2,
+    "worst_k_flag": true
+  },
+  {
+    "service_type": "Noise",
+    "neighborhood": "South of Market",
+    "N": 218,
+    "p50_hr": 56.44722222222222,
+    "p90_hr": 1104.2820555555556,
+    "city_p90_hr": 797.5867777777786,
+    "ratio_p90": 1.384529039751995,
+    "rank": 3,
+    "worst_k_flag": true
+  },
+  {
+    "service_type": "Noise",
+    "neighborhood": "Oceanview/Merced/Ingleside",
+    "N": 247,
+    "p50_hr": 55.149166666666666,
+    "p90_hr": 1024.036,
+    "city_p90_hr": 797.5867777777786,
+    "ratio_p90": 1.2839179742336628,
+    "rank": 4,
+    "worst_k_flag": false
+  },
+  {
+    "service_type": "Noise",
+    "neighborhood": "Inner Richmond",
+    "N": 65,
+    "p50_hr": 25.674444444444443,
+    "p90_hr": 898.1352777777781,
+    "city_p90_hr": 797.5867777777786,
+    "ratio_p90": 1.1260659063082088,
+    "rank": 5,
+    "worst_k_flag": false
+  },
+  {
+    "service_type": "Noise",
+    "neighborhood": "Tenderloin",
+    "N": 377,
+    "p50_hr": 113.10083333333333,
+    "p90_hr": 893.0582777777778,
+    "city_p90_hr": 797.5867777777786,
+    "ratio_p90": 1.119700454746755,
+    "rank": 6,
+    "worst_k_flag": false
+  },
+  {
+    "service_type": "Noise",
+    "neighborhood": "Castro/Upper Market",
+    "N": 101,
+    "p50_hr": 66.00472222222223,
+    "p90_hr": 871.9741666666666,
+    "city_p90_hr": 797.5867777777786,
+    "ratio_p90": 1.0932655743067166,
+    "rank": 7,
+    "worst_k_flag": false
+  },
+  {
+    "service_type": "Noise",
+    "neighborhood": "Bernal Heights",
+    "N": 54,
+    "p50_hr": 33.01638888888889,
+    "p90_hr": 843.644750000001,
+    "city_p90_hr": 797.5867777777786,
+    "ratio_p90": 1.0577466596807787,
+    "rank": 8,
+    "worst_k_flag": false
+  },
+  {
+    "service_type": "Noise",
+    "neighborhood": "Golden Gate Park",
+    "N": 5,
+    "p50_hr": 622.3577777777778,
+    "p90_hr": 840.8168333333333,
+    "city_p90_hr": 797.5867777777786,
+    "ratio_p90": 1.0542010684730776,
+    "rank": 9,
+    "worst_k_flag": false
+  },
+  {
+    "service_type": "Noise",
+    "neighborhood": "Western Addition",
+    "N": 110,
+    "p50_hr": 30.94333333333333,
+    "p90_hr": 784.5326944444445,
+    "city_p90_hr": 797.5867777777786,
+    "ratio_p90": 0.983633024396787,
+    "rank": 10,
+    "worst_k_flag": false
+  },
+  {
+    "service_type": "Noise",
+    "neighborhood": "Lone Mountain/USF",
+    "N": 43,
+    "p50_hr": 55.973333333333336,
+    "p90_hr": 754.1412777777787,
+    "city_p90_hr": 797.5867777777786,
+    "ratio_p90": 0.9455288111457327,
+    "rank": 11,
+    "worst_k_flag": false
+  },
+  {
+    "service_type": "Noise",
+    "neighborhood": "Nob Hill",
+    "N": 171,
+    "p50_hr": 35.43388888888889,
+    "p90_hr": 751.2072222222222,
+    "city_p90_hr": 797.5867777777786,
+    "ratio_p90": 0.9418501449023788,
+    "rank": 12,
+    "worst_k_flag": false
+  },
+  {
+    "service_type": "Noise",
+    "neighborhood": "Bayview Hunters Point",
+    "N": 147,
+    "p50_hr": 50.54638888888889,
+    "p90_hr": 733.6675000000012,
+    "city_p90_hr": 797.5867777777786,
+    "ratio_p90": 0.919859155694797,
+    "rank": 13,
+    "worst_k_flag": false
+  },
+  {
+    "service_type": "Noise",
+    "neighborhood": "Hayes Valley",
+    "N": 127,
+    "p50_hr": 52.11,
+    "p90_hr": 728.6722777777778,
+    "city_p90_hr": 797.5867777777786,
+    "ratio_p90": 0.9135962356447168,
+    "rank": 14,
+    "worst_k_flag": false
+  },
+  {
+    "service_type": "Noise",
+    "neighborhood": "Visitacion Valley",
+    "N": 17,
+    "p50_hr": 31.69527777777778,
+    "p90_hr": 713.1949444444444,
+    "city_p90_hr": 797.5867777777786,
+    "ratio_p90": 0.8941910326441656,
+    "rank": 15,
+    "worst_k_flag": false
+  },
+  {
+    "service_type": "Noise",
+    "neighborhood": "West of Twin Peaks",
+    "N": 36,
+    "p50_hr": 28.60013888888889,
+    "p90_hr": 656.3291666666667,
+    "city_p90_hr": 797.5867777777786,
+    "ratio_p90": 0.8228937401586806,
+    "rank": 16,
+    "worst_k_flag": false
+  },
+  {
+    "service_type": "Noise",
+    "neighborhood": "Outer Richmond",
+    "N": 81,
+    "p50_hr": 28.976666666666667,
+    "p90_hr": 626.2647222222222,
+    "city_p90_hr": 797.5867777777786,
+    "ratio_p90": 0.7851994788167243,
+    "rank": 17,
+    "worst_k_flag": false
+  },
+  {
+    "service_type": "Noise",
+    "neighborhood": "North Beach",
+    "N": 65,
+    "p50_hr": 54.70027777777778,
+    "p90_hr": 617.5240555555556,
+    "city_p90_hr": 797.5867777777786,
+    "ratio_p90": 0.7742405876838752,
+    "rank": 18,
+    "worst_k_flag": false
+  },
+  {
+    "service_type": "Noise",
+    "neighborhood": "Mission",
+    "N": 368,
+    "p50_hr": 58.571527777777774,
+    "p90_hr": 611.8394722222222,
+    "city_p90_hr": 797.5867777777786,
+    "ratio_p90": 0.7671133590340075,
+    "rank": 19,
+    "worst_k_flag": false
+  },
+  {
+    "service_type": "Noise",
+    "neighborhood": "Japantown",
+    "N": 11,
+    "p50_hr": 53.525,
+    "p90_hr": 560.3136111111111,
+    "city_p90_hr": 797.5867777777786,
+    "ratio_p90": 0.7025111583121355,
+    "rank": 20,
+    "worst_k_flag": false
+  },
+  {
+    "service_type": "Noise",
+    "neighborhood": "Noe Valley",
+    "N": 45,
+    "p50_hr": 26.647777777777776,
+    "p90_hr": 536.3558333333335,
+    "city_p90_hr": 797.5867777777786,
+    "ratio_p90": 0.6724733261347664,
+    "rank": 21,
+    "worst_k_flag": false
+  },
+  {
+    "service_type": "Noise",
+    "neighborhood": "Excelsior",
+    "N": 95,
+    "p50_hr": 50.88611111111111,
+    "p90_hr": 534.4053888888889,
+    "city_p90_hr": 797.5867777777786,
+    "ratio_p90": 0.6700278938648396,
+    "rank": 22,
+    "worst_k_flag": false
+  },
+  {
+    "service_type": "Noise",
+    "neighborhood": "Russian Hill",
+    "N": 74,
+    "p50_hr": 38.28069444444444,
+    "p90_hr": 532.0517222222222,
+    "city_p90_hr": 797.5867777777786,
+    "ratio_p90": 0.6670769088030958,
+    "rank": 23,
+    "worst_k_flag": false
+  },
+  {
+    "service_type": "Noise",
+    "neighborhood": "Outer Mission",
+    "N": 67,
+    "p50_hr": 35.295833333333334,
+    "p90_hr": 523.7805,
+    "city_p90_hr": 797.5867777777786,
+    "ratio_p90": 0.6567065986968182,
+    "rank": 24,
+    "worst_k_flag": false
+  },
+  {
+    "service_type": "Noise",
+    "neighborhood": "Twin Peaks",
+    "N": 15,
+    "p50_hr": 40.168055555555554,
+    "p90_hr": 493.815222222222,
+    "city_p90_hr": 797.5867777777786,
+    "ratio_p90": 0.6191366707433149,
+    "rank": 25,
+    "worst_k_flag": false
+  },
+  {
+    "service_type": "Noise",
+    "neighborhood": "Financial District/South Beach",
+    "N": 105,
+    "p50_hr": 58.76916666666666,
+    "p90_hr": 445.85872222222235,
+    "city_p90_hr": 797.5867777777786,
+    "ratio_p90": 0.5590096709783299,
+    "rank": 26,
+    "worst_k_flag": false
+  },
+  {
+    "service_type": "Noise",
+    "neighborhood": "Pacific Heights",
+    "N": 70,
+    "p50_hr": 37.18083333333334,
+    "p90_hr": 440.69961111111115,
+    "city_p90_hr": 797.5867777777786,
+    "ratio_p90": 0.5525412699781461,
+    "rank": 27,
+    "worst_k_flag": false
+  },
+  {
+    "service_type": "Noise",
+    "neighborhood": "Presidio Heights",
+    "N": 16,
+    "p50_hr": 26.13736111111111,
+    "p90_hr": 437.3223611111111,
+    "city_p90_hr": 797.5867777777786,
+    "ratio_p90": 0.5483069344875181,
+    "rank": 28,
+    "worst_k_flag": false
+  },
+  {
+    "service_type": "Noise",
+    "neighborhood": "Inner Sunset",
+    "N": 99,
+    "p50_hr": 30.253611111111113,
+    "p90_hr": 357.2847777777779,
+    "city_p90_hr": 797.5867777777786,
+    "ratio_p90": 0.4479572477031754,
+    "rank": 29,
+    "worst_k_flag": false
+  },
+  {
+    "service_type": "Noise",
+    "neighborhood": "Mission Bay",
+    "N": 86,
+    "p50_hr": 39.16319444444444,
+    "p90_hr": 309.06152777777777,
+    "city_p90_hr": 797.5867777777786,
+    "ratio_p90": 0.3874958015714343,
+    "rank": 30,
+    "worst_k_flag": false
+  },
+  {
+    "service_type": "Noise",
+    "neighborhood": "Chinatown",
+    "N": 56,
+    "p50_hr": 50.83541666666667,
+    "p90_hr": 302.3911111111111,
+    "city_p90_hr": 797.5867777777786,
+    "ratio_p90": 0.37913255276576624,
+    "rank": 31,
+    "worst_k_flag": false
+  },
+  {
+    "service_type": "Noise",
+    "neighborhood": "Marina",
+    "N": 93,
+    "p50_hr": 49.92138888888889,
+    "p90_hr": 277.0949999999996,
+    "city_p90_hr": 797.5867777777786,
+    "ratio_p90": 0.34741674225347174,
+    "rank": 32,
+    "worst_k_flag": false
+  },
+  {
+    "service_type": "Noise",
+    "neighborhood": "Glen Park",
+    "N": 7,
+    "p50_hr": 9.56611111111111,
+    "p90_hr": 225.05583333333348,
+    "city_p90_hr": 797.5867777777786,
+    "ratio_p90": 0.28217096823041604,
+    "rank": 33,
+    "worst_k_flag": false
+  },
+  {
+    "service_type": "Noise",
+    "neighborhood": "Sunset/Parkside",
+    "N": 102,
+    "p50_hr": 26.621111111111112,
+    "p90_hr": 221.2049722222226,
+    "city_p90_hr": 797.5867777777786,
+    "ratio_p90": 0.27734282762126494,
+    "rank": 34,
+    "worst_k_flag": false
+  },
+  {
+    "service_type": "Noise",
+    "neighborhood": "Haight Ashbury",
+    "N": 117,
+    "p50_hr": 19.771944444444443,
+    "p90_hr": 199.98727777777793,
+    "city_p90_hr": 797.5867777777786,
+    "ratio_p90": 0.25074046279325085,
+    "rank": 35,
+    "worst_k_flag": false
+  },
+  {
+    "service_type": "Noise",
+    "neighborhood": "Potrero Hill",
+    "N": 66,
+    "p50_hr": 26.193194444444444,
+    "p90_hr": 145.34027777777777,
+    "city_p90_hr": 797.5867777777786,
+    "ratio_p90": 0.18222503409938934,
+    "rank": 36,
+    "worst_k_flag": false
+  },
+  {
+    "service_type": "Noise",
+    "neighborhood": "Portola",
+    "N": 28,
+    "p50_hr": 34.13166666666666,
+    "p90_hr": 93.69002777777779,
+    "city_p90_hr": 797.5867777777786,
+    "ratio_p90": 0.11746687681911577,
+    "rank": 37,
+    "worst_k_flag": false
+  },
+  {
+    "service_type": "Noise",
+    "neighborhood": "Seacliff",
+    "N": 2,
+    "p50_hr": 45.52875,
+    "p90_hr": 66.90441666666666,
+    "city_p90_hr": 797.5867777777786,
+    "ratio_p90": 0.08388355791588534,
+    "rank": 38,
+    "worst_k_flag": false
+  },
+  {
+    "service_type": "Noise",
+    "neighborhood": "McLaren Park",
+    "N": 5,
+    "p50_hr": 16.065833333333334,
+    "p90_hr": 34.86555555555556,
+    "city_p90_hr": 797.5867777777786,
+    "ratio_p90": 0.043713808361639746,
+    "rank": 39,
+    "worst_k_flag": false
+  },
+  {
+    "service_type": "Noise",
+    "neighborhood": "Lincoln Park",
+    "N": 1,
+    "p50_hr": 7.8525,
+    "p90_hr": 7.8525,
+    "city_p90_hr": 797.5867777777786,
+    "ratio_p90": 0.009845323692399327,
+    "rank": 40,
+    "worst_k_flag": false
+  },
+  {
+    "service_type": "Parking Enforcement",
+    "neighborhood": "Treasure Island",
+    "N": 43,
+    "p50_hr": 1.4444444444444444,
+    "p90_hr": 688.9697777777812,
+    "city_p90_hr": 41.84811111111111,
+    "ratio_p90": 16.463581258147936,
+    "rank": 1,
+    "worst_k_flag": true
+  },
+  {
+    "service_type": "Parking Enforcement",
+    "neighborhood": "McLaren Park",
+    "N": 54,
+    "p50_hr": 19.245694444444446,
+    "p90_hr": 226.34952777777784,
+    "city_p90_hr": 41.84811111111111,
+    "ratio_p90": 5.408834993216209,
+    "rank": 2,
+    "worst_k_flag": true
+  },
+  {
+    "service_type": "Parking Enforcement",
+    "neighborhood": "Seacliff",
+    "N": 92,
+    "p50_hr": 3.76,
+    "p90_hr": 145.1510277777778,
+    "city_p90_hr": 41.84811111111111,
+    "ratio_p90": 3.468520416426602,
+    "rank": 3,
+    "worst_k_flag": true
+  },
+  {
+    "service_type": "Parking Enforcement",
+    "neighborhood": "Bernal Heights",
+    "N": 2007,
+    "p50_hr": 2.665277777777778,
+    "p90_hr": 140.92405555555555,
+    "city_p90_hr": 41.84811111111111,
+    "ratio_p90": 3.3675129369970236,
+    "rank": 4,
+    "worst_k_flag": false
+  },
+  {
+    "service_type": "Parking Enforcement",
+    "neighborhood": "West of Twin Peaks",
+    "N": 1130,
+    "p50_hr": 2.6041666666666665,
+    "p90_hr": 138.97194444444443,
+    "city_p90_hr": 41.84811111111111,
+    "ratio_p90": 3.320865404783967,
+    "rank": 5,
+    "worst_k_flag": false
+  },
+  {
+    "service_type": "Parking Enforcement",
+    "neighborhood": "Twin Peaks",
+    "N": 186,
+    "p50_hr": 4.4911111111111115,
+    "p90_hr": 138.29736111111112,
+    "city_p90_hr": 41.84811111111111,
+    "ratio_p90": 3.304745601155502,
+    "rank": 6,
+    "worst_k_flag": false
+  },
+  {
+    "service_type": "Parking Enforcement",
+    "neighborhood": "Oceanview/Merced/Ingleside",
+    "N": 1125,
+    "p50_hr": 3.098888888888889,
+    "p90_hr": 114.64994444444446,
+    "city_p90_hr": 41.84811111111111,
+    "ratio_p90": 2.7396683243369546,
+    "rank": 7,
+    "worst_k_flag": false
+  },
+  {
+    "service_type": "Parking Enforcement",
+    "neighborhood": "Golden Gate Park",
+    "N": 111,
+    "p50_hr": 3.805277777777778,
+    "p90_hr": 114.61722222222222,
+    "city_p90_hr": 41.84811111111111,
+    "ratio_p90": 2.738886396040708,
+    "rank": 8,
+    "worst_k_flag": false
+  },
+  {
+    "service_type": "Parking Enforcement",
+    "neighborhood": "Lincoln Park",
+    "N": 22,
+    "p50_hr": 19.733194444444443,
+    "p90_hr": 111.15763888888898,
+    "city_p90_hr": 41.84811111111111,
+    "ratio_p90": 2.656216396332772,
+    "rank": 9,
+    "worst_k_flag": false
+  },
+  {
+    "service_type": "Parking Enforcement",
+    "neighborhood": "Japantown",
+    "N": 82,
+    "p50_hr": 1.77125,
+    "p90_hr": 107.40891666666697,
+    "city_p90_hr": 41.84811111111111,
+    "ratio_p90": 2.5666371507541896,
+    "rank": 10,
+    "worst_k_flag": false
+  },
+  {
+    "service_type": "Parking Enforcement",
+    "neighborhood": "Sunset/Parkside",
+    "N": 2172,
+    "p50_hr": 1.61375,
+    "p90_hr": 99.08041666666671,
+    "city_p90_hr": 41.84811111111111,
+    "ratio_p90": 2.367619804956019,
+    "rank": 11,
+    "worst_k_flag": false
+  },
+  {
+    "service_type": "Parking Enforcement",
+    "neighborhood": "Bayview Hunters Point",
+    "N": 2521,
+    "p50_hr": 2.542222222222222,
+    "p90_hr": 97.19333333333333,
+    "city_p90_hr": 41.84811111111111,
+    "ratio_p90": 2.3225261726933115,
+    "rank": 12,
+    "worst_k_flag": false
+  },
+  {
+    "service_type": "Parking Enforcement",
+    "neighborhood": "Portola",
+    "N": 888,
+    "p50_hr": 2.244583333333333,
+    "p90_hr": 89.27711111111151,
+    "city_p90_hr": 41.84811111111111,
+    "ratio_p90": 2.1333605924069414,
+    "rank": 13,
+    "worst_k_flag": false
+  },
+  {
+    "service_type": "Parking Enforcement",
+    "neighborhood": "Potrero Hill",
+    "N": 491,
+    "p50_hr": 1.8952777777777778,
+    "p90_hr": 81.70861111111111,
+    "city_p90_hr": 41.84811111111111,
+    "ratio_p90": 1.9525041618764156,
+    "rank": 14,
+    "worst_k_flag": false
+  },
+  {
+    "service_type": "Parking Enforcement",
+    "neighborhood": "Glen Park",
+    "N": 505,
+    "p50_hr": 1.9013888888888888,
+    "p90_hr": 70.20733333333335,
+    "city_p90_hr": 41.84811111111111,
+    "ratio_p90": 1.6776703050449648,
+    "rank": 15,
+    "worst_k_flag": false
+  },
+  {
+    "service_type": "Parking Enforcement",
+    "neighborhood": "Noe Valley",
+    "N": 1358,
+    "p50_hr": 1.7616666666666667,
+    "p90_hr": 68.15422222222207,
+    "city_p90_hr": 41.84811111111111,
+    "ratio_p90": 1.6286092827765988,
+    "rank": 16,
+    "worst_k_flag": false
+  },
+  {
+    "service_type": "Parking Enforcement",
+    "neighborhood": "Lakeshore",
+    "N": 262,
+    "p50_hr": 2.827361111111111,
+    "p90_hr": 65.051388888889,
+    "city_p90_hr": 41.84811111111111,
+    "ratio_p90": 1.554464160070947,
+    "rank": 17,
+    "worst_k_flag": false
+  },
+  {
+    "service_type": "Parking Enforcement",
+    "neighborhood": "Presidio",
+    "N": 28,
+    "p50_hr": 4.7162500000000005,
+    "p90_hr": 56.50850000000001,
+    "city_p90_hr": 41.84811111111111,
+    "ratio_p90": 1.3503237900024696,
+    "rank": 18,
+    "worst_k_flag": false
+  },
+  {
+    "service_type": "Parking Enforcement",
+    "neighborhood": "Outer Richmond",
+    "N": 1976,
+    "p50_hr": 1.361388888888889,
+    "p90_hr": 54.40152777777777,
+    "city_p90_hr": 41.84811111111111,
+    "ratio_p90": 1.2999757057931727,
+    "rank": 19,
+    "worst_k_flag": false
+  },
+  {
+    "service_type": "Parking Enforcement",
+    "neighborhood": "Mission Bay",
+    "N": 334,
+    "p50_hr": 1.8761111111111113,
+    "p90_hr": 48.21274999999997,
+    "city_p90_hr": 41.84811111111111,
+    "ratio_p90": 1.1520890362766931,
+    "rank": 20,
+    "worst_k_flag": false
+  },
+  {
+    "service_type": "Parking Enforcement",
+    "neighborhood": "Visitacion Valley",
+    "N": 594,
+    "p50_hr": 2.2558333333333334,
+    "p90_hr": 39.68891666666692,
+    "city_p90_hr": 41.84811111111111,
+    "ratio_p90": 0.9484040166422015,
+    "rank": 21,
+    "worst_k_flag": false
+  },
+  {
+    "service_type": "Parking Enforcement",
+    "neighborhood": "Inner Sunset",
+    "N": 1286,
+    "p50_hr": 1.416111111111111,
+    "p90_hr": 26.382916666666667,
+    "city_p90_hr": 41.84811111111111,
+    "ratio_p90": 0.6304446238115089,
+    "rank": 22,
+    "worst_k_flag": false
+  },
+  {
+    "service_type": "Parking Enforcement",
+    "neighborhood": "South of Market",
+    "N": 1198,
+    "p50_hr": 1.3191666666666666,
+    "p90_hr": 24.818444444444413,
+    "city_p90_hr": 41.84811111111111,
+    "ratio_p90": 0.5930600876715523,
+    "rank": 23,
+    "worst_k_flag": false
+  },
+  {
+    "service_type": "Parking Enforcement",
+    "neighborhood": "Presidio Heights",
+    "N": 459,
+    "p50_hr": 1.1513888888888888,
+    "p90_hr": 23.76644444444444,
+    "city_p90_hr": 41.84811111111111,
+    "ratio_p90": 0.5679215575905456,
+    "rank": 24,
+    "worst_k_flag": false
+  },
+  {
+    "service_type": "Parking Enforcement",
+    "neighborhood": "Russian Hill",
+    "N": 841,
+    "p50_hr": 1.2886111111111112,
+    "p90_hr": 23.504444444444445,
+    "city_p90_hr": 41.84811111111111,
+    "ratio_p90": 0.5616608210114356,
+    "rank": 25,
+    "worst_k_flag": false
+  },
+  {
+    "service_type": "Parking Enforcement",
+    "neighborhood": "Outer Mission",
+    "N": 1134,
+    "p50_hr": 2.348055555555556,
+    "p90_hr": 23.231805555555574,
+    "city_p90_hr": 41.84811111111111,
+    "ratio_p90": 0.5551458581696245,
+    "rank": 26,
+    "worst_k_flag": false
+  },
+  {
+    "service_type": "Parking Enforcement",
+    "neighborhood": "Chinatown",
+    "N": 237,
+    "p50_hr": 1.4497222222222221,
+    "p90_hr": 20.732166666666668,
+    "city_p90_hr": 41.84811111111111,
+    "ratio_p90": 0.4954146344053761,
+    "rank": 27,
+    "worst_k_flag": false
+  },
+  {
+    "service_type": "Parking Enforcement",
+    "neighborhood": "Western Addition",
+    "N": 510,
+    "p50_hr": 1.1269444444444443,
+    "p90_hr": 19.63402777777779,
+    "city_p90_hr": 41.84811111111111,
+    "ratio_p90": 0.4691735721511395,
+    "rank": 28,
+    "worst_k_flag": false
+  },
+  {
+    "service_type": "Parking Enforcement",
+    "neighborhood": "Financial District/South Beach",
+    "N": 1302,
+    "p50_hr": 1.5409722222222224,
+    "p90_hr": 19.29669444444448,
+    "city_p90_hr": 41.84811111111111,
+    "ratio_p90": 0.46111267467269285,
+    "rank": 29,
+    "worst_k_flag": false
+  },
+  {
+    "service_type": "Parking Enforcement",
+    "neighborhood": "Castro/Upper Market",
+    "N": 1443,
+    "p50_hr": 1.4966666666666666,
+    "p90_hr": 19.1725,
+    "city_p90_hr": 41.84811111111111,
+    "ratio_p90": 0.45814493153812863,
+    "rank": 30,
+    "worst_k_flag": false
+  },
+  {
+    "service_type": "Parking Enforcement",
+    "neighborhood": "Haight Ashbury",
+    "N": 1796,
+    "p50_hr": 1.3279166666666666,
+    "p90_hr": 18.115694444444443,
+    "city_p90_hr": 41.84811111111111,
+    "ratio_p90": 0.43289156818441293,
+    "rank": 31,
+    "worst_k_flag": false
+  },
+  {
+    "service_type": "Parking Enforcement",
+    "neighborhood": "North Beach",
+    "N": 550,
+    "p50_hr": 1.3920833333333333,
+    "p90_hr": 17.01850000000001,
+    "city_p90_hr": 41.84811111111111,
+    "ratio_p90": 0.4066730743190323,
+    "rank": 32,
+    "worst_k_flag": false
+  },
+  {
+    "service_type": "Parking Enforcement",
+    "neighborhood": "Inner Richmond",
+    "N": 1058,
+    "p50_hr": 1.0806944444444444,
+    "p90_hr": 16.507416666666693,
+    "city_p90_hr": 41.84811111111111,
+    "ratio_p90": 0.3944602570672252,
+    "rank": 33,
+    "worst_k_flag": false
+  },
+  {
+    "service_type": "Parking Enforcement",
+    "neighborhood": "Mission",
+    "N": 4825,
+    "p50_hr": 1.4677777777777778,
+    "p90_hr": 15.169722222222235,
+    "city_p90_hr": 41.84811111111111,
+    "ratio_p90": 0.3624947893572792,
+    "rank": 34,
+    "worst_k_flag": false
+  },
+  {
+    "service_type": "Parking Enforcement",
+    "neighborhood": "Pacific Heights",
+    "N": 1407,
+    "p50_hr": 1.1052777777777778,
+    "p90_hr": 14.26477777777782,
+    "city_p90_hr": 41.84811111111111,
+    "ratio_p90": 0.3408702901763796,
+    "rank": 35,
+    "worst_k_flag": false
+  },
+  {
+    "service_type": "Parking Enforcement",
+    "neighborhood": "Excelsior",
+    "N": 1822,
+    "p50_hr": 2.0838888888888887,
+    "p90_hr": 13.330583333333335,
+    "city_p90_hr": 41.84811111111111,
+    "ratio_p90": 0.3185468347170854,
+    "rank": 36,
+    "worst_k_flag": false
+  },
+  {
+    "service_type": "Parking Enforcement",
+    "neighborhood": "Nob Hill",
+    "N": 1585,
+    "p50_hr": 1.2777777777777777,
+    "p90_hr": 12.112055555555562,
+    "city_p90_hr": 41.84811111111111,
+    "ratio_p90": 0.28942896665985207,
+    "rank": 37,
+    "worst_k_flag": false
+  },
+  {
+    "service_type": "Parking Enforcement",
+    "neighborhood": "Tenderloin",
+    "N": 642,
+    "p50_hr": 1.1081944444444445,
+    "p90_hr": 10.512194444444436,
+    "city_p90_hr": 41.84811111111111,
+    "ratio_p90": 0.25119877971393884,
+    "rank": 38,
+    "worst_k_flag": false
+  },
+  {
+    "service_type": "Parking Enforcement",
+    "neighborhood": "Marina",
+    "N": 1700,
+    "p50_hr": 1.1991666666666667,
+    "p90_hr": 10.503555555555558,
+    "city_p90_hr": 41.84811111111111,
+    "ratio_p90": 0.250992345333521,
+    "rank": 39,
+    "worst_k_flag": false
+  },
+  {
+    "service_type": "Parking Enforcement",
+    "neighborhood": "Hayes Valley",
+    "N": 1276,
+    "p50_hr": 1.1794444444444445,
+    "p90_hr": 8.643194444444445,
+    "city_p90_hr": 41.84811111111111,
+    "ratio_p90": 0.20653726572021042,
+    "rank": 40,
+    "worst_k_flag": false
+  },
+  {
+    "service_type": "Parking Enforcement",
+    "neighborhood": "Lone Mountain/USF",
+    "N": 870,
+    "p50_hr": 1.0590277777777777,
+    "p90_hr": 6.993388888888889,
+    "city_p90_hr": 41.84811111111111,
+    "ratio_p90": 0.16711360926950108,
+    "rank": 41,
+    "worst_k_flag": false
+  },
+  {
+    "service_type": "RPD General",
+    "neighborhood": "Seacliff",
+    "N": 3,
+    "p50_hr": 3.8136111111111113,
+    "p90_hr": 1596.4453888888888,
+    "city_p90_hr": 359.72,
+    "ratio_p90": 4.4380223198290025,
+    "rank": 1,
+    "worst_k_flag": true
+  },
+  {
+    "service_type": "RPD General",
+    "neighborhood": "Bernal Heights",
+    "N": 47,
+    "p50_hr": 69.14916666666667,
+    "p90_hr": 1055.3613333333333,
+    "city_p90_hr": 359.72,
+    "ratio_p90": 2.933841135698135,
+    "rank": 2,
+    "worst_k_flag": true
+  },
+  {
+    "service_type": "RPD General",
+    "neighborhood": "Financial District/South Beach",
+    "N": 35,
+    "p50_hr": 21.137777777777778,
+    "p90_hr": 898.2071666666683,
+    "city_p90_hr": 359.72,
+    "ratio_p90": 2.4969619889543764,
+    "rank": 3,
+    "worst_k_flag": true
+  },
+  {
+    "service_type": "RPD General",
+    "neighborhood": "Lone Mountain/USF",
+    "N": 11,
+    "p50_hr": 4.293333333333333,
+    "p90_hr": 864.7833333333333,
+    "city_p90_hr": 359.72,
+    "ratio_p90": 2.404045739278698,
+=======
+    "service_type": "encampment",
+    "neighborhood": "Potrero Hill",
+    "N": 39,
+    "p50_hr": 22.552222222222223,
+    "p90_hr": 129.63272222222236,
+    "city_p90_hr": 67.11427777777777,
+    "ratio_p90": 1.931522270886227,
+>>>>>>> 9857cbd (Refactor fairness metrics and simulator for strict historical/live data separation and robustness)
+    "rank": 4,
+    "worst_k_flag": false
+  },
+  {
+<<<<<<< HEAD
+    "service_type": "RPD General",
+    "neighborhood": "Inner Sunset",
+    "N": 20,
+    "p50_hr": 213.64569444444444,
+    "p90_hr": 813.8001111111113,
+    "city_p90_hr": 359.72,
+    "ratio_p90": 2.262315442875323,
+=======
+    "service_type": "encampment",
+    "neighborhood": "Treasure Island",
+    "N": 1,
+    "p50_hr": 109.03416666666666,
+    "p90_hr": 109.03416666666666,
+    "city_p90_hr": 67.11427777777777,
+    "ratio_p90": 1.6246046337217532,
+>>>>>>> 9857cbd (Refactor fairness metrics and simulator for strict historical/live data separation and robustness)
+    "rank": 5,
+    "worst_k_flag": false
+  },
+  {
+<<<<<<< HEAD
+    "service_type": "RPD General",
+    "neighborhood": "Japantown",
+    "N": 6,
+    "p50_hr": 393.49458333333337,
+    "p90_hr": 776.1179166666667,
+    "city_p90_hr": 359.72,
+    "ratio_p90": 2.157561205011305,
+    "rank": 6,
+    "worst_k_flag": false
+  },
+  {
+    "service_type": "RPD General",
+    "neighborhood": "West of Twin Peaks",
+    "N": 40,
+    "p50_hr": 28.125555555555557,
+    "p90_hr": 621.4170000000006,
+    "city_p90_hr": 359.72,
+    "ratio_p90": 1.7275019459579688,
+    "rank": 7,
+    "worst_k_flag": false
+  },
+  {
+    "service_type": "RPD General",
+    "neighborhood": "Outer Mission",
+    "N": 21,
+    "p50_hr": 43.608333333333334,
+    "p90_hr": 600.7930555555556,
+    "city_p90_hr": 359.72,
+    "ratio_p90": 1.6701686188022784,
+    "rank": 8,
+    "worst_k_flag": false
+  },
+  {
+    "service_type": "RPD General",
+    "neighborhood": "Sunset/Parkside",
+    "N": 107,
+    "p50_hr": 67.68222222222222,
+    "p90_hr": 580.489388888889,
+    "city_p90_hr": 359.72,
+    "ratio_p90": 1.6137256446371873,
+    "rank": 9,
+    "worst_k_flag": false
+  },
+  {
+    "service_type": "RPD General",
+    "neighborhood": "Haight Ashbury",
+    "N": 41,
+    "p50_hr": 24.084722222222222,
+    "p90_hr": 558.0736111111111,
+    "city_p90_hr": 359.72,
+    "ratio_p90": 1.551411128408515,
+    "rank": 10,
+    "worst_k_flag": false
+  },
+  {
+    "service_type": "RPD General",
+    "neighborhood": "Golden Gate Park",
+    "N": 204,
+    "p50_hr": 51.78916666666667,
+    "p90_hr": 522.7283055555556,
+    "city_p90_hr": 359.72,
+    "ratio_p90": 1.4531533013331357,
+    "rank": 11,
+    "worst_k_flag": false
+  },
+  {
+    "service_type": "RPD General",
+    "neighborhood": "Portola",
+    "N": 5,
+    "p50_hr": 4.526944444444444,
+    "p90_hr": 519.3463888888889,
+    "city_p90_hr": 359.72,
+    "ratio_p90": 1.4437517760727478,
+    "rank": 12,
+    "worst_k_flag": false
+  },
+  {
+    "service_type": "RPD General",
+    "neighborhood": "Noe Valley",
+    "N": 33,
+    "p50_hr": 45.58361111111111,
+    "p90_hr": 445.6765555555556,
+    "city_p90_hr": 359.72,
+    "ratio_p90": 1.2389540630366829,
+    "rank": 13,
+    "worst_k_flag": false
+  },
+  {
+    "service_type": "RPD General",
+    "neighborhood": "Treasure Island",
+    "N": 6,
+    "p50_hr": 12.5675,
+    "p90_hr": 417.6406944444444,
+    "city_p90_hr": 359.72,
+    "ratio_p90": 1.1610160526088191,
+    "rank": 14,
+    "worst_k_flag": false
+  },
+  {
+    "service_type": "RPD General",
+    "neighborhood": "Marina",
+    "N": 37,
+    "p50_hr": 54.5075,
+    "p90_hr": 363.77277777777766,
+    "city_p90_hr": 359.72,
+    "ratio_p90": 1.0112664788662784,
+    "rank": 15,
+    "worst_k_flag": false
+  },
+  {
+    "service_type": "RPD General",
+    "neighborhood": "Outer Richmond",
+    "N": 31,
+    "p50_hr": 24.611666666666668,
+    "p90_hr": 354.52,
+    "city_p90_hr": 359.72,
+    "ratio_p90": 0.9855443122428554,
+    "rank": 16,
+    "worst_k_flag": false
+  },
+  {
+    "service_type": "RPD General",
+    "neighborhood": "Excelsior",
+    "N": 27,
+    "p50_hr": 27.213333333333335,
+    "p90_hr": 353.1486111111112,
+    "city_p90_hr": 359.72,
+    "ratio_p90": 0.981731933479126,
+    "rank": 17,
+    "worst_k_flag": false
+  },
+  {
+    "service_type": "RPD General",
+    "neighborhood": "Twin Peaks",
+    "N": 10,
+    "p50_hr": 84.35930555555555,
+    "p90_hr": 350.8338888888889,
+    "city_p90_hr": 359.72,
+    "ratio_p90": 0.9752971446927857,
+    "rank": 18,
+    "worst_k_flag": false
+  },
+  {
+    "service_type": "RPD General",
+    "neighborhood": "Mission",
+    "N": 94,
+    "p50_hr": 16.10972222222222,
+    "p90_hr": 278.6155555555556,
+    "city_p90_hr": 359.72,
+    "ratio_p90": 0.7745345144989313,
+    "rank": 19,
+    "worst_k_flag": false
+  },
+  {
+    "service_type": "RPD General",
+    "neighborhood": "Visitacion Valley",
+    "N": 15,
+    "p50_hr": 16.656388888888888,
+    "p90_hr": 272.02677777777774,
+    "city_p90_hr": 359.72,
+    "ratio_p90": 0.7562181079110912,
+    "rank": 20,
+    "worst_k_flag": false
+  },
+  {
+    "service_type": "RPD General",
+    "neighborhood": "Mission Bay",
+    "N": 34,
+    "p50_hr": 42.26013888888889,
+    "p90_hr": 238.02761111111104,
+    "city_p90_hr": 359.72,
+    "ratio_p90": 0.6617024661156206,
+    "rank": 21,
+    "worst_k_flag": false
+  },
+  {
+    "service_type": "RPD General",
+    "neighborhood": "Western Addition",
+    "N": 47,
+    "p50_hr": 23.621111111111112,
+    "p90_hr": 233.75377777777774,
+    "city_p90_hr": 359.72,
+    "ratio_p90": 0.6498214660785547,
+    "rank": 22,
+    "worst_k_flag": false
+  },
+  {
+    "service_type": "RPD General",
+    "neighborhood": "Bayview Hunters Point",
+    "N": 57,
+    "p50_hr": 20.99416666666667,
+    "p90_hr": 231.56477777777772,
+    "city_p90_hr": 359.72,
+    "ratio_p90": 0.6437361775207876,
+    "rank": 23,
+    "worst_k_flag": false
+  },
+  {
+    "service_type": "RPD General",
+    "neighborhood": "Lakeshore",
+    "N": 24,
+    "p50_hr": 11.829444444444444,
+    "p90_hr": 230.96719444444443,
+    "city_p90_hr": 359.72,
+    "ratio_p90": 0.6420749317370299,
+    "rank": 24,
+    "worst_k_flag": false
+  },
+  {
+    "service_type": "RPD General",
+    "neighborhood": "Oceanview/Merced/Ingleside",
+    "N": 17,
+    "p50_hr": 21.458333333333332,
+    "p90_hr": 224.03111111111116,
+    "city_p90_hr": 359.72,
+    "ratio_p90": 0.6227930365592993,
+    "rank": 25,
+    "worst_k_flag": false
+  },
+  {
+    "service_type": "RPD General",
+    "neighborhood": "Castro/Upper Market",
+    "N": 135,
+    "p50_hr": 23.601944444444445,
+    "p90_hr": 193.73816666666667,
+    "city_p90_hr": 359.72,
+    "ratio_p90": 0.5385804699951814,
+    "rank": 26,
+    "worst_k_flag": false
+  },
+  {
+    "service_type": "RPD General",
+    "neighborhood": "Lincoln Park",
+    "N": 10,
+    "p50_hr": 24.78638888888889,
+    "p90_hr": 188.9941944444444,
+    "city_p90_hr": 359.72,
+    "ratio_p90": 0.5253925120772945,
+    "rank": 27,
+    "worst_k_flag": false
+  },
+  {
+    "service_type": "RPD General",
+    "neighborhood": "Inner Richmond",
+    "N": 18,
+    "p50_hr": 22.441111111111113,
+    "p90_hr": 186.76375000000016,
+    "city_p90_hr": 359.72,
+    "ratio_p90": 0.5191920104525746,
+    "rank": 28,
+    "worst_k_flag": false
+  },
+  {
+    "service_type": "RPD General",
+    "neighborhood": "Glen Park",
+    "N": 24,
+    "p50_hr": 39.33513888888889,
+    "p90_hr": 183.24777777777777,
+    "city_p90_hr": 359.72,
+    "ratio_p90": 0.5094178187973362,
+    "rank": 29,
+    "worst_k_flag": false
+  },
+  {
+    "service_type": "RPD General",
+    "neighborhood": "Russian Hill",
+    "N": 35,
+    "p50_hr": 14.649166666666666,
+    "p90_hr": 174.79338888888896,
+    "city_p90_hr": 359.72,
+    "ratio_p90": 0.48591512534440384,
+    "rank": 30,
+    "worst_k_flag": false
+  },
+  {
+    "service_type": "RPD General",
+    "neighborhood": "Potrero Hill",
+    "N": 36,
+    "p50_hr": 21.456944444444446,
+    "p90_hr": 171.64902777777777,
+    "city_p90_hr": 359.72,
+    "ratio_p90": 0.47717399026403245,
+    "rank": 31,
+    "worst_k_flag": false
+  },
+  {
+    "service_type": "RPD General",
+    "neighborhood": "Presidio",
+    "N": 12,
+    "p50_hr": 16.01013888888889,
+    "p90_hr": 170.22744444444447,
+    "city_p90_hr": 359.72,
+    "ratio_p90": 0.4732220739587581,
+    "rank": 32,
+    "worst_k_flag": false
+  },
+  {
+    "service_type": "RPD General",
+    "neighborhood": "Pacific Heights",
+    "N": 34,
+    "p50_hr": 22.00208333333333,
+    "p90_hr": 139.581,
+    "city_p90_hr": 359.72,
+    "ratio_p90": 0.38802679862114975,
+    "rank": 33,
+    "worst_k_flag": false
+  },
+  {
+    "service_type": "RPD General",
+    "neighborhood": "Hayes Valley",
+    "N": 39,
+    "p50_hr": 24.685833333333335,
+    "p90_hr": 138.53194444444446,
+    "city_p90_hr": 359.72,
+    "ratio_p90": 0.38511048716903273,
+    "rank": 34,
+    "worst_k_flag": false
+  },
+  {
+    "service_type": "RPD General",
+    "neighborhood": "McLaren Park",
+    "N": 46,
+    "p50_hr": 23.99513888888889,
+    "p90_hr": 114.94125,
+    "city_p90_hr": 359.72,
+    "ratio_p90": 0.3195297731568998,
+    "rank": 35,
+    "worst_k_flag": false
+  },
+  {
+    "service_type": "RPD General",
+    "neighborhood": "South of Market",
+    "N": 23,
+    "p50_hr": 7.225555555555555,
+    "p90_hr": 113.81650000000002,
+    "city_p90_hr": 359.72,
+    "ratio_p90": 0.316403035694429,
+    "rank": 36,
+    "worst_k_flag": false
+  },
+  {
+    "service_type": "RPD General",
+    "neighborhood": "Presidio Heights",
+    "N": 5,
+    "p50_hr": 46.065,
+    "p90_hr": 109.0021111111111,
+    "city_p90_hr": 359.72,
+    "ratio_p90": 0.30301932367149753,
+    "rank": 37,
+    "worst_k_flag": false
+  },
+  {
+    "service_type": "RPD General",
+    "neighborhood": "North Beach",
+    "N": 26,
+    "p50_hr": 25.92666666666667,
+    "p90_hr": 108.51319444444445,
+    "city_p90_hr": 359.72,
+    "ratio_p90": 0.3016601646959981,
+    "rank": 38,
+    "worst_k_flag": false
+  },
+  {
+    "service_type": "RPD General",
+    "neighborhood": "Chinatown",
+    "N": 29,
+    "p50_hr": 14.731111111111112,
+    "p90_hr": 94.54161111111111,
+    "city_p90_hr": 359.72,
+    "ratio_p90": 0.2628200019768462,
+    "rank": 39,
+    "worst_k_flag": false
+  },
+  {
+    "service_type": "RPD General",
+    "neighborhood": "Nob Hill",
+    "N": 24,
+    "p50_hr": 2.504027777777778,
+    "p90_hr": 64.69472222222221,
+    "city_p90_hr": 359.72,
+    "ratio_p90": 0.17984744307300735,
+    "rank": 40,
+    "worst_k_flag": false
+  },
+  {
+    "service_type": "RPD General",
+    "neighborhood": "Tenderloin",
+    "N": 20,
+    "p50_hr": 7.121250000000001,
+    "p90_hr": 64.52969444444444,
+    "city_p90_hr": 359.72,
+    "ratio_p90": 0.17938867576015913,
+    "rank": 41,
+    "worst_k_flag": false
+  },
+  {
+    "service_type": "Residential Building",
+    "neighborhood": "Castro/Upper Market",
+    "N": 25,
+    "p50_hr": 24.233888888888888,
+    "p90_hr": 234.6951111111114,
+    "city_p90_hr": 93.82777777777778,
+    "ratio_p90": 2.501339333293863,
+    "rank": 1,
+    "worst_k_flag": true
+  },
+  {
+    "service_type": "Residential Building",
+    "neighborhood": "Lone Mountain/USF",
+    "N": 12,
+    "p50_hr": 19.354305555555555,
+    "p90_hr": 160.81794444444446,
+    "city_p90_hr": 93.82777777777778,
+    "ratio_p90": 1.713969447569424,
+    "rank": 2,
+    "worst_k_flag": true
+  },
+  {
+    "service_type": "Residential Building",
+    "neighborhood": "Lakeshore",
+    "N": 43,
+    "p50_hr": 30.40861111111111,
+    "p90_hr": 146.68011111111113,
+    "city_p90_hr": 93.82777777777778,
+    "ratio_p90": 1.5632908994019779,
+    "rank": 3,
+    "worst_k_flag": true
+  },
+  {
+    "service_type": "Residential Building",
+    "neighborhood": "Western Addition",
+    "N": 51,
+    "p50_hr": 23.2175,
+    "p90_hr": 138.32861111111112,
+    "city_p90_hr": 93.82777777777778,
+    "ratio_p90": 1.474282077091598,
+    "rank": 4,
+    "worst_k_flag": false
+  },
+  {
+    "service_type": "Residential Building",
+    "neighborhood": "West of Twin Peaks",
+    "N": 22,
+    "p50_hr": 33.62847222222222,
+    "p90_hr": 133.1756666666668,
+    "city_p90_hr": 93.82777777777778,
+    "ratio_p90": 1.419362898928298,
+    "rank": 5,
+    "worst_k_flag": false
+  },
+  {
+    "service_type": "Residential Building",
+    "neighborhood": "Chinatown",
+    "N": 21,
+    "p50_hr": 45.13027777777778,
+    "p90_hr": 124.55,
+    "city_p90_hr": 93.82777777777778,
+    "ratio_p90": 1.3274320563680502,
+    "rank": 6,
+    "worst_k_flag": false
+  },
+  {
+    "service_type": "Residential Building",
+    "neighborhood": "Mission",
+    "N": 78,
+    "p50_hr": 23.33138888888889,
+    "p90_hr": 123.35422222222216,
+    "city_p90_hr": 93.82777777777778,
+    "ratio_p90": 1.314687666528509,
+    "rank": 7,
+    "worst_k_flag": false
+  },
+  {
+    "service_type": "Residential Building",
+    "neighborhood": "Haight Ashbury",
+    "N": 21,
+    "p50_hr": 24.684166666666666,
+    "p90_hr": 119.96583333333334,
+    "city_p90_hr": 93.82777777777778,
+    "ratio_p90": 1.2785748120078158,
+    "rank": 8,
+    "worst_k_flag": false
+  },
+  {
+    "service_type": "Residential Building",
+    "neighborhood": "Twin Peaks",
+    "N": 1,
+    "p50_hr": 119.63472222222222,
+    "p90_hr": 119.63472222222222,
+    "city_p90_hr": 93.82777777777778,
+    "ratio_p90": 1.275045887856001,
+    "rank": 9,
+    "worst_k_flag": false
+  },
+  {
+    "service_type": "Residential Building",
+    "neighborhood": "North Beach",
+    "N": 12,
+    "p50_hr": 25.148888888888887,
+    "p90_hr": 117.06333333333336,
+    "city_p90_hr": 93.82777777777778,
+    "ratio_p90": 1.2476404760495,
+    "rank": 10,
+    "worst_k_flag": false
+  },
+  {
+    "service_type": "Residential Building",
+    "neighborhood": "South of Market",
+    "N": 47,
+    "p50_hr": 25.358333333333334,
+    "p90_hr": 101.28994444444442,
+    "city_p90_hr": 93.82777777777778,
+    "ratio_p90": 1.0795304636153706,
+    "rank": 11,
+    "worst_k_flag": false
+  },
+  {
+    "service_type": "Residential Building",
+    "neighborhood": "Outer Mission",
+    "N": 9,
+    "p50_hr": 22.079444444444444,
+    "p90_hr": 97.88455555555555,
+    "city_p90_hr": 93.82777777777778,
+    "ratio_p90": 1.0432364260761442,
+    "rank": 12,
+    "worst_k_flag": false
+  },
+  {
+    "service_type": "Residential Building",
+    "neighborhood": "Bayview Hunters Point",
+    "N": 63,
+    "p50_hr": 21.283333333333335,
+    "p90_hr": 95.64288888888889,
+    "city_p90_hr": 93.82777777777778,
+    "ratio_p90": 1.0193451358872638,
+    "rank": 13,
+    "worst_k_flag": false
+  },
+  {
+    "service_type": "Residential Building",
+    "neighborhood": "Bernal Heights",
+    "N": 11,
+    "p50_hr": 42.65555555555556,
+    "p90_hr": 95.44972222222222,
+    "city_p90_hr": 93.82777777777778,
+    "ratio_p90": 1.0172863994315826,
+    "rank": 14,
+    "worst_k_flag": false
+  },
+  {
+    "service_type": "Residential Building",
+    "neighborhood": "Tenderloin",
+    "N": 274,
+    "p50_hr": 24.063333333333333,
+    "p90_hr": 91.55836111111111,
+    "city_p90_hr": 93.82777777777778,
+    "ratio_p90": 0.9758129551779264,
+    "rank": 15,
+    "worst_k_flag": false
+  },
+  {
+    "service_type": "Residential Building",
+    "neighborhood": "Pacific Heights",
+    "N": 41,
+    "p50_hr": 41.1275,
+    "p90_hr": 91.09305555555555,
+    "city_p90_hr": 93.82777777777778,
+    "ratio_p90": 0.9708538101723014,
+    "rank": 16,
+    "worst_k_flag": false
+  },
+  {
+    "service_type": "Residential Building",
+    "neighborhood": "Inner Sunset",
+    "N": 15,
+    "p50_hr": 41.99583333333333,
+    "p90_hr": 88.92744444444443,
+    "city_p90_hr": 93.82777777777778,
+    "ratio_p90": 0.9477731067558764,
+    "rank": 17,
+    "worst_k_flag": false
+  },
+  {
+    "service_type": "Residential Building",
+    "neighborhood": "Financial District/South Beach",
+    "N": 25,
+    "p50_hr": 24.670833333333334,
+    "p90_hr": 88.68866666666669,
+    "city_p90_hr": 93.82777777777778,
+    "ratio_p90": 0.9452282550772695,
+    "rank": 18,
+    "worst_k_flag": false
+  },
+  {
+    "service_type": "Residential Building",
+    "neighborhood": "Excelsior",
+    "N": 22,
+    "p50_hr": 20.915555555555557,
+    "p90_hr": 87.82125000000005,
+    "city_p90_hr": 93.82777777777778,
+    "ratio_p90": 0.9359834803718401,
+    "rank": 19,
+    "worst_k_flag": false
+  },
+  {
+    "service_type": "Residential Building",
+    "neighborhood": "Glen Park",
+    "N": 5,
+    "p50_hr": 22.374444444444446,
+    "p90_hr": 83.48805555555556,
+    "city_p90_hr": 93.82777777777778,
+    "ratio_p90": 0.8898010539404346,
+    "rank": 20,
+    "worst_k_flag": false
+  },
+  {
+    "service_type": "Residential Building",
+    "neighborhood": "Oceanview/Merced/Ingleside",
+    "N": 11,
+    "p50_hr": 22.301666666666666,
+    "p90_hr": 75.63111111111111,
+    "city_p90_hr": 93.82777777777778,
+    "ratio_p90": 0.8060631180058025,
+    "rank": 21,
+    "worst_k_flag": false
+  },
+  {
+    "service_type": "Residential Building",
+    "neighborhood": "Marina",
+    "N": 25,
+    "p50_hr": 27.898333333333333,
+    "p90_hr": 75.53933333333333,
+    "city_p90_hr": 93.82777777777778,
+    "ratio_p90": 0.8050849665462727,
+    "rank": 22,
+    "worst_k_flag": false
+  },
+  {
+    "service_type": "Residential Building",
+    "neighborhood": "Nob Hill",
+    "N": 84,
+    "p50_hr": 22.843333333333334,
+    "p90_hr": 73.04088888888889,
+    "city_p90_hr": 93.82777777777778,
+    "ratio_p90": 0.7784569838356326,
+    "rank": 23,
+    "worst_k_flag": false
+  },
+  {
+    "service_type": "Residential Building",
+    "neighborhood": "Hayes Valley",
+    "N": 27,
+    "p50_hr": 22.865277777777777,
+    "p90_hr": 72.15700000000001,
+    "city_p90_hr": 93.82777777777778,
+    "ratio_p90": 0.769036651074664,
+    "rank": 24,
+    "worst_k_flag": false
+  },
+  {
+    "service_type": "Residential Building",
+    "neighborhood": "Portola",
+    "N": 8,
+    "p50_hr": 23.023194444444446,
+    "p90_hr": 71.03122222222223,
+    "city_p90_hr": 93.82777777777778,
+    "ratio_p90": 0.7570383089584937,
+    "rank": 25,
+    "worst_k_flag": false
+  },
+  {
+    "service_type": "Residential Building",
+    "neighborhood": "Sunset/Parkside",
+    "N": 30,
+    "p50_hr": 23.798055555555557,
+    "p90_hr": 69.97905555555563,
+    "city_p90_hr": 93.82777777777778,
+    "ratio_p90": 0.7458245011545984,
+    "rank": 26,
+    "worst_k_flag": false
+  },
+  {
+    "service_type": "Residential Building",
+    "neighborhood": "Mission Bay",
+    "N": 8,
+    "p50_hr": 46.079861111111114,
+    "p90_hr": 68.8515,
+    "city_p90_hr": 93.82777777777778,
+    "ratio_p90": 0.7338072117946592,
+    "rank": 27,
+    "worst_k_flag": false
+  },
+  {
+    "service_type": "Residential Building",
+    "neighborhood": "Potrero Hill",
+    "N": 8,
+    "p50_hr": 26.41263888888889,
+    "p90_hr": 66.3498611111111,
+    "city_p90_hr": 93.82777777777778,
+    "ratio_p90": 0.7071451832553731,
+    "rank": 28,
+    "worst_k_flag": false
+  },
+  {
+    "service_type": "Residential Building",
+    "neighborhood": "Russian Hill",
+    "N": 19,
+    "p50_hr": 18.389722222222222,
+    "p90_hr": 65.78027777777778,
+    "city_p90_hr": 93.82777777777778,
+    "ratio_p90": 0.7010746639824739,
+    "rank": 29,
+    "worst_k_flag": false
+  },
+  {
+    "service_type": "Residential Building",
+    "neighborhood": "Outer Richmond",
+    "N": 33,
+    "p50_hr": 24.09611111111111,
+    "p90_hr": 62.937444444444466,
+    "city_p90_hr": 93.82777777777778,
+    "ratio_p90": 0.6707762448931259,
+    "rank": 30,
+    "worst_k_flag": false
+  },
+  {
+    "service_type": "Residential Building",
+    "neighborhood": "Visitacion Valley",
+    "N": 5,
+    "p50_hr": 44.1275,
+    "p90_hr": 62.60022222222223,
+    "city_p90_hr": 93.82777777777778,
+    "ratio_p90": 0.667182189590858,
+    "rank": 31,
+    "worst_k_flag": false
+  },
+  {
+    "service_type": "Residential Building",
+    "neighborhood": "Inner Richmond",
+    "N": 23,
+    "p50_hr": 21.610833333333332,
+    "p90_hr": 60.16561111111112,
+    "city_p90_hr": 93.82777777777778,
+    "ratio_p90": 0.6412345313517674,
+    "rank": 32,
+    "worst_k_flag": false
+  },
+  {
+    "service_type": "Residential Building",
+    "neighborhood": "Noe Valley",
+    "N": 13,
+    "p50_hr": 29.10472222222222,
+    "p90_hr": 57.87883333333335,
+    "city_p90_hr": 93.82777777777778,
+    "ratio_p90": 0.6168624548522709,
+    "rank": 33,
+    "worst_k_flag": false
+  },
+  {
+    "service_type": "Residential Building",
+    "neighborhood": "Treasure Island",
+    "N": 3,
+    "p50_hr": 23.51361111111111,
+    "p90_hr": 56.654944444444446,
+    "city_p90_hr": 93.82777777777778,
+    "ratio_p90": 0.6038184617206466,
+    "rank": 34,
+    "worst_k_flag": false
+  },
+  {
+    "service_type": "Residential Building",
+    "neighborhood": "Presidio Heights",
+    "N": 16,
+    "p50_hr": 19.609166666666667,
+    "p90_hr": 30.80027777777778,
+    "city_p90_hr": 93.82777777777778,
+    "ratio_p90": 0.3282639587897448,
+    "rank": 35,
+    "worst_k_flag": false
+  },
+  {
+    "service_type": "Residential Building",
+    "neighborhood": "Presidio",
+    "N": 4,
+    "p50_hr": 22.124861111111112,
+    "p90_hr": 23.431722222222223,
+    "city_p90_hr": 93.82777777777778,
+    "ratio_p90": 0.24973118597903962,
+    "rank": 36,
+    "worst_k_flag": false
+  },
+  {
+    "service_type": "Residential Building",
+    "neighborhood": "Japantown",
+    "N": 1,
+    "p50_hr": 2.633888888888889,
+    "p90_hr": 2.633888888888889,
+    "city_p90_hr": 93.82777777777778,
+    "ratio_p90": 0.028071525845224703,
+    "rank": 37,
+    "worst_k_flag": false
+  },
+  {
+    "service_type": "Sewer",
+    "neighborhood": "Golden Gate Park",
+    "N": 28,
+    "p50_hr": 50.49625,
+    "p90_hr": 423.1580277777782,
+    "city_p90_hr": 120.5033888888889,
+    "ratio_p90": 3.5115861195236127,
+    "rank": 1,
+    "worst_k_flag": true
+  },
+  {
+    "service_type": "Sewer",
+    "neighborhood": "Mission Bay",
+    "N": 25,
+    "p50_hr": 68.76138888888889,
+    "p90_hr": 240.52216666666675,
+    "city_p90_hr": 120.5033888888889,
+    "ratio_p90": 1.9959784441285888,
+    "rank": 2,
+    "worst_k_flag": true
+  },
+  {
+    "service_type": "Sewer",
+    "neighborhood": "Potrero Hill",
+    "N": 73,
+    "p50_hr": 3.568888888888889,
+    "p90_hr": 216.60666666666668,
+    "city_p90_hr": 120.5033888888889,
+    "ratio_p90": 1.7975151459548624,
+    "rank": 3,
+    "worst_k_flag": true
+  },
+  {
+    "service_type": "Sewer",
+    "neighborhood": "Russian Hill",
+    "N": 78,
+    "p50_hr": 22.88041666666667,
+    "p90_hr": 213.8372499999998,
+    "city_p90_hr": 120.5033888888889,
+    "ratio_p90": 1.7745330813656213,
+    "rank": 4,
+    "worst_k_flag": false
+  },
+  {
+    "service_type": "Sewer",
+    "neighborhood": "Bernal Heights",
+    "N": 174,
+    "p50_hr": 2.69625,
+    "p90_hr": 192.38502777777776,
+    "city_p90_hr": 120.5033888888889,
+    "ratio_p90": 1.5965113475370214,
+    "rank": 5,
+    "worst_k_flag": false
+  },
+  {
+    "service_type": "Sewer",
+    "neighborhood": "North Beach",
+    "N": 71,
+    "p50_hr": 3.0683333333333334,
+    "p90_hr": 166.86388888888888,
+    "city_p90_hr": 120.5033888888889,
+    "ratio_p90": 1.384723620036504,
+    "rank": 6,
+    "worst_k_flag": false
+  },
+  {
+    "service_type": "Sewer",
+    "neighborhood": "McLaren Park",
+    "N": 7,
+    "p50_hr": 23.096666666666668,
+    "p90_hr": 158.6116111111112,
+    "city_p90_hr": 120.5033888888889,
+    "ratio_p90": 1.3162419129752465,
+    "rank": 7,
+    "worst_k_flag": false
+  },
+  {
+    "service_type": "Sewer",
+    "neighborhood": "Noe Valley",
+    "N": 114,
+    "p50_hr": 2.672361111111111,
+    "p90_hr": 142.2631111111111,
+    "city_p90_hr": 120.5033888888889,
+    "ratio_p90": 1.1805735292829476,
+    "rank": 8,
+    "worst_k_flag": false
+  },
+  {
+    "service_type": "Sewer",
+    "neighborhood": "Pacific Heights",
+    "N": 158,
+    "p50_hr": 51.87652777777778,
+    "p90_hr": 141.291,
+    "city_p90_hr": 120.5033888888889,
+    "ratio_p90": 1.1725064440326942,
+    "rank": 9,
+    "worst_k_flag": false
+  },
+  {
+    "service_type": "Sewer",
+    "neighborhood": "Bayview Hunters Point",
+    "N": 219,
+    "p50_hr": 2.890277777777778,
+    "p90_hr": 139.1625,
+    "city_p90_hr": 120.5033888888889,
+    "ratio_p90": 1.1548430403755356,
+    "rank": 10,
+    "worst_k_flag": false
+  },
+  {
+    "service_type": "Sewer",
+    "neighborhood": "Glen Park",
+    "N": 43,
+    "p50_hr": 6.474444444444444,
+    "p90_hr": 134.9943888888891,
+    "city_p90_hr": 120.5033888888889,
+    "ratio_p90": 1.1202538794436872,
+    "rank": 11,
+    "worst_k_flag": false
+  },
+  {
+    "service_type": "Sewer",
+    "neighborhood": "Treasure Island",
+    "N": 12,
+    "p50_hr": 3.0929166666666665,
+    "p90_hr": 133.2287777777778,
+    "city_p90_hr": 120.5033888888889,
+    "ratio_p90": 1.105601917142948,
+    "rank": 12,
+    "worst_k_flag": false
+  },
+  {
+    "service_type": "Sewer",
+    "neighborhood": "Haight Ashbury",
+    "N": 59,
+    "p50_hr": 28.0425,
+    "p90_hr": 131.16944444444448,
+    "city_p90_hr": 120.5033888888889,
+    "ratio_p90": 1.0885124945771467,
+    "rank": 13,
+    "worst_k_flag": false
+  },
+  {
+    "service_type": "Sewer",
+    "neighborhood": "Visitacion Valley",
+    "N": 59,
+    "p50_hr": 2.028611111111111,
+    "p90_hr": 127.92466666666677,
+    "city_p90_hr": 120.5033888888889,
+    "ratio_p90": 1.0615856354431716,
+    "rank": 14,
+    "worst_k_flag": false
+  },
+  {
+    "service_type": "Sewer",
+    "neighborhood": "Oceanview/Merced/Ingleside",
+    "N": 70,
+    "p50_hr": 2.089027777777778,
+    "p90_hr": 126.82497222222223,
+    "city_p90_hr": 120.5033888888889,
+    "ratio_p90": 1.052459797119583,
+    "rank": 15,
+    "worst_k_flag": false
+  },
+  {
+    "service_type": "Sewer",
+    "neighborhood": "Hayes Valley",
+    "N": 79,
+    "p50_hr": 11.724722222222223,
+    "p90_hr": 121.9378888888889,
+    "city_p90_hr": 120.5033888888889,
+    "ratio_p90": 1.0119042295260483,
+    "rank": 16,
+    "worst_k_flag": false
+  },
+  {
+    "service_type": "Sewer",
+    "neighborhood": "Marina",
+    "N": 115,
+    "p50_hr": 13.204166666666667,
+    "p90_hr": 121.45066666666668,
+    "city_p90_hr": 120.5033888888889,
+    "ratio_p90": 1.0078610052921517,
+    "rank": 17,
+    "worst_k_flag": false
+  },
+  {
+    "service_type": "Sewer",
+    "neighborhood": "Nob Hill",
+    "N": 86,
+    "p50_hr": 5.838055555555556,
+    "p90_hr": 119.72472222222223,
+    "city_p90_hr": 120.5033888888889,
+    "ratio_p90": 0.9935382176895899,
+    "rank": 18,
+    "worst_k_flag": false
+  },
+  {
+    "service_type": "Sewer",
+    "neighborhood": "West of Twin Peaks",
+    "N": 165,
+    "p50_hr": 3.9819444444444443,
+    "p90_hr": 116.27744444444441,
+    "city_p90_hr": 120.5033888888889,
+    "ratio_p90": 0.9649309078905568,
+    "rank": 19,
+    "worst_k_flag": false
+  },
+  {
+    "service_type": "Sewer",
+    "neighborhood": "Lakeshore",
+    "N": 18,
+    "p50_hr": 25.242916666666666,
+    "p90_hr": 107.87869444444448,
+    "city_p90_hr": 120.5033888888889,
+    "ratio_p90": 0.8952336978996904,
+    "rank": 20,
+    "worst_k_flag": false
+  },
+  {
+    "service_type": "Sewer",
+    "neighborhood": "Western Addition",
+    "N": 131,
+    "p50_hr": 25.788888888888888,
+    "p90_hr": 107.3375,
+    "city_p90_hr": 120.5033888888889,
+    "ratio_p90": 0.8907425840029395,
+    "rank": 21,
+    "worst_k_flag": false
+  },
+  {
+    "service_type": "Sewer",
+    "neighborhood": "Outer Mission",
+    "N": 105,
+    "p50_hr": 2.328333333333333,
+    "p90_hr": 99.31177777777779,
+    "city_p90_hr": 120.5033888888889,
+    "ratio_p90": 0.8241409531589937,
+    "rank": 22,
+    "worst_k_flag": false
+  },
+  {
+    "service_type": "Sewer",
+    "neighborhood": "Twin Peaks",
+    "N": 34,
+    "p50_hr": 1.73875,
+    "p90_hr": 98.45344444444444,
+    "city_p90_hr": 120.5033888888889,
+    "ratio_p90": 0.8170180552782977,
+    "rank": 23,
+    "worst_k_flag": false
+  },
+  {
+    "service_type": "Sewer",
+    "neighborhood": "Mission",
+    "N": 251,
+    "p50_hr": 4.646388888888889,
+    "p90_hr": 96.09527777777778,
+    "city_p90_hr": 120.5033888888889,
+    "ratio_p90": 0.7974487577804403,
+    "rank": 24,
+    "worst_k_flag": false
+  },
+  {
+    "service_type": "Sewer",
+    "neighborhood": "Castro/Upper Market",
+    "N": 111,
+    "p50_hr": 1.8866666666666667,
+    "p90_hr": 95.64888888888889,
+    "city_p90_hr": 120.5033888888889,
+    "ratio_p90": 0.7937443898534895,
+    "rank": 25,
+    "worst_k_flag": false
+  },
+  {
+    "service_type": "Sewer",
+    "neighborhood": "Tenderloin",
+    "N": 67,
+    "p50_hr": 6.626111111111111,
+    "p90_hr": 95.2767222222222,
+    "city_p90_hr": 120.5033888888889,
+    "ratio_p90": 0.7906559566558983,
+    "rank": 26,
+    "worst_k_flag": false
+  },
+  {
+    "service_type": "Sewer",
+    "neighborhood": "Japantown",
+    "N": 21,
+    "p50_hr": 68.17083333333333,
+    "p90_hr": 94.23638888888888,
+    "city_p90_hr": 120.5033888888889,
+    "ratio_p90": 0.7820227278071016,
+    "rank": 27,
+    "worst_k_flag": false
+  },
+  {
+    "service_type": "Sewer",
+    "neighborhood": "Seacliff",
+    "N": 23,
+    "p50_hr": 1.9838888888888888,
+    "p90_hr": 91.13255555555557,
+    "city_p90_hr": 120.5033888888889,
+    "ratio_p90": 0.7562654992183253,
+    "rank": 28,
+    "worst_k_flag": false
+  },
+  {
+    "service_type": "Sewer",
+    "neighborhood": "Presidio Heights",
+    "N": 58,
+    "p50_hr": 20.85152777777778,
+    "p90_hr": 80.98413888888898,
+    "city_p90_hr": 120.5033888888889,
+    "ratio_p90": 0.6720486422465765,
+    "rank": 29,
+    "worst_k_flag": false
+  },
+  {
+    "service_type": "Sewer",
+    "neighborhood": "Chinatown",
+    "N": 42,
+    "p50_hr": 6.785416666666666,
+    "p90_hr": 80.50152777777777,
+    "city_p90_hr": 120.5033888888889,
+    "ratio_p90": 0.6680436834187695,
+    "rank": 30,
+    "worst_k_flag": false
+  },
+  {
+    "service_type": "Sewer",
+    "neighborhood": "Inner Sunset",
+    "N": 123,
+    "p50_hr": 3.602222222222222,
+    "p90_hr": 77.93388888888887,
+    "city_p90_hr": 120.5033888888889,
+    "ratio_p90": 0.64673607611773,
+    "rank": 31,
+    "worst_k_flag": false
+  },
+  {
+    "service_type": "Sewer",
+    "neighborhood": "Outer Richmond",
+>>>>>>> 0b5cce5 (Refactor fairness metrics and simulator for strict historical/live data separation and robustness)
     "N": 159,
     "p50_hr": 15.2125,
     "p90_hr": 176.76338888888907,
@@ -4576,6 +8167,2742 @@
     "worst_k_flag": false
   },
   {
+    "service_type": "other",
+    "neighborhood": "West of Twin Peaks",
+    "N": 1005,
+    "p50_hr": 8.783611111111112,
+    "p90_hr": 131.29261111111114,
+    "city_p90_hr": 122.72694444444444,
+    "ratio_p90": 1.0697945076807822,
+    "rank": 14,
+    "worst_k_flag": false
+  },
+  {
+    "service_type": "other",
+    "neighborhood": "Mission Bay",
+    "N": 441,
+    "p50_hr": 8.067222222222222,
+    "p90_hr": 131.06472222222223,
+    "city_p90_hr": 122.72694444444444,
+    "ratio_p90": 1.0679376302858423,
+    "rank": 15,
+    "worst_k_flag": false
+  },
+  {
+    "service_type": "other",
+    "neighborhood": "Seacliff",
+    "N": 55,
+    "p50_hr": 19.669722222222223,
+    "p90_hr": 128.7332777777778,
+    "city_p90_hr": 122.72694444444444,
+    "ratio_p90": 1.0489406247382969,
+    "rank": 16,
+    "worst_k_flag": false
+  },
+  {
+    "service_type": "other",
+    "neighborhood": "Japantown",
+    "N": 148,
+    "p50_hr": 13.831111111111111,
+    "p90_hr": 127.88952777777787,
+    "city_p90_hr": 122.72694444444444,
+    "ratio_p90": 1.0420656063483305,
+    "rank": 17,
+    "worst_k_flag": false
+  },
+  {
+    "service_type": "other",
+    "neighborhood": "Pacific Heights",
+    "N": 1079,
+    "p50_hr": 3.036388888888889,
+    "p90_hr": 125.24366666666667,
+    "city_p90_hr": 122.72694444444444,
+    "ratio_p90": 1.0205066803676637,
+    "rank": 18,
+    "worst_k_flag": false
+  },
+  {
+    "service_type": "other",
+    "neighborhood": "Treasure Island",
+    "N": 44,
+    "p50_hr": 4.8869444444444445,
+    "p90_hr": 121.91361111111112,
+    "city_p90_hr": 122.72694444444444,
+    "ratio_p90": 0.993372821779153,
+    "rank": 19,
+    "worst_k_flag": false
+  },
+  {
+    "service_type": "other",
+    "neighborhood": "Potrero Hill",
+    "N": 493,
+    "p50_hr": 6.796666666666667,
+    "p90_hr": 121.50644444444445,
+    "city_p90_hr": 122.72694444444444,
+    "ratio_p90": 0.9900551585837576,
+    "rank": 20,
+    "worst_k_flag": false
+  },
+  {
+    "service_type": "other",
+    "neighborhood": "Visitacion Valley",
+    "N": 371,
+    "p50_hr": 5.163333333333333,
+    "p90_hr": 121.00638888888889,
+    "city_p90_hr": 122.72694444444444,
+    "ratio_p90": 0.9859806209358174,
+    "rank": 21,
+    "worst_k_flag": false
+  },
+  {
+    "service_type": "other",
+    "neighborhood": "Presidio",
+<<<<<<< HEAD
+=======
+    "N": 1,
+    "p50_hr": 122.87527777777778,
+    "p90_hr": 122.87527777777778,
+    "city_p90_hr": 446.1202777777778,
+    "ratio_p90": 0.27543082863179025,
+    "rank": 39,
+    "worst_k_flag": false
+  },
+  {
+    "service_type": "Street Defect",
+    "neighborhood": "Treasure Island",
+    "N": 2,
+    "p50_hr": 65.46944444444445,
+    "p90_hr": 107.73344444444444,
+    "city_p90_hr": 446.1202777777778,
+    "ratio_p90": 0.2414896829641732,
+    "rank": 40,
+    "worst_k_flag": false
+  },
+  {
+    "service_type": "Street Defect",
+    "neighborhood": "Lincoln Park",
+    "N": 1,
+    "p50_hr": 12.800833333333333,
+    "p90_hr": 12.800833333333333,
+    "city_p90_hr": 446.1202777777778,
+    "ratio_p90": 0.02869368188573958,
+    "rank": 41,
+    "worst_k_flag": false
+  },
+  {
+    "service_type": "Street and Sidewalk Cleaning",
+    "neighborhood": "Treasure Island",
+    "N": 12,
+    "p50_hr": 57.886805555555554,
+    "p90_hr": 779.8860555555557,
+    "city_p90_hr": 113.45633333333323,
+    "ratio_p90": 6.873887359502978,
+    "rank": 1,
+    "worst_k_flag": true
+  },
+  {
+    "service_type": "Street and Sidewalk Cleaning",
+    "neighborhood": "Golden Gate Park",
+    "N": 411,
+    "p50_hr": 25.1075,
+    "p90_hr": 458.7113888888889,
+    "city_p90_hr": 113.45633333333323,
+    "ratio_p90": 4.043065516150612,
+    "rank": 2,
+    "worst_k_flag": true
+  },
+  {
+    "service_type": "Street and Sidewalk Cleaning",
+    "neighborhood": "Potrero Hill",
+    "N": 754,
+    "p50_hr": 16.45125,
+    "p90_hr": 240.91150000000007,
+    "city_p90_hr": 113.45633333333323,
+    "ratio_p90": 2.1233852084061735,
+    "rank": 3,
+    "worst_k_flag": true
+  },
+  {
+    "service_type": "Street and Sidewalk Cleaning",
+    "neighborhood": "Bayview Hunters Point",
+    "N": 4736,
+    "p50_hr": 21.68333333333333,
+    "p90_hr": 213.72305555555556,
+    "city_p90_hr": 113.45633333333323,
+    "ratio_p90": 1.8837472468605168,
+    "rank": 4,
+    "worst_k_flag": false
+  },
+  {
+    "service_type": "Street and Sidewalk Cleaning",
+    "neighborhood": "Mission Bay",
+    "N": 593,
+    "p50_hr": 23.51972222222222,
+    "p90_hr": 209.5892222222233,
+    "city_p90_hr": 113.45633333333323,
+    "ratio_p90": 1.8473117900474791,
+    "rank": 5,
+    "worst_k_flag": false
+  },
+  {
+    "service_type": "Street and Sidewalk Cleaning",
+    "neighborhood": "Visitacion Valley",
+    "N": 910,
+    "p50_hr": 16.07638888888889,
+    "p90_hr": 190.0267777777778,
+    "city_p90_hr": 113.45633333333323,
+    "ratio_p90": 1.674889115440401,
+    "rank": 6,
+    "worst_k_flag": false
+  },
+  {
+    "service_type": "Street and Sidewalk Cleaning",
+    "neighborhood": "McLaren Park",
+    "N": 180,
+    "p50_hr": 13.244861111111112,
+    "p90_hr": 148.05266666666654,
+    "city_p90_hr": 113.45633333333323,
+    "ratio_p90": 1.304930825075139,
+    "rank": 7,
+    "worst_k_flag": false
+  },
+  {
+    "service_type": "Street and Sidewalk Cleaning",
+    "neighborhood": "Excelsior",
+    "N": 1963,
+    "p50_hr": 2.49,
+    "p90_hr": 144.29527777777778,
+    "city_p90_hr": 113.45633333333323,
+    "ratio_p90": 1.2718133359187638,
+    "rank": 8,
+    "worst_k_flag": false
+  },
+  {
+    "service_type": "Street and Sidewalk Cleaning",
+    "neighborhood": "Lincoln Park",
+    "N": 14,
+    "p50_hr": 24.18722222222222,
+    "p90_hr": 143.77291666666667,
+    "city_p90_hr": 113.45633333333323,
+    "ratio_p90": 1.2672092640634147,
+    "rank": 9,
+    "worst_k_flag": false
+  },
+  {
+    "service_type": "Street and Sidewalk Cleaning",
+    "neighborhood": "Chinatown",
+    "N": 1182,
+    "p50_hr": 15.346388888888889,
+    "p90_hr": 140.47419444444452,
+    "city_p90_hr": 113.45633333333323,
+    "ratio_p90": 1.2381344462431476,
+    "rank": 10,
+    "worst_k_flag": false
+  },
+  {
+    "service_type": "Street and Sidewalk Cleaning",
+    "neighborhood": "Lakeshore",
+    "N": 182,
+    "p50_hr": 21.704305555555557,
+    "p90_hr": 137.69638888888895,
+    "city_p90_hr": 113.45633333333323,
+    "ratio_p90": 1.213650968997374,
+    "rank": 11,
+    "worst_k_flag": false
+  },
+  {
+    "service_type": "Street and Sidewalk Cleaning",
+    "neighborhood": "Twin Peaks",
+    "N": 163,
+    "p50_hr": 15.312777777777777,
+    "p90_hr": 136.77805555555577,
+    "city_p90_hr": 113.45633333333323,
+    "ratio_p90": 1.205556812361489,
+    "rank": 12,
+    "worst_k_flag": false
+  },
+  {
+    "service_type": "Street and Sidewalk Cleaning",
+    "neighborhood": "North Beach",
+    "N": 1399,
+    "p50_hr": 16.594444444444445,
+    "p90_hr": 125.63022222222223,
+    "city_p90_hr": 113.45633333333323,
+    "ratio_p90": 1.107300214375184,
+    "rank": 13,
+    "worst_k_flag": false
+  },
+  {
+    "service_type": "Street and Sidewalk Cleaning",
+    "neighborhood": "Seacliff",
+    "N": 42,
+    "p50_hr": 18.44638888888889,
+    "p90_hr": 123.00263888888888,
+    "city_p90_hr": 113.45633333333323,
+    "ratio_p90": 1.0841407903383298,
+    "rank": 14,
+    "worst_k_flag": false
+  },
+  {
+    "service_type": "Street and Sidewalk Cleaning",
+    "neighborhood": "Portola",
+    "N": 1992,
+    "p50_hr": 13.247777777777777,
+    "p90_hr": 121.4066388888889,
+    "city_p90_hr": 113.45633333333323,
+    "ratio_p90": 1.0700737043228585,
+    "rank": 15,
+    "worst_k_flag": false
+  },
+  {
+    "service_type": "Street and Sidewalk Cleaning",
+    "neighborhood": "Glen Park",
+    "N": 296,
+    "p50_hr": 9.170277777777777,
+    "p90_hr": 121.21375,
+    "city_p90_hr": 113.45633333333323,
+    "ratio_p90": 1.0683735886640684,
+    "rank": 16,
+    "worst_k_flag": false
+  },
+  {
+    "service_type": "Street and Sidewalk Cleaning",
+    "neighborhood": "Financial District/South Beach",
+    "N": 1727,
+    "p50_hr": 7.398611111111111,
+    "p90_hr": 121.02177777777779,
+    "city_p90_hr": 113.45633333333323,
+    "ratio_p90": 1.066681552471975,
+    "rank": 17,
+    "worst_k_flag": false
+  },
+  {
+    "service_type": "Street and Sidewalk Cleaning",
+    "neighborhood": "Marina",
+    "N": 1619,
+    "p50_hr": 11.491666666666667,
+    "p90_hr": 120.93794444444445,
+    "city_p90_hr": 113.45633333333323,
+    "ratio_p90": 1.0659426485177372,
+    "rank": 18,
+    "worst_k_flag": false
+  },
+  {
+    "service_type": "Street and Sidewalk Cleaning",
+    "neighborhood": "Bernal Heights",
+    "N": 1855,
+    "p50_hr": 12.486944444444445,
+    "p90_hr": 120.7688888888889,
+    "city_p90_hr": 113.45633333333323,
+    "ratio_p90": 1.0644525989930547,
+    "rank": 19,
+    "worst_k_flag": false
+  },
+  {
+    "service_type": "Street and Sidewalk Cleaning",
+    "neighborhood": "Nob Hill",
+    "N": 4497,
+    "p50_hr": 11.777777777777779,
+    "p90_hr": 119.748,
+    "city_p90_hr": 113.45633333333323,
+    "ratio_p90": 1.0554545214164637,
+    "rank": 20,
+    "worst_k_flag": false
+  },
+  {
+    "service_type": "Street and Sidewalk Cleaning",
+    "neighborhood": "Mission",
+    "N": 13293,
+    "p50_hr": 14.533611111111112,
+    "p90_hr": 118.97416666666666,
+    "city_p90_hr": 113.45633333333323,
+    "ratio_p90": 1.048633982530725,
+    "rank": 21,
+    "worst_k_flag": false
+  },
+  {
+    "service_type": "Street and Sidewalk Cleaning",
+    "neighborhood": "Pacific Heights",
+    "N": 1337,
+    "p50_hr": 8.905277777777778,
+    "p90_hr": 118.03238888888897,
+    "city_p90_hr": 113.45633333333323,
+    "ratio_p90": 1.0403331874132697,
+    "rank": 22,
+    "worst_k_flag": false
+  },
+  {
+    "service_type": "Street and Sidewalk Cleaning",
+    "neighborhood": "South of Market",
+    "N": 5698,
+    "p50_hr": 14.210972222222223,
+    "p90_hr": 112.53636111111125,
+    "city_p90_hr": 113.45633333333323,
+    "ratio_p90": 0.9918913982569918,
+    "rank": 23,
+    "worst_k_flag": false
+  },
+  {
+    "service_type": "Street and Sidewalk Cleaning",
+    "neighborhood": "Russian Hill",
+    "N": 1405,
+    "p50_hr": 7.718333333333334,
+    "p90_hr": 99.44461111111119,
+    "city_p90_hr": 113.45633333333323,
+    "ratio_p90": 0.8765011893954321,
+    "rank": 24,
+    "worst_k_flag": false
+  },
+  {
+    "service_type": "Street and Sidewalk Cleaning",
+    "neighborhood": "Castro/Upper Market",
+    "N": 2675,
+    "p50_hr": 10.6525,
+    "p90_hr": 98.45316666666666,
+    "city_p90_hr": 113.45633333333323,
+    "ratio_p90": 0.867762634082423,
+    "rank": 25,
+    "worst_k_flag": false
+  },
+  {
+    "service_type": "Street and Sidewalk Cleaning",
+    "neighborhood": "Outer Mission",
+    "N": 1409,
+    "p50_hr": 3.3272222222222223,
+    "p90_hr": 96.424,
+    "city_p90_hr": 113.45633333333323,
+    "ratio_p90": 0.8498776328043984,
+    "rank": 26,
+    "worst_k_flag": false
+  },
+  {
+    "service_type": "Street and Sidewalk Cleaning",
+    "neighborhood": "Noe Valley",
+    "N": 994,
+    "p50_hr": 3.1284722222222223,
+    "p90_hr": 96.33566666666668,
+    "city_p90_hr": 113.45633333333323,
+    "ratio_p90": 0.8490990660136508,
+    "rank": 27,
+    "worst_k_flag": false
+  },
+  {
+    "service_type": "Street and Sidewalk Cleaning",
+    "neighborhood": "Western Addition",
+    "N": 2525,
+    "p50_hr": 9.426388888888889,
+    "p90_hr": 92.55527777777776,
+    "city_p90_hr": 113.45633333333323,
+    "ratio_p90": 0.8157788556928908,
+    "rank": 28,
+    "worst_k_flag": false
+  },
+  {
+    "service_type": "Street and Sidewalk Cleaning",
+    "neighborhood": "West of Twin Peaks",
+    "N": 1156,
+    "p50_hr": 4.039027777777777,
+    "p90_hr": 74.36333333333333,
+    "city_p90_hr": 113.45633333333323,
+    "ratio_p90": 0.6554357182939697,
+    "rank": 29,
+    "worst_k_flag": false
+  },
+  {
+    "service_type": "Street and Sidewalk Cleaning",
+    "neighborhood": "Lone Mountain/USF",
+    "N": 1410,
+    "p50_hr": 7.302222222222222,
+    "p90_hr": 72.18027777777785,
+    "city_p90_hr": 113.45633333333323,
+    "ratio_p90": 0.6361943459402405,
+    "rank": 30,
+    "worst_k_flag": false
+  },
+  {
+    "service_type": "Street and Sidewalk Cleaning",
+    "neighborhood": "Hayes Valley",
+    "N": 3476,
+    "p50_hr": 7.065833333333334,
+    "p90_hr": 72.13055555555556,
+    "city_p90_hr": 113.45633333333323,
+    "ratio_p90": 0.6357560960800392,
+    "rank": 31,
+    "worst_k_flag": false
+  },
+  {
+    "service_type": "Street and Sidewalk Cleaning",
+    "neighborhood": "Japantown",
+    "N": 424,
+    "p50_hr": 3.8633333333333333,
+    "p90_hr": 70.61080555555556,
+    "city_p90_hr": 113.45633333333323,
+    "ratio_p90": 0.6223610747943169,
+    "rank": 32,
+    "worst_k_flag": false
+  },
+  {
+    "service_type": "Street and Sidewalk Cleaning",
+    "neighborhood": "Oceanview/Merced/Ingleside",
+    "N": 1375,
+    "p50_hr": 3.1483333333333334,
+    "p90_hr": 70.36550000000017,
+    "city_p90_hr": 113.45633333333323,
+    "ratio_p90": 0.6201989605398867,
+    "rank": 33,
+    "worst_k_flag": false
+  },
+  {
+    "service_type": "Street and Sidewalk Cleaning",
+    "neighborhood": "Presidio Heights",
+    "N": 571,
+    "p50_hr": 2.41,
+    "p90_hr": 65.79694444444445,
+    "city_p90_hr": 113.45633333333323,
+    "ratio_p90": 0.5799318778541334,
+    "rank": 34,
+    "worst_k_flag": false
+  },
+  {
+    "service_type": "Street and Sidewalk Cleaning",
+    "neighborhood": "Haight Ashbury",
+    "N": 2368,
+    "p50_hr": 5.303888888888888,
+    "p90_hr": 53.345083333333385,
+    "city_p90_hr": 113.45633333333323,
+    "ratio_p90": 0.4701816264113368,
+    "rank": 35,
+    "worst_k_flag": false
+  },
+  {
+    "service_type": "Street and Sidewalk Cleaning",
+    "neighborhood": "Outer Richmond",
+    "N": 2165,
+    "p50_hr": 4.373611111111111,
+    "p90_hr": 51.64822222222228,
+    "city_p90_hr": 113.45633333333323,
+    "ratio_p90": 0.45522555422693306,
+    "rank": 36,
+    "worst_k_flag": false
+  },
+  {
+    "service_type": "Street and Sidewalk Cleaning",
+    "neighborhood": "Tenderloin",
+    "N": 6259,
+    "p50_hr": 8.946944444444444,
+    "p90_hr": 51.36144444444444,
+    "city_p90_hr": 113.45633333333323,
+    "ratio_p90": 0.452697905312568,
+    "rank": 37,
+    "worst_k_flag": false
+  },
+  {
+    "service_type": "Street and Sidewalk Cleaning",
+    "neighborhood": "Inner Sunset",
+    "N": 1106,
+    "p50_hr": 3.92375,
+    "p90_hr": 50.565555555555555,
+    "city_p90_hr": 113.45633333333323,
+    "ratio_p90": 0.4456829695614665,
+    "rank": 38,
+    "worst_k_flag": false
+  },
+  {
+    "service_type": "Street and Sidewalk Cleaning",
+    "neighborhood": "Sunset/Parkside",
+    "N": 2567,
+    "p50_hr": 2.515,
+    "p90_hr": 49.98650000000003,
+    "city_p90_hr": 113.45633333333323,
+    "ratio_p90": 0.4405791949325591,
+    "rank": 39,
+    "worst_k_flag": false
+  },
+  {
+    "service_type": "Street and Sidewalk Cleaning",
+    "neighborhood": "Presidio",
+    "N": 28,
+    "p50_hr": 1.7648611111111112,
+    "p90_hr": 49.12591666666667,
+    "city_p90_hr": 113.45633333333323,
+    "ratio_p90": 0.43299404469854813,
+    "rank": 40,
+    "worst_k_flag": false
+  },
+  {
+    "service_type": "Street and Sidewalk Cleaning",
+    "neighborhood": "Inner Richmond",
+    "N": 1340,
+    "p50_hr": 7.359444444444444,
+    "p90_hr": 49.07694444444445,
+    "city_p90_hr": 113.45633333333323,
+    "ratio_p90": 0.4325624053110991,
+    "rank": 41,
+    "worst_k_flag": false
+  },
+  {
+    "service_type": "Streetlights",
+    "neighborhood": "Golden Gate Park",
+    "N": 49,
+    "p50_hr": 126.62138888888889,
+    "p90_hr": 592.1074444444452,
+    "city_p90_hr": 188.75916666666666,
+    "ratio_p90": 3.1368407420978857,
+    "rank": 1,
+    "worst_k_flag": true
+  },
+  {
+    "service_type": "Streetlights",
+    "neighborhood": "Mission Bay",
+    "N": 30,
+    "p50_hr": 51.34736111111111,
+    "p90_hr": 436.12241666666785,
+    "city_p90_hr": 188.75916666666666,
+    "ratio_p90": 2.31047013169339,
+    "rank": 2,
+    "worst_k_flag": true
+  },
+  {
+    "service_type": "Streetlights",
+    "neighborhood": "Treasure Island",
+    "N": 10,
+    "p50_hr": 139.7123611111111,
+    "p90_hr": 431.62758333333323,
+    "city_p90_hr": 188.75916666666666,
+    "ratio_p90": 2.286657601617581,
+    "rank": 3,
+    "worst_k_flag": true
+  },
+  {
+    "service_type": "Streetlights",
+    "neighborhood": "West of Twin Peaks",
+    "N": 83,
+    "p50_hr": 86.12083333333334,
+    "p90_hr": 270.5189444444444,
+    "city_p90_hr": 188.75916666666666,
+    "ratio_p90": 1.4331433499182524,
+    "rank": 4,
+    "worst_k_flag": false
+  },
+  {
+    "service_type": "Streetlights",
+    "neighborhood": "North Beach",
+    "N": 29,
+    "p50_hr": 60.79611111111111,
+    "p90_hr": 237.87183333333323,
+    "city_p90_hr": 188.75916666666666,
+    "ratio_p90": 1.260186922489415,
+    "rank": 5,
+    "worst_k_flag": false
+  },
+  {
+    "service_type": "Streetlights",
+    "neighborhood": "Oceanview/Merced/Ingleside",
+    "N": 33,
+    "p50_hr": 40.368611111111115,
+    "p90_hr": 205.6240555555556,
+    "city_p90_hr": 188.75916666666666,
+    "ratio_p90": 1.0893460656068215,
+=======
+    "service_type": "encampment",
+    "neighborhood": "Excelsior",
+    "N": 14,
+    "p50_hr": 13.60263888888889,
+    "p90_hr": 106.82002777777782,
+    "city_p90_hr": 67.11427777777777,
+    "ratio_p90": 1.59161405463484,
+>>>>>>> 9857cbd (Refactor fairness metrics and simulator for strict historical/live data separation and robustness)
+    "rank": 6,
+    "worst_k_flag": false
+  },
+  {
+<<<<<<< HEAD
+    "service_type": "Streetlights",
+    "neighborhood": "Outer Richmond",
+    "N": 78,
+    "p50_hr": 43.711527777777775,
+    "p90_hr": 203.63066666666654,
+    "city_p90_hr": 188.75916666666666,
+    "ratio_p90": 1.0787855777423607,
+=======
+    "service_type": "encampment",
+    "neighborhood": "Mission",
+    "N": 629,
+    "p50_hr": 22.61638888888889,
+    "p90_hr": 102.99266666666703,
+    "city_p90_hr": 67.11427777777777,
+    "ratio_p90": 1.5345865302713422,
+>>>>>>> 9857cbd (Refactor fairness metrics and simulator for strict historical/live data separation and robustness)
+    "rank": 7,
+    "worst_k_flag": false
+  },
+  {
+<<<<<<< HEAD
+    "service_type": "Streetlights",
+    "neighborhood": "Bayview Hunters Point",
+    "N": 76,
+    "p50_hr": 49.07625,
+    "p90_hr": 196.9322222222222,
+    "city_p90_hr": 188.75916666666666,
+    "ratio_p90": 1.0432988537716343,
+    "rank": 8,
+    "worst_k_flag": false
+  },
+  {
+    "service_type": "Streetlights",
+    "neighborhood": "Inner Sunset",
+    "N": 37,
+    "p50_hr": 89.03277777777778,
+    "p90_hr": 193.78238888888885,
+    "city_p90_hr": 188.75916666666666,
+    "ratio_p90": 1.0266118054605147,
+    "rank": 9,
+    "worst_k_flag": false
+  },
+  {
+    "service_type": "Streetlights",
+    "neighborhood": "Glen Park",
+    "N": 27,
+    "p50_hr": 42.05888888888889,
+    "p90_hr": 192.8201111111113,
+    "city_p90_hr": 188.75916666666666,
+    "ratio_p90": 1.0215138926292038,
+    "rank": 10,
+    "worst_k_flag": false
+  },
+  {
+    "service_type": "Streetlights",
+    "neighborhood": "Excelsior",
+    "N": 33,
+    "p50_hr": 28.810833333333335,
+    "p90_hr": 189.5563888888889,
+    "city_p90_hr": 188.75916666666666,
+    "ratio_p90": 1.0042234887783228,
+    "rank": 11,
+    "worst_k_flag": false
+  },
+  {
+    "service_type": "Streetlights",
+    "neighborhood": "Financial District/South Beach",
+    "N": 102,
+    "p50_hr": 61.02236111111111,
+    "p90_hr": 181.45697222222228,
+    "city_p90_hr": 188.75916666666666,
+    "ratio_p90": 0.9613147558691045,
+    "rank": 12,
+    "worst_k_flag": false
+  },
+  {
+    "service_type": "Streetlights",
+    "neighborhood": "Sunset/Parkside",
+    "N": 132,
+    "p50_hr": 63.2525,
+    "p90_hr": 179.3167222222224,
+    "city_p90_hr": 188.75916666666666,
+    "ratio_p90": 0.94997623367813,
+    "rank": 13,
+    "worst_k_flag": false
+  },
+  {
+    "service_type": "Streetlights",
+    "neighborhood": "Potrero Hill",
+>>>>>>> 0b5cce5 (Refactor fairness metrics and simulator for strict historical/live data separation and robustness)
+    "N": 35,
+    "p50_hr": 1.4388888888888889,
+    "p90_hr": 119.75872222222223,
+    "city_p90_hr": 122.72694444444444,
+    "ratio_p90": 0.975814420902772,
+    "rank": 22,
+    "worst_k_flag": false
+  },
+  {
+    "service_type": "other",
+    "neighborhood": "Bayview Hunters Point",
+    "N": 1486,
+    "p50_hr": 5.06875,
+    "p90_hr": 119.14291666666666,
+    "city_p90_hr": 122.72694444444444,
+    "ratio_p90": 0.9707967325838526,
+    "rank": 23,
+    "worst_k_flag": false
+  },
+  {
+    "service_type": "other",
+    "neighborhood": "Russian Hill",
+    "N": 650,
+    "p50_hr": 3.5059722222222223,
+    "p90_hr": 119.13675,
+    "city_p90_hr": 122.72694444444444,
+    "ratio_p90": 0.9707464855358667,
+    "rank": 24,
+    "worst_k_flag": false
+  },
+  {
+    "service_type": "other",
+    "neighborhood": "Lincoln Park",
+<<<<<<< HEAD
+    "N": 20,
+    "p50_hr": 16.898055555555555,
+    "p90_hr": 116.33125,
+    "city_p90_hr": 122.72694444444444,
+    "ratio_p90": 0.947886794758916,
+=======
+    "N": 1,
+    "p50_hr": 21.73,
+    "p90_hr": 21.73,
+    "city_p90_hr": 806.1778333333335,
+    "ratio_p90": 0.026954350642651833,
+    "rank": 38,
+    "worst_k_flag": false
+  },
+  {
+    "service_type": "Tree Maintenance",
+    "neighborhood": "Presidio",
+    "N": 2,
+    "p50_hr": 0.6127777777777779,
+    "p90_hr": 0.6432222222222223,
+    "city_p90_hr": 806.1778333333335,
+    "ratio_p90": 0.000797866420567119,
+    "rank": 39,
+    "worst_k_flag": false
+  },
+  {
+    "service_type": "Temporary Sign Applications",
+    "neighborhood": "West of Twin Peaks",
+    "N": 1,
+    "p50_hr": 890.9947222222222,
+    "p90_hr": 890.9947222222222,
+    "city_p90_hr": 528.6966666666667,
+    "ratio_p90": 1.6852663888345973,
+    "rank": 1,
+    "worst_k_flag": true
+  },
+  {
+    "service_type": "Temporary Sign Applications",
+    "neighborhood": "Bernal Heights",
+    "N": 2,
+    "p50_hr": 645.4902777777778,
+    "p90_hr": 645.4902777777778,
+    "city_p90_hr": 528.6966666666667,
+    "ratio_p90": 1.2209085444920107,
+    "rank": 2,
+    "worst_k_flag": true
+  },
+  {
+    "service_type": "Temporary Sign Applications",
+    "neighborhood": "Western Addition",
+    "N": 1,
+    "p50_hr": 552.7286111111111,
+    "p90_hr": 552.7286111111111,
+    "city_p90_hr": 528.6966666666667,
+    "ratio_p90": 1.045455070855584,
+    "rank": 3,
+    "worst_k_flag": true
+  },
+  {
+    "service_type": "Temporary Sign Applications",
+    "neighborhood": "Sunset/Parkside",
+    "N": 1,
+    "p50_hr": 529.0888888888888,
+    "p90_hr": 529.0888888888888,
+    "city_p90_hr": 528.6966666666667,
+    "ratio_p90": 1.000741866266521,
+    "rank": 4,
+    "worst_k_flag": false
+  },
+  {
+    "service_type": "Temporary Sign Applications",
+    "neighborhood": "Mission",
+    "N": 2,
+    "p50_hr": 490.6720833333334,
+    "p90_hr": 521.09175,
+    "city_p90_hr": 528.6966666666667,
+    "ratio_p90": 0.985615727985171,
+    "rank": 5,
+    "worst_k_flag": false
+  },
+  {
+    "service_type": "Temporary Sign Applications",
+    "neighborhood": "Outer Richmond",
+    "N": 1,
+    "p50_hr": 410.4941666666667,
+    "p90_hr": 410.4941666666667,
+    "city_p90_hr": 528.6966666666667,
+    "ratio_p90": 0.7764266214401452,
+    "rank": 6,
+    "worst_k_flag": false
+  },
+  {
+    "service_type": "Temporary Sign Applications",
+    "neighborhood": "Potrero Hill",
+    "N": 1,
+    "p50_hr": 405.8536111111111,
+    "p90_hr": 405.8536111111111,
+    "city_p90_hr": 528.6966666666667,
+    "ratio_p90": 0.7676492716890801,
+    "rank": 7,
+    "worst_k_flag": false
+  },
+  {
+    "service_type": "Temporary Sign Applications",
+    "neighborhood": "Hayes Valley",
+    "N": 2,
+    "p50_hr": 215.49638888888887,
+    "p90_hr": 387.79372222222224,
+    "city_p90_hr": 528.6966666666667,
+    "ratio_p90": 0.7334900079230476,
+    "rank": 8,
+    "worst_k_flag": false
+  },
+  {
+    "service_type": "Temporary Sign Applications",
+    "neighborhood": "Nob Hill",
+    "N": 8,
+    "p50_hr": 288.8927777777778,
+    "p90_hr": 376.41661111111114,
+    "city_p90_hr": 528.6966666666667,
+    "ratio_p90": 0.7119708423439611,
+    "rank": 9,
+    "worst_k_flag": false
+  },
+  {
+    "service_type": "Temporary Sign Applications",
+    "neighborhood": "Pacific Heights",
+    "N": 15,
+    "p50_hr": 241.14888888888888,
+    "p90_hr": 364.1722777777778,
+    "city_p90_hr": 528.6966666666667,
+    "ratio_p90": 0.6888113747223256,
+=======
+    "service_type": "encampment",
+    "neighborhood": "Portola",
+    "N": 6,
+    "p50_hr": 17.584722222222222,
+    "p90_hr": 95.38166666666666,
+    "city_p90_hr": 67.11427777777777,
+    "ratio_p90": 1.4211829408711676,
+    "rank": 8,
+    "worst_k_flag": false
+  },
+  {
+    "service_type": "encampment",
+    "neighborhood": "Golden Gate Park",
+    "N": 16,
+    "p50_hr": 23.72375,
+    "p90_hr": 94.45847222222223,
+    "city_p90_hr": 67.11427777777777,
+    "ratio_p90": 1.4074273813238947,
+    "rank": 9,
+    "worst_k_flag": false
+  },
+  {
+    "service_type": "encampment",
+    "neighborhood": "Bernal Heights",
+    "N": 56,
+    "p50_hr": 18.831666666666667,
+    "p90_hr": 91.29611111111112,
+    "city_p90_hr": 67.11427777777777,
+    "ratio_p90": 1.3603083298221856,
+>>>>>>> 9857cbd (Refactor fairness metrics and simulator for strict historical/live data separation and robustness)
+    "rank": 10,
+    "worst_k_flag": false
+  },
+  {
+<<<<<<< HEAD
+    "service_type": "Temporary Sign Applications",
+    "neighborhood": "Presidio Heights",
+    "N": 1,
+    "p50_hr": 339.4963888888889,
+    "p90_hr": 339.4963888888889,
+    "city_p90_hr": 528.6966666666667,
+    "ratio_p90": 0.6421383191790293,
+    "rank": 11,
+    "worst_k_flag": false
+  },
+  {
+    "service_type": "Temporary Sign Applications",
+    "neighborhood": "Financial District/South Beach",
+    "N": 3,
+    "p50_hr": 235.19222222222223,
+    "p90_hr": 330.29288888888885,
+    "city_p90_hr": 528.6966666666667,
+    "ratio_p90": 0.6247304167270876,
+    "rank": 12,
+    "worst_k_flag": false
+  },
+  {
+    "service_type": "Temporary Sign Applications",
+    "neighborhood": "Russian Hill",
+    "N": 5,
+    "p50_hr": 267.1455555555556,
+    "p90_hr": 328.1715555555556,
+    "city_p90_hr": 528.6966666666667,
+    "ratio_p90": 0.6207180340754097,
+    "rank": 13,
+    "worst_k_flag": false
+  },
+  {
+    "service_type": "Temporary Sign Applications",
+    "neighborhood": "South of Market",
+    "N": 2,
+    "p50_hr": 206.17125,
+    "p90_hr": 326.37402777777777,
+    "city_p90_hr": 528.6966666666667,
+    "ratio_p90": 0.6173181114144426,
+    "rank": 14,
+    "worst_k_flag": false
+  },
+  {
+    "service_type": "Temporary Sign Applications",
+    "neighborhood": "Mission Bay",
+    "N": 2,
+    "p50_hr": 188.71055555555554,
+    "p90_hr": 322.73855555555554,
+    "city_p90_hr": 528.6966666666667,
+    "ratio_p90": 0.6104418202413902,
+    "rank": 15,
+    "worst_k_flag": false
+  },
+  {
+    "service_type": "Temporary Sign Applications",
+    "neighborhood": "Glen Park",
+    "N": 1,
+    "p50_hr": 257.1613888888889,
+    "p90_hr": 257.1613888888889,
+    "city_p90_hr": 528.6966666666667,
+    "ratio_p90": 0.48640629892797166,
+    "rank": 16,
+    "worst_k_flag": false
+  },
+  {
+    "service_type": "Temporary Sign Applications",
+    "neighborhood": "Tenderloin",
+    "N": 1,
+    "p50_hr": 244.49138888888888,
+    "p90_hr": 244.49138888888888,
+    "city_p90_hr": 528.6966666666667,
+    "ratio_p90": 0.46244170675476587,
+    "rank": 17,
+    "worst_k_flag": false
+  },
+  {
+    "service_type": "Temporary Sign Applications",
+    "neighborhood": "North Beach",
+    "N": 1,
+    "p50_hr": 244.25944444444445,
+    "p90_hr": 244.25944444444445,
+    "city_p90_hr": 528.6966666666667,
+    "ratio_p90": 0.4620029968875242,
+    "rank": 18,
+    "worst_k_flag": false
+  },
+  {
+    "service_type": "Temporary Sign Applications",
+    "neighborhood": "Japantown",
+    "N": 1,
+    "p50_hr": 1.4672222222222222,
+    "p90_hr": 1.4672222222222222,
+    "city_p90_hr": 528.6966666666667,
+    "ratio_p90": 0.0027751682859526675,
+    "rank": 19,
+    "worst_k_flag": false
+  },
+  {
+    "service_type": "Water Quality",
+    "neighborhood": "Castro/Upper Market",
+    "N": 7,
+    "p50_hr": 2.236388888888889,
+    "p90_hr": 70.09738888888893,
+    "city_p90_hr": 38.449416666666686,
+    "ratio_p90": 1.8231066935707017,
+    "rank": 1,
+    "worst_k_flag": true
+  },
+  {
+    "service_type": "Water Quality",
+    "neighborhood": "Noe Valley",
+    "N": 2,
+    "p50_hr": 37.67875,
+    "p90_hr": 66.55419444444445,
+    "city_p90_hr": 38.449416666666686,
+    "ratio_p90": 1.730954594745332,
+    "rank": 2,
+    "worst_k_flag": true
+  },
+  {
+    "service_type": "Water Quality",
+    "neighborhood": "Pacific Heights",
+    "N": 3,
+    "p50_hr": 17.67972222222222,
+    "p90_hr": 61.75305555555556,
+    "city_p90_hr": 38.449416666666686,
+    "ratio_p90": 1.6060856290985481,
+    "rank": 3,
+    "worst_k_flag": true
+  },
+  {
+    "service_type": "Water Quality",
+    "neighborhood": "Inner Sunset",
+    "N": 4,
+    "p50_hr": 1.77125,
+    "p90_hr": 57.858861111111125,
+    "city_p90_hr": 38.449416666666686,
+    "ratio_p90": 1.504804653155408,
+    "rank": 4,
+    "worst_k_flag": false
+  },
+  {
+    "service_type": "Water Quality",
+    "neighborhood": "Twin Peaks",
+    "N": 1,
+    "p50_hr": 47.0,
+    "p90_hr": 47.0,
+    "city_p90_hr": 38.449416666666686,
+    "ratio_p90": 1.2223852550862273,
+    "rank": 5,
+    "worst_k_flag": false
+  },
+  {
+    "service_type": "Water Quality",
+    "neighborhood": "Lone Mountain/USF",
+    "N": 1,
+    "p50_hr": 43.60861111111111,
+    "p90_hr": 43.60861111111111,
+    "city_p90_hr": 38.449416666666686,
+    "ratio_p90": 1.1341813450428009,
+    "rank": 6,
+    "worst_k_flag": false
+  },
+  {
+    "service_type": "Water Quality",
+    "neighborhood": "Sunset/Parkside",
+    "N": 16,
+    "p50_hr": 3.47375,
+    "p90_hr": 39.36819444444444,
+    "city_p90_hr": 38.449416666666686,
+    "ratio_p90": 1.0238957533671578,
+    "rank": 7,
+    "worst_k_flag": false
+  },
+  {
+    "service_type": "Water Quality",
+    "neighborhood": "Marina",
+    "N": 3,
+    "p50_hr": 18.176944444444445,
+    "p90_hr": 33.9245,
+    "city_p90_hr": 38.449416666666686,
+    "ratio_p90": 0.8823150763015473,
+    "rank": 8,
+    "worst_k_flag": false
+  },
+  {
+    "service_type": "Water Quality",
+    "neighborhood": "Mission",
+    "N": 8,
+    "p50_hr": 19.82875,
+    "p90_hr": 33.04633333333332,
+    "city_p90_hr": 38.449416666666686,
+    "ratio_p90": 0.8594755447091734,
+    "rank": 9,
+    "worst_k_flag": false
+  },
+  {
+    "service_type": "Water Quality",
+    "neighborhood": "Tenderloin",
+    "N": 5,
+    "p50_hr": 2.213888888888889,
+    "p90_hr": 25.482055555555558,
+    "city_p90_hr": 38.449416666666686,
+    "ratio_p90": 0.6627423187318978,
+    "rank": 10,
+    "worst_k_flag": false
+  },
+  {
+    "service_type": "Water Quality",
+    "neighborhood": "South of Market",
+    "N": 2,
+    "p50_hr": 9.544444444444444,
+    "p90_hr": 16.988444444444443,
+    "city_p90_hr": 38.449416666666686,
+    "ratio_p90": 0.441838808420009,
+    "rank": 11,
+    "worst_k_flag": false
+  },
+  {
+    "service_type": "Water Quality",
+    "neighborhood": "Outer Richmond",
+    "N": 10,
+    "p50_hr": 0.5398611111111111,
+    "p90_hr": 16.88263888888887,
+    "city_p90_hr": 38.449416666666686,
+    "ratio_p90": 0.43908699669623585,
+    "rank": 12,
+    "worst_k_flag": false
+  },
+  {
+    "service_type": "Water Quality",
+    "neighborhood": "Bernal Heights",
+    "N": 1,
+    "p50_hr": 16.415555555555557,
+    "p90_hr": 16.415555555555557,
+    "city_p90_hr": 38.449416666666686,
+    "ratio_p90": 0.4269390013863812,
+    "rank": 13,
+    "worst_k_flag": false
+  },
+  {
+    "service_type": "Water Quality",
+    "neighborhood": "West of Twin Peaks",
+    "N": 7,
+    "p50_hr": 4.408333333333333,
+    "p90_hr": 15.787111111111114,
+    "city_p90_hr": 38.449416666666686,
+    "ratio_p90": 0.4105942945240463,
+    "rank": 14,
+    "worst_k_flag": false
+  },
+  {
+    "service_type": "Water Quality",
+    "neighborhood": "Inner Richmond",
+    "N": 3,
+    "p50_hr": 15.531944444444445,
+    "p90_hr": 15.531944444444445,
+    "city_p90_hr": 38.449416666666686,
+    "ratio_p90": 0.4039578696107944,
+    "rank": 15,
+    "worst_k_flag": false
+  },
+  {
+    "service_type": "Water Quality",
+    "neighborhood": "Potrero Hill",
+    "N": 5,
+    "p50_hr": 2.3355555555555556,
+    "p90_hr": 12.871666666666668,
+    "city_p90_hr": 38.449416666666686,
+    "ratio_p90": 0.3347688413131537,
+    "rank": 16,
+    "worst_k_flag": false
+  },
+  {
+    "service_type": "Water Quality",
+    "neighborhood": "Bayview Hunters Point",
+    "N": 6,
+    "p50_hr": 2.925416666666667,
+    "p90_hr": 12.458888888888888,
+    "city_p90_hr": 38.449416666666686,
+    "ratio_p90": 0.3240332355858597,
+    "rank": 17,
+    "worst_k_flag": false
+  },
+  {
+    "service_type": "Water Quality",
+    "neighborhood": "Excelsior",
+    "N": 3,
+    "p50_hr": 2.040277777777778,
+    "p90_hr": 11.020722222222222,
+    "city_p90_hr": 38.449416666666686,
+    "ratio_p90": 0.2866291137201184,
+    "rank": 18,
+    "worst_k_flag": false
+  },
+  {
+    "service_type": "Water Quality",
+    "neighborhood": "North Beach",
+    "N": 2,
+    "p50_hr": 5.838611111111112,
+    "p90_hr": 9.312833333333334,
+    "city_p90_hr": 38.449416666666686,
+    "ratio_p90": 0.24221000318600402,
+    "rank": 19,
+    "worst_k_flag": false
+  },
+  {
+    "service_type": "Water Quality",
+    "neighborhood": "Oceanview/Merced/Ingleside",
+    "N": 5,
+    "p50_hr": 1.6025,
+    "p90_hr": 4.177388888888889,
+    "city_p90_hr": 38.449416666666686,
+    "ratio_p90": 0.10864635281997483,
+=======
+    "service_type": "encampment",
+    "neighborhood": "Oceanview/Merced/Ingleside",
+    "N": 14,
+    "p50_hr": 18.047361111111112,
+    "p90_hr": 83.29222222222228,
+    "city_p90_hr": 67.11427777777777,
+    "ratio_p90": 1.2410507120111063,
+    "rank": 11,
+    "worst_k_flag": false
+  },
+  {
+    "service_type": "encampment",
+    "neighborhood": "Inner Richmond",
+    "N": 51,
+    "p50_hr": 11.8775,
+    "p90_hr": 72.86777777777777,
+    "city_p90_hr": 67.11427777777777,
+    "ratio_p90": 1.0857269152035045,
+    "rank": 12,
+    "worst_k_flag": false
+  },
+  {
+    "service_type": "encampment",
+    "neighborhood": "Lone Mountain/USF",
+    "N": 29,
+    "p50_hr": 18.58111111111111,
+    "p90_hr": 71.7042222222222,
+    "city_p90_hr": 67.11427777777777,
+    "ratio_p90": 1.068389984909652,
+    "rank": 13,
+    "worst_k_flag": false
+  },
+  {
+    "service_type": "encampment",
+    "neighborhood": "Financial District/South Beach",
+    "N": 222,
+    "p50_hr": 16.414861111111108,
+    "p90_hr": 69.31086111111115,
+    "city_p90_hr": 67.11427777777777,
+    "ratio_p90": 1.0327290020255673,
+    "rank": 14,
+    "worst_k_flag": false
+  },
+  {
+    "service_type": "encampment",
+    "neighborhood": "Tenderloin",
+    "N": 412,
+    "p50_hr": 16.83833333333333,
+    "p90_hr": 66.46761111111113,
+    "city_p90_hr": 67.11427777777777,
+    "ratio_p90": 0.990364693056702,
+    "rank": 15,
+    "worst_k_flag": false
+  },
+  {
+    "service_type": "encampment",
+    "neighborhood": "Japantown",
+    "N": 23,
+    "p50_hr": 28.109166666666667,
+    "p90_hr": 64.90438888888889,
+    "city_p90_hr": 67.11427777777777,
+    "ratio_p90": 0.9670727457396464,
+    "rank": 16,
+    "worst_k_flag": false
+  },
+  {
+    "service_type": "encampment",
+    "neighborhood": "Western Addition",
+    "N": 126,
+    "p50_hr": 22.464166666666664,
+    "p90_hr": 61.751666666666665,
+    "city_p90_hr": 67.11427777777777,
+    "ratio_p90": 0.9200973132890253,
+    "rank": 17,
+    "worst_k_flag": false
+  },
+  {
+    "service_type": "encampment",
+    "neighborhood": "North Beach",
+    "N": 50,
+    "p50_hr": 13.791805555555555,
+    "p90_hr": 60.8088888888889,
+    "city_p90_hr": 67.11427777777777,
+    "ratio_p90": 0.9060499628742686,
+    "rank": 18,
+    "worst_k_flag": false
+  },
+  {
+    "service_type": "encampment",
+    "neighborhood": "Haight Ashbury",
+    "N": 62,
+    "p50_hr": 22.046944444444442,
+    "p90_hr": 59.16947222222222,
+    "city_p90_hr": 67.11427777777777,
+    "ratio_p90": 0.8816227214444352,
+    "rank": 19,
+    "worst_k_flag": false
+  },
+  {
+    "service_type": "encampment",
+    "neighborhood": "South of Market",
+    "N": 742,
+    "p50_hr": 14.517083333333332,
+    "p90_hr": 58.235277777777725,
+    "city_p90_hr": 67.11427777777777,
+    "ratio_p90": 0.8677032623460641,
+>>>>>>> 9857cbd (Refactor fairness metrics and simulator for strict historical/live data separation and robustness)
+    "rank": 20,
+    "worst_k_flag": false
+  },
+  {
+<<<<<<< HEAD
+    "service_type": "Water Quality",
+    "neighborhood": "Financial District/South Beach",
+    "N": 3,
+    "p50_hr": 1.166388888888889,
+    "p90_hr": 3.897277777777778,
+    "city_p90_hr": 38.449416666666686,
+    "ratio_p90": 0.1013611678836335,
+=======
+    "service_type": "encampment",
+    "neighborhood": "Outer Mission",
+    "N": 26,
+    "p50_hr": 7.648055555555556,
+    "p90_hr": 58.17888888888889,
+    "city_p90_hr": 67.11427777777777,
+    "ratio_p90": 0.8668630702028134,
+>>>>>>> 9857cbd (Refactor fairness metrics and simulator for strict historical/live data separation and robustness)
+    "rank": 21,
+    "worst_k_flag": false
+  },
+  {
+<<<<<<< HEAD
+    "service_type": "Water Quality",
+    "neighborhood": "Visitacion Valley",
+    "N": 1,
+    "p50_hr": 3.338611111111111,
+    "p90_hr": 3.338611111111111,
+    "city_p90_hr": 38.449416666666686,
+    "ratio_p90": 0.08683125520615466,
+=======
+    "service_type": "encampment",
+    "neighborhood": "Inner Sunset",
+    "N": 26,
+    "p50_hr": 15.114166666666666,
+    "p90_hr": 57.15125,
+    "city_p90_hr": 67.11427777777777,
+    "ratio_p90": 0.8515512926956261,
+>>>>>>> 9857cbd (Refactor fairness metrics and simulator for strict historical/live data separation and robustness)
+    "rank": 22,
+    "worst_k_flag": false
+  },
+  {
+<<<<<<< HEAD
+    "service_type": "Water Quality",
+    "neighborhood": "Seacliff",
+    "N": 1,
+    "p50_hr": 3.1866666666666665,
+    "p90_hr": 3.1866666666666665,
+    "city_p90_hr": 38.449416666666686,
+    "ratio_p90": 0.08287945417464067,
+=======
+    "service_type": "encampment",
+    "neighborhood": "Noe Valley",
+    "N": 17,
+    "p50_hr": 19.433055555555555,
+    "p90_hr": 55.17922222222223,
+    "city_p90_hr": 67.11427777777777,
+    "ratio_p90": 0.822168159283875,
+>>>>>>> 9857cbd (Refactor fairness metrics and simulator for strict historical/live data separation and robustness)
+    "rank": 23,
+    "worst_k_flag": false
+  },
+  {
+<<<<<<< HEAD
+    "service_type": "Water Quality",
+    "neighborhood": "Glen Park",
+    "N": 1,
+    "p50_hr": 2.1205555555555557,
+    "p90_hr": 2.1205555555555557,
+    "city_p90_hr": 38.449416666666686,
+    "ratio_p90": 0.05515182646175095,
+=======
+    "service_type": "encampment",
+    "neighborhood": "Presidio Heights",
+    "N": 6,
+    "p50_hr": 24.071527777777778,
+    "p90_hr": 54.84722222222222,
+    "city_p90_hr": 67.11427777777777,
+    "ratio_p90": 0.8172213728325733,
+>>>>>>> 9857cbd (Refactor fairness metrics and simulator for strict historical/live data separation and robustness)
+    "rank": 24,
+    "worst_k_flag": false
+  },
+  {
+<<<<<<< HEAD
+    "service_type": "Water Quality",
+    "neighborhood": "Nob Hill",
+    "N": 2,
+    "p50_hr": 1.3333333333333333,
+    "p90_hr": 2.1095555555555556,
+    "city_p90_hr": 38.449416666666686,
+    "ratio_p90": 0.054865736295666934,
+=======
+    "service_type": "encampment",
+    "neighborhood": "Russian Hill",
+    "N": 27,
+    "p50_hr": 15.53888888888889,
+    "p90_hr": 53.06150000000004,
+    "city_p90_hr": 67.11427777777777,
+    "ratio_p90": 0.7906141845955951,
+>>>>>>> 9857cbd (Refactor fairness metrics and simulator for strict historical/live data separation and robustness)
+>>>>>>> 0b5cce5 (Refactor fairness metrics and simulator for strict historical/live data separation and robustness)
+    "rank": 25,
+    "worst_k_flag": false
+  },
+  {
+<<<<<<< HEAD
+    "service_type": "other",
+    "neighborhood": "Inner Richmond",
+    "N": 794,
+    "p50_hr": 2.19125,
+    "p90_hr": 116.25591666666669,
+    "city_p90_hr": 122.72694444444444,
+    "ratio_p90": 0.9472729659564936,
+=======
+<<<<<<< HEAD
+    "service_type": "Water Quality",
+    "neighborhood": "Hayes Valley",
+    "N": 4,
+    "p50_hr": 1.580277777777778,
+    "p90_hr": 2.030888888888889,
+    "city_p90_hr": 38.449416666666686,
+    "ratio_p90": 0.052819758138217654,
+=======
+    "service_type": "encampment",
+    "neighborhood": "Castro/Upper Market",
+    "N": 211,
+    "p50_hr": 18.071944444444444,
+    "p90_hr": 51.95777777777778,
+    "city_p90_hr": 67.11427777777777,
+    "ratio_p90": 0.7741687685266507,
+>>>>>>> 9857cbd (Refactor fairness metrics and simulator for strict historical/live data separation and robustness)
+>>>>>>> 0b5cce5 (Refactor fairness metrics and simulator for strict historical/live data separation and robustness)
+    "rank": 26,
+    "worst_k_flag": false
+  },
+  {
+<<<<<<< HEAD
+    "service_type": "other",
+    "neighborhood": "Lone Mountain/USF",
+    "N": 762,
+    "p50_hr": 4.685555555555555,
+    "p90_hr": 109.57311111111106,
+    "city_p90_hr": 122.72694444444444,
+    "ratio_p90": 0.8928203305893613,
+=======
+<<<<<<< HEAD
+    "service_type": "Water Quality",
+    "neighborhood": "Portola",
+    "N": 1,
+    "p50_hr": 1.4436111111111112,
+    "p90_hr": 1.4436111111111112,
+    "city_p90_hr": 38.449416666666686,
+    "ratio_p90": 0.037545722048954636,
+=======
+    "service_type": "encampment",
+    "neighborhood": "Mission Bay",
+    "N": 66,
+    "p50_hr": 18.153333333333332,
+    "p90_hr": 51.35805555555555,
+    "city_p90_hr": 67.11427777777777,
+    "ratio_p90": 0.7652329318898032,
+>>>>>>> 9857cbd (Refactor fairness metrics and simulator for strict historical/live data separation and robustness)
+>>>>>>> 0b5cce5 (Refactor fairness metrics and simulator for strict historical/live data separation and robustness)
+    "rank": 27,
+    "worst_k_flag": false
+  },
+  {
+<<<<<<< HEAD
+    "service_type": "other",
+    "neighborhood": "Inner Sunset",
+    "N": 877,
+    "p50_hr": 2.8377777777777777,
+    "p90_hr": 104.48294444444443,
+    "city_p90_hr": 122.72694444444444,
+    "ratio_p90": 0.8513447875477855,
+=======
+<<<<<<< HEAD
+    "service_type": "Water Quality",
+    "neighborhood": "Chinatown",
+    "N": 2,
+    "p50_hr": 0.6366666666666667,
+    "p90_hr": 0.6366666666666667,
+    "city_p90_hr": 38.449416666666686,
+    "ratio_p90": 0.01655855203698365,
+=======
+    "service_type": "encampment",
+    "neighborhood": "Hayes Valley",
+    "N": 261,
+    "p50_hr": 16.47361111111111,
+    "p90_hr": 50.45194444444444,
+    "city_p90_hr": 67.11427777777777,
+    "ratio_p90": 0.7517319133120375,
+>>>>>>> 9857cbd (Refactor fairness metrics and simulator for strict historical/live data separation and robustness)
+>>>>>>> 0b5cce5 (Refactor fairness metrics and simulator for strict historical/live data separation and robustness)
+    "rank": 28,
+    "worst_k_flag": false
+  },
+  {
+<<<<<<< HEAD
+    "service_type": "other",
+    "neighborhood": "Noe Valley",
+    "N": 743,
+    "p50_hr": 2.562222222222222,
+    "p90_hr": 104.05738888888892,
+    "city_p90_hr": 122.72694444444444,
+    "ratio_p90": 0.8478772885606487,
+=======
+<<<<<<< HEAD
+    "service_type": "Water Quality",
+    "neighborhood": "Presidio",
+    "N": 1,
+    "p50_hr": 0.57,
+    "p90_hr": 0.57,
+    "city_p90_hr": 38.449416666666686,
+    "ratio_p90": 0.014824672242535097,
+=======
+    "service_type": "encampment",
+    "neighborhood": "Glen Park",
+    "N": 6,
+    "p50_hr": 18.260277777777777,
+    "p90_hr": 50.10944444444445,
+    "city_p90_hr": 67.11427777777777,
+    "ratio_p90": 0.746628677289234,
+>>>>>>> 9857cbd (Refactor fairness metrics and simulator for strict historical/live data separation and robustness)
+>>>>>>> 0b5cce5 (Refactor fairness metrics and simulator for strict historical/live data separation and robustness)
+    "rank": 29,
+    "worst_k_flag": false
+  },
+  {
+<<<<<<< HEAD
+    "service_type": "other",
+    "neighborhood": "Haight Ashbury",
+    "N": 1387,
+    "p50_hr": 3.5494444444444446,
+    "p90_hr": 103.84677777777786,
+    "city_p90_hr": 122.72694444444444,
+    "ratio_p90": 0.8461611934352917,
+    "rank": 30,
+    "worst_k_flag": false
+  },
+  {
+    "service_type": "other",
+    "neighborhood": "Tenderloin",
+    "N": 1770,
+    "p50_hr": 16.66361111111111,
+    "p90_hr": 99.50211111111112,
+    "city_p90_hr": 122.72694444444444,
+    "ratio_p90": 0.810760111086717,
+    "rank": 31,
+    "worst_k_flag": false
+  },
+  {
+    "service_type": "other",
+    "neighborhood": "Financial District/South Beach",
+    "N": 1354,
+    "p50_hr": 2.3580555555555556,
+    "p90_hr": 99.14061111111116,
+    "city_p90_hr": 122.72694444444444,
+    "ratio_p90": 0.8078145476520826,
+    "rank": 32,
+    "worst_k_flag": false
+  },
+  {
+    "service_type": "other",
+    "neighborhood": "Hayes Valley",
+    "N": 1331,
+    "p50_hr": 2.426111111111111,
+    "p90_hr": 99.06972222222223,
+    "city_p90_hr": 122.72694444444444,
+    "ratio_p90": 0.807236932938298,
+    "rank": 33,
+    "worst_k_flag": false
+  },
+  {
+    "service_type": "other",
+    "neighborhood": "Presidio Heights",
+    "N": 361,
+    "p50_hr": 2.3538888888888887,
+    "p90_hr": 97.9811111111111,
+    "city_p90_hr": 122.72694444444444,
+    "ratio_p90": 0.7983667446024032,
+    "rank": 34,
+    "worst_k_flag": false
+  },
+  {
+    "service_type": "other",
+    "neighborhood": "Marina",
+    "N": 974,
+    "p50_hr": 1.8909722222222223,
+    "p90_hr": 96.26833333333335,
+    "city_p90_hr": 122.72694444444444,
+    "ratio_p90": 0.7844107401933381,
+    "rank": 35,
+    "worst_k_flag": false
+  },
+  {
+    "service_type": "other",
+    "neighborhood": "Outer Mission",
+    "N": 783,
+    "p50_hr": 2.9716666666666667,
+    "p90_hr": 94.5708888888889,
+    "city_p90_hr": 122.72694444444444,
+    "ratio_p90": 0.7705796743900757,
+    "rank": 36,
+    "worst_k_flag": false
+  },
+  {
+    "service_type": "other",
+    "neighborhood": "Outer Richmond",
+    "N": 1290,
+    "p50_hr": 3.0591666666666666,
+    "p90_hr": 80.32472222222223,
+    "city_p90_hr": 122.72694444444444,
+    "ratio_p90": 0.6544994873443079,
+    "rank": 37,
+    "worst_k_flag": false
+  },
+  {
+    "service_type": "other",
+    "neighborhood": "Nob Hill",
+    "N": 1547,
+    "p50_hr": 4.569166666666667,
+    "p90_hr": 77.36938888888889,
+    "city_p90_hr": 122.72694444444444,
+    "ratio_p90": 0.6304189291041314,
+    "rank": 38,
+    "worst_k_flag": false
+  },
+  {
+    "service_type": "other",
+    "neighborhood": "Oceanview/Merced/Ingleside",
+    "N": 695,
+    "p50_hr": 3.5005555555555556,
+    "p90_hr": 74.51144444444445,
+    "city_p90_hr": 122.72694444444444,
+    "ratio_p90": 0.6071319120812464,
+    "rank": 39,
+    "worst_k_flag": false
+  },
+  {
+    "service_type": "other",
+    "neighborhood": "North Beach",
+    "N": 616,
+    "p50_hr": 3.4763888888888888,
+    "p90_hr": 73.54722222222222,
+    "city_p90_hr": 122.72694444444444,
+    "ratio_p90": 0.5992752655511219,
+    "rank": 40,
+    "worst_k_flag": false
+  },
+  {
+    "service_type": "other",
+    "neighborhood": "Excelsior",
+    "N": 1125,
+    "p50_hr": 2.435,
+    "p90_hr": 53.39316666666667,
+    "city_p90_hr": 122.72694444444444,
+    "ratio_p90": 0.4350565958304004,
+    "rank": 41,
+=======
+<<<<<<< HEAD
+    "service_type": "Waste of Water",
+    "neighborhood": "Outer Richmond",
+    "N": 1,
+    "p50_hr": 929.6338888888889,
+    "p90_hr": 929.6338888888889,
+    "city_p90_hr": 356.41833333333335,
+    "ratio_p90": 2.6082661915695193,
+=======
+    "service_type": "encampment",
+    "neighborhood": "Outer Richmond",
+    "N": 39,
+    "p50_hr": 10.748055555555556,
+    "p90_hr": 48.1291666666667,
+    "city_p90_hr": 67.11427777777777,
+    "ratio_p90": 0.7171226192141601,
+    "rank": 30,
+    "worst_k_flag": false
+  },
+  {
+    "service_type": "encampment",
+    "neighborhood": "Nob Hill",
+    "N": 222,
+    "p50_hr": 13.47111111111111,
+    "p90_hr": 47.51883333333333,
+    "city_p90_hr": 67.11427777777777,
+    "ratio_p90": 0.708028677454789,
+    "rank": 31,
+    "worst_k_flag": false
+  },
+  {
+    "service_type": "encampment",
+    "neighborhood": "Chinatown",
+    "N": 49,
+    "p50_hr": 17.852222222222224,
+    "p90_hr": 46.7545,
+    "city_p90_hr": 67.11427777777777,
+    "ratio_p90": 0.6966401419800556,
+    "rank": 32,
+    "worst_k_flag": false
+  },
+  {
+    "service_type": "encampment",
+    "neighborhood": "Pacific Heights",
+    "N": 56,
+    "p50_hr": 17.079583333333332,
+    "p90_hr": 46.30625,
+    "city_p90_hr": 67.11427777777777,
+    "ratio_p90": 0.689961235272839,
+    "rank": 33,
+    "worst_k_flag": false
+  },
+  {
+    "service_type": "encampment",
+    "neighborhood": "Sunset/Parkside",
+    "N": 57,
+    "p50_hr": 10.473333333333333,
+    "p90_hr": 42.74211111111111,
+    "city_p90_hr": 67.11427777777777,
+    "ratio_p90": 0.6368557112785241,
+    "rank": 34,
+    "worst_k_flag": false
+  },
+  {
+    "service_type": "encampment",
+    "neighborhood": "Marina",
+    "N": 67,
+    "p50_hr": 14.939166666666667,
+    "p90_hr": 41.82738888888889,
+    "city_p90_hr": 67.11427777777777,
+    "ratio_p90": 0.6232263874966165,
+    "rank": 35,
+    "worst_k_flag": false
+  },
+  {
+    "service_type": "encampment",
+    "neighborhood": "West of Twin Peaks",
+    "N": 20,
+    "p50_hr": 4.731111111111112,
+    "p90_hr": 25.324555555555555,
+    "city_p90_hr": 67.11427777777777,
+    "ratio_p90": 0.3773348442995654,
+    "rank": 36,
+    "worst_k_flag": false
+  },
+  {
+    "service_type": "encampment",
+    "neighborhood": "Lakeshore",
+    "N": 7,
+    "p50_hr": 5.341111111111111,
+    "p90_hr": 21.67388888888889,
+    "city_p90_hr": 67.11427777777777,
+    "ratio_p90": 0.3229400599475025,
+    "rank": 37,
+    "worst_k_flag": false
+  },
+  {
+    "service_type": "encampment",
+    "neighborhood": "McLaren Park",
+    "N": 2,
+    "p50_hr": 10.92986111111111,
+    "p90_hr": 19.54063888888889,
+    "city_p90_hr": 67.11427777777777,
+    "ratio_p90": 0.29115472200401143,
+    "rank": 38,
+    "worst_k_flag": false
+  },
+  {
+    "service_type": "encampment",
+    "neighborhood": "Presidio",
+    "N": 1,
+    "p50_hr": 13.670277777777779,
+    "p90_hr": 13.670277777777779,
+    "city_p90_hr": 67.11427777777777,
+    "ratio_p90": 0.20368658101397535,
+    "rank": 39,
+    "worst_k_flag": false
+  },
+  {
+    "service_type": "encampment",
+    "neighborhood": "Lincoln Park",
+    "N": 1,
+    "p50_hr": 0.4038888888888889,
+    "p90_hr": 0.4038888888888889,
+    "city_p90_hr": 67.11427777777777,
+    "ratio_p90": 0.006017927962008416,
+    "rank": 40,
+    "worst_k_flag": false
+  },
+  {
+    "service_type": "graffiti",
+    "neighborhood": "Sunset/Parkside",
+    "N": 22,
+    "p50_hr": 190.56111111111113,
+    "p90_hr": 566.3157222222222,
+    "city_p90_hr": 226.75727777777792,
+    "ratio_p90": 2.4974533464686037,
+>>>>>>> 9857cbd (Refactor fairness metrics and simulator for strict historical/live data separation and robustness)
+    "rank": 1,
+    "worst_k_flag": true
+  },
+  {
+<<<<<<< HEAD
+    "service_type": "Waste of Water",
+    "neighborhood": "Potrero Hill",
+    "N": 1,
+    "p50_hr": 566.8888888888889,
+    "p90_hr": 566.8888888888889,
+    "city_p90_hr": 356.41833333333335,
+    "ratio_p90": 1.5905155146963696,
+=======
+    "service_type": "graffiti",
+    "neighborhood": "Visitacion Valley",
+    "N": 4,
+    "p50_hr": 486.4802777777778,
+    "p90_hr": 486.5002222222222,
+    "city_p90_hr": 226.75727777777792,
+    "ratio_p90": 2.1454668489140722,
+>>>>>>> 9857cbd (Refactor fairness metrics and simulator for strict historical/live data separation and robustness)
+    "rank": 2,
+    "worst_k_flag": true
+  },
+  {
+<<<<<<< HEAD
+    "service_type": "Waste of Water",
+    "neighborhood": "Glen Park",
+    "N": 2,
+    "p50_hr": 294.1065277777777,
+    "p90_hr": 529.2504166666666,
+    "city_p90_hr": 356.41833333333335,
+    "ratio_p90": 1.4849135613113802,
+=======
+    "service_type": "graffiti",
+    "neighborhood": "Outer Richmond",
+    "N": 8,
+    "p50_hr": 158.96472222222224,
+    "p90_hr": 413.5046388888889,
+    "city_p90_hr": 226.75727777777792,
+    "ratio_p90": 1.8235561960402584,
+>>>>>>> 9857cbd (Refactor fairness metrics and simulator for strict historical/live data separation and robustness)
+    "rank": 3,
+    "worst_k_flag": true
+  },
+  {
+<<<<<<< HEAD
+    "service_type": "Waste of Water",
+    "neighborhood": "Inner Sunset",
+    "N": 2,
+    "p50_hr": 82.83694444444446,
+    "p90_hr": 133.32561111111113,
+    "city_p90_hr": 356.41833333333335,
+    "ratio_p90": 0.37407057561884993,
+=======
+    "service_type": "graffiti",
+    "neighborhood": "Bayview Hunters Point",
+    "N": 19,
+    "p50_hr": 118.5225,
+    "p90_hr": 388.4439444444444,
+    "city_p90_hr": 226.75727777777792,
+    "ratio_p90": 1.7130384887805867,
+>>>>>>> 9857cbd (Refactor fairness metrics and simulator for strict historical/live data separation and robustness)
+    "rank": 4,
+    "worst_k_flag": false
+  },
+  {
+<<<<<<< HEAD
+    "service_type": "Waste of Water",
+    "neighborhood": "Castro/Upper Market",
+    "N": 1,
+    "p50_hr": 122.32555555555555,
+    "p90_hr": 122.32555555555555,
+    "city_p90_hr": 356.41833333333335,
+    "ratio_p90": 0.3432078097990345,
+=======
+    "service_type": "graffiti",
+    "neighborhood": "Nob Hill",
+    "N": 13,
+    "p50_hr": 69.65444444444445,
+    "p90_hr": 352.8961111111111,
+    "city_p90_hr": 226.75727777777792,
+    "ratio_p90": 1.5562724802903536,
+>>>>>>> 9857cbd (Refactor fairness metrics and simulator for strict historical/live data separation and robustness)
+    "rank": 5,
+    "worst_k_flag": false
+  },
+  {
+<<<<<<< HEAD
+    "service_type": "Waste of Water",
+    "neighborhood": "Lakeshore",
+    "N": 3,
+    "p50_hr": 96.14194444444445,
+    "p90_hr": 96.71083333333334,
+    "city_p90_hr": 356.41833333333335,
+    "ratio_p90": 0.27134079335612177,
+=======
+    "service_type": "graffiti",
+    "neighborhood": "Haight Ashbury",
+    "N": 26,
+    "p50_hr": 71.19597222222222,
+    "p90_hr": 294.12513888888884,
+    "city_p90_hr": 226.75727777777792,
+    "ratio_p90": 1.297092387822416,
+>>>>>>> 9857cbd (Refactor fairness metrics and simulator for strict historical/live data separation and robustness)
+    "rank": 6,
+    "worst_k_flag": false
+  },
+  {
+<<<<<<< HEAD
+    "service_type": "Waste of Water",
+    "neighborhood": "Bayview Hunters Point",
+    "N": 3,
+    "p50_hr": 79.58805555555556,
+    "p90_hr": 79.58805555555556,
+    "city_p90_hr": 356.41833333333335,
+    "ratio_p90": 0.22329955592133463,
+=======
+    "service_type": "graffiti",
+    "neighborhood": "Potrero Hill",
+    "N": 7,
+    "p50_hr": 89.91666666666667,
+    "p90_hr": 290.2900000000001,
+    "city_p90_hr": 226.75727777777792,
+    "ratio_p90": 1.280179418472664,
+>>>>>>> 9857cbd (Refactor fairness metrics and simulator for strict historical/live data separation and robustness)
+    "rank": 7,
+    "worst_k_flag": false
+  },
+  {
+<<<<<<< HEAD
+    "service_type": "Waste of Water",
+    "neighborhood": "Seacliff",
+    "N": 1,
+    "p50_hr": 66.44388888888889,
+    "p90_hr": 66.44388888888889,
+    "city_p90_hr": 356.41833333333335,
+    "ratio_p90": 0.18642107510992856,
+=======
+    "service_type": "graffiti",
+    "neighborhood": "Noe Valley",
+    "N": 11,
+    "p50_hr": 101.56138888888889,
+    "p90_hr": 286.9736111111111,
+    "city_p90_hr": 226.75727777777792,
+    "ratio_p90": 1.2655541375494248,
+>>>>>>> 9857cbd (Refactor fairness metrics and simulator for strict historical/live data separation and robustness)
+    "rank": 8,
+    "worst_k_flag": false
+  },
+  {
+<<<<<<< HEAD
+    "service_type": "Waste of Water",
+    "neighborhood": "West of Twin Peaks",
+    "N": 3,
+    "p50_hr": 54.21472222222222,
+    "p90_hr": 54.21472222222222,
+    "city_p90_hr": 356.41833333333335,
+    "ratio_p90": 0.15210980230783738,
+=======
+    "service_type": "graffiti",
+    "neighborhood": "Mission Bay",
+    "N": 6,
+    "p50_hr": 47.57041666666667,
+    "p90_hr": 279.30027777777775,
+    "city_p90_hr": 226.75727777777792,
+    "ratio_p90": 1.2317147238444623,
+>>>>>>> 9857cbd (Refactor fairness metrics and simulator for strict historical/live data separation and robustness)
+    "rank": 9,
+    "worst_k_flag": false
+  },
+  {
+<<<<<<< HEAD
+    "service_type": "Waste of Water",
+    "neighborhood": "Oceanview/Merced/Ingleside",
+    "N": 3,
+    "p50_hr": 24.66611111111111,
+    "p90_hr": 26.94922222222222,
+    "city_p90_hr": 356.41833333333335,
+    "ratio_p90": 0.07561121216797365,
+=======
+    "service_type": "graffiti",
+    "neighborhood": "Financial District/South Beach",
+    "N": 4,
+    "p50_hr": 88.64847222222221,
+    "p90_hr": 269.92294444444445,
+    "city_p90_hr": 226.75727777777792,
+    "ratio_p90": 1.1903606670960696,
+>>>>>>> 9857cbd (Refactor fairness metrics and simulator for strict historical/live data separation and robustness)
+    "rank": 10,
+    "worst_k_flag": false
+  },
+  {
+<<<<<<< HEAD
+    "service_type": "Waste of Water",
+    "neighborhood": "Bernal Heights",
+    "N": 1,
+    "p50_hr": 25.051944444444445,
+    "p90_hr": 25.051944444444445,
+    "city_p90_hr": 356.41833333333335,
+    "ratio_p90": 0.07028803543900504,
+=======
+    "service_type": "graffiti",
+    "neighborhood": "South of Market",
+    "N": 26,
+    "p50_hr": 25.448055555555555,
+    "p90_hr": 229.34263888888887,
+    "city_p90_hr": 226.75727777777792,
+    "ratio_p90": 1.0114014471175854,
+>>>>>>> 9857cbd (Refactor fairness metrics and simulator for strict historical/live data separation and robustness)
+    "rank": 11,
+    "worst_k_flag": false
+  },
+  {
+<<<<<<< HEAD
+    "service_type": "Waste of Water",
+    "neighborhood": "Sunset/Parkside",
+    "N": 1,
+    "p50_hr": 21.738611111111112,
+    "p90_hr": 21.738611111111112,
+    "city_p90_hr": 356.41833333333335,
+    "ratio_p90": 0.06099184323041121,
+=======
+    "service_type": "graffiti",
+    "neighborhood": "West of Twin Peaks",
+    "N": 6,
+    "p50_hr": 109.23652777777778,
+    "p90_hr": 228.90027777777777,
+    "city_p90_hr": 226.75727777777792,
+    "ratio_p90": 1.009450633827506,
+>>>>>>> 9857cbd (Refactor fairness metrics and simulator for strict historical/live data separation and robustness)
+    "rank": 12,
+    "worst_k_flag": false
+  },
+  {
+<<<<<<< HEAD
+    "service_type": "Waste of Water",
+    "neighborhood": "Haight Ashbury",
+    "N": 1,
+    "p50_hr": 19.73138888888889,
+    "p90_hr": 19.73138888888889,
+    "city_p90_hr": 356.41833333333335,
+    "ratio_p90": 0.05536019627372953,
+=======
+    "service_type": "graffiti",
+    "neighborhood": "Castro/Upper Market",
+    "N": 42,
+    "p50_hr": 117.69180555555556,
+    "p90_hr": 220.55227777777776,
+    "city_p90_hr": 226.75727777777792,
+    "ratio_p90": 0.9726359389175546,
+>>>>>>> 9857cbd (Refactor fairness metrics and simulator for strict historical/live data separation and robustness)
+    "rank": 13,
+    "worst_k_flag": false
+  },
+  {
+<<<<<<< HEAD
+    "service_type": "Waste of Water",
+    "neighborhood": "Noe Valley",
+    "N": 1,
+    "p50_hr": 15.7525,
+    "p90_hr": 15.7525,
+    "city_p90_hr": 356.41833333333335,
+    "ratio_p90": 0.044196660291511376,
+=======
+    "service_type": "graffiti",
+    "neighborhood": "Marina",
+    "N": 6,
+    "p50_hr": 19.890277777777776,
+    "p90_hr": 213.0726388888889,
+    "city_p90_hr": 226.75727777777792,
+    "ratio_p90": 0.9396507180585403,
+>>>>>>> 9857cbd (Refactor fairness metrics and simulator for strict historical/live data separation and robustness)
+    "rank": 14,
+    "worst_k_flag": false
+  },
+  {
+<<<<<<< HEAD
+    "service_type": "Waste of Water",
+    "neighborhood": "Chinatown",
+    "N": 1,
+    "p50_hr": 3.198611111111111,
+    "p90_hr": 3.198611111111111,
+    "city_p90_hr": 356.41833333333335,
+    "ratio_p90": 0.008974317008883131,
+=======
+    "service_type": "graffiti",
+    "neighborhood": "Excelsior",
+    "N": 5,
+    "p50_hr": 75.15388888888889,
+    "p90_hr": 196.82205555555555,
+    "city_p90_hr": 226.75727777777792,
+    "ratio_p90": 0.8679856165341742,
+>>>>>>> 9857cbd (Refactor fairness metrics and simulator for strict historical/live data separation and robustness)
+    "rank": 15,
+    "worst_k_flag": false
+  },
+  {
+<<<<<<< HEAD
+    "service_type": "Waste of Water",
+    "neighborhood": "Russian Hill",
+    "N": 1,
+    "p50_hr": 1.8366666666666667,
+    "p90_hr": 1.8366666666666667,
+    "city_p90_hr": 356.41833333333335,
+    "ratio_p90": 0.00515312063071952,
+=======
+    "service_type": "graffiti",
+    "neighborhood": "Bernal Heights",
+    "N": 10,
+    "p50_hr": 105.84083333333334,
+    "p90_hr": 191.42708333333326,
+    "city_p90_hr": 226.75727777777792,
+    "ratio_p90": 0.8441937793984798,
+>>>>>>> 9857cbd (Refactor fairness metrics and simulator for strict historical/live data separation and robustness)
+    "rank": 16,
+    "worst_k_flag": false
+  },
+  {
+<<<<<<< HEAD
+    "service_type": "311 Complaints",
+    "neighborhood": "Outer Mission",
+    "N": 2,
+    "p50_hr": 1000.7311111111111,
+    "p90_hr": 1395.9426666666666,
+    "city_p90_hr": 552.0907222222222,
+    "ratio_p90": 2.5284660844287568,
+=======
+    "service_type": "graffiti",
+    "neighborhood": "Golden Gate Park",
+    "N": 107,
+    "p50_hr": 66.2461111111111,
+    "p90_hr": 190.5413888888889,
+    "city_p90_hr": 226.75727777777792,
+    "ratio_p90": 0.840287865316585,
+    "rank": 17,
+    "worst_k_flag": false
+  },
+  {
+    "service_type": "graffiti",
+    "neighborhood": "Western Addition",
+    "N": 9,
+    "p50_hr": 86.1225,
+    "p90_hr": 188.7083888888889,
+    "city_p90_hr": 226.75727777777792,
+    "ratio_p90": 0.832204332042754,
+    "rank": 18,
+    "worst_k_flag": false
+  },
+  {
+    "service_type": "graffiti",
+    "neighborhood": "Lone Mountain/USF",
+    "N": 6,
+    "p50_hr": 66.79388888888889,
+    "p90_hr": 182.02277777777778,
+    "city_p90_hr": 226.75727777777792,
+    "ratio_p90": 0.8027207751019134,
+    "rank": 19,
+    "worst_k_flag": false
+  },
+  {
+    "service_type": "graffiti",
+    "neighborhood": "Hayes Valley",
+    "N": 12,
+    "p50_hr": 36.67125,
+    "p90_hr": 169.01833333333332,
+    "city_p90_hr": 226.75727777777792,
+    "ratio_p90": 0.745371151875316,
+    "rank": 20,
+    "worst_k_flag": false
+  },
+  {
+    "service_type": "graffiti",
+    "neighborhood": "Chinatown",
+    "N": 4,
+    "p50_hr": 24.50166666666667,
+    "p90_hr": 158.95063888888893,
+    "city_p90_hr": 226.75727777777792,
+    "ratio_p90": 0.7009726013939034,
+    "rank": 21,
+    "worst_k_flag": false
+  },
+  {
+    "service_type": "graffiti",
+    "neighborhood": "Inner Richmond",
+    "N": 5,
+    "p50_hr": 122.45,
+    "p90_hr": 155.2913888888889,
+    "city_p90_hr": 226.75727777777792,
+    "ratio_p90": 0.684835302358297,
+    "rank": 22,
+    "worst_k_flag": false
+  },
+  {
+    "service_type": "graffiti",
+    "neighborhood": "Portola",
+    "N": 6,
+    "p50_hr": 83.34527777777778,
+    "p90_hr": 153.6948611111111,
+    "city_p90_hr": 226.75727777777792,
+    "ratio_p90": 0.6777946120068173,
+    "rank": 23,
+    "worst_k_flag": false
+  },
+  {
+    "service_type": "graffiti",
+    "neighborhood": "Mission",
+    "N": 57,
+    "p50_hr": 46.07805555555556,
+    "p90_hr": 151.0400555555555,
+    "city_p90_hr": 226.75727777777792,
+    "ratio_p90": 0.6660869147651999,
+    "rank": 24,
+    "worst_k_flag": false
+  },
+  {
+    "service_type": "graffiti",
+    "neighborhood": "McLaren Park",
+    "N": 3,
+    "p50_hr": 71.05638888888889,
+    "p90_hr": 149.79283333333336,
+    "city_p90_hr": 226.75727777777792,
+    "ratio_p90": 0.660586662537598,
+    "rank": 25,
+    "worst_k_flag": false
+  },
+  {
+    "service_type": "graffiti",
+    "neighborhood": "North Beach",
+    "N": 10,
+    "p50_hr": 68.45694444444445,
+    "p90_hr": 148.4768333333333,
+    "city_p90_hr": 226.75727777777792,
+    "ratio_p90": 0.654783100187155,
+    "rank": 26,
+    "worst_k_flag": false
+  },
+  {
+    "service_type": "graffiti",
+    "neighborhood": "Tenderloin",
+    "N": 11,
+    "p50_hr": 95.54222222222222,
+    "p90_hr": 138.935,
+    "city_p90_hr": 226.75727777777792,
+    "ratio_p90": 0.6127035981449569,
+    "rank": 27,
+    "worst_k_flag": false
+  },
+  {
+    "service_type": "graffiti",
+    "neighborhood": "Russian Hill",
+    "N": 4,
+    "p50_hr": 69.01194444444445,
+    "p90_hr": 138.45947222222225,
+    "city_p90_hr": 226.75727777777792,
+    "ratio_p90": 0.6106065197956403,
+    "rank": 28,
+    "worst_k_flag": false
+  },
+  {
+    "service_type": "graffiti",
+    "neighborhood": "Japantown",
+    "N": 2,
+    "p50_hr": 75.2925,
+    "p90_hr": 133.98494444444447,
+    "city_p90_hr": 226.75727777777792,
+    "ratio_p90": 0.5908738443039067,
+    "rank": 29,
+    "worst_k_flag": false
+  },
+  {
+    "service_type": "graffiti",
+    "neighborhood": "Inner Sunset",
+    "N": 7,
+    "p50_hr": 48.160555555555554,
+    "p90_hr": 133.3418888888889,
+    "city_p90_hr": 226.75727777777792,
+    "ratio_p90": 0.5880379681553768,
+    "rank": 30,
+    "worst_k_flag": false
+  },
+  {
+    "service_type": "graffiti",
+    "neighborhood": "Lincoln Park",
+    "N": 1,
+    "p50_hr": 127.13388888888889,
+    "p90_hr": 127.13388888888889,
+    "city_p90_hr": 226.75727777777792,
+    "ratio_p90": 0.5606606770675738,
+    "rank": 31,
+    "worst_k_flag": false
+  },
+  {
+    "service_type": "graffiti",
+    "neighborhood": "Glen Park",
+    "N": 3,
+    "p50_hr": 125.34972222222223,
+    "p90_hr": 125.43794444444444,
+    "city_p90_hr": 226.75727777777792,
+    "ratio_p90": 0.5531815590385311,
+    "rank": 32,
+    "worst_k_flag": false
+  },
+  {
+    "service_type": "graffiti",
+    "neighborhood": "Pacific Heights",
+    "N": 11,
+    "p50_hr": 43.685833333333335,
+    "p90_hr": 116.86027777777778,
+    "city_p90_hr": 226.75727777777792,
+    "ratio_p90": 0.5153540337183834,
+    "rank": 33,
+    "worst_k_flag": false
+  },
+  {
+    "service_type": "graffiti",
+    "neighborhood": "Oceanview/Merced/Ingleside",
+    "N": 3,
+    "p50_hr": 72.61277777777778,
+    "p90_hr": 112.21766666666667,
+    "city_p90_hr": 226.75727777777792,
+    "ratio_p90": 0.4948801104264445,
+    "rank": 34,
+    "worst_k_flag": false
+  },
+  {
+    "service_type": "graffiti",
+    "neighborhood": "Outer Mission",
+    "N": 3,
+    "p50_hr": 71.64861111111111,
+    "p90_hr": 111.2975,
+    "city_p90_hr": 226.75727777777792,
+    "ratio_p90": 0.4908221737829801,
+    "rank": 35,
+    "worst_k_flag": false
+  },
+  {
+    "service_type": "graffiti",
+    "neighborhood": "Treasure Island",
+    "N": 1,
+    "p50_hr": 54.945,
+    "p90_hr": 54.945,
+    "city_p90_hr": 226.75727777777792,
+    "ratio_p90": 0.24230754813455685,
+    "rank": 36,
+    "worst_k_flag": false
+  },
+  {
+    "service_type": "graffiti",
+    "neighborhood": "Presidio Heights",
+    "N": 3,
+    "p50_hr": 17.101666666666667,
+    "p90_hr": 43.67633333333333,
+    "city_p90_hr": 226.75727777777792,
+    "ratio_p90": 0.19261270800814662,
+    "rank": 37,
+    "worst_k_flag": false
+  },
+  {
+    "service_type": "graffiti",
+    "neighborhood": "Twin Peaks",
+    "N": 1,
+    "p50_hr": 19.561666666666667,
+    "p90_hr": 19.561666666666667,
+    "city_p90_hr": 226.75727777777792,
+    "ratio_p90": 0.08626698493812886,
+    "rank": 38,
+    "worst_k_flag": false
+  },
+  {
+    "service_type": "graffiti",
+    "neighborhood": "Lakeshore",
+    "N": 2,
+    "p50_hr": 7.940138888888889,
+    "p90_hr": 12.651583333333333,
+    "city_p90_hr": 226.75727777777792,
+    "ratio_p90": 0.05579350509636953,
+    "rank": 39,
+    "worst_k_flag": false
+  },
+  {
+    "service_type": "graffiti",
+    "neighborhood": "Seacliff",
+    "N": 2,
+    "p50_hr": 10.7975,
+    "p90_hr": 11.850166666666667,
+    "city_p90_hr": 226.75727777777792,
+    "ratio_p90": 0.05225925616499871,
+    "rank": 40,
+    "worst_k_flag": false
+  },
+  {
+    "service_type": "other",
+    "neighborhood": "Castro/Upper Market",
+    "N": 1475,
+    "p50_hr": 6.651666666666666,
+    "p90_hr": 249.48783333333333,
+    "city_p90_hr": 122.72694444444444,
+    "ratio_p90": 2.032869264876634,
+>>>>>>> 9857cbd (Refactor fairness metrics and simulator for strict historical/live data separation and robustness)
+    "rank": 1,
+    "worst_k_flag": true
+  },
+  {
+<<<<<<< HEAD
+    "service_type": "311 Complaints",
+    "neighborhood": "West of Twin Peaks",
+    "N": 1,
+    "p50_hr": 552.5447222222223,
+    "p90_hr": 552.5447222222223,
+    "city_p90_hr": 552.0907222222222,
+    "ratio_p90": 1.0008223286168851,
+=======
+    "service_type": "other",
+    "neighborhood": "Twin Peaks",
+    "N": 141,
+    "p50_hr": 10.734722222222222,
+    "p90_hr": 237.41861111111112,
+    "city_p90_hr": 122.72694444444444,
+    "ratio_p90": 1.9345271911221162,
+>>>>>>> 9857cbd (Refactor fairness metrics and simulator for strict historical/live data separation and robustness)
+    "rank": 2,
+    "worst_k_flag": true
+  },
+  {
+<<<<<<< HEAD
+    "service_type": "311 Complaints",
+    "neighborhood": "North Beach",
+    "N": 1,
+    "p50_hr": 552.0402777777778,
+    "p90_hr": 552.0402777777778,
+    "city_p90_hr": 552.0907222222222,
+    "ratio_p90": 0.9999086301536795,
+=======
+    "service_type": "other",
+    "neighborhood": "Golden Gate Park",
+    "N": 252,
+    "p50_hr": 36.03819444444444,
+    "p90_hr": 205.60005555555554,
+    "city_p90_hr": 122.72694444444444,
+    "ratio_p90": 1.6752641930935206,
+>>>>>>> 9857cbd (Refactor fairness metrics and simulator for strict historical/live data separation and robustness)
+    "rank": 3,
+    "worst_k_flag": true
+  },
+  {
+<<<<<<< HEAD
+    "service_type": "311 Complaints",
+    "neighborhood": "Presidio Heights",
+    "N": 1,
+    "p50_hr": 481.02166666666665,
+    "p90_hr": 481.02166666666665,
+    "city_p90_hr": 552.0907222222222,
+    "ratio_p90": 0.8712728674926916,
+=======
+    "service_type": "other",
+    "neighborhood": "Lakeshore",
+    "N": 159,
+    "p50_hr": 15.2125,
+    "p90_hr": 176.76338888888907,
+    "city_p90_hr": 122.72694444444444,
+    "ratio_p90": 1.440298132484718,
+>>>>>>> 9857cbd (Refactor fairness metrics and simulator for strict historical/live data separation and robustness)
+    "rank": 4,
+    "worst_k_flag": false
+  },
+  {
+<<<<<<< HEAD
+    "service_type": "311 Complaints",
+    "neighborhood": "Haight Ashbury",
+    "N": 1,
+    "p50_hr": 433.0708333333333,
+    "p90_hr": 433.0708333333333,
+    "city_p90_hr": 552.0907222222222,
+    "ratio_p90": 0.7844196902823841,
+=======
+    "service_type": "other",
+    "neighborhood": "Glen Park",
+    "N": 322,
+    "p50_hr": 3.1513888888888886,
+    "p90_hr": 167.8239722222224,
+    "city_p90_hr": 122.72694444444444,
+    "ratio_p90": 1.3674582462874916,
+>>>>>>> 9857cbd (Refactor fairness metrics and simulator for strict historical/live data separation and robustness)
+    "rank": 5,
+    "worst_k_flag": false
+  },
+  {
+<<<<<<< HEAD
+    "service_type": "311 Complaints",
+    "neighborhood": "Russian Hill",
+    "N": 1,
+    "p50_hr": 388.7991666666667,
+    "p90_hr": 388.7991666666667,
+    "city_p90_hr": 552.0907222222222,
+    "ratio_p90": 0.7042305748260175,
+=======
+    "service_type": "other",
+    "neighborhood": "Bernal Heights",
+    "N": 1149,
+    "p50_hr": 3.8152777777777778,
+    "p90_hr": 164.0116666666667,
+    "city_p90_hr": 122.72694444444444,
+    "ratio_p90": 1.3363949327436477,
+>>>>>>> 9857cbd (Refactor fairness metrics and simulator for strict historical/live data separation and robustness)
+    "rank": 6,
+    "worst_k_flag": false
+  },
+  {
+<<<<<<< HEAD
+    "service_type": "311 Complaints",
+    "neighborhood": "Tenderloin",
+    "N": 3,
+    "p50_hr": 212.07722222222222,
+    "p90_hr": 212.07722222222222,
+    "city_p90_hr": 552.0907222222222,
+    "ratio_p90": 0.3841347330898615,
+=======
+    "service_type": "other",
+    "neighborhood": "McLaren Park",
+    "N": 58,
+    "p50_hr": 22.865000000000002,
+    "p90_hr": 159.22944444444445,
+    "city_p90_hr": 122.72694444444444,
+    "ratio_p90": 1.297428573368612,
+>>>>>>> 9857cbd (Refactor fairness metrics and simulator for strict historical/live data separation and robustness)
+    "rank": 7,
+    "worst_k_flag": false
+  },
+  {
+<<<<<<< HEAD
+    "service_type": "311 Complaints",
+    "neighborhood": "Oceanview/Merced/Ingleside",
+    "N": 1,
+    "p50_hr": 140.67444444444445,
+    "p90_hr": 140.67444444444445,
+    "city_p90_hr": 552.0907222222222,
+    "ratio_p90": 0.25480313068514404,
+=======
+    "service_type": "other",
+    "neighborhood": "Sunset/Parkside",
+    "N": 1732,
+    "p50_hr": 4.1154166666666665,
+    "p90_hr": 144.64961111111114,
+    "city_p90_hr": 122.72694444444444,
+    "ratio_p90": 1.1786296136183083,
+>>>>>>> 9857cbd (Refactor fairness metrics and simulator for strict historical/live data separation and robustness)
+    "rank": 8,
+    "worst_k_flag": false
+  },
+  {
+<<<<<<< HEAD
+    "service_type": "311 Complaints",
+    "neighborhood": "McLaren Park",
+    "N": 1,
+    "p50_hr": 134.4038888888889,
+    "p90_hr": 134.4038888888889,
+    "city_p90_hr": 552.0907222222222,
+    "ratio_p90": 0.24344529527302933,
+=======
+    "service_type": "other",
+    "neighborhood": "Mission",
+    "N": 5166,
+    "p50_hr": 9.282777777777778,
+    "p90_hr": 142.78875,
+    "city_p90_hr": 122.72694444444444,
+    "ratio_p90": 1.1634670010434185,
+>>>>>>> 9857cbd (Refactor fairness metrics and simulator for strict historical/live data separation and robustness)
+    "rank": 9,
+    "worst_k_flag": false
+  },
+  {
+<<<<<<< HEAD
+    "service_type": "311 Complaints",
+    "neighborhood": "Sunset/Parkside",
+    "N": 2,
+    "p50_hr": 110.48944444444444,
+    "p90_hr": 118.67633333333333,
+    "city_p90_hr": 552.0907222222222,
+    "ratio_p90": 0.2149580287378292,
+=======
+    "service_type": "other",
+    "neighborhood": "South of Market",
+    "N": 1630,
+    "p50_hr": 13.651805555555555,
+    "p90_hr": 139.96905555555574,
+    "city_p90_hr": 122.72694444444444,
+    "ratio_p90": 1.14049165152088,
+>>>>>>> 9857cbd (Refactor fairness metrics and simulator for strict historical/live data separation and robustness)
+    "rank": 10,
+    "worst_k_flag": false
+  },
+  {
+<<<<<<< HEAD
+    "service_type": "311 Complaints",
+    "neighborhood": "South of Market",
+    "N": 1,
+    "p50_hr": 100.01194444444444,
+    "p90_hr": 100.01194444444444,
+    "city_p90_hr": 552.0907222222222,
+    "ratio_p90": 0.18115128622681073,
+=======
+    "service_type": "other",
+    "neighborhood": "Western Addition",
+    "N": 843,
+    "p50_hr": 14.868333333333334,
+    "p90_hr": 139.56655555555554,
+    "city_p90_hr": 122.72694444444444,
+    "ratio_p90": 1.1372120131185535,
+>>>>>>> 9857cbd (Refactor fairness metrics and simulator for strict historical/live data separation and robustness)
+    "rank": 11,
+    "worst_k_flag": false
+  },
+  {
+<<<<<<< HEAD
+    "service_type": "311 Complaints",
+    "neighborhood": "Mission",
+    "N": 1,
+    "p50_hr": 23.823888888888888,
+    "p90_hr": 23.823888888888888,
+    "city_p90_hr": 552.0907222222222,
+    "ratio_p90": 0.04315212686964793,
+=======
+    "service_type": "other",
+    "neighborhood": "Chinatown",
+    "N": 368,
+    "p50_hr": 13.045972222222222,
+    "p90_hr": 137.22619444444445,
+    "city_p90_hr": 122.72694444444444,
+    "ratio_p90": 1.1181423530556769,
+>>>>>>> 9857cbd (Refactor fairness metrics and simulator for strict historical/live data separation and robustness)
+    "rank": 12,
+    "worst_k_flag": false
+  },
+  {
+<<<<<<< HEAD
+    "service_type": "311 Complaints",
+    "neighborhood": "Excelsior",
+    "N": 1,
+    "p50_hr": 23.71361111111111,
+    "p90_hr": 23.71361111111111,
+    "city_p90_hr": 552.0907222222222,
+    "ratio_p90": 0.0429523811153018,
+=======
+    "service_type": "other",
+    "neighborhood": "Portola",
+    "N": 581,
+    "p50_hr": 3.023888888888889,
+    "p90_hr": 134.23194444444445,
+    "city_p90_hr": 122.72694444444444,
+    "ratio_p90": 1.0937446952018597,
+>>>>>>> 9857cbd (Refactor fairness metrics and simulator for strict historical/live data separation and robustness)
+    "rank": 13,
+    "worst_k_flag": false
+  },
+  {
+<<<<<<< HEAD
+    "service_type": "311 Complaints",
+    "neighborhood": "Twin Peaks",
+    "N": 1,
+    "p50_hr": 7.952222222222222,
+    "p90_hr": 7.952222222222222,
+    "city_p90_hr": 552.0907222222222,
+    "ratio_p90": 0.01440383238141316,
+    "rank": 14,
+>>>>>>> 0b5cce5 (Refactor fairness metrics and simulator for strict historical/live data separation and robustness)
+    "worst_k_flag": false
+=======
     "service_type": "other",
     "neighborhood": "West of Twin Peaks",
     "N": 1005,
@@ -4882,5 +11209,6 @@
     "ratio_p90": 0.4350565958304004,
     "rank": 41,
     "worst_k_flag": false
+>>>>>>> 9857cbd (Refactor fairness metrics and simulator for strict historical/live data separation and robustness)
   }
 ]
