@@ -23,6 +23,7 @@ def main():
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
     start_date = end_date - relativedelta(months=3)
 =======
     start_date = end_date - relativedelta(months=1)
@@ -44,6 +45,9 @@ def main():
 >>>>>>> c9de744 (Refactor fairness metrics and simulator for strict historical/live data separation and robustness)
 >>>>>>> da586b3 (Refactor fairness metrics and simulator for strict historical/live data separation and robustness)
 >>>>>>> d854be0 (Refactor fairness metrics and simulator for strict historical/live data separation and robustness)
+=======
+    start_date = end_date - relativedelta(months=3)
+>>>>>>> 91775d4 (data processing corrected)
     
     # Process in 1-week chunks
     current_start = start_date
