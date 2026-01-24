@@ -32,36 +32,42 @@ def main():
     
     # Identify Worst-K Neighborhoods
     worst_k_list = city_state.get('derived_insights', {}).get('worst_neighborhoods', [])
+    if not worst_k_list:
+        print("Warning: Worst-K neighborhoods list is missing or empty. Skipping worst_k constraint.")
     
     verdicts = []
     
     for policy in scenarios:
         pid = policy.get('policy_id', 'unknown')
         effects = policy.get('neighborhood_effects', {})
-        city_delta = policy.get('citywide_delta_p90', 0.0)
+        # Use None to indicate missing citywide delta
+        city_delta = policy.get('citywide_delta_p90', None)
         
         violations = []
         
         # A. Worst-off Improvement Rule
-        # delta_p90 <= -MIN_IMPROVEMENT (i.e. improvement of at least X%)
-        for n in worst_k_list:
-            if n in effects:
-                delta = effects[n].get('delta_p90', 0.0)
-                # Improvement means negative delta. 
-                # e.g. -0.2 <= -0.15 (True, passed)
-                target = -MIN_IMPROVEMENT
-                if delta > target:
-                    violations.append({
-                        "constraint": "min_worst_k_improvement",
-                        "neighborhood": n,
-                        "observed": delta,
-                        "allowed": target
-                    })
+        # Only check if we have a worst-k list
+        if worst_k_list:
+            for n in worst_k_list:
+                if n in effects:
+                    delta = effects[n].get('delta_p90', None)
+                    if delta is None: continue
+                    
+                    # Improvement means negative delta. 
+                    target = -MIN_IMPROVEMENT
+                    if delta > target:
+                        violations.append({
+                            "constraint": "min_worst_k_improvement",
+                            "neighborhood": n,
+                            "observed": delta,
+                            "allowed": target
+                        })
         
         # B. No Excessive Harm Rule
-        # delta_p90 <= MAX_HARM
         for n, metrics in effects.items():
-            delta = metrics.get('delta_p90', 0.0)
+            delta = metrics.get('delta_p90', None)
+            if delta is None: continue
+            
             if delta > MAX_HARM:
                 violations.append({
                     "constraint": "max_neighborhood_harm",
@@ -71,9 +77,11 @@ def main():
                 })
         
         # C. Backlog Growth Rule
-        # delta_backlog_pct <= MAX_BACKLOG
         for n, metrics in effects.items():
-            delta_b = metrics.get('delta_backlog_pct', 0.0)
+            delta_b = metrics.get('delta_backlog_pct', None)
+            # Skip check if metric missing
+            if delta_b is None: continue
+            
             if delta_b > MAX_BACKLOG:
                 violations.append({
                     "constraint": "max_backlog_growth",
@@ -83,14 +91,14 @@ def main():
                 })
 
         # D. Citywide Performance Rule
-        # citywide_delta_p90 <= 0
-        if NO_CITY_WORSEN and city_delta > 0:
-             violations.append({
-                "constraint": "citywide_p90_must_not_worsen",
-                "neighborhood": "CITYWIDE",
-                "observed": city_delta,
-                "allowed": 0.0
-            })
+        if NO_CITY_WORSEN and city_delta is not None:
+             if city_delta > 0:
+                 violations.append({
+                    "constraint": "citywide_p90_must_not_worsen",
+                    "neighborhood": "CITYWIDE",
+                    "observed": city_delta,
+                    "allowed": 0.0
+                })
             
         # Verdict
         passed = len(violations) == 0

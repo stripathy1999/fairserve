@@ -3,22 +3,43 @@ import pandas as pd
 import json
 
 # --- Configuration ---
-INPUT_FILE = "/home/dell/Desktop/fairserve-1/data/processed/incidents_historical.parquet"
+INPUT_FILE = "/home/dell/Desktop/fairserve-1/data/processed/historical"
 OUTPUT_FILE = "/home/dell/Desktop/fairserve-1/data/processed/fairness_metrics.json"
 
 def main():
-    # 1. Load data and filter for closed incidents
+    # 1. Load data and derive response_time_hours
     try:
         df = pd.read_parquet(INPUT_FILE)
     except FileNotFoundError:
         print(f"Error: Input file {INPUT_FILE} not found.")
         return
 
-    # Filter closed incidents
-    df = df[df['status'] == 'closed'].copy()
+    # Ensure timestamps are datetime objects
+    df['opened_at'] = pd.to_datetime(df['opened_at'])
+    df['closed_at'] = pd.to_datetime(df['closed_at'])
+
+    # Filter closed incidents with valid closed_at
+    # Normalize status to lowercase just in case
+    df['status'] = df['status'].str.lower()
+    
+    df = df[
+        (df['status'] == 'closed') & 
+        (df['closed_at'].notna())
+    ].copy()
 
     if df.empty:
         print("No closed incidents found.")
+        return
+
+    # Derive response_time_hours
+    # (closed_at - opened_at).total_seconds() / 3600
+    df['response_time_hours'] = (df['closed_at'] - df['opened_at']).dt.total_seconds() / 3600.0
+
+    # Drop invalid response times (<= 0 or NaN)
+    df = df[df['response_time_hours'] > 0]
+
+    if df.empty:
+        print("No valid response times found after filtering.")
         return
 
     # 2. Compute neighborhood-level metrics (N, median, p90)

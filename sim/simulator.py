@@ -1,7 +1,7 @@
-
 import pandas as pd
 import json
 import numpy as np
+import policies
 
 # --- Configuration ---
 HISTORICAL_FILE = "data/processed/incidents_historical.parquet"
@@ -13,16 +13,23 @@ def main():
     # 1. Load Inputs
     try:
         hist_df = pd.read_parquet(HISTORICAL_FILE)
-        live_df = pd.read_parquet(LIVE_FILE)
         with open(CITY_STATE_FILE, 'r') as f:
             city_state = json.load(f)
+            
+        # Optional Live Data
+        try:
+            live_df = pd.read_parquet(LIVE_FILE)
+        except (FileNotFoundError, Exception):
+            print("Live data not found or empty. Simulating with 0 initial backlog.")
+            live_df = pd.DataFrame(columns=hist_df.columns)
+            
     except Exception as e:
         print(f"Error loading inputs: {e}")
         return
 
-    # Check for empty dataframes
-    if hist_df.empty or live_df.empty:
-        print("Historical or Live data is empty. Cannot simulate.")
+    # Check for empty historical data
+    if hist_df.empty:
+        print("Historical data is empty. Cannot simulate.")
         return
 
     service_type = city_state['city_context']['service_type']
@@ -33,11 +40,11 @@ def main():
     # Parameters Estimation
     # Filter for service type
     hist_sv = hist_df[hist_df['service_type'] == service_type]
-    live_sv = live_df[live_df['service_type'] == service_type]
+    live_sv = live_df[live_df['service_type'] == service_type] if not live_df.empty else pd.DataFrame(columns=hist_df.columns)
     
     # 2. Estimate baselines per neighborhood
-    # arrival_rate (incidents/day)
-    # capacity (closed/day)
+    # arrival_rate (incidents/day) - HISTORICAL ONLY
+    # capacity (closed/day) - HISTORICAL ONLY
     
     neighborhood_params = {}
     
@@ -50,22 +57,22 @@ def main():
         return max(span, 1)
 
     hist_span = get_span(hist_sv, 'opened_at')
-    # Use live data for current backlog
     
-    # Get initial backlog from live data
-    live_open = live_sv[live_sv['status'] == 'open']
-    current_backlogs = live_open['neighborhood'].value_counts().to_dict()
+    # Get initial backlog from live data if available
+    if not live_sv.empty:
+        live_open = live_sv[live_sv['status'] == 'open']
+        current_backlogs = live_open['neighborhood'].value_counts().to_dict()
+    else:
+        current_backlogs = {}
 
     for n_data in neighborhoods_data:
         name = n_data['neighborhood']
         
-        # Arrival rate from historical + live? 
-        # Plan said: "avg number of incidents per day (use historical + live)"
-        # Let's use historical for stability
+        # Arrival rate from historical ONLY
         n_hist = hist_sv[hist_sv['neighborhood'] == name]
         arrival_rate = len(n_hist) / hist_span
         
-        # Capacity from closed historical
+        # Capacity from closed historical ONLY
         n_closed = n_hist[n_hist['status'] == 'closed']
         capacity = len(n_closed) / hist_span
         
@@ -78,41 +85,8 @@ def main():
         }
 
     # 3. Define Policies
-    # Hardcoded list of policies to test
-    policies = [
-        {
-            "policy_id": "Baseline",
-            "parameters": {
-                "capacity_shift_pct": 0.0,
-                "efficiency_bonus_pct": 0.0,
-                "max_reassignments": 0
-            }
-        },
-        {
-            "policy_id": "Efficiency_Boost",
-            "parameters": {
-                "capacity_shift_pct": 0.0,
-                "efficiency_bonus_pct": 0.16,
-                "max_reassignments": 0
-            }
-        },
-        {
-            "policy_id": "Equity_Shift",
-            "parameters": {
-                "capacity_shift_pct": 0.2, # Shift 20% from best to worst
-                "efficiency_bonus_pct": 0.0,
-                "max_reassignments": 1
-            }
-        },
-         {
-            "policy_id": "Balanced_Reform",
-            "parameters": {
-                "capacity_shift_pct": 0.04,
-                "efficiency_bonus_pct": 0.12,
-                "max_reassignments": 2
-            }
-        }
-    ]
+    # Retrieve allowed policies from the policies module
+    policies_list = policies.get_default_policies()
 
     results = []
 
@@ -131,7 +105,7 @@ def main():
     worst_half = sorted_neighborhoods[:mid_point]
     best_half = sorted_neighborhoods[mid_point:]
 
-    for pol in policies:
+    for pol in policies_list:
         pid = pol['policy_id']
         params = pol['parameters']
         shift_pct = params['capacity_shift_pct']
@@ -251,7 +225,7 @@ def main():
     with open(OUTPUT_FILE, 'w') as f:
         json.dump(results, f, indent=2)
 
-    print(f"Simulation completed. {len(policies)} policies tested across {len(neighborhood_names)} neighborhoods.")
+    print(f"Simulation completed. {len(policies_list)} policies tested across {len(neighborhood_names)} neighborhoods.")
     print(f"Results saved to {OUTPUT_FILE}")
 
 if __name__ == "__main__":
