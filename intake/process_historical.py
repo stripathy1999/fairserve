@@ -20,8 +20,24 @@ def main():
     
     # Define time range: last 6 months
     end_date = datetime.datetime.now()
+<<<<<<< HEAD
     start_date = end_date - relativedelta(months=3)
 
+=======
+<<<<<<< HEAD
+<<<<<<< HEAD
+    start_date = end_date - relativedelta(months=1)
+=======
+    start_date = end_date - relativedelta(months=3)
+>>>>>>> bca58ca (improved data engineering)
+=======
+    start_date = end_date - relativedelta(months=3)
+=======
+    start_date = end_date - relativedelta(months=1)
+>>>>>>> c9de744 (Refactor fairness metrics and simulator for strict historical/live data separation and robustness)
+>>>>>>> da586b3 (Refactor fairness metrics and simulator for strict historical/live data separation and robustness)
+    
+>>>>>>> 4355025 (Refactor fairness metrics and simulator for strict historical/live data separation and robustness)
     # Process in 1-week chunks
     current_start = start_date
     chunk_size = datetime.timedelta(weeks=1)
