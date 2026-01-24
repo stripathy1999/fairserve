@@ -20,59 +20,10 @@ def main():
     
     # Define time range: last 6 months
     end_date = datetime.datetime.now()
-<<<<<<< HEAD:backend/intake/process_historical.py
+
     start_date = end_date - relativedelta(months=3)
-=======
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-    start_date = end_date - relativedelta(months=3)
-=======
-    start_date = end_date - relativedelta(months=1)
->>>>>>> c9de744 (Refactor fairness metrics and simulator for strict historical/live data separation and robustness)
-=======
-=======
->>>>>>> d854be0 (Refactor fairness metrics and simulator for strict historical/live data separation and robustness)
-=======
->>>>>>> d854be0 (Refactor fairness metrics and simulator for strict historical/live data separation and robustness)
-    start_date = end_date - relativedelta(months=1)
-=======
-    start_date = end_date - relativedelta(months=3)
->>>>>>> bca58ca (improved data engineering)
-<<<<<<< HEAD
-<<<<<<< HEAD
->>>>>>> e900676 (merged)
-=======
-=======
->>>>>>> d854be0 (Refactor fairness metrics and simulator for strict historical/live data separation and robustness)
-=======
-    start_date = end_date - relativedelta(months=3)
-=======
-    start_date = end_date - relativedelta(months=1)
->>>>>>> c9de744 (Refactor fairness metrics and simulator for strict historical/live data separation and robustness)
->>>>>>> da586b3 (Refactor fairness metrics and simulator for strict historical/live data separation and robustness)
-<<<<<<< HEAD
->>>>>>> d854be0 (Refactor fairness metrics and simulator for strict historical/live data separation and robustness)
-=======
-    start_date = end_date - relativedelta(months=3)
->>>>>>> 91775d4 (data processing corrected)
-=======
-    start_date = end_date - relativedelta(months=1)
->>>>>>> c9de744 (Refactor fairness metrics and simulator for strict historical/live data separation and robustness)
-=======
-    start_date = end_date - relativedelta(months=1)
-=======
-    start_date = end_date - relativedelta(months=3)
->>>>>>> bca58ca (improved data engineering)
->>>>>>> e900676 (merged)
-=======
->>>>>>> d854be0 (Refactor fairness metrics and simulator for strict historical/live data separation and robustness)
-    
->>>>>>> 6bd98ba (Refactor fairness metrics and simulator for strict historical/live data separation and robustness):intake/process_historical.py
+
+
     # Process in 1-week chunks
     current_start = start_date
     chunk_size = datetime.timedelta(weeks=1)
