@@ -5,8 +5,8 @@ import json
 from datetime import datetime, timedelta
 
 # --- Configuration ---
-HISTORICAL_FILE = "data/processed/incidents_historical.parquet"
-LIVE_FILE = "data/processed/incidents_live.parquet"
+HISTORICAL_FILE = "data/processed/historical"
+LIVE_FILE = "data/processed/live_stream"
 OUTPUT_FILE = "data/processed/neighborhood_signals.json"
 
 def main():

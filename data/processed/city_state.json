@@ -6,101 +6,623 @@
       "live": "last_7_days"
     },
     "city_baselines": {
-      "p50_hr": 37.46910924566928,
-      "p90_hr": 129.36444650480152
+      "p50_hr": 0.9241666666666667,
+      "p90_hr": 2.231388888888889
     },
-    "service_volume": 1035
+    "service_volume": 929
   },
   "neighborhoods": [
     {
-      "neighborhood": "Bayview",
+      "neighborhood": "Mission Bay",
       "fairness_metrics": {
-        "p50_hr": 63.5111499191793,
-        "p90_hr": 212.93481479146863,
-        "ratio_p90": 1.6460072341712937,
+        "p50_hr": 1.2354166666666666,
+        "p90_hr": 3.7399166666666686,
+        "ratio_p90": 1.6760487987053412,
         "rank": 1,
         "worst_k_flag": true
       },
       "signals": {
-        "backlog_pressure": 48.3356,
-        "aging_tail_14d": 0.7759,
-        "duplicate_rate": 0.1831,
-        "mislabel_rate": 0.5493,
-        "agency_fragmentation": 0.6338
+        "backlog_pressure": 0.0,
+        "aging_tail_14d": 0.0,
+        "duplicate_rate": 0.2,
+        "mislabel_rate": 0.0,
+        "agency_fragmentation": 0.0
       },
-      "severity_score": 81.20675450218127
+      "severity_score": 1.6760487987053412
     },
     {
-      "neighborhood": "Tenderloin",
+      "neighborhood": "North Beach",
       "fairness_metrics": {
-        "p50_hr": 37.46910924566928,
-        "p90_hr": 128.94740077526075,
-        "ratio_p90": 0.9967761951540117,
+        "p50_hr": 1.091388888888889,
+        "p90_hr": 2.9306111111111113,
+        "ratio_p90": 1.3133574007220217,
         "rank": 2,
         "worst_k_flag": true
       },
       "signals": {
-        "backlog_pressure": 40.6838,
-        "aging_tail_14d": 0.5532,
-        "duplicate_rate": 0.2146,
-        "mislabel_rate": 0.5512,
-        "agency_fragmentation": 0.6634
+        "backlog_pressure": 0.0,
+        "aging_tail_14d": 0.0,
+        "duplicate_rate": 0.1739,
+        "mislabel_rate": 0.0,
+        "agency_fragmentation": 0.0
       },
-      "severity_score": 41.54941956356079
+      "severity_score": 1.3133574007220217
     },
     {
-      "neighborhood": "Sunset",
+      "neighborhood": "Hayes Valley",
       "fairness_metrics": {
-        "p50_hr": 38.662847950751356,
-        "p90_hr": 124.31156072253637,
-        "ratio_p90": 0.960940691830057,
+        "p50_hr": 1.0752777777777778,
+        "p90_hr": 2.7015,
+        "ratio_p90": 1.2106809411178885,
         "rank": 3,
         "worst_k_flag": true
       },
       "signals": {
-        "backlog_pressure": 57.9714,
-        "aging_tail_14d": 0.4545,
-        "duplicate_rate": 0.2277,
-        "mislabel_rate": 0.5644,
-        "agency_fragmentation": 0.6485
+        "backlog_pressure": 0.0,
+        "aging_tail_14d": 0.0,
+        "duplicate_rate": 0.4839,
+        "mislabel_rate": 0.0,
+        "agency_fragmentation": 0.0
       },
-      "severity_score": 56.668017914187025
+      "severity_score": 1.2106809411178885
     },
     {
-      "neighborhood": "Mission",
+      "neighborhood": "Lone Mountain/USF",
       "fairness_metrics": {
-        "p50_hr": 36.92550628739246,
-        "p90_hr": 105.86500209016698,
-        "ratio_p90": 0.8183469643356582,
+        "p50_hr": 0.9936111111111111,
+        "p90_hr": 2.674166666666667,
+        "ratio_p90": 1.1984314701854848,
         "rank": 4,
         "worst_k_flag": false
       },
       "signals": {
-        "backlog_pressure": 40.8815,
-        "aging_tail_14d": 0.7021,
-        "duplicate_rate": 0.1961,
-        "mislabel_rate": 0.5735,
-        "agency_fragmentation": 0.598
+        "backlog_pressure": 0.0,
+        "aging_tail_14d": 0.0,
+        "duplicate_rate": 0.0909,
+        "mislabel_rate": 0.0,
+        "agency_fragmentation": 0.0
       },
-      "severity_score": 34.27359838682387
+      "severity_score": 1.1984314701854848
     },
     {
-      "neighborhood": "Marina",
+      "neighborhood": "Noe Valley",
       "fairness_metrics": {
-        "p50_hr": 14.771005735659946,
-        "p90_hr": 40.71168605615826,
-        "ratio_p90": 0.314705370417576,
+        "p50_hr": 1.5119444444444445,
+        "p90_hr": 2.668444444444445,
+        "ratio_p90": 1.1958670484252458,
         "rank": 5,
         "worst_k_flag": false
       },
       "signals": {
-        "backlog_pressure": 42.0602,
-        "aging_tail_14d": 0.6,
-        "duplicate_rate": 0.1517,
-        "mislabel_rate": 0.5213,
-        "agency_fragmentation": 0.6635
+        "backlog_pressure": 0.0,
+        "aging_tail_14d": 0.0,
+        "duplicate_rate": 0.0,
+        "mislabel_rate": 0.0,
+        "agency_fragmentation": 0.0
       },
-      "severity_score": 13.551276191254907
+      "severity_score": 1.1958670484252458
+    },
+    {
+      "neighborhood": "Western Addition",
+      "fairness_metrics": {
+        "p50_hr": 1.001111111111111,
+        "p90_hr": 2.4667222222222223,
+        "ratio_p90": 1.1054649570521597,
+        "rank": 6,
+        "worst_k_flag": false
+      },
+      "signals": {
+        "backlog_pressure": 0.0,
+        "aging_tail_14d": 0.0,
+        "duplicate_rate": 0.25,
+        "mislabel_rate": 0.0,
+        "agency_fragmentation": 0.0
+      },
+      "severity_score": 1.1054649570521597
+    },
+    {
+      "neighborhood": "Bayview Hunters Point",
+      "fairness_metrics": {
+        "p50_hr": 0.9225000000000001,
+        "p90_hr": 2.298583333333335,
+        "ratio_p90": 1.0301132827088266,
+        "rank": 7,
+        "worst_k_flag": false
+      },
+      "signals": {
+        "backlog_pressure": 0.0,
+        "aging_tail_14d": 0.0,
+        "duplicate_rate": 0.2727,
+        "mislabel_rate": 0.0,
+        "agency_fragmentation": 0.0909
+      },
+      "severity_score": 1.0301132827088266
+    },
+    {
+      "neighborhood": "Outer Mission",
+      "fairness_metrics": {
+        "p50_hr": 2.2355555555555555,
+        "p90_hr": 2.2355555555555555,
+        "ratio_p90": 1.001867297398232,
+        "rank": 8,
+        "worst_k_flag": false
+      },
+      "signals": {
+        "backlog_pressure": 0.0,
+        "aging_tail_14d": 0.0,
+        "duplicate_rate": 1.0,
+        "mislabel_rate": 0.0,
+        "agency_fragmentation": 0.0
+      },
+      "severity_score": 1.001867297398232
+    },
+    {
+      "neighborhood": "Pacific Heights",
+      "fairness_metrics": {
+        "p50_hr": 0.9940277777777777,
+        "p90_hr": 2.231388888888889,
+        "ratio_p90": 1.0,
+        "rank": 9,
+        "worst_k_flag": false
+      },
+      "signals": {
+        "backlog_pressure": 0.0,
+        "aging_tail_14d": 0.0,
+        "duplicate_rate": 0.1333,
+        "mislabel_rate": 0.0,
+        "agency_fragmentation": 0.0
+      },
+      "severity_score": 1.0
+    },
+    {
+      "neighborhood": "Mission",
+      "fairness_metrics": {
+        "p50_hr": 0.81,
+        "p90_hr": 2.2216388888888896,
+        "ratio_p90": 0.9956305240881367,
+        "rank": 10,
+        "worst_k_flag": false
+      },
+      "signals": {
+        "backlog_pressure": 0.0,
+        "aging_tail_14d": 0.0,
+        "duplicate_rate": 0.44,
+        "mislabel_rate": 0.0,
+        "agency_fragmentation": 0.032
+      },
+      "severity_score": 0.9956305240881367
+    },
+    {
+      "neighborhood": "Outer Richmond",
+      "fairness_metrics": {
+        "p50_hr": 1.2583333333333333,
+        "p90_hr": 2.1974444444444448,
+        "ratio_p90": 0.9847877505290676,
+        "rank": 11,
+        "worst_k_flag": false
+      },
+      "signals": {
+        "backlog_pressure": 0.0,
+        "aging_tail_14d": 0.0,
+        "duplicate_rate": 0.0588,
+        "mislabel_rate": 0.0,
+        "agency_fragmentation": 0.0
+      },
+      "severity_score": 0.9847877505290676
+    },
+    {
+      "neighborhood": "South of Market",
+      "fairness_metrics": {
+        "p50_hr": 0.9258333333333333,
+        "p90_hr": 2.1302777777777777,
+        "ratio_p90": 0.9546869164695629,
+        "rank": 12,
+        "worst_k_flag": false
+      },
+      "signals": {
+        "backlog_pressure": 0.0,
+        "aging_tail_14d": 0.0,
+        "duplicate_rate": 0.451,
+        "mislabel_rate": 0.0,
+        "agency_fragmentation": 0.0098
+      },
+      "severity_score": 0.9546869164695629
+    },
+    {
+      "neighborhood": "Tenderloin",
+      "fairness_metrics": {
+        "p50_hr": 0.9327777777777777,
+        "p90_hr": 2.1089722222222225,
+        "ratio_p90": 0.9451388024399353,
+        "rank": 13,
+        "worst_k_flag": false
+      },
+      "signals": {
+        "backlog_pressure": 0.0,
+        "aging_tail_14d": 0.0,
+        "duplicate_rate": 0.4268,
+        "mislabel_rate": 0.0,
+        "agency_fragmentation": 0.0244
+      },
+      "severity_score": 0.9451388024399353
+    },
+    {
+      "neighborhood": "West of Twin Peaks",
+      "fairness_metrics": {
+        "p50_hr": 0.9915277777777778,
+        "p90_hr": 2.1006944444444446,
+        "ratio_p90": 0.9414291049421137,
+        "rank": 14,
+        "worst_k_flag": false
+      },
+      "signals": {
+        "backlog_pressure": 0.0,
+        "aging_tail_14d": 0.0,
+        "duplicate_rate": 0.0,
+        "mislabel_rate": 0.0,
+        "agency_fragmentation": 0.0
+      },
+      "severity_score": 0.9414291049421137
+    },
+    {
+      "neighborhood": "Oceanview/Merced/Ingleside",
+      "fairness_metrics": {
+        "p50_hr": 1.0,
+        "p90_hr": 2.075555555555556,
+        "ratio_p90": 0.9301630773061124,
+        "rank": 15,
+        "worst_k_flag": false
+      },
+      "signals": {
+        "backlog_pressure": 0.0,
+        "aging_tail_14d": 0.0,
+        "duplicate_rate": 0.3333,
+        "mislabel_rate": 0.0,
+        "agency_fragmentation": 0.0
+      },
+      "severity_score": 0.9301630773061124
+    },
+    {
+      "neighborhood": "Financial District/South Beach",
+      "fairness_metrics": {
+        "p50_hr": 0.8725,
+        "p90_hr": 2.021,
+        "ratio_p90": 0.9057139300385907,
+        "rank": 16,
+        "worst_k_flag": false
+      },
+      "signals": {
+        "backlog_pressure": 0.0,
+        "aging_tail_14d": 0.0,
+        "duplicate_rate": 0.2258,
+        "mislabel_rate": 0.0,
+        "agency_fragmentation": 0.0081
+      },
+      "severity_score": 0.9057139300385907
+    },
+    {
+      "neighborhood": "Castro/Upper Market",
+      "fairness_metrics": {
+        "p50_hr": 0.8213888888888888,
+        "p90_hr": 1.9955555555555555,
+        "ratio_p90": 0.8943109672600522,
+        "rank": 17,
+        "worst_k_flag": false
+      },
+      "signals": {
+        "backlog_pressure": 0.0,
+        "aging_tail_14d": 0.0,
+        "duplicate_rate": 0.4186,
+        "mislabel_rate": 0.0,
+        "agency_fragmentation": 0.0465
+      },
+      "severity_score": 0.8943109672600522
+    },
+    {
+      "neighborhood": "Sunset/Parkside",
+      "fairness_metrics": {
+        "p50_hr": 1.1143055555555557,
+        "p90_hr": 1.9456944444444446,
+        "ratio_p90": 0.8719656417278725,
+        "rank": 18,
+        "worst_k_flag": false
+      },
+      "signals": {
+        "backlog_pressure": 0.0,
+        "aging_tail_14d": 0.0,
+        "duplicate_rate": 0.0833,
+        "mislabel_rate": 0.0,
+        "agency_fragmentation": 0.0
+      },
+      "severity_score": 0.8719656417278725
+    },
+    {
+      "neighborhood": "Nob Hill",
+      "fairness_metrics": {
+        "p50_hr": 0.8061111111111111,
+        "p90_hr": 1.8873888888888897,
+        "ratio_p90": 0.8458359268019423,
+        "rank": 19,
+        "worst_k_flag": false
+      },
+      "signals": {
+        "backlog_pressure": 0.0,
+        "aging_tail_14d": 0.0,
+        "duplicate_rate": 0.4824,
+        "mislabel_rate": 0.0,
+        "agency_fragmentation": 0.0
+      },
+      "severity_score": 0.8458359268019423
+    },
+    {
+      "neighborhood": "Twin Peaks",
+      "fairness_metrics": {
+        "p50_hr": 1.8666666666666667,
+        "p90_hr": 1.8666666666666667,
+        "ratio_p90": 0.8365492344080666,
+        "rank": 20,
+        "worst_k_flag": false
+      },
+      "signals": {
+        "backlog_pressure": 0.0,
+        "aging_tail_14d": 0.0,
+        "duplicate_rate": 0.0,
+        "mislabel_rate": 0.0,
+        "agency_fragmentation": 0.0
+      },
+      "severity_score": 0.8365492344080666
+    },
+    {
+      "neighborhood": "Marina",
+      "fairness_metrics": {
+        "p50_hr": 0.7577777777777778,
+        "p90_hr": 1.7490277777777778,
+        "ratio_p90": 0.7838292045313083,
+        "rank": 21,
+        "worst_k_flag": false
+      },
+      "signals": {
+        "backlog_pressure": 0.0,
+        "aging_tail_14d": 0.0,
+        "duplicate_rate": 0.2941,
+        "mislabel_rate": 0.0,
+        "agency_fragmentation": 0.0588
+      },
+      "severity_score": 0.7838292045313083
+    },
+    {
+      "neighborhood": "Japantown",
+      "fairness_metrics": {
+        "p50_hr": 0.8947222222222222,
+        "p90_hr": 1.6672777777777783,
+        "ratio_p90": 0.7471928295779909,
+        "rank": 22,
+        "worst_k_flag": false
+      },
+      "signals": {
+        "backlog_pressure": 0.0,
+        "aging_tail_14d": 0.0,
+        "duplicate_rate": 0.1429,
+        "mislabel_rate": 0.0,
+        "agency_fragmentation": 0.0
+      },
+      "severity_score": 0.7471928295779909
+    },
+    {
+      "neighborhood": "Chinatown",
+      "fairness_metrics": {
+        "p50_hr": 0.8233333333333334,
+        "p90_hr": 1.6253888888888888,
+        "ratio_p90": 0.7284202664010954,
+        "rank": 23,
+        "worst_k_flag": false
+      },
+      "signals": {
+        "backlog_pressure": 0.0,
+        "aging_tail_14d": 0.0,
+        "duplicate_rate": 0.2105,
+        "mislabel_rate": 0.0,
+        "agency_fragmentation": 0.0
+      },
+      "severity_score": 0.7284202664010954
+    },
+    {
+      "neighborhood": "Excelsior",
+      "fairness_metrics": {
+        "p50_hr": 0.7644444444444445,
+        "p90_hr": 1.6022777777777781,
+        "ratio_p90": 0.7180629901655672,
+        "rank": 24,
+        "worst_k_flag": false
+      },
+      "signals": {
+        "backlog_pressure": 0.0,
+        "aging_tail_14d": 0.0,
+        "duplicate_rate": 0.2857,
+        "mislabel_rate": 0.0,
+        "agency_fragmentation": 0.0
+      },
+      "severity_score": 0.7180629901655672
+    },
+    {
+      "neighborhood": "Russian Hill",
+      "fairness_metrics": {
+        "p50_hr": 0.6958333333333333,
+        "p90_hr": 1.4966388888888886,
+        "ratio_p90": 0.6707207767957175,
+        "rank": 25,
+        "worst_k_flag": false
+      },
+      "signals": {
+        "backlog_pressure": 0.0,
+        "aging_tail_14d": 0.0,
+        "duplicate_rate": 0.125,
+        "mislabel_rate": 0.0,
+        "agency_fragmentation": 0.0
+      },
+      "severity_score": 0.6707207767957175
+    },
+    {
+      "neighborhood": "Potrero Hill",
+      "fairness_metrics": {
+        "p50_hr": 0.5763888888888888,
+        "p90_hr": 1.4726388888888888,
+        "ratio_p90": 0.6599651437818996,
+        "rank": 26,
+        "worst_k_flag": false
+      },
+      "signals": {
+        "backlog_pressure": 0.0,
+        "aging_tail_14d": 0.0,
+        "duplicate_rate": 0.5,
+        "mislabel_rate": 0.0,
+        "agency_fragmentation": 0.0
+      },
+      "severity_score": 0.6599651437818996
+    },
+    {
+      "neighborhood": "Inner Richmond",
+      "fairness_metrics": {
+        "p50_hr": 0.9277777777777778,
+        "p90_hr": 1.4719722222222222,
+        "ratio_p90": 0.6596663761981825,
+        "rank": 27,
+        "worst_k_flag": false
+      },
+      "signals": {
+        "backlog_pressure": 0.0,
+        "aging_tail_14d": 0.0,
+        "duplicate_rate": 0.5,
+        "mislabel_rate": 0.0,
+        "agency_fragmentation": 0.0
+      },
+      "severity_score": 0.6596663761981825
+    },
+    {
+      "neighborhood": "Haight Ashbury",
+      "fairness_metrics": {
+        "p50_hr": 0.9172222222222223,
+        "p90_hr": 1.2351111111111113,
+        "ratio_p90": 0.5535167434333375,
+        "rank": 28,
+        "worst_k_flag": false
+      },
+      "signals": {
+        "backlog_pressure": 0.0,
+        "aging_tail_14d": 0.0,
+        "duplicate_rate": 0.3846,
+        "mislabel_rate": 0.0,
+        "agency_fragmentation": 0.0
+      },
+      "severity_score": 0.5535167434333375
+    },
+    {
+      "neighborhood": "Visitacion Valley",
+      "fairness_metrics": {
+        "p50_hr": 1.102638888888889,
+        "p90_hr": 1.1800833333333334,
+        "ratio_p90": 0.5288559691273497,
+        "rank": 29,
+        "worst_k_flag": false
+      },
+      "signals": {
+        "backlog_pressure": 0.0,
+        "aging_tail_14d": 0.0,
+        "duplicate_rate": 0.0,
+        "mislabel_rate": 0.0,
+        "agency_fragmentation": 0.0
+      },
+      "severity_score": 0.5288559691273497
+    },
+    {
+      "neighborhood": "Glen Park",
+      "fairness_metrics": {
+        "p50_hr": 0.5773611111111111,
+        "p90_hr": 1.1322500000000002,
+        "ratio_p90": 0.507419394995643,
+        "rank": 30,
+        "worst_k_flag": false
+      },
+      "signals": {
+        "backlog_pressure": 0.0,
+        "aging_tail_14d": 0.0,
+        "duplicate_rate": 0.25,
+        "mislabel_rate": 0.0,
+        "agency_fragmentation": 0.0
+      },
+      "severity_score": 0.507419394995643
+    },
+    {
+      "neighborhood": "Bernal Heights",
+      "fairness_metrics": {
+        "p50_hr": 0.4666666666666667,
+        "p90_hr": 1.0613333333333332,
+        "ratio_p90": 0.47563799327772927,
+        "rank": 31,
+        "worst_k_flag": false
+      },
+      "signals": {
+        "backlog_pressure": 0.0,
+        "aging_tail_14d": 0.0,
+        "duplicate_rate": 0.0,
+        "mislabel_rate": 0.0,
+        "agency_fragmentation": 0.0
+      },
+      "severity_score": 0.47563799327772927
+    },
+    {
+      "neighborhood": "Presidio Heights",
+      "fairness_metrics": {
+        "p50_hr": 0.6044444444444445,
+        "p90_hr": 0.9402222222222223,
+        "ratio_p90": 0.4213618822357774,
+        "rank": 32,
+        "worst_k_flag": false
+      },
+      "signals": {
+        "backlog_pressure": 0.0,
+        "aging_tail_14d": 0.0,
+        "duplicate_rate": 0.3333,
+        "mislabel_rate": 0.0,
+        "agency_fragmentation": 0.0
+      },
+      "severity_score": 0.4213618822357774
+    },
+    {
+      "neighborhood": "Lakeshore",
+      "fairness_metrics": {
+        "p50_hr": 0.6944444444444444,
+        "p90_hr": 0.6944444444444444,
+        "ratio_p90": 0.31121623303871526,
+        "rank": 33,
+        "worst_k_flag": false
+      },
+      "signals": {
+        "backlog_pressure": 0.0,
+        "aging_tail_14d": 0.0,
+        "duplicate_rate": 1.0,
+        "mislabel_rate": 0.0,
+        "agency_fragmentation": 0.0
+      },
+      "severity_score": 0.31121623303871526
+    },
+    {
+      "neighborhood": "Inner Sunset",
+      "fairness_metrics": {
+        "p50_hr": 0.5929166666666666,
+        "p90_hr": 0.6010277777777778,
+        "ratio_p90": 0.26935142537034734,
+        "rank": 34,
+        "worst_k_flag": false
+      },
+      "signals": {
+        "backlog_pressure": 0.0,
+        "aging_tail_14d": 0.0,
+        "duplicate_rate": 0.0,
+        "mislabel_rate": 0.0,
+        "agency_fragmentation": 0.0
+      },
+      "severity_score": 0.26935142537034734
     }
   ],
   "governance": {
@@ -128,14 +650,29 @@
   },
   "derived_insights": {
     "worst_neighborhoods": [
-      "Bayview",
-      "Tenderloin",
-      "Sunset"
+      "Mission Bay",
+      "North Beach",
+      "Hayes Valley"
     ],
     "priority_neighborhoods": [
-      "Bayview",
-      "Sunset"
+      "Mission Bay",
+      "North Beach",
+      "Hayes Valley",
+      "Lone Mountain/USF",
+      "Noe Valley",
+      "Western Addition",
+      "Bayview Hunters Point",
+      "Outer Mission",
+      "Pacific Heights",
+      "Mission",
+      "Outer Richmond",
+      "South of Market",
+      "Tenderloin",
+      "West of Twin Peaks",
+      "Oceanview/Merced/Ingleside",
+      "Financial District/South Beach",
+      "Castro/Upper Market"
     ],
-    "overall_severity": "high"
+    "overall_severity": "medium"
   }
 }

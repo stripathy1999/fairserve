@@ -5,68 +5,910 @@
     "violations": [
       {
         "constraint": "min_worst_k_improvement",
-        "neighborhood": "Bayview",
+        "neighborhood": "Mission Bay",
         "observed": 0.0,
         "allowed": -0.15
       },
       {
         "constraint": "min_worst_k_improvement",
+        "neighborhood": "North Beach",
+        "observed": 0.0,
+        "allowed": -0.15
+      },
+      {
+        "constraint": "min_worst_k_improvement",
+        "neighborhood": "Hayes Valley",
+        "observed": 0.0,
+        "allowed": -0.15
+      },
+      {
+        "constraint": "max_backlog_growth",
+        "neighborhood": "Mission Bay",
+        "observed": 1.0,
+        "allowed": 0.1
+      },
+      {
+        "constraint": "max_backlog_growth",
+        "neighborhood": "North Beach",
+        "observed": 1.0,
+        "allowed": 0.1
+      },
+      {
+        "constraint": "max_backlog_growth",
+        "neighborhood": "Hayes Valley",
+        "observed": 1.0,
+        "allowed": 0.1
+      },
+      {
+        "constraint": "max_backlog_growth",
+        "neighborhood": "Lone Mountain/USF",
+        "observed": 1.0,
+        "allowed": 0.1
+      },
+      {
+        "constraint": "max_backlog_growth",
+        "neighborhood": "Noe Valley",
+        "observed": 1.0,
+        "allowed": 0.1
+      },
+      {
+        "constraint": "max_backlog_growth",
+        "neighborhood": "Western Addition",
+        "observed": 1.0,
+        "allowed": 0.1
+      },
+      {
+        "constraint": "max_backlog_growth",
+        "neighborhood": "Bayview Hunters Point",
+        "observed": 1.0,
+        "allowed": 0.1
+      },
+      {
+        "constraint": "max_backlog_growth",
+        "neighborhood": "Outer Mission",
+        "observed": 1.0,
+        "allowed": 0.1
+      },
+      {
+        "constraint": "max_backlog_growth",
+        "neighborhood": "Pacific Heights",
+        "observed": 1.0,
+        "allowed": 0.1
+      },
+      {
+        "constraint": "max_backlog_growth",
+        "neighborhood": "Mission",
+        "observed": 1.0,
+        "allowed": 0.1
+      },
+      {
+        "constraint": "max_backlog_growth",
+        "neighborhood": "Outer Richmond",
+        "observed": 1.0,
+        "allowed": 0.1
+      },
+      {
+        "constraint": "max_backlog_growth",
+        "neighborhood": "South of Market",
+        "observed": 1.0,
+        "allowed": 0.1
+      },
+      {
+        "constraint": "max_backlog_growth",
         "neighborhood": "Tenderloin",
-        "observed": 0.0,
-        "allowed": -0.15
+        "observed": 1.0,
+        "allowed": 0.1
       },
       {
-        "constraint": "min_worst_k_improvement",
-        "neighborhood": "Sunset",
-        "observed": 0.0,
-        "allowed": -0.15
+        "constraint": "max_backlog_growth",
+        "neighborhood": "West of Twin Peaks",
+        "observed": 1.0,
+        "allowed": 0.1
+      },
+      {
+        "constraint": "max_backlog_growth",
+        "neighborhood": "Oceanview/Merced/Ingleside",
+        "observed": 1.0,
+        "allowed": 0.1
+      },
+      {
+        "constraint": "max_backlog_growth",
+        "neighborhood": "Financial District/South Beach",
+        "observed": 1.0,
+        "allowed": 0.1
+      },
+      {
+        "constraint": "max_backlog_growth",
+        "neighborhood": "Castro/Upper Market",
+        "observed": 1.0,
+        "allowed": 0.1
+      },
+      {
+        "constraint": "max_backlog_growth",
+        "neighborhood": "Sunset/Parkside",
+        "observed": 1.0,
+        "allowed": 0.1
+      },
+      {
+        "constraint": "max_backlog_growth",
+        "neighborhood": "Nob Hill",
+        "observed": 1.0,
+        "allowed": 0.1
+      },
+      {
+        "constraint": "max_backlog_growth",
+        "neighborhood": "Twin Peaks",
+        "observed": 1.0,
+        "allowed": 0.1
+      },
+      {
+        "constraint": "max_backlog_growth",
+        "neighborhood": "Marina",
+        "observed": 1.0,
+        "allowed": 0.1
+      },
+      {
+        "constraint": "max_backlog_growth",
+        "neighborhood": "Japantown",
+        "observed": 1.0,
+        "allowed": 0.1
+      },
+      {
+        "constraint": "max_backlog_growth",
+        "neighborhood": "Chinatown",
+        "observed": 1.0,
+        "allowed": 0.1
+      },
+      {
+        "constraint": "max_backlog_growth",
+        "neighborhood": "Excelsior",
+        "observed": 1.0,
+        "allowed": 0.1
+      },
+      {
+        "constraint": "max_backlog_growth",
+        "neighborhood": "Russian Hill",
+        "observed": 1.0,
+        "allowed": 0.1
+      },
+      {
+        "constraint": "max_backlog_growth",
+        "neighborhood": "Potrero Hill",
+        "observed": 1.0,
+        "allowed": 0.1
+      },
+      {
+        "constraint": "max_backlog_growth",
+        "neighborhood": "Inner Richmond",
+        "observed": 1.0,
+        "allowed": 0.1
+      },
+      {
+        "constraint": "max_backlog_growth",
+        "neighborhood": "Haight Ashbury",
+        "observed": 1.0,
+        "allowed": 0.1
+      },
+      {
+        "constraint": "max_backlog_growth",
+        "neighborhood": "Visitacion Valley",
+        "observed": 1.0,
+        "allowed": 0.1
+      },
+      {
+        "constraint": "max_backlog_growth",
+        "neighborhood": "Glen Park",
+        "observed": 1.0,
+        "allowed": 0.1
+      },
+      {
+        "constraint": "max_backlog_growth",
+        "neighborhood": "Bernal Heights",
+        "observed": 1.0,
+        "allowed": 0.1
+      },
+      {
+        "constraint": "max_backlog_growth",
+        "neighborhood": "Presidio Heights",
+        "observed": 1.0,
+        "allowed": 0.1
+      },
+      {
+        "constraint": "max_backlog_growth",
+        "neighborhood": "Lakeshore",
+        "observed": 1.0,
+        "allowed": 0.1
+      },
+      {
+        "constraint": "max_backlog_growth",
+        "neighborhood": "Inner Sunset",
+        "observed": 1.0,
+        "allowed": 0.1
       }
     ]
   },
   {
     "policy_id": "Efficiency_Boost",
-    "pass": true,
-    "violations": []
+    "pass": false,
+    "violations": [
+      {
+        "constraint": "min_worst_k_improvement",
+        "neighborhood": "Mission Bay",
+        "observed": 0.0,
+        "allowed": -0.15
+      },
+      {
+        "constraint": "min_worst_k_improvement",
+        "neighborhood": "North Beach",
+        "observed": 0.0,
+        "allowed": -0.15
+      },
+      {
+        "constraint": "min_worst_k_improvement",
+        "neighborhood": "Hayes Valley",
+        "observed": 0.0,
+        "allowed": -0.15
+      },
+      {
+        "constraint": "max_backlog_growth",
+        "neighborhood": "Mission Bay",
+        "observed": 1.0,
+        "allowed": 0.1
+      },
+      {
+        "constraint": "max_backlog_growth",
+        "neighborhood": "North Beach",
+        "observed": 1.0,
+        "allowed": 0.1
+      },
+      {
+        "constraint": "max_backlog_growth",
+        "neighborhood": "Hayes Valley",
+        "observed": 1.0,
+        "allowed": 0.1
+      },
+      {
+        "constraint": "max_backlog_growth",
+        "neighborhood": "Lone Mountain/USF",
+        "observed": 1.0,
+        "allowed": 0.1
+      },
+      {
+        "constraint": "max_backlog_growth",
+        "neighborhood": "Noe Valley",
+        "observed": 1.0,
+        "allowed": 0.1
+      },
+      {
+        "constraint": "max_backlog_growth",
+        "neighborhood": "Western Addition",
+        "observed": 1.0,
+        "allowed": 0.1
+      },
+      {
+        "constraint": "max_backlog_growth",
+        "neighborhood": "Bayview Hunters Point",
+        "observed": 1.0,
+        "allowed": 0.1
+      },
+      {
+        "constraint": "max_backlog_growth",
+        "neighborhood": "Outer Mission",
+        "observed": 1.0,
+        "allowed": 0.1
+      },
+      {
+        "constraint": "max_backlog_growth",
+        "neighborhood": "Pacific Heights",
+        "observed": 1.0,
+        "allowed": 0.1
+      },
+      {
+        "constraint": "max_backlog_growth",
+        "neighborhood": "Mission",
+        "observed": 1.0,
+        "allowed": 0.1
+      },
+      {
+        "constraint": "max_backlog_growth",
+        "neighborhood": "Outer Richmond",
+        "observed": 1.0,
+        "allowed": 0.1
+      },
+      {
+        "constraint": "max_backlog_growth",
+        "neighborhood": "South of Market",
+        "observed": 1.0,
+        "allowed": 0.1
+      },
+      {
+        "constraint": "max_backlog_growth",
+        "neighborhood": "Tenderloin",
+        "observed": 1.0,
+        "allowed": 0.1
+      },
+      {
+        "constraint": "max_backlog_growth",
+        "neighborhood": "West of Twin Peaks",
+        "observed": 1.0,
+        "allowed": 0.1
+      },
+      {
+        "constraint": "max_backlog_growth",
+        "neighborhood": "Oceanview/Merced/Ingleside",
+        "observed": 1.0,
+        "allowed": 0.1
+      },
+      {
+        "constraint": "max_backlog_growth",
+        "neighborhood": "Financial District/South Beach",
+        "observed": 1.0,
+        "allowed": 0.1
+      },
+      {
+        "constraint": "max_backlog_growth",
+        "neighborhood": "Castro/Upper Market",
+        "observed": 1.0,
+        "allowed": 0.1
+      },
+      {
+        "constraint": "max_backlog_growth",
+        "neighborhood": "Sunset/Parkside",
+        "observed": 1.0,
+        "allowed": 0.1
+      },
+      {
+        "constraint": "max_backlog_growth",
+        "neighborhood": "Nob Hill",
+        "observed": 1.0,
+        "allowed": 0.1
+      },
+      {
+        "constraint": "max_backlog_growth",
+        "neighborhood": "Twin Peaks",
+        "observed": 1.0,
+        "allowed": 0.1
+      },
+      {
+        "constraint": "max_backlog_growth",
+        "neighborhood": "Marina",
+        "observed": 1.0,
+        "allowed": 0.1
+      },
+      {
+        "constraint": "max_backlog_growth",
+        "neighborhood": "Japantown",
+        "observed": 1.0,
+        "allowed": 0.1
+      },
+      {
+        "constraint": "max_backlog_growth",
+        "neighborhood": "Chinatown",
+        "observed": 1.0,
+        "allowed": 0.1
+      },
+      {
+        "constraint": "max_backlog_growth",
+        "neighborhood": "Excelsior",
+        "observed": 1.0,
+        "allowed": 0.1
+      },
+      {
+        "constraint": "max_backlog_growth",
+        "neighborhood": "Russian Hill",
+        "observed": 1.0,
+        "allowed": 0.1
+      },
+      {
+        "constraint": "max_backlog_growth",
+        "neighborhood": "Potrero Hill",
+        "observed": 1.0,
+        "allowed": 0.1
+      },
+      {
+        "constraint": "max_backlog_growth",
+        "neighborhood": "Inner Richmond",
+        "observed": 1.0,
+        "allowed": 0.1
+      },
+      {
+        "constraint": "max_backlog_growth",
+        "neighborhood": "Haight Ashbury",
+        "observed": 1.0,
+        "allowed": 0.1
+      },
+      {
+        "constraint": "max_backlog_growth",
+        "neighborhood": "Visitacion Valley",
+        "observed": 1.0,
+        "allowed": 0.1
+      },
+      {
+        "constraint": "max_backlog_growth",
+        "neighborhood": "Glen Park",
+        "observed": 1.0,
+        "allowed": 0.1
+      },
+      {
+        "constraint": "max_backlog_growth",
+        "neighborhood": "Bernal Heights",
+        "observed": 1.0,
+        "allowed": 0.1
+      },
+      {
+        "constraint": "max_backlog_growth",
+        "neighborhood": "Presidio Heights",
+        "observed": 1.0,
+        "allowed": 0.1
+      },
+      {
+        "constraint": "max_backlog_growth",
+        "neighborhood": "Lakeshore",
+        "observed": 1.0,
+        "allowed": 0.1
+      },
+      {
+        "constraint": "max_backlog_growth",
+        "neighborhood": "Inner Sunset",
+        "observed": 1.0,
+        "allowed": 0.1
+      }
+    ]
   },
   {
     "policy_id": "Equity_Shift",
     "pass": false,
     "violations": [
       {
-        "constraint": "max_neighborhood_harm",
-        "neighborhood": "Mission",
-        "observed": 0.4288,
-        "allowed": 0.05
+        "constraint": "min_worst_k_improvement",
+        "neighborhood": "Mission Bay",
+        "observed": 0.0,
+        "allowed": -0.15
       },
       {
-        "constraint": "max_neighborhood_harm",
-        "neighborhood": "Marina",
-        "observed": 0.4238,
-        "allowed": 0.05
+        "constraint": "min_worst_k_improvement",
+        "neighborhood": "North Beach",
+        "observed": 0.0,
+        "allowed": -0.15
+      },
+      {
+        "constraint": "min_worst_k_improvement",
+        "neighborhood": "Hayes Valley",
+        "observed": 0.0,
+        "allowed": -0.15
+      },
+      {
+        "constraint": "max_backlog_growth",
+        "neighborhood": "Mission Bay",
+        "observed": 1.0,
+        "allowed": 0.1
+      },
+      {
+        "constraint": "max_backlog_growth",
+        "neighborhood": "North Beach",
+        "observed": 1.0,
+        "allowed": 0.1
+      },
+      {
+        "constraint": "max_backlog_growth",
+        "neighborhood": "Hayes Valley",
+        "observed": 1.0,
+        "allowed": 0.1
+      },
+      {
+        "constraint": "max_backlog_growth",
+        "neighborhood": "Lone Mountain/USF",
+        "observed": 1.0,
+        "allowed": 0.1
+      },
+      {
+        "constraint": "max_backlog_growth",
+        "neighborhood": "Noe Valley",
+        "observed": 1.0,
+        "allowed": 0.1
+      },
+      {
+        "constraint": "max_backlog_growth",
+        "neighborhood": "Western Addition",
+        "observed": 1.0,
+        "allowed": 0.1
+      },
+      {
+        "constraint": "max_backlog_growth",
+        "neighborhood": "Bayview Hunters Point",
+        "observed": 1.0,
+        "allowed": 0.1
+      },
+      {
+        "constraint": "max_backlog_growth",
+        "neighborhood": "Outer Mission",
+        "observed": 1.0,
+        "allowed": 0.1
+      },
+      {
+        "constraint": "max_backlog_growth",
+        "neighborhood": "Pacific Heights",
+        "observed": 1.0,
+        "allowed": 0.1
       },
       {
         "constraint": "max_backlog_growth",
         "neighborhood": "Mission",
-        "observed": 0.1455,
+        "observed": 1.0,
+        "allowed": 0.1
+      },
+      {
+        "constraint": "max_backlog_growth",
+        "neighborhood": "Outer Richmond",
+        "observed": 1.0,
+        "allowed": 0.1
+      },
+      {
+        "constraint": "max_backlog_growth",
+        "neighborhood": "South of Market",
+        "observed": 1.0,
+        "allowed": 0.1
+      },
+      {
+        "constraint": "max_backlog_growth",
+        "neighborhood": "Tenderloin",
+        "observed": 1.0,
+        "allowed": 0.1
+      },
+      {
+        "constraint": "max_backlog_growth",
+        "neighborhood": "West of Twin Peaks",
+        "observed": 1.0,
+        "allowed": 0.1
+      },
+      {
+        "constraint": "max_backlog_growth",
+        "neighborhood": "Oceanview/Merced/Ingleside",
+        "observed": 1.0,
+        "allowed": 0.1
+      },
+      {
+        "constraint": "max_backlog_growth",
+        "neighborhood": "Financial District/South Beach",
+        "observed": 1.0,
+        "allowed": 0.1
+      },
+      {
+        "constraint": "max_backlog_growth",
+        "neighborhood": "Castro/Upper Market",
+        "observed": 1.0,
+        "allowed": 0.1
+      },
+      {
+        "constraint": "max_backlog_growth",
+        "neighborhood": "Sunset/Parkside",
+        "observed": 1.0,
+        "allowed": 0.1
+      },
+      {
+        "constraint": "max_backlog_growth",
+        "neighborhood": "Nob Hill",
+        "observed": 1.0,
+        "allowed": 0.1
+      },
+      {
+        "constraint": "max_backlog_growth",
+        "neighborhood": "Twin Peaks",
+        "observed": 1.0,
         "allowed": 0.1
       },
       {
         "constraint": "max_backlog_growth",
         "neighborhood": "Marina",
-        "observed": 0.1415,
+        "observed": 1.0,
         "allowed": 0.1
       },
       {
-        "constraint": "citywide_p90_must_not_worsen",
-        "neighborhood": "CITYWIDE",
-        "observed": 0.0563,
-        "allowed": 0.0
+        "constraint": "max_backlog_growth",
+        "neighborhood": "Japantown",
+        "observed": 1.0,
+        "allowed": 0.1
+      },
+      {
+        "constraint": "max_backlog_growth",
+        "neighborhood": "Chinatown",
+        "observed": 1.0,
+        "allowed": 0.1
+      },
+      {
+        "constraint": "max_backlog_growth",
+        "neighborhood": "Excelsior",
+        "observed": 1.0,
+        "allowed": 0.1
+      },
+      {
+        "constraint": "max_backlog_growth",
+        "neighborhood": "Russian Hill",
+        "observed": 1.0,
+        "allowed": 0.1
+      },
+      {
+        "constraint": "max_backlog_growth",
+        "neighborhood": "Potrero Hill",
+        "observed": 1.0,
+        "allowed": 0.1
+      },
+      {
+        "constraint": "max_backlog_growth",
+        "neighborhood": "Inner Richmond",
+        "observed": 1.0,
+        "allowed": 0.1
+      },
+      {
+        "constraint": "max_backlog_growth",
+        "neighborhood": "Haight Ashbury",
+        "observed": 1.0,
+        "allowed": 0.1
+      },
+      {
+        "constraint": "max_backlog_growth",
+        "neighborhood": "Visitacion Valley",
+        "observed": 1.0,
+        "allowed": 0.1
+      },
+      {
+        "constraint": "max_backlog_growth",
+        "neighborhood": "Glen Park",
+        "observed": 1.0,
+        "allowed": 0.1
+      },
+      {
+        "constraint": "max_backlog_growth",
+        "neighborhood": "Bernal Heights",
+        "observed": 1.0,
+        "allowed": 0.1
+      },
+      {
+        "constraint": "max_backlog_growth",
+        "neighborhood": "Presidio Heights",
+        "observed": 1.0,
+        "allowed": 0.1
+      },
+      {
+        "constraint": "max_backlog_growth",
+        "neighborhood": "Lakeshore",
+        "observed": 1.0,
+        "allowed": 0.1
+      },
+      {
+        "constraint": "max_backlog_growth",
+        "neighborhood": "Inner Sunset",
+        "observed": 1.0,
+        "allowed": 0.1
       }
     ]
   },
   {
     "policy_id": "Balanced_Reform",
-    "pass": true,
-    "violations": []
+    "pass": false,
+    "violations": [
+      {
+        "constraint": "min_worst_k_improvement",
+        "neighborhood": "Mission Bay",
+        "observed": 0.0,
+        "allowed": -0.15
+      },
+      {
+        "constraint": "min_worst_k_improvement",
+        "neighborhood": "North Beach",
+        "observed": 0.0,
+        "allowed": -0.15
+      },
+      {
+        "constraint": "min_worst_k_improvement",
+        "neighborhood": "Hayes Valley",
+        "observed": 0.0,
+        "allowed": -0.15
+      },
+      {
+        "constraint": "max_backlog_growth",
+        "neighborhood": "Mission Bay",
+        "observed": 1.0,
+        "allowed": 0.1
+      },
+      {
+        "constraint": "max_backlog_growth",
+        "neighborhood": "North Beach",
+        "observed": 1.0,
+        "allowed": 0.1
+      },
+      {
+        "constraint": "max_backlog_growth",
+        "neighborhood": "Hayes Valley",
+        "observed": 1.0,
+        "allowed": 0.1
+      },
+      {
+        "constraint": "max_backlog_growth",
+        "neighborhood": "Lone Mountain/USF",
+        "observed": 1.0,
+        "allowed": 0.1
+      },
+      {
+        "constraint": "max_backlog_growth",
+        "neighborhood": "Noe Valley",
+        "observed": 1.0,
+        "allowed": 0.1
+      },
+      {
+        "constraint": "max_backlog_growth",
+        "neighborhood": "Western Addition",
+        "observed": 1.0,
+        "allowed": 0.1
+      },
+      {
+        "constraint": "max_backlog_growth",
+        "neighborhood": "Bayview Hunters Point",
+        "observed": 1.0,
+        "allowed": 0.1
+      },
+      {
+        "constraint": "max_backlog_growth",
+        "neighborhood": "Outer Mission",
+        "observed": 1.0,
+        "allowed": 0.1
+      },
+      {
+        "constraint": "max_backlog_growth",
+        "neighborhood": "Pacific Heights",
+        "observed": 1.0,
+        "allowed": 0.1
+      },
+      {
+        "constraint": "max_backlog_growth",
+        "neighborhood": "Mission",
+        "observed": 1.0,
+        "allowed": 0.1
+      },
+      {
+        "constraint": "max_backlog_growth",
+        "neighborhood": "Outer Richmond",
+        "observed": 1.0,
+        "allowed": 0.1
+      },
+      {
+        "constraint": "max_backlog_growth",
+        "neighborhood": "South of Market",
+        "observed": 1.0,
+        "allowed": 0.1
+      },
+      {
+        "constraint": "max_backlog_growth",
+        "neighborhood": "Tenderloin",
+        "observed": 1.0,
+        "allowed": 0.1
+      },
+      {
+        "constraint": "max_backlog_growth",
+        "neighborhood": "West of Twin Peaks",
+        "observed": 1.0,
+        "allowed": 0.1
+      },
+      {
+        "constraint": "max_backlog_growth",
+        "neighborhood": "Oceanview/Merced/Ingleside",
+        "observed": 1.0,
+        "allowed": 0.1
+      },
+      {
+        "constraint": "max_backlog_growth",
+        "neighborhood": "Financial District/South Beach",
+        "observed": 1.0,
+        "allowed": 0.1
+      },
+      {
+        "constraint": "max_backlog_growth",
+        "neighborhood": "Castro/Upper Market",
+        "observed": 1.0,
+        "allowed": 0.1
+      },
+      {
+        "constraint": "max_backlog_growth",
+        "neighborhood": "Sunset/Parkside",
+        "observed": 1.0,
+        "allowed": 0.1
+      },
+      {
+        "constraint": "max_backlog_growth",
+        "neighborhood": "Nob Hill",
+        "observed": 1.0,
+        "allowed": 0.1
+      },
+      {
+        "constraint": "max_backlog_growth",
+        "neighborhood": "Twin Peaks",
+        "observed": 1.0,
+        "allowed": 0.1
+      },
+      {
+        "constraint": "max_backlog_growth",
+        "neighborhood": "Marina",
+        "observed": 1.0,
+        "allowed": 0.1
+      },
+      {
+        "constraint": "max_backlog_growth",
+        "neighborhood": "Japantown",
+        "observed": 1.0,
+        "allowed": 0.1
+      },
+      {
+        "constraint": "max_backlog_growth",
+        "neighborhood": "Chinatown",
+        "observed": 1.0,
+        "allowed": 0.1
+      },
+      {
+        "constraint": "max_backlog_growth",
+        "neighborhood": "Excelsior",
+        "observed": 1.0,
+        "allowed": 0.1
+      },
+      {
+        "constraint": "max_backlog_growth",
+        "neighborhood": "Russian Hill",
+        "observed": 1.0,
+        "allowed": 0.1
+      },
+      {
+        "constraint": "max_backlog_growth",
+        "neighborhood": "Potrero Hill",
+        "observed": 1.0,
+        "allowed": 0.1
+      },
+      {
+        "constraint": "max_backlog_growth",
+        "neighborhood": "Inner Richmond",
+        "observed": 1.0,
+        "allowed": 0.1
+      },
+      {
+        "constraint": "max_backlog_growth",
+        "neighborhood": "Haight Ashbury",
+        "observed": 1.0,
+        "allowed": 0.1
+      },
+      {
+        "constraint": "max_backlog_growth",
+        "neighborhood": "Visitacion Valley",
+        "observed": 1.0,
+        "allowed": 0.1
+      },
+      {
+        "constraint": "max_backlog_growth",
+        "neighborhood": "Glen Park",
+        "observed": 1.0,
+        "allowed": 0.1
+      },
+      {
+        "constraint": "max_backlog_growth",
+        "neighborhood": "Bernal Heights",
+        "observed": 1.0,
+        "allowed": 0.1
+      },
+      {
+        "constraint": "max_backlog_growth",
+        "neighborhood": "Presidio Heights",
+        "observed": 1.0,
+        "allowed": 0.1
+      },
+      {
+        "constraint": "max_backlog_growth",
+        "neighborhood": "Lakeshore",
+        "observed": 1.0,
+        "allowed": 0.1
+      },
+      {
+        "constraint": "max_backlog_growth",
+        "neighborhood": "Inner Sunset",
+        "observed": 1.0,
+        "allowed": 0.1
+      }
+    ]
   }
 ]
