@@ -1,0 +1,8 @@
+{
+  "service_type": "encampment",
+  "verdicts": [
+    {"policy_id": "P_BASE", "pass": false, "reasons": ["Worst-K improvement 0.0% < 12%"], "constraint_values": {"worst_k_improve_pct": 0.0, "max_harm_pct": 0.0, "backlog_change_pct": 0.0}},
+    {"policy_id": "P_FAIL", "pass": false, "reasons": ["No-harm violated: Sunset worsened 7.2% > 5%", "Backlog cap violated: 11.2% > 8%"], "constraint_values": {"worst_k_improve_pct": 17.2, "max_harm_pct": 7.2, "backlog_change_pct": 11.2}},
+    {"policy_id": "P_PASS", "pass": true, "reasons": [], "constraint_values": {"worst_k_improve_pct": 13.5, "max_harm_pct": 1.6, "backlog_change_pct": 4.0}}
+  ]
+}
