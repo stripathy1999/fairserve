@@ -1,0 +1,20 @@
+{
+  "service_type": "encampment",
+  "policies": [
+    {
+      "policy_id": "P_BASE",
+      "knobs": {"capacity_shift_pct": 0, "priority_weighting": "hybrid", "efficiency_bonus_pct": 0},
+      "rationale": ["Control policy (no shifts)."]
+    },
+    {
+      "policy_id": "P_FAIL",
+      "knobs": {"capacity_shift_pct": 30, "priority_weighting": "worst_only", "efficiency_bonus_pct": 0},
+      "rationale": ["Aggressive equity shift to stress no-harm/backlog constraints."]
+    },
+    {
+      "policy_id": "P_PASS",
+      "knobs": {"capacity_shift_pct": 15, "priority_weighting": "hybrid", "efficiency_bonus_pct": 4},
+      "rationale": ["Balanced shift + small efficiency gain to improve worst neighborhoods safely."]
+    }
+  ]
+}
