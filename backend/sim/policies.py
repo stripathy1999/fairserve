@@ -8,7 +8,7 @@ policy templates, and includes validation logic to enforce constraints.
 # 1. Define Policy Knobs
 # Allowed parameter ranges and descriptions
 POLICY_KNOBS = {
-    "capacity_shift_pct": {
+    "capacity_shift_pct": { #How much capacity can we reallocate from well-served neighborhoods to under-served ones?
         "type": float,
         "min": 0.0,
         "max": 0.30,
