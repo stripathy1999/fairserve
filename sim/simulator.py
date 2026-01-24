@@ -4,8 +4,8 @@ import numpy as np
 import policies
 
 # --- Configuration ---
-HISTORICAL_FILE = "data/processed/incidents_historical.parquet"
-LIVE_FILE = "data/processed/incidents_live.parquet"
+HISTORICAL_FILE = "data/processed/historical"
+LIVE_FILE = "data/processed/live_stream"
 CITY_STATE_FILE = "data/processed/city_state.json"
 OUTPUT_FILE = "data/processed/scenario_results.json"
 
