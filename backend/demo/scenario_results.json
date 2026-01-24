@@ -1,0 +1,26 @@
+{
+  "service_type": "encampment",
+  "results": [
+    {
+      "policy_id": "P_BASE",
+      "citywide_p90_delta_pct": 0.0,
+      "backlog_delta_pct": 0.0,
+      "p90_delta_by_neighborhood_pct": {"Bayview": 0.0, "Tenderloin": 0.0, "Sunset": 0.0},
+      "equity_gain_score": 0.0
+    },
+    {
+      "policy_id": "P_FAIL",
+      "citywide_p90_delta_pct": -2.0,
+      "backlog_delta_pct": 11.2,
+      "p90_delta_by_neighborhood_pct": {"Bayview": -18.5, "Tenderloin": -16.0, "Sunset": 7.2},
+      "equity_gain_score": 0.72
+    },
+    {
+      "policy_id": "P_PASS",
+      "citywide_p90_delta_pct": -1.1,
+      "backlog_delta_pct": 4.0,
+      "p90_delta_by_neighborhood_pct": {"Bayview": -14.2, "Tenderloin": -12.8, "Sunset": 1.6},
+      "equity_gain_score": 0.58
+    }
+  ]
+}
