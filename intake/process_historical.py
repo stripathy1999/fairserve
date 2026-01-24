@@ -22,16 +22,28 @@ def main():
     end_date = datetime.datetime.now()
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
     start_date = end_date - relativedelta(months=3)
 =======
     start_date = end_date - relativedelta(months=1)
 >>>>>>> c9de744 (Refactor fairness metrics and simulator for strict historical/live data separation and robustness)
 =======
+=======
+>>>>>>> d854be0 (Refactor fairness metrics and simulator for strict historical/live data separation and robustness)
     start_date = end_date - relativedelta(months=1)
 =======
     start_date = end_date - relativedelta(months=3)
 >>>>>>> bca58ca (improved data engineering)
+<<<<<<< HEAD
 >>>>>>> e900676 (merged)
+=======
+=======
+    start_date = end_date - relativedelta(months=3)
+=======
+    start_date = end_date - relativedelta(months=1)
+>>>>>>> c9de744 (Refactor fairness metrics and simulator for strict historical/live data separation and robustness)
+>>>>>>> da586b3 (Refactor fairness metrics and simulator for strict historical/live data separation and robustness)
+>>>>>>> d854be0 (Refactor fairness metrics and simulator for strict historical/live data separation and robustness)
     
     # Process in 1-week chunks
     current_start = start_date
