@@ -6,7 +6,7 @@ import datetime
 from typing import List, Dict
 import pandas as pd
 import numpy as np
-from intake.config import SERVICE_KEYWORDS, DEDUP_THRESHOLD_METERS, DEDUP_TIME_WINDOW_HOURS
+from intake.config import DEDUP_THRESHOLD_METERS, DEDUP_TIME_WINDOW_HOURS, OFFICIAL_CATEGORY_KEYWORDS
 
 def normalize_record(record: Dict) -> Dict:
     """
@@ -34,27 +34,39 @@ def normalize_record(record: Dict) -> Dict:
 
 def repair_category(record: Dict) -> Dict:
     """
-    Checks description against config.SERVICE_KEYWORDS. 
-    Overrides category and sets confidence.
+    Checks description against config.OFFICIAL_CATEGORY_KEYWORDS. 
+    If original_category is present and matches keywords (or no keywords found), keep it.
+    If original_category clearly conflicts with keywords, override with keyword match.
     """
     description = record["description_redacted"].lower()
-    original = str(record.get("original_category", "")).lower()
+    original = str(record.get("original_category", "")).strip()
     
-    best_match = "other"
-    confidence = 0.5 # Start low
+    # 1. Start with original as default
+    best_match = original if original else "unknown"
+    confidence = 1.0 if original else 0.0
+
+    # 2. Check for keyword matches
+    found_categories = []
+    for category, keywords in OFFICIAL_CATEGORY_KEYWORDS.items():
+        for kw in keywords:
+            if kw in description:
+                found_categories.append(category)
+                break # Matched this category, move to next
     
-    # Check description keywords
-    for category, keywords in SERVICE_KEYWORDS.items():
-        if any(kw in description for kw in keywords):
-            best_match = category
-            confidence = 0.9
-            break
+    # 3. Decision Logic
+    if found_categories:
+        # If original is one of the found categories (or effectively same group), trust original
+        # Note: This is a strict string match. Logic could be fuzzier if needed.
+        if original in found_categories:
+            best_match = original
+            confidence = 1.0
+        else:
+            # Conflict! Description says X, Category says Y (or Y is empty)
+            # We trust the text content more if we have a match.
+            # Pick the first one for now (could be improved with score)
+            best_match = found_categories[0]
+            confidence = 0.8 # Inferred
             
-    # If no keyword match, trust original if valid
-    if best_match == "other" and original in SERVICE_KEYWORDS:
-        best_match = original
-        confidence = 0.8
-        
     record["service_type"] = best_match
     record["service_type_confidence"] = confidence
     return record
