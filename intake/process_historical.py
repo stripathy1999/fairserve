@@ -20,7 +20,7 @@ def main():
     
     # Define time range: last 6 months
     end_date = datetime.datetime.now()
-    start_date = end_date - relativedelta(months=6)
+    start_date = end_date - relativedelta(months=1)
     
     # Process in 1-week chunks
     current_start = start_date
