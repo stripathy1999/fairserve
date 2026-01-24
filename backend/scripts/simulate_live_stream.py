@@ -13,6 +13,7 @@ sys.path.append(os.path.abspath(os.path.join(os.path.dirname(__file__), '..')))
 from intake.api_client import CityAPIClient
 
 
+
 from intake.process_live import ingest_live_batch
 
 
@@ -25,9 +26,6 @@ OUTPUT_DIR = os.path.join(PROJECT_ROOT, "data/processed/live_stream")
 
 
 
-# Define output directory relative to the project root (assuming script is in scripts/)
-PROJECT_ROOT = os.path.abspath(os.path.join(os.path.dirname(__file__), '..'))
-OUTPUT_DIR = os.path.join(PROJECT_ROOT, "data/processed/live_stream")
 
 def fetch_seed_data(days_back=7):
     """Fetches a pool of real data to sample from."""
