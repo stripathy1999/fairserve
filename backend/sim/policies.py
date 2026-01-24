@@ -12,7 +12,11 @@ POLICY_KNOBS = {
     "capacity_shift_pct": { #How much capacity can we reallocate from well-served neighborhoods to under-served ones?
 =======
     "capacity_shift_pct": {
+<<<<<<< HEAD
 >>>>>>> c9de744 (Refactor fairness metrics and simulator for strict historical/live data separation and robustness)
+=======
+>>>>>>> 1468d63 (Refactor fairness metrics and simulator for strict historical/live data separation and robustness)
+>>>>>>> 550ad52 (Refactor fairness metrics and simulator for strict historical/live data separation and robustness)
         "type": float,
         "min": 0.0,
         "max": 0.30,
@@ -22,7 +26,11 @@ POLICY_KNOBS = {
     "efficiency_bonus_pct": { #How much efficiency can we realistically gain without adding staff?
 =======
     "efficiency_bonus_pct": {
+<<<<<<< HEAD
 >>>>>>> c9de744 (Refactor fairness metrics and simulator for strict historical/live data separation and robustness)
+=======
+>>>>>>> 1468d63 (Refactor fairness metrics and simulator for strict historical/live data separation and robustness)
+>>>>>>> 550ad52 (Refactor fairness metrics and simulator for strict historical/live data separation and robustness)
         "type": float,
         "min": 0.0,
         "max": 0.20,
@@ -32,7 +40,11 @@ POLICY_KNOBS = {
     "max_reassignments": { #How many times can a ticket bounce before we stop moving it?
 =======
     "max_reassignments": {
+<<<<<<< HEAD
 >>>>>>> c9de744 (Refactor fairness metrics and simulator for strict historical/live data separation and robustness)
+=======
+>>>>>>> 1468d63 (Refactor fairness metrics and simulator for strict historical/live data separation and robustness)
+>>>>>>> 550ad52 (Refactor fairness metrics and simulator for strict historical/live data separation and robustness)
         "type": int,
         "min": 0,
         "max": 3,
