@@ -1,0 +1,112 @@
+[
+  {
+    "service_type": "Encampment",
+    "neighborhood": "Bayview",
+    "N": 213,
+    "p50_hr": 63.5111499191793,
+    "p90_hr": 212.93481479146863,
+    "city_p90_hr": 129.36444650480152,
+    "ratio_p90": 1.6460072341712937,
+    "rank": 1,
+    "worst_k_flag": true
+  },
+  {
+    "service_type": "Encampment",
+    "neighborhood": "Tenderloin",
+    "N": 205,
+    "p50_hr": 37.46910924566928,
+    "p90_hr": 128.94740077526075,
+    "city_p90_hr": 129.36444650480152,
+    "ratio_p90": 0.9967761951540117,
+    "rank": 2,
+    "worst_k_flag": true
+  },
+  {
+    "service_type": "Encampment",
+    "neighborhood": "Sunset",
+    "N": 202,
+    "p50_hr": 38.662847950751356,
+    "p90_hr": 124.31156072253637,
+    "city_p90_hr": 129.36444650480152,
+    "ratio_p90": 0.960940691830057,
+    "rank": 3,
+    "worst_k_flag": true
+  },
+  {
+    "service_type": "Encampment",
+    "neighborhood": "Mission",
+    "N": 204,
+    "p50_hr": 36.92550628739246,
+    "p90_hr": 105.86500209016698,
+    "city_p90_hr": 129.36444650480152,
+    "ratio_p90": 0.8183469643356582,
+    "rank": 4,
+    "worst_k_flag": false
+  },
+  {
+    "service_type": "Encampment",
+    "neighborhood": "Marina",
+    "N": 211,
+    "p50_hr": 14.771005735659946,
+    "p90_hr": 40.71168605615826,
+    "city_p90_hr": 129.36444650480152,
+    "ratio_p90": 0.314705370417576,
+    "rank": 5,
+    "worst_k_flag": false
+  },
+  {
+    "service_type": "Graffiti",
+    "neighborhood": "Bayview",
+    "N": 177,
+    "p50_hr": 67.7980426649479,
+    "p90_hr": 220.34777614025003,
+    "city_p90_hr": 126.65721447796183,
+    "ratio_p90": 1.7397175285154423,
+    "rank": 1,
+    "worst_k_flag": true
+  },
+  {
+    "service_type": "Graffiti",
+    "neighborhood": "Mission",
+    "N": 202,
+    "p50_hr": 39.478110794049826,
+    "p90_hr": 134.34400812470307,
+    "city_p90_hr": 126.65721447796183,
+    "ratio_p90": 1.0606897418234216,
+    "rank": 2,
+    "worst_k_flag": true
+  },
+  {
+    "service_type": "Graffiti",
+    "neighborhood": "Tenderloin",
+    "N": 211,
+    "p50_hr": 36.14767312422217,
+    "p90_hr": 113.20744515959262,
+    "city_p90_hr": 126.65721447796183,
+    "ratio_p90": 0.8938096864532779,
+    "rank": 3,
+    "worst_k_flag": true
+  },
+  {
+    "service_type": "Graffiti",
+    "neighborhood": "Sunset",
+    "N": 186,
+    "p50_hr": 28.01401128814234,
+    "p90_hr": 105.71030205210599,
+    "city_p90_hr": 126.65721447796183,
+    "ratio_p90": 0.8346172974655102,
+    "rank": 4,
+    "worst_k_flag": false
+  },
+  {
+    "service_type": "Graffiti",
+    "neighborhood": "Marina",
+    "N": 189,
+    "p50_hr": 14.271396272876968,
+    "p90_hr": 41.91494382969221,
+    "city_p90_hr": 126.65721447796183,
+    "ratio_p90": 0.33093214628516365,
+    "rank": 5,
+    "worst_k_flag": false
+  }
+]
