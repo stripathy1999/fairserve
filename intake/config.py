@@ -6,10 +6,14 @@ from dotenv import load_dotenv
 # Load environment variables from .env file
 load_dotenv()
 
-SERVICE_KEYWORDS = {
-    "encampment": ["encampment", "tent", "homeless", "sleeping"],
-    "cleaning": ["trash", "garbage", "litter", "debris", "needle", "feces"],
-    "graffiti": ["graffiti", "tag", "paint", "spray"]
+
+
+
+# Map of Official Category -> Keywords
+OFFICIAL_CATEGORY_KEYWORDS = {
+    "Street and Sidewalk Cleaning": ["trash", "garbage", "litter", "debris", "needle", "feces"],
+    "Graffiti": ["graffiti", "tag", "paint", "spray"],
+    "Encampments": ["encampment", "tent", "homeless", "sleeping"]
 }
 
 DEDUP_THRESHOLD_METERS = 100
