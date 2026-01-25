@@ -1,0 +1,2 @@
+[nat.plugins]
+fairserve_agentiq = fairserve_agentiq.register

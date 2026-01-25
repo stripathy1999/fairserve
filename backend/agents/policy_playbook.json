@@ -1,0 +1,133 @@
+[
+  {
+    "id": "BACKLOG_SHOCK_ABSORBER",
+    "name": "Backlog shock absorber",
+    "when_it_works": "Backlog pressure is high in worst-k neighborhoods.",
+    "risks": ["May slow best-performing neighborhoods", "Can increase citywide p90 if overused"],
+    "tradeoffs": "Equity improves at the expense of some citywide speed.",
+    "knobs": ["capacity_shift_pct", "max_reassignments"],
+    "safe_ranges": {"capacity_shift_pct": [0.15, 0.3], "max_reassignments": [1, 3]},
+    "signal_rules": [
+      {"signal": "max_backlog_pressure", "op": ">=", "value": 1.2},
+      {"signal": "worst_k_ratio_p90", "op": ">=", "value": 1.5}
+    ]
+  },
+  {
+    "id": "EQUITY_RESCUE",
+    "name": "Equity rescue",
+    "when_it_works": "Worst-k ratio_p90 is significantly above city average.",
+    "risks": ["Potential harm to non-worst neighborhoods", "Backlog tradeoffs"],
+    "tradeoffs": "Targets worst-k p90 reduction.",
+    "knobs": ["capacity_shift_pct", "efficiency_bonus_pct"],
+    "safe_ranges": {"capacity_shift_pct": [0.2, 0.3], "efficiency_bonus_pct": [0.02, 0.08]},
+    "signal_rules": [
+      {"signal": "worst_k_ratio_p90", "op": ">=", "value": 1.8}
+    ]
+  },
+  {
+    "id": "EFFICIENCY_FIRST",
+    "name": "Efficiency-first",
+    "when_it_works": "Citywide p90 is high but equity gap is moderate.",
+    "risks": ["May not move worst-k enough", "Can under-serve equity goals"],
+    "tradeoffs": "Boosts overall throughput with modest equity changes.",
+    "knobs": ["efficiency_bonus_pct"],
+    "safe_ranges": {"efficiency_bonus_pct": [0.05, 0.15]},
+    "signal_rules": [
+      {"signal": "citywide_p90", "op": ">=", "value": 48},
+      {"signal": "avg_ratio_p90", "op": "<=", "value": 1.4}
+    ]
+  },
+  {
+    "id": "REASSIGNMENT_CAP",
+    "name": "Reassignment cap",
+    "when_it_works": "Aging tail and churn signals are elevated.",
+    "risks": ["Limits flexibility", "May require extra efficiency"],
+    "tradeoffs": "Stabilizes staffing while allowing modest shifts.",
+    "knobs": ["max_reassignments", "efficiency_bonus_pct"],
+    "safe_ranges": {"max_reassignments": [0, 1], "efficiency_bonus_pct": [0.03, 0.08]},
+    "signal_rules": [
+      {"signal": "max_aging_tail_14d", "op": ">=", "value": 0.2}
+    ]
+  },
+  {
+    "id": "DUPLICATE_CLEANUP",
+    "name": "Duplicate cleanup",
+    "when_it_works": "Duplicate rate is high across neighborhoods.",
+    "risks": ["If duplicates are misclassified, can bias improvements"],
+    "tradeoffs": "Small equity impact, improves operational efficiency.",
+    "knobs": ["efficiency_bonus_pct"],
+    "safe_ranges": {"efficiency_bonus_pct": [0.04, 0.1]},
+    "signal_rules": [
+      {"signal": "avg_duplicate_rate", "op": ">=", "value": 0.12}
+    ]
+  },
+  {
+    "id": "MISLABEL_SUPPRESSION",
+    "name": "Mislabel suppression",
+    "when_it_works": "Mislabel rate spikes in worst-k neighborhoods.",
+    "risks": ["Over-correction can slow intake"],
+    "tradeoffs": "Operational cleanup that supports equity gains.",
+    "knobs": ["efficiency_bonus_pct", "max_reassignments"],
+    "safe_ranges": {"efficiency_bonus_pct": [0.03, 0.1], "max_reassignments": [1, 2]},
+    "signal_rules": [
+      {"signal": "avg_mislabel_rate", "op": ">=", "value": 0.1},
+      {"signal": "worst_k_ratio_p90", "op": ">=", "value": 1.4}
+    ]
+  },
+  {
+    "id": "CONSERVATIVE_SHIFT",
+    "name": "Conservative shift",
+    "when_it_works": "Equity gap exists but backlog pressure is moderate.",
+    "risks": ["May not reach worst-k improvement threshold"],
+    "tradeoffs": "Lower risk of harm to non-worst neighborhoods.",
+    "knobs": ["capacity_shift_pct"],
+    "safe_ranges": {"capacity_shift_pct": [0.05, 0.15]},
+    "signal_rules": [
+      {"signal": "max_backlog_pressure", "op": "<=", "value": 1.0},
+      {"signal": "avg_ratio_p90", "op": ">=", "value": 1.2}
+    ]
+  },
+  {
+    "id": "BACKLOG_STABILIZATION",
+    "name": "Backlog stabilization",
+    "when_it_works": "Backlog growth risk is high citywide.",
+    "risks": ["Equity improvements can be slower"],
+    "tradeoffs": "Stabilizes backlog while avoiding harm constraints.",
+    "knobs": ["capacity_shift_pct", "efficiency_bonus_pct"],
+    "safe_ranges": {"capacity_shift_pct": [0.1, 0.2], "efficiency_bonus_pct": [0.04, 0.08]},
+    "signal_rules": [
+      {"signal": "max_backlog_pressure", "op": ">=", "value": 1.0},
+      {"signal": "citywide_p90", "op": ">=", "value": 36}
+    ]
+  },
+  {
+    "id": "WORSTK_FOCUS",
+    "name": "Worst-k focus",
+    "when_it_works": "Worst-k list is stable and clearly underperforming.",
+    "risks": ["Potential harm to median neighborhoods"],
+    "tradeoffs": "Aggressive equity improvement targeting.",
+    "knobs": ["capacity_shift_pct", "max_reassignments"],
+    "safe_ranges": {"capacity_shift_pct": [0.2, 0.3], "max_reassignments": [2, 3]},
+    "signal_rules": [
+      {"signal": "worst_k_count", "op": ">=", "value": 2},
+      {"signal": "worst_k_ratio_p90", "op": ">=", "value": 1.6}
+    ]
+  },
+  {
+    "id": "BALANCED_UPLIFT",
+    "name": "Balanced uplift",
+    "when_it_works": "Equity gap and citywide p90 are both elevated.",
+    "risks": ["Needs careful tuning to avoid harm"],
+    "tradeoffs": "Mix of shift and efficiency for balanced gains.",
+    "knobs": ["capacity_shift_pct", "efficiency_bonus_pct", "max_reassignments"],
+    "safe_ranges": {
+      "capacity_shift_pct": [0.15, 0.25],
+      "efficiency_bonus_pct": [0.04, 0.1],
+      "max_reassignments": [1, 2]
+    },
+    "signal_rules": [
+      {"signal": "citywide_p90", "op": ">=", "value": 40},
+      {"signal": "avg_ratio_p90", "op": ">=", "value": 1.3}
+    ]
+  }
+]

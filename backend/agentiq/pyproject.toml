@@ -1,0 +1,12 @@
+[build-system]
+requires = ["setuptools>=64"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "fairserve-agentiq"
+version = "0.1.0"
+description = "FairServe AgentIQ workflow integration"
+dependencies = ["nvidia-nat[langchain]"]
+
+[project.entry-points.'nat.plugins']
+fairserve_agentiq = "fairserve_agentiq.register"

@@ -1,0 +1,11 @@
+README.md
+pyproject.toml
+src/fairserve_agentiq/__init__.py
+src/fairserve_agentiq/register.py
+src/fairserve_agentiq/workflow.py
+src/fairserve_agentiq.egg-info/PKG-INFO
+src/fairserve_agentiq.egg-info/SOURCES.txt
+src/fairserve_agentiq.egg-info/dependency_links.txt
+src/fairserve_agentiq.egg-info/entry_points.txt
+src/fairserve_agentiq.egg-info/requires.txt
+src/fairserve_agentiq.egg-info/top_level.txt

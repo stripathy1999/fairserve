@@ -24,14 +24,17 @@ export default function HomePage() {
   );
 
   return (
-    <div className="space-y-8">
-      <section>
-        <h2 className="text-2xl font-semibold text-zinc-900">
+    <div className="space-y-10">
+      <section className="rounded-2xl border border-zinc-200 bg-white p-6 shadow-sm">
+        <p className="text-xs uppercase tracking-widest text-emerald-600">
           FairServe Operations Console
+        </p>
+        <h2 className="mt-3 text-3xl font-semibold text-zinc-900">
+          City services, fairness, and policy decisions—one view.
         </h2>
-        <p className="mt-2 text-sm text-zinc-600">
-          Tools for city operations: intake, fairness, policy lab, review, and
-          agentic workflow.
+        <p className="mt-3 text-sm text-zinc-600">
+          Monitor live incidents, identify equity gaps, simulate policy levers, and track the
+          agentic workflow from proposal to memo.
         </p>
       </section>
 
@@ -49,28 +52,28 @@ export default function HomePage() {
 
       <section className="grid gap-3 md:grid-cols-2">
         <a
-          className="rounded-lg border border-zinc-200 bg-white px-4 py-3 text-sm font-medium text-zinc-700 shadow-sm hover:border-zinc-300"
+          className="rounded-lg border border-zinc-200 bg-white px-4 py-4 text-sm font-medium text-zinc-700 shadow-sm hover:border-zinc-300"
           href={`/intake${serviceParam}`}
         >
-          Go to Intake
+          Go to Intake →
         </a>
         <a
-          className="rounded-lg border border-zinc-200 bg-white px-4 py-3 text-sm font-medium text-zinc-700 shadow-sm hover:border-zinc-300"
+          className="rounded-lg border border-zinc-200 bg-white px-4 py-4 text-sm font-medium text-zinc-700 shadow-sm hover:border-zinc-300"
           href={`/fairness${serviceParam}`}
         >
-          Go to Fairness
+          Go to Fairness →
         </a>
         <a
-          className="rounded-lg border border-zinc-200 bg-white px-4 py-3 text-sm font-medium text-zinc-700 shadow-sm hover:border-zinc-300"
+          className="rounded-lg border border-zinc-200 bg-white px-4 py-4 text-sm font-medium text-zinc-700 shadow-sm hover:border-zinc-300"
           href={`/policy${serviceParam}`}
         >
-          Go to Policy
+          Go to Policy Lab →
         </a>
         <a
-          className="rounded-lg border border-zinc-200 bg-white px-4 py-3 text-sm font-medium text-zinc-700 shadow-sm hover:border-zinc-300"
+          className="rounded-lg border border-zinc-200 bg-white px-4 py-4 text-sm font-medium text-zinc-700 shadow-sm hover:border-zinc-300"
           href={`/review${serviceParam}`}
         >
-          Go to Review
+          Go to Review →
         </a>
       </section>
 
@@ -78,27 +81,27 @@ export default function HomePage() {
         {[
           {
             title: "Intake Firewall",
-            desc: "Live 311 feed with dedup, repair, redaction.",
+            desc: "Live 311 feed with dedup, repair, and redaction checks.",
             href: `/intake${serviceParam}`,
           },
           {
             title: "Fairness Leaderboard",
-            desc: "Worst neighborhoods by service response time.",
+            desc: "Rank neighborhoods by p90 response time and equity gaps.",
             href: `/fairness${serviceParam}`,
           },
           {
             title: "Policy Lab",
-            desc: "Simulate and verify candidate policies.",
+            desc: "Tune capacity + efficiency levers and verify constraints.",
             href: `/policy${serviceParam}`,
           },
           {
             title: "Executive Review",
-            desc: "PASS/FAIL, red-team risks, memo output.",
+            desc: "PASS/FAIL, constraint reasons, red-team risks, memo output.",
             href: `/review${serviceParam}`,
           },
           {
             title: "Agent Ops Room",
-            desc: "Watch Nemotron agents debate and decide.",
+            desc: "Watch Nemotron agents debate and decide in real time.",
             href: `/agents${serviceParam}`,
           },
         ].map((item) => (
@@ -111,6 +114,16 @@ export default function HomePage() {
             <p className="mt-2 text-xs text-zinc-500">{item.desc}</p>
           </a>
         ))}
+      </section>
+
+      <section className="rounded-lg border border-zinc-200 bg-white p-4 text-sm text-zinc-600">
+        <div className="text-xs font-semibold uppercase text-zinc-400">What you can do</div>
+        <div className="mt-3 grid gap-2 md:grid-cols-2">
+          <div>✔️ Monitor live incidents and investigate details quickly.</div>
+          <div>✔️ Compare neighborhood fairness and identify worst‑k areas.</div>
+          <div>✔️ Simulate policy levers and see constraints immediately.</div>
+          <div>✔️ Track the agentic workflow and export final memos.</div>
+        </div>
       </section>
     </div>
   );

@@ -1,0 +1,35 @@
+functions:
+  fairserve_retrieve:
+    _type: fairserve_retrieve
+    description: "Retrieve evidence cards from city metrics."
+  fairserve_propose:
+    _type: fairserve_propose
+    description: "Propose policies from a city state."
+  fairserve_simulate:
+    _type: fairserve_simulate
+    description: "Run simulation for each proposed policy."
+  fairserve_verify:
+    _type: fairserve_verify
+    description: "Verify simulated policies against governance constraints."
+  fairserve_rank:
+    _type: fairserve_rank
+    description: "Rank policies deterministically using quant metrics."
+  fairserve_redteam:
+    _type: fairserve_redteam
+    description: "Red-team risk review based on sim + verify results."
+  fairserve_memo:
+    _type: fairserve_memo
+    description: "Executive memo based on selected policy and evidence."
+
+workflow:
+  _type: sequential_executor
+  tool_list: [
+    fairserve_retrieve,
+    fairserve_propose,
+    fairserve_simulate,
+    fairserve_verify,
+    fairserve_rank,
+    fairserve_redteam,
+    fairserve_memo
+  ]
+  raise_type_incompatibility: false

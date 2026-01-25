@@ -16,6 +16,8 @@ export const zone2 = {
   refresh: () => http<any>("/api/zone2/refresh", { method: "POST" }),
   propose: (payload: any) =>
     http<any>("/api/agents/propose", { method: "POST", body: JSON.stringify(payload) }),
+  evidence: (service?: string) =>
+    http<any>(`/api/agents/evidence${service ? `?service=${encodeURIComponent(service)}` : ""}`),
   redteam: (payload: any) =>
     http<any>("/api/agents/redteam", { method: "POST", body: JSON.stringify(payload) }),
   memo: (payload: any) =>
