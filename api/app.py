@@ -4,13 +4,15 @@ FairServe Zone-2 API
 Lightweight FastAPI layer exposing Zone-2 capabilities:
 - Metrics (read-only evidence)
 - City State (primary briefing packet)
+- Budget Context (read-only budget data)
 - Simulation (policy testing)
 - Verification (constitution enforcement)
 - Refresh (recompute Zone-2 outputs)
 """
 
-from fastapi import FastAPI, HTTPException
+from fastapi import FastAPI, HTTPException, Query
 from fastapi.responses import JSONResponse
+from typing import Optional
 import json
 from pathlib import Path
 import logging
@@ -38,6 +40,7 @@ app = FastAPI(
 # Paths
 PROJECT_ROOT = Path(__file__).parent.parent
 DATA_DIR = PROJECT_ROOT / "data" / "processed"
+BUDGET_DIR = PROJECT_ROOT / "data" / "budget"
 
 
 @app.get("/")
@@ -88,6 +91,99 @@ async def health_check():
             missing_files=missing,
             message=f"Missing {len(missing)} required files. Run /refresh to regenerate."
         )
+
+
+@app.get("/budget_context")
+def get_budget_context(service_type: Optional[str] = Query(None, description="Optional service type to filter budget context")):
+    """
+    Budget context for governance, not decision-making.
+    
+    Returns read-only budget data from precomputed files.
+    Budget does NOT make decisions or act as an agent.
+    
+    Query Parameters:
+    - service_type (optional): Filter by specific service type
+    
+    Returns:
+    - If service_type provided: Budget context for that service's department
+    - If no service_type: All department budget contexts
+    """
+    
+    # Load required files
+    dept_summary_file = DATA_DIR / "department_budget_summary.json"
+    budget_metrics_file = DATA_DIR / "budget_metrics.json"
+    service_mapping_file = BUDGET_DIR / "service_type_to_department.json"
+    
+    try:
+        with open(dept_summary_file, 'r') as f:
+            dept_summary = json.load(f)
+        with open(budget_metrics_file, 'r') as f:
+            budget_metrics = json.load(f)
+        with open(service_mapping_file, 'r') as f:
+            service_mapping = json.load(f)
+    except FileNotFoundError as e:
+        raise HTTPException(
+            status_code=500,
+            detail=f"Budget data files not found: {e}. Run budget pipeline to generate."
+        )
+    
+    # Budget constraints (hardcoded)
+    budget_constraints = {
+        "max_budget_stress_ratio": 0.15,
+        "recommended_budget_stress_ratio": 0.05
+    }
+    
+    # Assumptions
+    assumptions = [
+        "Budget is spending-only",
+        "Latest fiscal year used",
+        "Service-to-department mapping is static",
+        "Costs are estimated, not allocated"
+    ]
+    
+    if service_type:
+        # Filter for specific service type
+        if service_type not in service_mapping:
+            raise HTTPException(
+                status_code=400,
+                detail=f"Service type '{service_type}' not found in mapping. Available: {list(service_mapping.keys())}"
+            )
+        
+        department = service_mapping[service_type]
+        
+        # Find budget metrics for this service type
+        service_budget = next((b for b in budget_metrics if b['service_type'] == service_type), None)
+        
+        if not service_budget:
+            raise HTTPException(
+                status_code=404,
+                detail=f"Budget metrics not found for service type '{service_type}'"
+            )
+        
+        return {
+            "service_type": service_type,
+            "department": department,
+            "budget_year": service_budget['fiscal_year'],
+            "annual_budget_usd": service_budget['department_annual_budget_usd'],
+            "estimated_budget_per_incident_usd": service_budget['estimated_budget_per_incident_usd'],
+            "budget_constraints": budget_constraints,
+            "assumptions": assumptions
+        }
+    else:
+        # Return all budget contexts
+        budget_contexts = []
+        
+        for metric in budget_metrics:
+            budget_contexts.append({
+                "department": metric['department'],
+                "budget_year": metric['fiscal_year'],
+                "annual_budget_usd": metric['department_annual_budget_usd'],
+                "estimated_budget_per_incident_usd": metric['estimated_budget_per_incident_usd']
+            })
+        
+        return {
+            "budget_contexts": budget_contexts
+        }
 
 
 @app.get("/fairness_metrics")
