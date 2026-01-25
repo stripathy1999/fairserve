@@ -1,4 +1,1 @@
-.env
-*.swp
-node_modules/
-.next/
+nemotron-venv/
