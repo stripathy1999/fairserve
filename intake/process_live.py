@@ -22,7 +22,7 @@ def main():
     client = CityAPIClient()
     
     # specific file for live append
-    output_path = os.path.abspath(os.path.join(os.path.dirname(__file__), '../data/processed/incidents_live.parquet'))
+    output_path = os.path.abspath(os.path.join(os.path.dirname(__file__), '../data/processed/live_stream'))
     
     # initialize "last checked" to now
     last_checked = datetime.datetime.now()
