@@ -1,7 +1,0 @@
-services:
-  - id: encampment
-    label: Encampment
-  - id: cleaning_trash
-    label: Cleaning Trash
-  - id: graffiti
-    label: Graffiti
