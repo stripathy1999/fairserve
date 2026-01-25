@@ -1,4 +1,6 @@
 .env
-*.swp
-node_modules/
-.next/
+data/
+*.pyc
+__pycache__/
+venv/
+.DS_Store
