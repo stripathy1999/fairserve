@@ -6,6 +6,7 @@ import numpy as np
 # --- Configuration ---
 FAIRNESS_FILE = "data/processed/fairness_metrics.json"
 SIGNALS_FILE = "data/processed/neighborhood_signals.json"
+BUDGET_METRICS_FILE = "data/processed/budget_metrics.json"
 OUTPUT_FILE = "data/processed/city_state.json"
 
 # --- Governance Constitution (Hardcoded) ---
@@ -33,6 +34,14 @@ def main():
             fairness_data = json.load(f)
         with open(SIGNALS_FILE, 'r') as f:
             signals_data = json.load(f)
+        
+        # Load budget metrics (optional)
+        budget_metrics = []
+        try:
+            with open(BUDGET_METRICS_FILE, 'r') as f:
+                budget_metrics = json.load(f)
+        except FileNotFoundError:
+            print("Warning: Budget metrics not found. Budget context will be omitted.")
     except FileNotFoundError as e:
         print(f"Error loading inputs: {e}")
         return
@@ -89,7 +98,29 @@ def main():
         "service_volume": int(total_incidents)
     }
 
-    # 3. Neighborhood-level Data
+    # 3. Budget Context (if available)
+    budget_context = None
+    budget_per_incident = 0.0
+    
+    if budget_metrics:
+        # Find budget for this service type
+        service_budget = next((b for b in budget_metrics if b['service_type'] == target_service), None)
+        if service_budget:
+            budget_context = {
+                "department": service_budget['department'],
+                "budget_year": service_budget['fiscal_year'],
+                "annual_budget_usd": service_budget['department_annual_budget_usd'],
+                "budget_per_incident_estimate": service_budget['estimated_budget_per_incident_usd']
+            }
+            budget_per_incident = service_budget['estimated_budget_per_incident_usd']
+    
+    # Budget constraints (hardcoded)
+    budget_constraints = {
+        "max_budget_stress_ratio": 0.15,
+        "recommended_budget_stress_ratio": 0.05
+    }
+    
+    # 4. Neighborhood-level Data
     # Merge fairness and signals
     merged = pd.merge(f_df, s_df, on="neighborhood", how="left", suffixes=('', '_sig'))
     
@@ -103,6 +134,13 @@ def main():
         
         # Compute severity_score
         severity = ratio_p90 * (1 + backlog_p)
+        
+        # Advanced budget-aware metrics
+        cost_weighted_backlog = backlog_p * budget_per_incident if budget_per_incident > 0 else 0.0
+        
+        # unfair_z approximation: (ratio_p90 - 1.0) / 0.3 (assuming std ~0.3)
+        unfair_z = (ratio_p90 - 1.0) / 0.3 if ratio_p90 > 0 else 0.0
+        budget_adjusted_priority = unfair_z * np.log(1 + budget_per_incident) if budget_per_incident > 0 else 0.0
         
         n_data = {
             "neighborhood": row['neighborhood'],
@@ -120,7 +158,11 @@ def main():
                 "mislabel_rate": row.get('mislabel_rate', 0.0),
                 "agency_fragmentation": row.get('agency_fragmentation') # can be None
             },
-            "severity_score": float(severity)
+            "severity_score": float(severity),
+            "budget_metrics": {
+                "cost_weighted_backlog_pressure": round(cost_weighted_backlog, 2),
+                "budget_adjusted_priority_score": round(budget_adjusted_priority, 4)
+            }
         }
         neighborhoods_list.append(n_data)
 
@@ -156,6 +198,11 @@ def main():
         "policy_space": POLICY_SPACE,
         "derived_insights": derived_insights
     }
+    
+    # Add budget context if available
+    if budget_context:
+        city_state["budget_context"] = budget_context
+        city_state["budget_constraints"] = budget_constraints
 
     # Write to file
     with open(OUTPUT_FILE, 'w') as f:

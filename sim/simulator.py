@@ -35,7 +35,14 @@ def main():
     service_type = city_state['city_context']['service_type']
     neighborhoods_data = city_state['neighborhoods']
     
+    # Extract budget context if available
+    budget_context = city_state.get('budget_context', {})
+    budget_per_incident = budget_context.get('budget_per_incident_estimate', 0.0)
+    annual_budget = budget_context.get('annual_budget_usd', 0.0)
+    
     print(f"Simulating for service: {service_type}")
+    if budget_per_incident > 0:
+        print(f"Budget per incident: ${budget_per_incident:,.2f}")
 
     # Parameters Estimation
     # Filter for service type
@@ -212,13 +219,29 @@ def main():
         clean_effects = {}
         for n, eff in sim_effects.items():
             clean_effects[n] = {k: v for k, v in eff.items() if k != "new_ratio"}
+        
+        # Budget Cost Metrics
+        # estimated_policy_cost = capacity changes * budget_per_incident * horizon
+        # Approximate: sum of absolute backlog changes * budget_per_incident
+        total_backlog_change = sum(abs(neighborhood_params[n]['initial_backlog'] * sim_effects[n]['delta_backlog_pct']) 
+                                   for n in neighborhood_names)
+        estimated_cost = total_backlog_change * budget_per_incident if budget_per_incident > 0 else 0.0
+        
+        # equity_per_million
+        equity_per_million = (equity_imp / (estimated_cost / 1_000_000)) if estimated_cost > 0 else 0.0
+        
+        # budget_stress_ratio
+        budget_stress_ratio = (estimated_cost / annual_budget) if annual_budget > 0 else 0.0
 
         results.append({
             "policy_id": pid,
             "parameters": params,
             "neighborhood_effects": clean_effects,
             "citywide_delta_p90": round(avg_delta, 4),
-            "equity_improvement": round(equity_imp, 4)
+            "equity_improvement": round(equity_imp, 4),
+            "estimated_policy_cost": round(estimated_cost, 2),
+            "equity_per_million": round(equity_per_million, 4),
+            "budget_stress_ratio": round(budget_stress_ratio, 4)
         })
 
     # Output
