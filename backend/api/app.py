@@ -114,6 +114,20 @@ def get_budget_context(service_type: Optional[str] = Query(None, description="Op
     budget_metrics_file = DATA_DIR / "budget_metrics.json"
     service_mapping_file = BUDGET_DIR / "service_type_to_department.json"
     
+    missing_files = [
+        str(path)
+        for path in (dept_summary_file, budget_metrics_file, service_mapping_file)
+        if not path.exists()
+    ]
+    if missing_files:
+        raise HTTPException(
+            status_code=404,
+            detail=(
+                "Budget data files not found. Run budget pipeline to generate. "
+                f"Missing: {missing_files}"
+            ),
+        )
+
     try:
         with open(dept_summary_file, 'r') as f:
             dept_summary = json.load(f)
@@ -121,10 +135,10 @@ def get_budget_context(service_type: Optional[str] = Query(None, description="Op
             budget_metrics = json.load(f)
         with open(service_mapping_file, 'r') as f:
             service_mapping = json.load(f)
-    except FileNotFoundError as e:
+    except json.JSONDecodeError as e:
         raise HTTPException(
             status_code=500,
-            detail=f"Budget data files not found: {e}. Run budget pipeline to generate."
+            detail=f"Invalid JSON in budget data files: {e}",
         )
     
     # Budget constraints (hardcoded)
@@ -142,6 +156,16 @@ def get_budget_context(service_type: Optional[str] = Query(None, description="Op
     ]
     
     if service_type:
+        normalized_service = service_type.strip()
+        if not normalized_service:
+            raise HTTPException(
+                status_code=400,
+                detail="Service type cannot be empty or whitespace.",
+            )
+        mapping_lookup = {key.lower(): key for key in service_mapping.keys()}
+        lookup_key = normalized_service.lower()
+        if lookup_key in mapping_lookup:
+            service_type = mapping_lookup[lookup_key]
         # Filter for specific service type
         if service_type not in service_mapping:
             raise HTTPException(
