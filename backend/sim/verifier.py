@@ -30,6 +30,10 @@ def main():
     MAX_BACKLOG = constraints.get('max_backlog_growth', 0.10)
     NO_CITY_WORSEN = constraints.get('citywide_p90_must_not_worsen', True)
     
+    # Budget constraints (optional)
+    budget_constraints = city_state.get('budget_constraints', {})
+    MAX_BUDGET_STRESS = budget_constraints.get('max_budget_stress_ratio', 0.15)
+    
     # Identify Worst-K Neighborhoods
     worst_k_list = city_state.get('derived_insights', {}).get('worst_neighborhoods', [])
     if not worst_k_list:
@@ -98,6 +102,17 @@ def main():
                     "neighborhood": "CITYWIDE",
                     "observed": city_delta,
                     "allowed": 0.0
+                })
+        
+        # E. Budget Stress Rule (optional)
+        budget_stress = policy.get('budget_stress_ratio')
+        if budget_stress is not None and MAX_BUDGET_STRESS is not None:
+            if budget_stress > MAX_BUDGET_STRESS:
+                violations.append({
+                    "constraint": "budget_stress_exceeded",
+                    "neighborhood": "BUDGET",
+                    "observed": budget_stress,
+                    "allowed": MAX_BUDGET_STRESS
                 })
             
         # Verdict

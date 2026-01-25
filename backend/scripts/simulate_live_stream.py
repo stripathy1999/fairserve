@@ -7,25 +7,15 @@ import datetime
 import uuid
 
 # Add project root to path
-# Add project root to path
 sys.path.append(os.path.abspath(os.path.join(os.path.dirname(__file__), '..')))
 
+from intake.processor import process_batch
+from intake.processor import process_batch
 from intake.api_client import CityAPIClient
-
-
-
-from intake.process_live import ingest_live_batch
-
-
 
 # Define output directory relative to the project root (assuming script is in scripts/)
 PROJECT_ROOT = os.path.abspath(os.path.join(os.path.dirname(__file__), '..'))
 OUTPUT_DIR = os.path.join(PROJECT_ROOT, "data/processed/live_stream")
-
-
-
-
-
 
 def fetch_seed_data(days_back=7):
     """Fetches a pool of real data to sample from."""
@@ -68,7 +58,7 @@ def generate_mock_batch(seed_pool, size=20):
     return batch
 
 def simulate_stream(interval_seconds=15*60, batch_size=20):
-    print(f"🚀 Starting Live Simulation (Direct Integration)")
+    print(f"🚀 Starting Live Simulation (Replaying Real Data)")
     print(f"Rate: {batch_size} records every {interval_seconds} seconds.")
     
     # Initialize seed data
@@ -86,10 +76,33 @@ def simulate_stream(interval_seconds=15*60, batch_size=20):
             
             raw_data = generate_mock_batch(seed_pool, batch_size)
             
-            # Send to Ingestion
-            ingest_live_batch(raw_data)
+            # Process
+            df = process_batch(raw_data)
             
-            print(f"   ✅ Sent {len(raw_data)} records to ingestion.")
+            # Deduplicate: Remove duplicates from this batch
+            initial_count = len(df)
+            df = df[df['is_duplicate'] == False]
+            dedup_count = len(df)
+            
+            if dedup_count < initial_count:
+                print(f"   ✂️  Removed {initial_count - dedup_count} duplicates.")
+            
+            # Save results (Parquet)
+            if not os.path.exists(OUTPUT_DIR):
+                os.makedirs(OUTPUT_DIR)
+            
+            # Use timestamp and UUID for unique filename
+            timestamp = datetime.datetime.now().strftime("%Y%m%d_%H%M%S")
+            unique_id = uuid.uuid4().hex[:6]
+            file_name = f"batch_{timestamp}_{unique_id}.parquet"
+            file_path = os.path.join(OUTPUT_DIR, file_name)
+            
+            df.to_parquet(file_path, index=False)
+            
+            # Stats
+            print(f"   ✅ Processed {len(df)} records. Saved to {file_path}")
+            if not df.empty:
+                print(f"   Sample Limit: {df.iloc[0]['service_type']} (Confidence: {df.iloc[0]['service_type_confidence']})")
             
             print(f"   Waiting {interval_seconds}s for next batch...")
             time.sleep(interval_seconds)
@@ -98,8 +111,13 @@ def simulate_stream(interval_seconds=15*60, batch_size=20):
         print("\n🛑 Simulation stopped by user.")
 
 if __name__ == "__main__":
-    # Hardcoded values as per requirements: 15 minutes, 20 records
-    interval = 15 * 60 
+    # Allow command line overrides for testing: python simulate_live_stream.py [interval] [size]
+    interval = 15 * 60 # 15 minutes
     size = 20
     
+    if len(sys.argv) > 1:
+        interval = int(sys.argv[1])
+    if len(sys.argv) > 2:
+        size = int(sys.argv[2])
+        
     simulate_stream(interval, size)
