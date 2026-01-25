@@ -21,9 +21,6 @@ def main():
     
     client = CityAPIClient()
     
-    # specific file for live append
-    output_path = os.path.abspath(os.path.join(os.path.dirname(__file__), '../data/processed/incidents_live.parquet'))
-    
     # initialize "last checked" to now
     last_checked = datetime.datetime.now()
     
@@ -34,23 +31,7 @@ def main():
             current_time = datetime.datetime.now()
             
             if new_data:
-                # Process
-                df_batch = process_batch(new_data)
-                
-                # Append to parquet
-                # Parquet append is tricky (requires reading or partitioned dataset).
-                # For simplicity here, we'll read-concat-write (inefficient for big data, OK for demo)
-                # OR just write separate timestamps files.
-                # Requirement says "Appends results to... incidents_live.parquet"
-                
-                if os.path.exists(output_path):
-                    existing_df = pd.read_parquet(output_path)
-                    combined_df = pd.concat([existing_df, df_batch], ignore_index=True)
-                else:
-                    combined_df = df_batch
-                
-                combined_df.to_parquet(output_path, index=False)
-                
+                ingest_live_batch(new_data)
                 print(f"[{datetime.datetime.now().time()}] Ingested {len(new_data)} new tickets.")
             else:
                 # print(".", end="", flush=True) # Heartbeat
@@ -61,6 +42,34 @@ def main():
             
     except KeyboardInterrupt:
         print("\nStopping Live Ingestion.")
+
+def ingest_live_batch(data_batch):
+    """
+    Processes and saves a batch of live data.
+    Can be called by the API poller or the simulator.
+    """
+    # basic check
+    if not data_batch:
+        return
+
+    output_path = os.path.abspath(os.path.join(os.path.dirname(__file__), '../data/processed/live_stream'))
+    
+    # Process
+    df_batch = process_batch(data_batch)
+    
+    # Ensure directory exists
+    if not os.path.exists(output_path):
+        os.makedirs(output_path, exist_ok=True)
+
+    # Use timestamp and UUID for unique filename
+    timestamp = datetime.datetime.now().strftime("%Y%m%d_%H%M%S")
+    import uuid
+    unique_id = uuid.uuid4().hex[:6]
+    file_name = f"batch_{timestamp}_{unique_id}.parquet"
+    file_path = os.path.join(output_path, file_name)
+    
+    df_batch.to_parquet(file_path, index=False)
+
 
 if __name__ == "__main__":
     main()
