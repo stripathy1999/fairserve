@@ -19,10 +19,10 @@ from pathlib import Path
 from collections import defaultdict
 
 # Configuration
-HISTORICAL_DIR = "data/processed/historical"
-SERVICE_MAPPING_FILE = "data/budget/service_type_to_department.json"
-DEPT_SUMMARY_FILE = "data/processed/department_budget_summary.json"
-OUTPUT_FILE = "data/processed/budget_metrics.json"
+HISTORICAL_DIR = "/home/dell/Desktop/fairserve-1/backend/data/processed/historical"
+SERVICE_MAPPING_FILE = "/home/dell/Desktop/fairserve-1/backend/data/budget/service_type_to_department.json"
+DEPT_SUMMARY_FILE = "/home/dell/Desktop/fairserve-1/backend/data/processed/department_budget_summary.json"
+OUTPUT_FILE = "/home/dell/Desktop/fairserve-1/backend/data/processed/budget_metrics.json"
 
 def main():
     print("Computing budget per incident metrics...")

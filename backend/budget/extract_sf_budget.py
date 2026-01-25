@@ -12,8 +12,8 @@ import json
 from pathlib import Path
 
 # Configuration
-PARQUET_PATTERN = "/home/dell/Desktop/fairserve-1/data/budget/fy2026_batch_*.parquet"
-OUTPUT_FILE = "data/budget/sf_budget_raw.json"
+PARQUET_PATTERN = "/home/dell/Desktop/fairserve-1/backend/data/budget/fy2026_batch_*.parquet"
+OUTPUT_FILE = "/home/dell/Desktop/fairserve-1/backend/data/budget/sf_budget_raw.json"
 
 # Required fields
 FIELDS = [

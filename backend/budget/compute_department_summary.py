@@ -16,8 +16,8 @@ from pathlib import Path
 from collections import defaultdict
 
 # Configuration
-INPUT_FILE = "data/budget/sf_budget_raw.json"
-OUTPUT_FILE = "data/processed/department_budget_summary.json"
+INPUT_FILE = "/home/dell/Desktop/fairserve-1/backend/data/budget/sf_budget_raw.json"
+OUTPUT_FILE = "/home/dell/Desktop/fairserve-1/backend/data/processed/department_budget_summary.json"
 
 # Labor-related budget characters
 LABOR_CHARACTERS = {"Salaries", "Benefits", "Mandatory Fringe Benefits", "Fringe Benefits"}

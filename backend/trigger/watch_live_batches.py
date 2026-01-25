@@ -9,8 +9,8 @@ import os
 
 # --- Configuration ---
 # Absolute path recommended for watcher stability
-WATCH_DIR = os.path.abspath("data/processed/live_stream")
-TRIGGER_SCRIPT = os.path.abspath("scripts/trigger_zone2.py")
+WATCH_DIR = "/home/dell/Desktop/fairserve-1/backend/data/processed/live_stream"
+TRIGGER_SCRIPT = "/home/dell/Desktop/fairserve-1/backend/scripts/trigger_zone2.py"
 
 class LiveBatchHandler(FileSystemEventHandler):
     def on_created(self, event):
