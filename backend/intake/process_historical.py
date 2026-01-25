@@ -21,7 +21,6 @@ def main():
     # Define time range: last 6 months
     end_date = datetime.datetime.now()
     start_date = end_date - relativedelta(months=3)
-    
     # Process in 1-week chunks
     current_start = start_date
     chunk_size = datetime.timedelta(weeks=1)
