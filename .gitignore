@@ -1,2 +1,7 @@
-nemotron-venv/
-.next/
+
+.env
+data/
+*.pyc
+__pycache__/
+venv/
+.DS_Store
