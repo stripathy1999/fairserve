@@ -1,0 +1,24 @@
+/home/dell/Desktop/fairserve/backend/api/main.py:46: DeprecationWarning: 
+        on_event is deprecated, use lifespan event handlers instead.
+
+        Read more about it in the
+        [FastAPI docs for Lifespan Events](https://fastapi.tiangolo.com/advanced/events/).
+        
+  @app.on_event("startup")
+/home/dell/Desktop/fairserve/backend/api/main.py:58: DeprecationWarning: 
+        on_event is deprecated, use lifespan event handlers instead.
+
+        Read more about it in the
+        [FastAPI docs for Lifespan Events](https://fastapi.tiangolo.com/advanced/events/).
+        
+  @app.on_event("shutdown")
+INFO:     Started server process [1197436]
+INFO:     Waiting for application startup.
+INFO:     Application startup complete.
+[2026-01-25 17:39:42] [INFO    ] discord.client: logging in using static token
+INFO:     Uvicorn running on http://0.0.0.0:8081 (Press CTRL+C to quit)
+[2026-01-25 17:39:43] [INFO    ] discord.gateway: Shard ID None has connected to Gateway (Session ID: 0a35deef12e1bdacdacf927b2aa42a4f).
+INFO:     Shutting down
+INFO:     Waiting for application shutdown.
+INFO:     Application shutdown complete.
+INFO:     Finished server process [1197436]

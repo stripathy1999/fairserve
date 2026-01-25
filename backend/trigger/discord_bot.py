@@ -2,6 +2,7 @@ import discord
 import aiohttp
 import os
 import io
+import asyncio
 from dotenv import load_dotenv
 
 load_dotenv()
@@ -60,20 +61,18 @@ async def on_message(message):
                 except Exception as e:
                     await message.reply(f"❌ Error processing image: {e}")
 
-if __name__ == "__main__":
+def run_bot():
+    """Entry point for running the bot via thread."""
     if not TOKEN:
         print("Error: DISCORD_TOKEN not found in environment.")
-    else:
-        try:
-            client.run(TOKEN)
-        except discord.errors.PrivilegedIntentsRequired:
-            print("\n❌ ERROR: Privileged Intents are missing!")
-            print("To fix this:")
-            print("1. Go to https://discord.com/developers/applications")
-            print("2. Click on your Bot application")
-            print("3. Go to the 'Bot' tab (left sidebar)")
-            print("4. Scroll down to 'Privileged Gateway Intents'")
-            print("5. ENABLE 'Message Content Intent'")
-            print("6. Save Changes and restart this script.\n")
-        except Exception as e:
-            print(f"Error running bot: {e}")
+        return
+        
+    try:
+        # Check if we are in a loop already? client.run handles this well usually,
+        # but in a thread a new loop is needed.
+        client.run(TOKEN)
+    except Exception as e:
+        print(f"Error running bot: {e}")
+
+if __name__ == "__main__":
+    run_bot()

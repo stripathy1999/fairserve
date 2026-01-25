@@ -1,4 +1,3 @@
-
 import sys
 import os
 
@@ -6,9 +5,14 @@ import os
 sys.path.append(os.path.abspath(os.path.join(os.path.dirname(__file__), '..')))
 
 from intake.processor import process_batch
+from config.categories import get_all_categories
 
 def test_category_logic():
     print("Running category logic tests...")
+    
+    # Ensure categories are loaded
+    cats = get_all_categories()
+    print(f"Loaded {len(cats)} categories for testing.")
     
     mock_data = [
         # Case 1: Match - Keywords agree with Category -> Keep Category
@@ -27,19 +31,9 @@ def test_category_logic():
             "description": "Huge graffiti spray paint on the wall", # 'graffiti', 'paint' -> Graffiti
             "opened_at": "2023-01-01T10:05:00",
             "lat": 37.7750, "lon": -122.4195,
-             "status": "Open"
+            "status": "Open"
         },
-        # Case 3: Ambiguity/Subtype - Category is specific "Graffiti Private", Keywords "tag" implies "Graffiti"
-        # We want to PRESERVE "Graffiti Private" if possible, but our current logic might override if not careful.
-        # BUT: Our logic says "If original in found_categories".
-        # "Graffiti Private" is NOT in keys of OFFICIAL_CATEGORY_KEYWORDS ("Graffiti" is).
-        # So it might correct "Graffiti Private" -> "Graffiti".
-        # Let's see behavior. Ideally we want to keep original if it vaguely matches. 
-        # For now, let's test strict behavior: it might override to "Graffiti" which is acceptable per "use provided categories" instruction if "Graffiti Private" isn't in our trusted list?
-        # Actually user said "Do not make internal categories".
-        # If "Graffiti Private" is a valid SODA category, we should probably respect it.
-        # But if our config only knows "Graffiti", it will swap.
-        # Let's test that it DOES swap to the known one for now, or just trust the outcome.
+        # Case 3: Ambiguity - Unknown category, description implies a known one
         {
              "incident_id": "3",
              "original_category": "Unknown Garbage", # Unknown category

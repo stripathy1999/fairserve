@@ -6,6 +6,7 @@ import pandas as pd
 import uvicorn
 from fastapi import FastAPI, HTTPException, Query, UploadFile, File
 from typing import List, Optional
+import json
 
 # --- Configuration & Path Setup ---
 # Add project root to path to ensure we can import local modules
@@ -22,11 +23,45 @@ except ImportError as e:
     print(f"Warning: Could not import image_processing: {e}")
     process_visual_upload = None
 
+# --- Background Processing Setup ---
+import threading
+try:
+    from intake.process_live import run_scheduler
+    from trigger.discord_bot import run_bot
+except ImportError:
+    # Fallback/Retry if direct import fails
+    from backend.intake.process_live import run_scheduler
+    from backend.trigger.discord_bot import run_bot
+    
+stop_event = threading.Event()
+processor_thread = None
+discord_thread = None
+
 # --- App Initialization ---
 app = FastAPI(
     title="FairServe Live API", 
     description="API for streaming live incident data and processing visual reports."
 )
+
+@app.on_event("startup")
+def startup_event():
+    global processor_thread, discord_thread
+    
+    print("API Startup: Launching Live Processor...")
+    processor_thread = threading.Thread(target=run_scheduler, args=(stop_event,), daemon=True)
+    processor_thread.start()
+    
+    print("API Startup: Launching Discord Bot...")
+    discord_thread = threading.Thread(target=run_bot, daemon=True)
+    discord_thread.start()
+
+@app.on_event("shutdown")
+def shutdown_event():
+    print("API Shutdown: Stopping Live Processor...")
+    stop_event.set()
+    if processor_thread:
+        processor_thread.join(timeout=2)
+    # Discord bot thread is daemon, will die with process
 
 # --- Endpoints ---
 
@@ -49,22 +84,26 @@ async def create_visual_incident(file: UploadFile = File(...)):
         if "incident" in result:
             incident_data = result["incident"]
             print(incident_data)
-            # Persist to Parquet (Live Data Stream)
-            if not os.path.exists(LIVE_DATA_DIR):
-                os.makedirs(LIVE_DATA_DIR, exist_ok=True)
+            
+            # Persist to Queue (JSON)
+            QUEUE_DIR = os.path.join(PROJECT_ROOT, "data/queue")
+            if not os.path.exists(QUEUE_DIR):
+                os.makedirs(QUEUE_DIR, exist_ok=True)
                 
             timestamp = datetime.datetime.now().strftime("%Y%m%d_%H%M%S")
             import uuid
             unique_id = uuid.uuid4().hex[:6]
-            file_name = f"visual_{timestamp}_{unique_id}.parquet"
-            file_path = os.path.join(LIVE_DATA_DIR, file_name)
+            file_name = f"visual_{timestamp}_{unique_id}.json"
+            file_path = os.path.join(QUEUE_DIR, file_name)
             
-            # Wrap in list to create DataFrame
-            df = pd.DataFrame([incident_data])
-            df.to_parquet(file_path, index=False)
+            with open(file_path, 'w') as f:
+                json.dump(incident_data, f)
             
             # Return path for debug/confirmation
             result["storage_path"] = file_path
+            result["status"] = "Queued for processing"
+            
+        return result
             
         return result
     except Exception as e:

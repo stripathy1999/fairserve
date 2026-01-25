@@ -1,0 +1,65 @@
+/home/dell/Desktop/fairserve/backend/api/main.py:43: DeprecationWarning: 
+        on_event is deprecated, use lifespan event handlers instead.
+
+        Read more about it in the
+        [FastAPI docs for Lifespan Events](https://fastapi.tiangolo.com/advanced/events/).
+        
+  @app.on_event("startup")
+/home/dell/Desktop/fairserve/backend/api/main.py:50: DeprecationWarning: 
+        on_event is deprecated, use lifespan event handlers instead.
+
+        Read more about it in the
+        [FastAPI docs for Lifespan Events](https://fastapi.tiangolo.com/advanced/events/).
+        
+  @app.on_event("shutdown")
+INFO:     Started server process [1184856]
+INFO:     Waiting for application startup.
+INFO:     Application startup complete.
+INFO:     Uvicorn running on http://0.0.0.0:8081 (Press CTRL+C to quit)
+API Startup: Launching Live Processor...
+Starting Live Queue Consumer Background Thread...
+[17:26:04.524616] Live Processor: Found 1 items in queue.
+Live Processor: Processing 1 records...
+⚡ using Local LLM: /home/dell/Desktop/deploy-vllm/models--nvidia_Nemotron-3-Nano-30B-A3B-FP8/
+Warning: LLM returned non-JSON: We need to classify incident description "other_ba...
+Live Processor: Saved processed batch to /home/dell/Desktop/fairserve/backend/data/processed/live_stream/batch_20260125_172609_d3da00.parquet
+```json
+{
+  "description": "A large pothole with cracked asphalt edges, water pooling inside, and debris around the perimeter. The surface shows signs of wear and potential safety hazards.",
+  "category": "Pothole",
+  "is_incident": true
+}
+```
+{'incident_id': 'fee7f73f-5a6e-448c-8cdd-fbe8cc124e06', 'service_type': 'Pothole', 'service_type_confidence': 0.95, 'original_category': 'Pothole', 'description_redacted': 'A large pothole with cracked asphalt edges, water pooling inside, and debris around the perimeter. The surface shows signs of wear and potential safety hazards.', 'neighborhood': 'Unknown', 'lat': 0.0, 'lon': 0.0, 'opened_at': '2026-01-25T17:26:43.718183', 'closed_at': None, 'status': 'Open', 'is_duplicate': False, 'dedup_cluster_id': None, 'agency': 'Generated', 'source': 'Visual API'}
+INFO:     127.0.0.1:53600 - "POST /visual-incident HTTP/1.1" 200 OK
+[17:26:49.252467] Live Processor: Found 1 items in queue.
+Live Processor: Processing 1 records...
+Live Processor: Saved processed batch to /home/dell/Desktop/fairserve/backend/data/processed/live_stream/batch_20260125_172649_631c56.parquet
+```json
+{
+  "description": "No visible maintenance or city service issues present in the image. The scene depicts a professional workspace with no signs of potholes, graffiti, overflowing trash, or broken lighting.",
+  "category": "none",
+  "is_incident": false
+}
+```
+INFO:     127.0.0.1:41594 - "POST /visual-incident HTTP/1.1" 200 OK
+```json
+{
+  "description": "The image depicts a workspace with a laptop and external monitor displaying technical interfaces. No visible maintenance issues (e.g., potholes, graffiti, overflowing trash, broken lights) are present.",
+  "category": "None",
+  "is_incident": false
+}
+```
+INFO:     127.0.0.1:46150 - "POST /visual-incident HTTP/1.1" 200 OK
+```json
+{
+  "description": "The image shows a healthy potted plant in a decorative turtle-shaped container. There are no visible signs of damage, neglect, or hazards such as potholes, graffiti, overflowing trash, or broken lights. The plant appears well-maintained, and the surroundings are clean.",
+  "category": "None",
+  "is_incident": false
+}
+```
+INFO:     127.0.0.1:38456 - "POST /visual-incident HTTP/1.1" 200 OK
+INFO:     Shutting down
+INFO:     Waiting for application shutdown.
+INFO:     Application shutdown complete.
+INFO:     Finished server process [1184856]

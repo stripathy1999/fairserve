@@ -167,9 +167,14 @@ def flag_duplicates(df: pd.DataFrame) -> pd.DataFrame:
         
     return df
 
+    # 3. Dedup (Batch level)
+    df = flag_duplicates(df)
+    
+    return df
+
 def process_batch(raw_records: List[Dict]) -> pd.DataFrame:
     """
-    Master function: Normalization -> Repair -> Redact -> Dedup.
+    Master function: Normalization -> Repair (LLM) -> Redact -> Dedup.
     """
     if not raw_records:
         return pd.DataFrame()
@@ -177,11 +182,42 @@ def process_batch(raw_records: List[Dict]) -> pd.DataFrame:
     # 1. Normalize
     normalized_data = [normalize_record(r) for r in raw_records]
     
-    # 2. Repair & Redact (Record level)
+    # 2. Repair (LLM) & Redact
+    # Import here to avoid circular dependencies if any at module level
+    try:
+        from image_processing.nemotron_client import verify_incident_text
+    except ImportError:
+        # Fallback if path issues
+        print("Warning: Could not import Nemotron client. Skipping LLM verification.")
+        verify_incident_text = None
+
     for record in normalized_data:
-        repair_category(record)
+        # Redact first to protect PII before sending to LLM (good practice)
         record["description_redacted"] = redact_pii(record["description_redacted"])
         
+        # Verify/Repair Category using LLM
+        if verify_incident_text:
+            # only call if we have a description
+            desc = record["description_redacted"]
+            orig_cat = record["original_category"]
+            
+            if desc:
+                # This might be slow for large batches! 
+                # Be mindful of rate limits/latency.
+                try:
+                    result = verify_incident_text(desc, orig_cat)
+                    record["service_type"] = result.get("category", orig_cat)
+                    record["service_type_confidence"] = result.get("confidence", 0.0)
+                    # record["llm_reasoning"] = result.get("reasoning", "") # Optional
+                except Exception as e:
+                    print(f"LLM Verification failed for {record['incident_id']}: {e}")
+            else:
+                 record["service_type"] = orig_cat if orig_cat else "Unknown"
+                 
+        else:
+             # Fallback to old logic if import failed
+             repair_category(record)
+
     df = pd.DataFrame(normalized_data)
     
     # 3. Dedup (Batch level)
