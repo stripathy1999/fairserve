@@ -1,0 +1,18 @@
+[
+  {
+    "service_type": "Encampment",
+    "department": "HOM Homelessness Services",
+    "total_historical_incidents": 942,
+    "department_annual_budget_usd": 766169630.0,
+    "estimated_budget_per_incident_usd": 813343.56,
+    "fiscal_year": "2026"
+  },
+  {
+    "service_type": "Parking Enforcement",
+    "department": "MTA Municipal Transprtn Agncy",
+    "total_historical_incidents": 43513,
+    "department_annual_budget_usd": 1549870680.0,
+    "estimated_budget_per_incident_usd": 35618.57,
+    "fiscal_year": "2026"
+  }
+]

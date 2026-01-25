@@ -1,0 +1,442 @@
+[
+  {
+    "department": "DPH Public Health",
+    "fiscal_year": "2026",
+    "total_spending": 3320221540.0,
+    "labor_share": 0.0,
+    "ops_share": 1.0,
+    "programs_count": 7
+  },
+  {
+    "department": "PUC Public Utilities Commsn",
+    "fiscal_year": "2026",
+    "total_spending": 1892880661.0,
+    "labor_share": 0.0,
+    "ops_share": 1.0,
+    "programs_count": 7
+  },
+  {
+    "department": "AIR Airport Commission",
+    "fiscal_year": "2026",
+    "total_spending": 1728527358.0,
+    "labor_share": 0.0,
+    "ops_share": 1.0,
+    "programs_count": 3
+  },
+  {
+    "department": "MTA Municipal Transprtn Agncy",
+    "fiscal_year": "2026",
+    "total_spending": 1549870680.0,
+    "labor_share": 0.0,
+    "ops_share": 1.0,
+    "programs_count": 8
+  },
+  {
+    "department": "HSA Human Services Agency",
+    "fiscal_year": "2026",
+    "total_spending": 1244723261.0,
+    "labor_share": 0.0,
+    "ops_share": 1.0,
+    "programs_count": 4
+  },
+  {
+    "department": "POL Police",
+    "fiscal_year": "2026",
+    "total_spending": 842115548.0,
+    "labor_share": 0.0,
+    "ops_share": 1.0,
+    "programs_count": 8
+  },
+  {
+    "department": "HOM Homelessness Services",
+    "fiscal_year": "2026",
+    "total_spending": 766169630.0,
+    "labor_share": 0.0,
+    "ops_share": 1.0,
+    "programs_count": 4
+  },
+  {
+    "department": "GEN General City - Unallocated",
+    "fiscal_year": "2026",
+    "total_spending": 718888579.0,
+    "labor_share": 0.0,
+    "ops_share": 1.0,
+    "programs_count": 3
+  },
+  {
+    "department": "FIR Fire Department",
+    "fiscal_year": "2026",
+    "total_spending": 537344909.0,
+    "labor_share": 0.0,
+    "ops_share": 1.0,
+    "programs_count": 5
+  },
+  {
+    "department": "CHF Children;Youth & Families",
+    "fiscal_year": "2026",
+    "total_spending": 343118422.0,
+    "labor_share": 0.0,
+    "ops_share": 1.0,
+    "programs_count": 1
+  },
+  {
+    "department": "SHF Sheriff",
+    "fiscal_year": "2026",
+    "total_spending": 312943695.0,
+    "labor_share": 0.0,
+    "ops_share": 1.0,
+    "programs_count": 6
+  },
+  {
+    "department": "ADM GSA - City Administrator",
+    "fiscal_year": "2026",
+    "total_spending": 272790915.0,
+    "labor_share": 0.0,
+    "ops_share": 1.0,
+    "programs_count": 7
+  },
+  {
+    "department": "DPW Public Works",
+    "fiscal_year": "2026",
+    "total_spending": 263118207.0,
+    "labor_share": 0.0,
+    "ops_share": 1.0,
+    "programs_count": 9
+  },
+  {
+    "department": "REC Recreation & Park Commsn",
+    "fiscal_year": "2026",
+    "total_spending": 256880619.0,
+    "labor_share": 0.0,
+    "ops_share": 1.0,
+    "programs_count": 7
+  },
+  {
+    "department": "DEC Dept of Early Childhood",
+    "fiscal_year": "2026",
+    "total_spending": 256127117.0,
+    "labor_share": 0.0,
+    "ops_share": 1.0,
+    "programs_count": 1
+  },
+  {
+    "department": "LIB Public Library",
+    "fiscal_year": "2026",
+    "total_spending": 193276543.0,
+    "labor_share": 0.0,
+    "ops_share": 1.0,
+    "programs_count": 5
+  },
+  {
+    "department": "MYR Mayor",
+    "fiscal_year": "2026",
+    "total_spending": 179480569.0,
+    "labor_share": 0.0,
+    "ops_share": 1.0,
+    "programs_count": 2
+  },
+  {
+    "department": "PRT Port",
+    "fiscal_year": "2026",
+    "total_spending": 156168832.0,
+    "labor_share": 0.0,
+    "ops_share": 1.0,
+    "programs_count": 6
+  },
+  {
+    "department": "DEM Emergency Management",
+    "fiscal_year": "2026",
+    "total_spending": 144374939.0,
+    "labor_share": 0.0,
+    "ops_share": 1.0,
+    "programs_count": 7
+  },
+  {
+    "department": "DAT District Attorney",
+    "fiscal_year": "2026",
+    "total_spending": 96118066.0,
+    "labor_share": 0.0,
+    "ops_share": 1.0,
+    "programs_count": 3
+  },
+  {
+    "department": "DBI Building Inspection",
+    "fiscal_year": "2026",
+    "total_spending": 92564444.0,
+    "labor_share": 0.0,
+    "ops_share": 1.0,
+    "programs_count": 1
+  },
+  {
+    "department": "ECN Economic & Wrkfrce Dvlpmnt",
+    "fiscal_year": "2026",
+    "total_spending": 80960954.0,
+    "labor_share": 0.0,
+    "ops_share": 1.0,
+    "programs_count": 2
+  },
+  {
+    "department": "PDR Public Defender",
+    "fiscal_year": "2026",
+    "total_spending": 58260655.0,
+    "labor_share": 0.0,
+    "ops_share": 1.0,
+    "programs_count": 2
+  },
+  {
+    "department": "RET Retirement System",
+    "fiscal_year": "2026",
+    "total_spending": 55653708.0,
+    "labor_share": 0.0,
+    "ops_share": 1.0,
+    "programs_count": 2
+  },
+  {
+    "department": "CPC City Planning",
+    "fiscal_year": "2026",
+    "total_spending": 55222660.0,
+    "labor_share": 0.0,
+    "ops_share": 1.0,
+    "programs_count": 3
+  },
+  {
+    "department": "ADP Adult Probation",
+    "fiscal_year": "2026",
+    "total_spending": 53860021.0,
+    "labor_share": 0.0,
+    "ops_share": 1.0,
+    "programs_count": 3
+  },
+  {
+    "department": "JUV Juvenile Probation",
+    "fiscal_year": "2026",
+    "total_spending": 52691960.0,
+    "labor_share": 0.0,
+    "ops_share": 1.0,
+    "programs_count": 5
+  },
+  {
+    "department": "CAT City Attorney",
+    "fiscal_year": "2026",
+    "total_spending": 42761618.0,
+    "labor_share": 0.0,
+    "ops_share": 1.0,
+    "programs_count": 3
+  },
+  {
+    "department": "ASR Assessor - Recorder",
+    "fiscal_year": "2026",
+    "total_spending": 42333443.0,
+    "labor_share": 0.0,
+    "ops_share": 1.0,
+    "programs_count": 3
+  },
+  {
+    "department": "TTX Treasurer-Tax Collector",
+    "fiscal_year": "2026",
+    "total_spending": 36912953.0,
+    "labor_share": 0.0,
+    "ops_share": 1.0,
+    "programs_count": 2
+  },
+  {
+    "department": "ENV Environment",
+    "fiscal_year": "2026",
+    "total_spending": 34773694.0,
+    "labor_share": 0.0,
+    "ops_share": 1.0,
+    "programs_count": 2
+  },
+  {
+    "department": "CRT Superior Court",
+    "fiscal_year": "2026",
+    "total_spending": 33200508.0,
+    "labor_share": 0.0,
+    "ops_share": 1.0,
+    "programs_count": 1
+  },
+  {
+    "department": "WAR War Memorial",
+    "fiscal_year": "2026",
+    "total_spending": 32041735.0,
+    "labor_share": 0.0,
+    "ops_share": 1.0,
+    "programs_count": 5
+  },
+  {
+    "department": "HRC Human Rights Commission",
+    "fiscal_year": "2026",
+    "total_spending": 29931984.0,
+    "labor_share": 0.0,
+    "ops_share": 1.0,
+    "programs_count": 2
+  },
+  {
+    "department": "BOS Board of Supervisors",
+    "fiscal_year": "2026",
+    "total_spending": 26483366.0,
+    "labor_share": 0.0,
+    "ops_share": 1.0,
+    "programs_count": 2
+  },
+  {
+    "department": "FAM Fine Arts Museum",
+    "fiscal_year": "2026",
+    "total_spending": 24333281.0,
+    "labor_share": 0.0,
+    "ops_share": 1.0,
+    "programs_count": 3
+  },
+  {
+    "department": "ART Arts Commission",
+    "fiscal_year": "2026",
+    "total_spending": 23625590.0,
+    "labor_share": 0.0,
+    "ops_share": 1.0,
+    "programs_count": 5
+  },
+  {
+    "department": "REG Elections",
+    "fiscal_year": "2026",
+    "total_spending": 22473794.0,
+    "labor_share": 0.0,
+    "ops_share": 1.0,
+    "programs_count": 2
+  },
+  {
+    "department": "HRD Human Resources",
+    "fiscal_year": "2026",
+    "total_spending": 16953355.0,
+    "labor_share": 0.0,
+    "ops_share": 1.0,
+    "programs_count": 5
+  },
+  {
+    "department": "CON Controller",
+    "fiscal_year": "2026",
+    "total_spending": 16153282.0,
+    "labor_share": 0.0,
+    "ops_share": 1.0,
+    "programs_count": 4
+  },
+  {
+    "department": "DT  GSA - Technology",
+    "fiscal_year": "2026",
+    "total_spending": 14675196.0,
+    "labor_share": 0.0,
+    "ops_share": 1.0,
+    "programs_count": 6
+  },
+  {
+    "department": "RNT Rent Arbitration Board",
+    "fiscal_year": "2026",
+    "total_spending": 14507813.0,
+    "labor_share": 0.0,
+    "ops_share": 1.0,
+    "programs_count": 1
+  },
+  {
+    "department": "CSS Child Support Services",
+    "fiscal_year": "2026",
+    "total_spending": 13148344.0,
+    "labor_share": 0.0,
+    "ops_share": 1.0,
+    "programs_count": 1
+  },
+  {
+    "department": "AAM Asian Art Museum",
+    "fiscal_year": "2026",
+    "total_spending": 12771314.0,
+    "labor_share": 0.0,
+    "ops_share": 1.0,
+    "programs_count": 4
+  },
+  {
+    "department": "DPA Police Accountabilty",
+    "fiscal_year": "2026",
+    "total_spending": 8989466.0,
+    "labor_share": 0.0,
+    "ops_share": 1.0,
+    "programs_count": 2
+  },
+  {
+    "department": "SCI Academy of Sciences",
+    "fiscal_year": "2026",
+    "total_spending": 8112940.0,
+    "labor_share": 0.0,
+    "ops_share": 1.0,
+    "programs_count": 2
+  },
+  {
+    "department": "ETH Ethics Commission",
+    "fiscal_year": "2026",
+    "total_spending": 6582368.0,
+    "labor_share": 0.0,
+    "ops_share": 1.0,
+    "programs_count": 1
+  },
+  {
+    "department": "SDA Shrf Dept Ofc Inspctr Genl",
+    "fiscal_year": "2026",
+    "total_spending": 1283747.0,
+    "labor_share": 0.0,
+    "ops_share": 1.0,
+    "programs_count": 1
+  },
+  {
+    "department": "BOA Board of Appeals",
+    "fiscal_year": "2026",
+    "total_spending": 1254289.0,
+    "labor_share": 0.0,
+    "ops_share": 1.0,
+    "programs_count": 1
+  },
+  {
+    "department": "LLB Law Library",
+    "fiscal_year": "2026",
+    "total_spending": 1240588.0,
+    "labor_share": 0.0,
+    "ops_share": 1.0,
+    "programs_count": 1
+  },
+  {
+    "department": "CSC Civil Service Commission",
+    "fiscal_year": "2026",
+    "total_spending": 1181363.0,
+    "labor_share": 0.0,
+    "ops_share": 1.0,
+    "programs_count": 1
+  },
+  {
+    "department": "HSS Health Service System",
+    "fiscal_year": "2026",
+    "total_spending": 780000.0,
+    "labor_share": 0.0,
+    "ops_share": 1.0,
+    "programs_count": 2
+  },
+  {
+    "department": "CII Commty Invest & Infrstrctr",
+    "fiscal_year": "2026",
+    "total_spending": 0.0,
+    "labor_share": 0.0,
+    "ops_share": 1.0,
+    "programs_count": 1
+  },
+  {
+    "department": "USD County Education Office",
+    "fiscal_year": "2026",
+    "total_spending": 0.0,
+    "labor_share": 0.0,
+    "ops_share": 1.0,
+    "programs_count": 2
+  },
+  {
+    "department": "CCD SF Communtiy College Dist",
+    "fiscal_year": "2026",
+    "total_spending": 0.0,
+    "labor_share": 0.0,
+    "ops_share": 1.0,
+    "programs_count": 2
+  }
+]

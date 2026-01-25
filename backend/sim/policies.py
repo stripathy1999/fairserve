@@ -8,19 +8,31 @@ policy templates, and includes validation logic to enforce constraints.
 # 1. Define Policy Knobs
 # Allowed parameter ranges and descriptions
 POLICY_KNOBS = {
+<<<<<<< HEAD
     "capacity_shift_pct": { #How much capacity can we reallocate from well-served neighborhoods to under-served ones?
+=======
+    "capacity_shift_pct": {
+>>>>>>> c9de744 (Refactor fairness metrics and simulator for strict historical/live data separation and robustness)
         "type": float,
         "min": 0.0,
         "max": 0.30,
         "description": "Fraction of capacity shifted from best-off to worst-off neighborhoods."
     },
+<<<<<<< HEAD
     "efficiency_bonus_pct": { #How much efficiency can we realistically gain without adding staff?
+=======
+    "efficiency_bonus_pct": {
+>>>>>>> c9de744 (Refactor fairness metrics and simulator for strict historical/live data separation and robustness)
         "type": float,
         "min": 0.0,
         "max": 0.20,
         "description": "System-wide efficiency gain from batching and routing improvements."
     },
+<<<<<<< HEAD
     "max_reassignments": { #How many times can a ticket bounce before we stop moving it?
+=======
+    "max_reassignments": {
+>>>>>>> c9de744 (Refactor fairness metrics and simulator for strict historical/live data separation and robustness)
         "type": int,
         "min": 0,
         "max": 3,
