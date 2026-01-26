@@ -22,6 +22,14 @@ from agents.proposer import propose_policies, propose_policies_with_debug
 from agents.rag import retrieve_evidence_cards
 from agents.redteam import redteam_review, redteam_review_with_debug
 
+try:
+    from intake.process_live import run_scheduler
+    from trigger.discord_bot import run_bot
+except ImportError:
+    # Fallback/Retry if direct import fails
+    from backend.intake.process_live import run_scheduler
+    from backend.trigger.discord_bot import run_bot
+    
 logger = logging.getLogger(__name__)
 logging.basicConfig(level=logging.INFO)
 
@@ -31,6 +39,7 @@ app = FastAPI(
     version="1.0.0",
 )
 zone2_app = app
+LIVE_DATA_DIR = os.path.join(PROJECT_ROOT, "data/processed/live_stream")
 
 cors_env = os.getenv("CORS_ORIGIN", "http://localhost:3000,http://localhost:8004,http://localhost:8005")
 cors_origins = [origin.strip() for origin in cors_env.split(",") if origin.strip()]
@@ -142,6 +151,46 @@ def _record_turn(
 @app.get("/health")
 async def api_health_check():
     return {"status": "ok"}
+
+@app.post("/visual-incident")
+async def create_visual_incident(file: UploadFile = File(...)):
+    """
+    Generate an incident from an uploaded image/video using Nemotron VL.
+    """
+    if not process_visual_upload:
+        return {"error": "Image processing module not available."}
+        
+    try:
+        content = await file.read()
+        result = process_visual_upload(content, file.filename)
+        
+        if "incident" in result:
+            incident_data = result["incident"]
+            print(incident_data)
+            
+            # Persist to Queue (JSON)
+            QUEUE_DIR = os.path.join(PROJECT_ROOT, "data/queue")
+            if not os.path.exists(QUEUE_DIR):
+                os.makedirs(QUEUE_DIR, exist_ok=True)
+                
+            timestamp = datetime.datetime.now().strftime("%Y%m%d_%H%M%S")
+            import uuid
+            unique_id = uuid.uuid4().hex[:6]
+            file_name = f"visual_{timestamp}_{unique_id}.json"
+            file_path = os.path.join(QUEUE_DIR, file_name)
+            
+            with open(file_path, 'w') as f:
+                json.dump(incident_data, f)
+            
+            # Return path for debug/confirmation
+            result["storage_path"] = file_path
+            result["status"] = "Queued for processing"
+            
+        return result
+            
+        return result
+    except Exception as e:
+        return {"error": f"Failed to process upload: {str(e)}"}
 
 
 @app.get("/live")
