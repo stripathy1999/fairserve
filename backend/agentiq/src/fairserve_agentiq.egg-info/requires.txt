@@ -1,1 +1,1 @@
-nvidia-nat
+nvidia-nat[langchain]

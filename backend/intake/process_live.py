@@ -6,57 +6,97 @@ import os
 import time
 import datetime
 import pandas as pd
+import json
+import glob
 
 # Ensure imports work
 sys.path.append(os.path.abspath(os.path.join(os.path.dirname(__file__), '../')))
 
-from intake.api_client import CityAPIClient
 from intake.processor import process_batch
 
-POLL_INTERVAL_SECONDS = 5 # Short interval for demo purposes
+POLL_INTERVAL_SECONDS = 60* 5
 
 def main():
-    print("Starting Live Data Ingestion Daemon...")
+    print("Starting Live Data Ingestion Daemon (Queue Mode)...")
     print("Press Ctrl+C to stop.")
     
-    client = CityAPIClient()
+    # Paths relative to this script: backend/intake/process_live.py
+    # Data root: ../../data
+    BASE_DIR = os.path.dirname(__file__)
+    DATA_ROOT = os.path.abspath(os.path.join(BASE_DIR, '../../data'))
     
-    # specific file for live append
-    output_path = os.path.abspath(os.path.join(os.path.dirname(__file__), '../data/processed/incidents_live.parquet'))
+    QUEUE_DIR = os.path.join(DATA_ROOT, 'queue')
+    OUTPUT_DIR = os.path.join(DATA_ROOT, 'processed/live_stream')
     
-    # initialize "last checked" to now
-    last_checked = datetime.datetime.now()
-    
+    # Ensure output directory exists (queue directory should be created by API)
+    if not os.path.exists(OUTPUT_DIR):
+        os.makedirs(OUTPUT_DIR, exist_ok=True)
+        
+    print(f"Monitoring Queue: {QUEUE_DIR}")
+    print(f"Output Directory: {OUTPUT_DIR}")
+
     try:
         while True:
-            # Poll
-            new_data = client.fetch_new_data(last_checked)
-            current_time = datetime.datetime.now()
+            # 1. Scan for JSON files in queue
+            if not os.path.exists(QUEUE_DIR):
+                time.sleep(POLL_INTERVAL_SECONDS)
+                continue
+                
+            json_files = glob.glob(os.path.join(QUEUE_DIR, "*.json"))
             
-            if new_data:
-                # Process
-                df_batch = process_batch(new_data)
+            if json_files:
+                print(f"[{datetime.datetime.now().time()}] Found {len(json_files)} new tickets in queue.")
                 
-                # Append to parquet
-                # Parquet append is tricky (requires reading or partitioned dataset).
-                # For simplicity here, we'll read-concat-write (inefficient for big data, OK for demo)
-                # OR just write separate timestamps files.
-                # Requirement says "Appends results to... incidents_live.parquet"
+                batch_data = []
+                processed_files = []
                 
-                if os.path.exists(output_path):
-                    existing_df = pd.read_parquet(output_path)
-                    combined_df = pd.concat([existing_df, df_batch], ignore_index=True)
+                # 2. Read all files
+                for json_file in json_files:
+                    try:
+                        with open(json_file, 'r', encoding='utf-8') as f:
+                            data = json.load(f)
+                            # Handle both list of dicts and single dict
+                            if isinstance(data, list):
+                                batch_data.extend(data)
+                            elif isinstance(data, dict):
+                                batch_data.append(data)
+                            processed_files.append(json_file)
+                    except Exception as e:
+                        print(f"Error reading {json_file}: {e}")
+                
+                if batch_data:
+                    # 3. Process Batch
+                    try:
+                        df_batch = process_batch(batch_data)
+                        
+                        # 4. Save to unique Parquet file
+                        timestamp = datetime.datetime.now().strftime("%Y%m%d_%H%M%S_%f")
+                        filename = f"batch_{timestamp}.parquet"
+                        output_file = os.path.join(OUTPUT_DIR, filename)
+                        
+                        df_batch.to_parquet(output_file, index=False)
+                        print(f"Saved batch to {output_file}")
+                        
+                        # 5. Delete processed files only if processing succeeded
+                        for f in processed_files:
+                            try:
+                                os.remove(f)
+                            except OSError as e:
+                                print(f"Error deleting {f}: {e}")
+                                
+                    except Exception as e:
+                        print(f"Error processing batch: {e}")
                 else:
-                    combined_df = df_batch
-                
-                combined_df.to_parquet(output_path, index=False)
-                
-                print(f"[{datetime.datetime.now().time()}] Ingested {len(new_data)} new tickets.")
+                    # Valid files were found but contained no data? Clean them up.
+                    for f in processed_files:
+                        try:
+                            os.remove(f)
+                        except OSError:
+                            pass
+
             else:
-                # print(".", end="", flush=True) # Heartbeat
                 pass
                 
-            last_checked = current_time
             time.sleep(POLL_INTERVAL_SECONDS)
             
     except KeyboardInterrupt:

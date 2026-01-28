@@ -39,8 +39,8 @@ app = FastAPI(
 
 # Paths
 PROJECT_ROOT = Path(__file__).parent.parent
-DATA_DIR = PROJECT_ROOT / "data" / "processed"
-BUDGET_DIR = PROJECT_ROOT / "data" / "budget"
+DATA_DIR = PROJECT_ROOT.parent / "data" / "processed"
+BUDGET_DIR = PROJECT_ROOT.parent / "data" / "budget"
 
 
 @app.get("/")

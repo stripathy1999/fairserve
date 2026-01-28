@@ -38,7 +38,7 @@ def main():
         
         # Fetch & Process Batches
         batch_count = 0
-        output_dir = os.path.abspath(os.path.join(os.path.dirname(__file__), '../data/processed/historical'))
+        output_dir = os.path.abspath(os.path.join(os.path.dirname(__file__), '../../data/processed/historical'))
         os.makedirs(output_dir, exist_ok=True)
         
         for raw_batch in client.fetch_historical_batch(current_start, current_end):

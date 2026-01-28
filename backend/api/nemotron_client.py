@@ -32,10 +32,14 @@ def _load_env_fallback() -> None:
             value = value.strip().strip('"').strip("'")
             if os.getenv(key) is None:
                 os.environ[key] = value
+    
+    # Ensure NIM_API_KEY is available if NEMO_API_KEY is missing
+    if not os.getenv("NEMO_API_KEY") and os.getenv("NIM_API_KEY"):
+        os.environ["NEMO_API_KEY"] = os.environ["NIM_API_KEY"]
 
 
 def _resolve_base_url() -> str:
-    base = os.getenv("NEMO_BASE", "http://localhost:8000").rstrip("/")
+    base = os.getenv("NEMO_BASE", "https://integrate.api.nvidia.com").rstrip("/")
     if base.endswith("/v1"):
         return base
     return f"{base}/v1"
@@ -44,7 +48,7 @@ def _resolve_base_url() -> str:
 def chat(messages, temperature: float = 0.2, max_tokens: int = 1200) -> str:
     _load_env_fallback()
     base = _resolve_base_url()
-    model = os.getenv("NEMO_MODEL", "nvidia/nemotron-nano-3-30b")
+    model = os.getenv("NEMO_MODEL", "nvidia/nemotron-3-nano-30b-a3b")
     api_key = os.getenv("NEMO_API_KEY", "")
     url = f"{base}/chat/completions"
 
@@ -65,7 +69,7 @@ def chat(messages, temperature: float = 0.2, max_tokens: int = 1200) -> str:
 def health_check(timeout_seconds: int = 5) -> bool:
     _load_env_fallback()
     base = _resolve_base_url()
-    model = os.getenv("NEMO_MODEL", "nvidia/nemotron-nano-3-30b")
+    model = os.getenv("NEMO_MODEL", "nvidia/nemotron-3-nano-30b-a3b")
     api_key = os.getenv("NEMO_API_KEY", "")
     url = f"{base}/chat/completions"
 
