@@ -4,10 +4,19 @@ import numpy as np
 import policies
 
 # --- Configuration ---
-HISTORICAL_FILE = "data/processed/historical"
-LIVE_FILE = "data/processed/live_stream"
-CITY_STATE_FILE = "data/processed/city_state.json"
-OUTPUT_FILE = "data/processed/scenario_results.json"
+from pathlib import Path
+import os
+
+# --- Configuration ---
+# Use absolute paths rooted at the project root (sibling of backend)
+BACKEND_DIR = Path(__file__).resolve().parent.parent
+PROJECT_ROOT = BACKEND_DIR.parent
+DATA_DIR = PROJECT_ROOT / "data" / "processed"
+
+HISTORICAL_FILE = DATA_DIR / "historical"
+LIVE_FILE = DATA_DIR / "live_stream"
+CITY_STATE_FILE = DATA_DIR / "city_state.json"
+OUTPUT_FILE = DATA_DIR / "scenario_results.json"
 
 def main():
     # 1. Load Inputs
@@ -92,8 +101,22 @@ def main():
         }
 
     # 3. Define Policies
-    # Retrieve allowed policies from the policies module
-    policies_list = policies.get_default_policies()
+    import argparse
+    parser = argparse.ArgumentParser()
+    parser.add_argument("--policies", help="Path to JSON file containing policies to simulate")
+    args, _ = parser.parse_known_args()
+
+    if args.policies and os.path.exists(args.policies):
+        try:
+            with open(args.policies, 'r') as f:
+                policies_list = json.load(f)
+            print(f"Loaded {len(policies_list)} policies from {args.policies}")
+        except Exception as e:
+            print(f"Error loading policies from {args.policies}: {e}")
+            policies_list = policies.get_default_policies()
+    else:
+        # Retrieve allowed policies from the policies module
+        policies_list = policies.get_default_policies()
 
     results = []
 

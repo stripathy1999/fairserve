@@ -2,9 +2,21 @@
 import pandas as pd
 import json
 
+import sys
+from pathlib import Path
+
+# Add project root (parent of backend) to path
+# sys.path.append(str(Path(__file__).resolve().parents[2]))
+
+# Add backend directory to path to allow importing config
+sys.path.append(str(Path(__file__).resolve().parent.parent))
+
+# Add backend to path and import centralized configuration
+from config.paths import PROCESSED_DIR
+
 # --- Configuration ---
-INPUT_FILE = "/home/dell/Desktop/fairserve-1/data/processed/historical"
-OUTPUT_FILE = "/home/dell/Desktop/fairserve-1/data/processed/fairness_metrics.json"
+INPUT_FILE = PROCESSED_DIR / "historical"
+OUTPUT_FILE = PROCESSED_DIR / "fairness_metrics.json"
 
 def main():
     # 1. Load data and derive response_time_hours

@@ -16,8 +16,8 @@ class PolicyProposal(BaseModel):
 
 
 class RedTeamOutput(BaseModel):
-    risks: List[str]
-    recommendations: List[str]
+    risks: List[dict]
+    recommendations: List[dict]
 
 
 class MemoOutput(BaseModel):

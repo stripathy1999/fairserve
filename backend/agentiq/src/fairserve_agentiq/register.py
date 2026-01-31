@@ -1,6 +1,7 @@
 import logging
 from typing import Dict
 
+
 try:
     from nat.builder.builder import Builder
     from nat.builder.function_info import FunctionInfo
@@ -23,6 +24,10 @@ from .workflow import (
 )
 
 logger = logging.getLogger(__name__)
+
+
+
+
 
 
 class FairServeProposeConfig(FunctionBaseConfig, name="fairserve_propose"):
@@ -55,55 +60,55 @@ class FairServeMemoConfig(FunctionBaseConfig, name="fairserve_memo"):
 
 @register_function(config_type=FairServeProposeConfig)
 async def fairserve_propose(config: FairServeProposeConfig, builder: Builder):
-    async def _inner(payload: dict | None = None, **kwargs) -> dict:
-        return propose_step(payload or kwargs or {})
+    async def _inner(payload: dict) -> dict:
+        return {"payload": propose_step(payload)}
 
     yield FunctionInfo.from_fn(_inner, description=config.description)
 
 
 @register_function(config_type=FairServeRetrieveConfig)
 async def fairserve_retrieve(config: FairServeRetrieveConfig, builder: Builder):
-    async def _inner(payload: dict | None = None, **kwargs) -> dict:
-        return retrieve_step(payload or kwargs or {})
+    async def _inner(payload: dict) -> dict:
+        return {"payload": retrieve_step(payload)}
 
     yield FunctionInfo.from_fn(_inner, description=config.description)
 
 
 @register_function(config_type=FairServeSimulateConfig)
 async def fairserve_simulate(config: FairServeSimulateConfig, builder: Builder):
-    async def _inner(payload: dict | None = None, **kwargs) -> dict:
-        return simulate_step(payload or kwargs or {})
+    async def _inner(payload: dict) -> dict:
+        return {"payload": simulate_step(payload)}
 
     yield FunctionInfo.from_fn(_inner, description=config.description)
 
 
 @register_function(config_type=FairServeVerifyConfig)
 async def fairserve_verify(config: FairServeVerifyConfig, builder: Builder):
-    async def _inner(payload: dict | None = None, **kwargs) -> dict:
-        return verify_step(payload or kwargs or {})
+    async def _inner(payload: dict) -> dict:
+        return {"payload": verify_step(payload)}
 
     yield FunctionInfo.from_fn(_inner, description=config.description)
 
 
 @register_function(config_type=FairServeRankConfig)
 async def fairserve_rank(config: FairServeRankConfig, builder: Builder):
-    async def _inner(payload: dict | None = None, **kwargs) -> dict:
-        return rank_step(payload or kwargs or {})
+    async def _inner(payload: dict) -> dict:
+        return {"payload": rank_step(payload)}
 
     yield FunctionInfo.from_fn(_inner, description=config.description)
 
 
 @register_function(config_type=FairServeRedTeamConfig)
 async def fairserve_redteam(config: FairServeRedTeamConfig, builder: Builder):
-    async def _inner(payload: dict | None = None, **kwargs) -> dict:
-        return redteam_step(payload or kwargs or {})
+    async def _inner(payload: dict) -> dict:
+        return {"payload": redteam_step(payload)}
 
     yield FunctionInfo.from_fn(_inner, description=config.description)
 
 
 @register_function(config_type=FairServeMemoConfig)
 async def fairserve_memo(config: FairServeMemoConfig, builder: Builder):
-    async def _inner(payload: dict | None = None, **kwargs) -> dict:
-        return memo_step(payload or kwargs or {})
+    async def _inner(payload: dict) -> dict:
+        return {"payload": memo_step(payload)}
 
     yield FunctionInfo.from_fn(_inner, description=config.description)

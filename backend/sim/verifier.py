@@ -2,9 +2,18 @@
 import json
 
 # --- Configuration ---
-SCENARIO_RESULTS_FILE = "data/processed/scenario_results.json"
-CITY_STATE_FILE = "data/processed/city_state.json"
-OUTPUT_FILE = "data/processed/verifier_outputs.json"
+from pathlib import Path
+import os
+
+# --- Configuration ---
+# Use absolute paths rooted at the project root (sibling of backend)
+BACKEND_DIR = Path(__file__).resolve().parent.parent
+PROJECT_ROOT = BACKEND_DIR.parent
+DATA_DIR = PROJECT_ROOT / "data" / "processed"
+
+SCENARIO_RESULTS_FILE = DATA_DIR / "scenario_results.json"
+CITY_STATE_FILE = DATA_DIR / "city_state.json"
+OUTPUT_FILE = DATA_DIR / "verifier_outputs.json"
 
 def main():
     # 1. Load Inputs

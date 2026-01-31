@@ -22,9 +22,20 @@ logger = logging.getLogger(__name__)
 
 
 def _extract_json(text: str):
+    if text is None:
+        return None
+    # Strip markdown code blocks
+    text = text.strip()
+    if text.startswith("```"):
+        text = text.strip("`")
+        if text.startswith("json"):
+            text = text[4:]
+        text = text.strip()
+    
     try:
         return json.loads(text)
     except json.JSONDecodeError:
+        # Fallback: try to find the outer list brackets
         start = text.find("[")
         end = text.rfind("]")
         if start == -1 or end == -1 or end <= start:
@@ -36,6 +47,15 @@ def _extract_json(text: str):
 
 
 def _validate_policies(payload) -> List[PolicyProposal]:
+    # Handle common LLM wrapping
+    if isinstance(payload, dict):
+        if "policies" in payload and isinstance(payload["policies"], list):
+            payload = payload["policies"]
+        elif "candidates" in payload and isinstance(payload["candidates"], list):
+            payload = payload["candidates"]
+        elif "policy_proposals" in payload and isinstance(payload["policy_proposals"], list):
+            payload = payload["policy_proposals"]
+
     if TypeAdapter is not None:
         adapter = TypeAdapter(List[PolicyProposal])
         return adapter.validate_python(payload)
@@ -94,9 +114,14 @@ def _build_prompt(city_state: Dict[str, Any]) -> str:
         "Use ONLY the allowed parameter knobs and ranges from policy_space below.\n"
         "Respect governance constraints in governance.\n"
         "Use evidence_cards + policy_playbook for grounding and parameter choices.\n"
-        "Output schema (JSON array):\n"
-        "[{\"policy_id\": \"string\", \"parameters\": {\"capacity_shift_pct\": number, "
-        "\"efficiency_bonus_pct\": number, \"max_reassignments\": integer}, \"rationale\": \"string\"}]\n"
+        "Output schema (JSON array of objects):\n"
+        "[\n"
+        "  {\n"
+        "    \"policy_id\": \"string\",\n"
+        "    \"parameters\": {\"capacity_shift_pct\": number, \"efficiency_bonus_pct\": number, \"max_reassignments\": integer},\n"
+        "    \"rationale\": \"string\"\n"
+        "  }\n"
+        "]\n"
         "Hard rules:\n"
         "- capacity_shift_pct in [0.0, 0.30]\n"
         "- efficiency_bonus_pct in [0.0, 0.20]\n"
@@ -105,7 +130,8 @@ def _build_prompt(city_state: Dict[str, Any]) -> str:
         "- If unsure, still output valid JSON that fits the schema.\n"
         "- Rationale must cite evidence ids from retrieved_cards (e.g., EVID_WORST_NEIGHBORHOODS, "
         "GOV_CONSTRAINTS, PLAYBOOK_BACKLOG_SHOCK_ABSORBER).\n"
-        f"INPUT_JSON: {json.dumps(input_json, indent=2)}"
+        f"INPUT_JSON: {json.dumps(input_json, indent=2)}\n"
+        "REMEMBER: Output ONLY the valid JSON array. No markdown, no explanations."
     )
 
 
@@ -119,21 +145,21 @@ def _attempt_generate(
             "role": "system",
             "content": (
                 "You are the Policy Proposer agent for a city ops system.\n"
-                "Output must be ONLY valid JSON. No markdown. No commentary. No extra keys. No preamble."
+                "CRITICAL: Output must be ONLY valid JSON array. Do NOT use markdown code blocks. Do NOT include any intro or outro text."
             ),
         }
     ]
     if history:
         messages.extend(history)
     messages.append({"role": "user", "content": prompt})
-    content = chat(messages=messages, temperature=0.3, max_tokens=1200)
+    content = chat(messages=messages, temperature=0.3, max_tokens=4096)
     payload = _extract_json(content)
     if payload is None:
         return None, content, None
     try:
         return _validate_policies(payload), content, payload
     except ValidationError as exc:
-        logger.warning("Nemotron output failed validation: %s", exc)
+        logger.warning("Nemotron output failed validation. Error: %s. Payload: %s", exc, json.dumps(payload, indent=2))
         return None, content, payload
 
 

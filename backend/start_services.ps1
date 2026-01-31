@@ -5,7 +5,7 @@ Write-Host "Starting FairServe Services..." -ForegroundColor Green
 
 # 1. Zone 2 API (Port 8080)
 Write-Host "Launching Zone 2 API (Port 8080)..."
-Start-Process -FilePath "python" -ArgumentList "-m api.app" -WindowStyle Minimized
+Start-Process -FilePath "python" -ArgumentList "-u -m api.app" -WindowStyle Minimized
 
 # 2. Zone 1 API (Port 8081)
 Write-Host "Launching Zone 1 API (Port 8081)..."

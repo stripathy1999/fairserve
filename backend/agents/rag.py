@@ -4,7 +4,7 @@ import json
 from pathlib import Path
 from typing import Any, Dict, List
 
-from agents.city_state import DATA_DIR
+from config.paths import PROCESSED_DIR
 
 PLAYBOOK_PATH = Path(__file__).parent / "policy_playbook.json"
 
@@ -27,8 +27,8 @@ def build_city_evidence_pack(city_state: Dict[str, Any], max_neighborhoods: int 
     )
     top_neighborhoods = sorted_by_ratio[:max_neighborhoods]
 
-    fairness_metrics = _load_optional_json(DATA_DIR / "fairness_metrics.json")
-    intake_summary = _load_optional_json(DATA_DIR / "intake_summary.json")
+    fairness_metrics = _load_optional_json(PROCESSED_DIR / "fairness_metrics.json")
+    intake_summary = _load_optional_json(PROCESSED_DIR / "intake_summary.json")
 
     cards = [
         {

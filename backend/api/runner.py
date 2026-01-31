@@ -12,7 +12,9 @@ from datetime import datetime
 
 
 # Project root (assuming api/ is at project root)
-PROJECT_ROOT = Path(__file__).parent.parent
+# Project root (assuming api/ is at backend root, and data is sibling of backend)
+BACKEND_ROOT = Path(__file__).parent.parent
+PROJECT_ROOT = BACKEND_ROOT.parent
 DATA_DIR = PROJECT_ROOT / "data" / "processed"
 
 
@@ -38,8 +40,8 @@ def run_simulator(policy_dict: Dict[str, Any]) -> Dict[str, Any]:
     """
     
     # Backup original policies.py
-    policies_file = PROJECT_ROOT / "sim" / "policies.py"
-    backup_file = PROJECT_ROOT / "sim" / "policies.py.bak"
+    policies_file = BACKEND_ROOT / "sim" / "policies.py"
+    backup_file = BACKEND_ROOT / "sim" / "policies.py.bak"
     
     try:
         # Create backup
@@ -66,7 +68,7 @@ def validate_policy(policy):
         # Run simulator
         result = subprocess.run(
             ["python", "sim/simulator.py"],
-            cwd=PROJECT_ROOT,
+            cwd=BACKEND_ROOT,
             capture_output=True,
             text=True,
             timeout=60
@@ -78,7 +80,9 @@ def validate_policy(policy):
         # Read results
         results_file = DATA_DIR / "scenario_results.json"
         if not results_file.exists():
-            raise FileNotFoundError(f"Simulator did not produce {results_file}")
+            print(f"Simulator stdout: {result.stdout}")
+            print(f"Simulator stderr: {result.stderr}")
+            raise FileNotFoundError(f"Simulator did not produce {results_file}. Output: {result.stdout}")
         
         with open(results_file, 'r') as f:
             all_results = json.load(f)
@@ -96,6 +100,59 @@ def validate_policy(policy):
         # Restore original policies.py
         with open(policies_file, 'w') as f:
             f.write(original_content)
+
+
+def run_batch_simulator(policies: List[Dict[str, Any]]) -> List[Dict[str, Any]]:
+    """
+    Run simulator.py for a batch of policies efficiently.
+    
+    Args:
+        policies: List of policy dictionaries
+        
+    Returns:
+        List of simulation result dictionaries
+    """
+    if not policies:
+        return []
+
+    # Create temporary policies input file
+    temp_policies_file = BACKEND_ROOT / "temp_policies_input.json"
+    
+    try:
+        with open(temp_policies_file, 'w') as f:
+            json.dump(policies, f, indent=2)
+        
+        # Run simulator with --policies argument
+        result = subprocess.run(
+            ["python", "sim/simulator.py", "--policies", str(temp_policies_file)],
+            cwd=BACKEND_ROOT,
+            capture_output=True,
+            text=True,
+            timeout=120
+        )
+        
+        if result.returncode != 0:
+            print(f"Simulator stdout: {result.stdout}")
+            print(f"Simulator stderr: {result.stderr}")
+            raise RuntimeError(f"Simulator batch failed: {result.stderr}")
+        
+        # Read results
+        results_file = DATA_DIR / "scenario_results.json"
+        if not results_file.exists():
+            raise FileNotFoundError(f"Simulator did not produce {results_file} from batch run. Output: {result.stdout}")
+        
+        with open(results_file, 'r') as f:
+            all_results = json.load(f)
+            
+        return all_results
+        
+    finally:
+        # Cleanup temp file
+        if temp_policies_file.exists():
+            try:
+                os.remove(temp_policies_file)
+            except OSError:
+                pass
 
 
 def run_verifier(policy_result: Dict[str, Any]) -> Dict[str, Any]:
@@ -135,7 +192,7 @@ def run_verifier(policy_result: Dict[str, Any]) -> Dict[str, Any]:
         # Run verifier
         result = subprocess.run(
             ["python", "sim/verifier.py"],
-            cwd=PROJECT_ROOT,
+            cwd=BACKEND_ROOT,
             capture_output=True,
             text=True,
             timeout=30
@@ -195,7 +252,7 @@ def run_refresh() -> Dict[str, Any]:
     for script_path, step_name in steps:
         result = subprocess.run(
             ["python", script_path],
-            cwd=PROJECT_ROOT,
+            cwd=BACKEND_ROOT,
             capture_output=True,
             text=True,
             timeout=120

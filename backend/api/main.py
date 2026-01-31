@@ -15,7 +15,8 @@ PROJECT_ROOT = os.path.abspath(os.path.join(os.path.dirname(__file__), '..'))
 if PROJECT_ROOT not in sys.path:
     sys.path.append(PROJECT_ROOT)
 
-LIVE_DATA_DIR = os.path.join(PROJECT_ROOT, "../data/processed/live_stream")
+from config.paths import PROCESSED_DIR, QUEUE_DIR
+LIVE_DATA_DIR = os.path.join(PROCESSED_DIR, "live_stream")
 
 # --- Local Imports ---
 try:
@@ -56,7 +57,6 @@ async def create_visual_incident(file: UploadFile = File(...)):
             print(incident_data)
             
             # Persist to Queue (JSON)
-            QUEUE_DIR = os.path.join(PROJECT_ROOT, "../data/queue")
             if not os.path.exists(QUEUE_DIR):
                 os.makedirs(QUEUE_DIR, exist_ok=True)
                 

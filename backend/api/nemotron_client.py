@@ -27,7 +27,7 @@ def _load_env_fallback() -> None:
                 continue
             key, value = raw.split("=", 1)
             key = key.strip()
-            if key not in {"NEMO_BASE", "NEMO_MODEL", "NEMO_API_KEY"}:
+            if key not in {"NEMO_BASE", "NEMO_MODEL", "NEMO_API_KEY", "NIM_API_KEY"}:
                 continue
             value = value.strip().strip('"').strip("'")
             if os.getenv(key) is None:
@@ -45,7 +45,7 @@ def _resolve_base_url() -> str:
     return f"{base}/v1"
 
 
-def chat(messages, temperature: float = 0.2, max_tokens: int = 1200) -> str:
+def chat(messages, temperature: float = 0.2, max_tokens: int = 4096) -> str:
     _load_env_fallback()
     base = _resolve_base_url()
     model = os.getenv("NEMO_MODEL", "nvidia/nemotron-3-nano-30b-a3b")
@@ -63,7 +63,15 @@ def chat(messages, temperature: float = 0.2, max_tokens: int = 1200) -> str:
     }
     response = requests.post(url, headers=headers, json=payload, timeout=120)
     response.raise_for_status()
-    return response.json()["choices"][0]["message"]["content"]
+    data = response.json()
+    # Debug logging
+    import logging
+    import pprint
+    logging.getLogger(__name__).info(f"Nemotron Response:\n{pprint.pformat(data)}")
+    
+    if not data.get("choices"):
+        return None
+    return data["choices"][0]["message"]["content"]
 
 
 def health_check(timeout_seconds: int = 5) -> bool:

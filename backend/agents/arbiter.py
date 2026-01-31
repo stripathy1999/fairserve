@@ -22,6 +22,16 @@ logger = logging.getLogger(__name__)
 
 
 def _extract_json(text: str):
+    if text is None:
+        return None
+    # Strip markdown code blocks
+    text = text.strip()
+    if text.startswith("```"):
+        text = text.strip("`")
+        if text.startswith("json"):
+            text = text[4:]
+        text = text.strip()
+
     try:
         return json.loads(text)
     except json.JSONDecodeError:
@@ -61,7 +71,8 @@ def _build_prompt(service: str, payload: Dict[str, Any]) -> str:
         f"CONSTITUTION_CARDS: {json.dumps(constitution_cards, indent=2)}\n"
         f"PLAYBOOK_CARDS: {json.dumps(playbook_cards, indent=2)}\n"
         f"RETRIEVED_CARDS: {json.dumps(retrieved_cards, indent=2)}\n"
-        f"INPUT_JSON: {json.dumps(payload, indent=2)}"
+        f"INPUT_JSON: {json.dumps(payload, indent=2)}\n"
+        "REMEMBER: Output ONLY valid JSON. No markdown."
     )
 
 
@@ -72,12 +83,12 @@ def _attempt_generate(
 ) -> Tuple[MemoOutput | None, str, Any]:
     prompt = _build_prompt(service, payload)
     messages: List[Dict[str, str]] = [
-        {"role": "system", "content": "You are an executive policy writer. Output ONLY JSON."},
+        {"role": "system", "content": "You are an executive policy writer. CRITICAL: Output must be ONLY valid JSON. Do NOT use markdown code blocks. No intro or outro."},
     ]
     if history:
         messages.extend(history)
     messages.append({"role": "user", "content": prompt})
-    content = chat(messages=messages, temperature=0.2, max_tokens=1200)
+    content = chat(messages=messages, temperature=0.2, max_tokens=4096)
     payload_json = _extract_json(content)
     if payload_json is None:
         return None, content, None

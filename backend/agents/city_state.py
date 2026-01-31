@@ -5,9 +5,7 @@ from pathlib import Path
 from typing import Any, Dict, List
 
 from fastapi import HTTPException
-
-PROJECT_ROOT = Path(__file__).parent.parent
-DATA_DIR = PROJECT_ROOT / "data" / "processed"
+from config.paths import DATA_DIR
 
 GOVERNANCE = {
     "worst_k": 3,

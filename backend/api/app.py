@@ -10,12 +10,15 @@ Lightweight FastAPI layer exposing Zone-2 capabilities:
 - Refresh (recompute Zone-2 outputs)
 """
 
-from fastapi import FastAPI, HTTPException, Query
+from fastapi import FastAPI, HTTPException, Query, Request
 from fastapi.responses import JSONResponse
 from typing import Optional
 import json
 from pathlib import Path
 import logging
+import httpx
+from fastapi.responses import StreamingResponse
+from config.settings import settings
 
 from api.models import (
     SimulateRequest, SimulateResponse,
@@ -38,9 +41,8 @@ app = FastAPI(
 )
 
 # Paths
-PROJECT_ROOT = Path(__file__).parent.parent
-DATA_DIR = PROJECT_ROOT.parent / "data" / "processed"
-BUDGET_DIR = PROJECT_ROOT.parent / "data" / "budget"
+# Paths
+from config.paths import PROCESSED_DIR as DATA_DIR, BUDGET_DIR
 
 
 @app.get("/")
@@ -228,7 +230,7 @@ async def get_fairness_metrics():
     try:
         with open(metrics_file, 'r') as f:
             data = json.load(f)
-        return JSONResponse(content=data)
+        return JSONResponse(content={"metrics": data})
     except json.JSONDecodeError as e:
         raise HTTPException(status_code=500, detail=f"Invalid JSON in fairness_metrics.json: {e}")
 
@@ -340,6 +342,239 @@ async def refresh_zone2():
     except Exception as e:
         logger.error(f"Unexpected error during refresh: {e}")
         raise HTTPException(status_code=500, detail=f"Unexpected error: {e}")
+
+
+@app.get("/agents/health")
+async def agent_health():
+    """
+    Proxy to AgentIQ health check.
+    """
+    async with httpx.AsyncClient() as client:
+        try:
+            # AgentIQ (NAT) doesn't have a standard /health endpoint, but /docs exists.
+            # We just need to check if the service is up.
+            resp = await client.get(f"{settings.AGENTIQ_URL}/docs")
+            if resp.status_code == 200:
+                return {"ok": True, "details": "AgentIQ reachable"}
+            return JSONResponse(status_code=502, content={"ok": False, "error": f"AgentIQ returned {resp.status_code}"})
+        except Exception as e:
+            return JSONResponse(status_code=502, content={"ok": False, "error": str(e)})
+
+@app.get("/agents/stream")
+async def agent_stream(service: str, request: Request): # Need Request to get query params? No, simplified
+    """
+    Proxy SSE stream to AgentIQ.
+    """
+    # AgentIQ expects a POST to /generate/stream with {"initial_tool_input": ...}
+    # We convert the GET query param 'service' into that payload.
+    url = f"{settings.AGENTIQ_URL}/generate/stream"
+    payload = {
+        "initial_tool_input": {
+            "payload": {
+                "service": service 
+            }
+        }
+    }
+    
+    # We need to stream the response back
+    # Using httpx stream
+    
+    async def event_generator():
+        async with httpx.AsyncClient() as client:
+            try:
+                # Use POST for NAT streaming
+                # set timeout to None for long streaming
+                turn_counter = 0
+                current_agent = "System"
+                accumulated_payloads = {}  # Track outputs from each agent
+                
+                async with client.stream("POST", url, json=payload, timeout=None) as response:
+                     async for line in response.aiter_lines():
+                         if not line:
+                             continue
+                             
+                         # Parse nat event
+                         # Format: intermediate_data: {"id": ...}
+                         if line.startswith("intermediate_data: "):
+                             try:
+                                 json_str = line[len("intermediate_data: "):]
+                                 event_data = json.loads(json_str)
+                                 
+                                 # Extract info
+                                 # event_data keys: id, type, name, payload (markdown)
+                                 name = event_data.get("name", "Unknown")
+                                 content_md = event_data.get("payload", "")
+                                 
+                                 # Stateful agent mapping
+                                 # Update current_agent if we see a specific function start
+                                 if "propose" in name.lower():
+                                     current_agent = "Proposer"
+                                 elif "verify" in name.lower():
+                                     current_agent = "Constitution Checker"
+                                 elif "redteam" in name.lower():
+                                     current_agent = "Red Team"
+                                 elif "memo" in name.lower():
+                                     current_agent = "Memo Writer"
+                                 # Note: Retrieve usually maps to System or we can leave it as previous
+                                 
+                                 agent = current_agent
+                                 
+                                 # Filter out System messages (function inputs/outputs logs)
+                                 if agent == "System":
+                                     continue
+                                     
+                                 # NOTE: Input filter disabled - was blocking valid agent outputs
+                                 # The "**Input:**" marker can appear in agent output documentation
+                                 
+                                 # Try to extract structured payload from markdown code block
+                                 structured_payload = None
+                                 candidate = None
+                                 
+                                 # Strategy 1: Regex for code blocks
+                                 import re
+                                 matches = re.findall(r"```(?:\w+)?\s+(.*?)\s+```", content_md, re.DOTALL)
+                                 if matches:
+                                     candidate = matches[-1]
+                                 
+                                 # Strategy 2: Look for **Output:** marker and take everything after
+                                 if not candidate and "**Output:**" in content_md:
+                                     parts = content_md.split("**Output:**")
+                                     if len(parts) > 1:
+                                         candidate = parts[-1].strip()
+
+                                 # Parsing Logic (common)
+                                 if candidate:
+                                     # First try JSON
+                                     try:
+                                         structured_payload = json.loads(candidate)
+                                     except Exception:
+                                         # Fallback to python literal eval (single quotes)
+                                         try:
+                                             import ast
+                                             # Sanitize common non-literals
+                                             safe_candidate = candidate.replace(" nan,", " None,").replace(": nan", ": None")
+                                             structured_payload = ast.literal_eval(safe_candidate)
+                                         except Exception:
+                                             pass
+                                 
+                                 if structured_payload is not None:
+                                      # Handle list wrapper (common in nat if multiple outputs possible)
+                                      if isinstance(structured_payload, list):
+                                          if len(structured_payload) > 0:
+                                               structured_payload = structured_payload[0]
+                                      
+                                      # Unwrap "payload" wrapper if present (common in nat)
+                                      if isinstance(structured_payload, dict) and "payload" in structured_payload:
+                                           structured_payload = structured_payload["payload"]
+                                      
+                                      # Accumulate by agent
+                                      accumulated_payloads[agent] = structured_payload
+                                 
+                                 # Construct AgentMessage
+                                 turn_counter += 1
+                                 msg = {
+                                     "agent": agent,
+                                     "content": content_md,
+                                     "turn": turn_counter,
+                                     "payload": structured_payload
+                                 }
+                                 
+                                 # Yield SSE event
+                                 yield f"data: {json.dumps(msg)}\n\n".encode('utf-8')
+
+                             except Exception as parse_err:
+                                 logger.error(f"Error parsing intermediate_data: {parse_err}")
+                                 continue
+                         
+                         # Check for other event types?
+                         # For now, just handle intermediate_data
+                
+                # Stream finished successfully
+                # Build final payload matching frontend expectations
+                final_payload = {}
+                
+                # Frontend expects: policies, chosen_policy, verifier_outputs, redteam
+                if "Proposer" in accumulated_payloads:
+                    proposer_data = accumulated_payloads["Proposer"]
+                    if isinstance(proposer_data, dict):
+                        final_payload["policies"] = proposer_data.get("policies", [])
+                
+                if "Constitution Checker" in accumulated_payloads:
+                    checker_data = accumulated_payloads["Constitution Checker"]
+                    if isinstance(checker_data, dict):
+                        final_payload["verifier_outputs"] = checker_data.get("verifier_outputs", [])
+                        final_payload["chosen_policy"] = checker_data.get("chosen_policy", None)
+                
+                if "Red Team" in accumulated_payloads:
+                    redteam_data = accumulated_payloads["Red Team"]
+                    if isinstance(redteam_data, dict):
+                        final_payload["redteam"] = redteam_data.get("redteam", None)
+                
+                if "Memo Writer" in accumulated_payloads:
+                    memo_data = accumulated_payloads["Memo Writer"]
+                    if isinstance(memo_data, dict):
+                        final_payload["memo"] = memo_data.get("memo", "")
+                
+                logger.info(f"Stream done. Final payload keys: {list(final_payload.keys())}")
+                
+                yield b"event: done\n"
+                yield f"data: {json.dumps(final_payload)}\n\n".encode('utf-8')
+
+            except Exception as e:
+                logger.error(f"Stream proxy error: {e}")
+                err_msg = {"agent": "System", "content": f"Stream error: {str(e)}", "turn": 0}
+                yield f"data: {json.dumps(err_msg)}\n\n".encode('utf-8')
+
+    return StreamingResponse(event_generator(), media_type="text/event-stream")
+
+
+@app.post("/agents/propose")
+async def agent_propose(request: Request):
+    """Proxy propose to AgentIQ"""
+    data = await request.json()
+    async with httpx.AsyncClient() as client:
+        resp = await client.post(f"{settings.AGENTIQ_URL}/fairserve_propose", json=data) # Assuming direct function access or similar
+        # NOTE: If AgentIQ only exposes /stream, these individual calls might not work as expected unless 
+        # AgentIQ is configured to expose them. But for now, we proxy.
+        # If AgentIQ is just 'nat serve', it doesn't expose these individually by default unless they are registered routes.
+        # However, looking at the previous 'register.py', they are registered as functions.
+        # 'nat serve' typically runs a server. 
+        # Does it expose /fairserve_propose? unsure.
+        # BUT, if we look at `store/zone2.ts`, the frontend expects these paths.
+        # If they fail, we deal with it later.
+        if resp.status_code >= 400:
+             raise HTTPException(status_code=resp.status_code, detail=resp.text)
+        return resp.json()
+
+@app.post("/agents/redteam")
+async def agent_redteam(request: Request):
+    """Proxy redteam to AgentIQ"""
+    data = await request.json()
+    async with httpx.AsyncClient() as client:
+        resp = await client.post(f"{settings.AGENTIQ_URL}/fairserve_redteam", json=data)
+        if resp.status_code >= 400:
+             raise HTTPException(status_code=resp.status_code, detail=resp.text)
+        return resp.json()
+
+@app.post("/agents/memo")
+async def agent_memo(request: Request):
+    """Proxy memo to AgentIQ"""
+    data = await request.json()
+    async with httpx.AsyncClient() as client:
+        resp = await client.post(f"{settings.AGENTIQ_URL}/fairserve_memo", json=data)
+        if resp.status_code >= 400:
+             raise HTTPException(status_code=resp.status_code, detail=resp.text)
+        return resp.json()
+
+@app.get("/agents/evidence")
+async def agent_evidence(service: Optional[str] = None):
+    """Proxy evidence to AgentIQ"""
+    async with httpx.AsyncClient() as client:
+        params = {"service": service} if service else {}
+        resp = await client.get(f"{settings.AGENTIQ_URL}/fairserve_retrieve", params=params)
+        if resp.status_code >= 400:
+             raise HTTPException(status_code=resp.status_code, detail=resp.text)
+        return resp.json()
 
 
 if __name__ == "__main__":
